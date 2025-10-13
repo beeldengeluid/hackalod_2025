@@ -2,6 +2,12 @@
 To be used by the "Imagine all the people" team for HackaLOD 2025
 
 
+## Triplestore
+
+De triplestore die gebruikt kan worden voor het event is hier te vinden:
+
+https://graphdb-sandbox.rdlabs.beeldengeluid.nl/
+
 ## Wat ideeen
 
 Koppel deze bronnen:

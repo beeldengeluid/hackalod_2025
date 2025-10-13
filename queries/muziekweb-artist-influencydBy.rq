@@ -1,0 +1,12 @@
+# artist X influenced by Y
+# SPARQL endpoint: https://api.data.muziekweb.nl/datasets/MuziekwebOrganization/Muziekweb/services/Muziekweb/sparql
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix vocab: <https://data.muziekweb.nl/vocab/>
+select *
+where {
+  # VALUES ?s {<https://www.muziekweb.nl/en/Link/M00000049825>}
+  ?s vocab:influencedBy ?o .
+    ?s rdfs:label ?sLabel .
+    ?o rdfs:label ?oLabel .
+} 
+limit 100

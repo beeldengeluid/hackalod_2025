@@ -1,0 +1,13 @@
+# artist X is related to album Y
+# SPARQL endpoint: https://api.data.muziekweb.nl/datasets/MuziekwebOrganization/Muziekweb/services/Muziekweb/sparql
+prefix vocab: <https://data.muziekweb.nl/vocab/>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+select * 
+where {
+  VALUES ?s {<https://data.muziekweb.nl/Link/M00000049825>
+  }
+  ?s vocab:album ?o .
+  ?o rdfs:label ?oLabel .
+  ?s rdfs:label ?sLabel
+} limit 10

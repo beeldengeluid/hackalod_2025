@@ -17,3 +17,4 @@ Om b.v. :
 -  Dus het browsen van artiesten en hun invloeden op media optredens o.a
 
 
+Some SPARQL queries for public Muziekweb data are added in `/queries`. These can be useful for the Musiant/LODster application idea.

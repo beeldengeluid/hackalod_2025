@@ -24,3 +24,8 @@ Om b.v. :
 
 
 Some SPARQL queries for public Muziekweb data are added in `/queries`. These can be useful for the Musiant/LODster application idea.
+
+TODO: 
+- Give app access to the internal muziekweb dataset (needed to find embed URLs). 
+    - Prepare grlc queries for REST API access and link to the search API. 
+    - Provide authenticated access for the app.

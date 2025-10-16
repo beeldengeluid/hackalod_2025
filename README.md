@@ -1,6 +1,7 @@
 # hackalod_2025
 To be used by the "Imagine all the people" team for HackaLOD 2025
 
+- [Functioneel ontwerp](./docs/fo.md) WiP
 - [Repo](./docs/repo.md)
 - [Wat ideeen](./docs/ideeen.md)
 - [Triplestore](./docs/triplestore.md)

@@ -7,8 +7,7 @@
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "dev": "tsx watch src/server.ts",
-    "start": "node dist/server.js",
-    "test": "vitest"
+    "start": "node dist/server.js"
   },
   "dependencies": {
     "express": "^5.1.0"

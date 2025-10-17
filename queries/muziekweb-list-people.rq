@@ -1,0 +1,16 @@
+#+ summary: Query to list-people using Classes in Muziekweb data model
+#+ endpoint: https://api.data.muziekweb.nl/datasets/MuziekwebOrganization/Muziekweb/services/Muziekweb/sparql
+prefix vocab: <https://data.muziekweb.nl/vocab/>
+prefix schema: <http://schema.org/>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+select DISTINCT ?s 
+WHERE {
+  VALUES ?type {
+    schema:Person
+    vocab:Performer 
+    vocab:PopularPerformer 
+    vocab:ClassicalPerformer 
+    vocab:ImportantPerformer 
+  }
+  ?s rdf:type ?type .
+} limit 100

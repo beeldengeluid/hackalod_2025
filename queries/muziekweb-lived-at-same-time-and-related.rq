@@ -1,0 +1,29 @@
+prefix vocab: <https://data.muziekweb.nl/vocab/>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix skos: <http://www.w3.org/2004/02/skos/core#>
+select distinct ?s1 ?name1 ?s2 ?name2 ?relation
+where {
+  values ?relation {
+    vocab:related
+    vocab:influencedBy
+    vocab:contemporary
+    vocab:seeAlso
+  }
+  ?s1 rdf:type vocab:ImportantPerformer ;
+    rdf:type vocab:PopularPerformer ;
+    skos:prefLabel ?name1 ;
+    vocab:beginYear ?bYear1 ;
+    vocab:endYear ?eYear1 .
+  ?s2 rdf:type vocab:ImportantPerformer ;
+    rdf:type vocab:PopularPerformer ;
+    skos:prefLabel ?name2 ;
+    vocab:beginYear ?bYear2 ;
+    vocab:endYear ?eYear2 .
+  filter(
+    (?bYear1 <= ?eYear2) && (?bYear2 >= ?bYear1) && !(?eYear1 <= ?bYear2)
+  )
+  filter (?s1 != ?s2)
+  ?s1 ?relation ?s2
+}
+order by desc(?bYear)
+limit 100

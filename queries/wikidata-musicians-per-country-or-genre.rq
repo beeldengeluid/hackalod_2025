@@ -1,0 +1,20 @@
+# SPARQL endpoint: https://query.wikidata.org
+# Musicians per country or genre
+SELECT ?artist ?artistLabel ?birthDate ?countryLabel ?genreLabel
+WHERE {
+  ?artist wdt:P31 wd:Q5;              # human
+          wdt:P106 wd:Q639669.        # musician
+  OPTIONAL { ?artist wdt:P569 ?birthDate. }
+  OPTIONAL { ?artist wdt:P27 ?country. }    # country of citizenship
+  OPTIONAL { ?artist wdt:P136 ?genre. }     # genre
+  #FILTER EXISTS { ?artist wdt:P136 wd:Q11399 }  # rock music
+  FILTER EXISTS { ?artist wdt:P136 wd:Q8341 }  # jazz
+  FILTER(?country = wd:Q29999)  # Nederland
+
+  SERVICE wikibase:label {
+    bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en".
+  }
+}
+ORDER BY ?artistLabel
+LIMIT 100
+

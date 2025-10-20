@@ -1,0 +1,43 @@
+# SPARQL endpoint: https://query.wikidata.org
+# Musicians born in the Netherlands with a MusicBrainz, Discogs ID or GTAA ID
+SELECT ?artist ?artistLabel ?birthPlaceLabel ?musicbrainz ?discogs
+WHERE {
+  ?artist wdt:P31 wd:Q5;               # instance of human
+          wdt:P106 wd:Q639669;         # occupation: musician
+          wdt:P19 ?birthPlace.         # place of birth
+
+  ?birthPlace wdt:P17 wd:Q55.          # country of that place = Netherlands
+
+  OPTIONAL { ?artist wdt:P434 ?musicbrainz. }  # MusicBrainz artist ID
+  OPTIONAL { ?artist wdt:P1953 ?discogs. }     # Discogs artist ID
+  OPTIONAL { ?artist wdt:P1741 ?gtaa. }     # GTAA artist ID
+
+  FILTER(BOUND(?musicbrainz) || BOUND(?discogs) || BOUND(?gtaa))  # moet tenminste 1 van deze IDs hebben
+
+  SERVICE wikibase:label {
+    bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en".
+  }
+}
+ORDER BY ?artistLabel
+LIMIT 200
+
+
+# Musicians living in the Netherlands with a MusicBrainz or Discogs ID
+SELECT ?artist ?artistLabel ?musicbrainz ?discogs ?countryLabel
+WHERE {
+  ?artist wdt:P31 wd:Q5;               # instance of human
+          wdt:P106 wd:Q639669;         # occupation: musician
+          wdt:P27 ?country .            # country of citizenship
+  FILTER(?country IN (wd:Q55, wd:Q29999)) # Netherlands or Kingdom of the Netherlands
+
+  OPTIONAL { ?artist wdt:P434 ?musicbrainz. }  # MusicBrainz artist ID
+  OPTIONAL { ?artist wdt:P1953 ?discogs. }     # Discogs artist ID
+
+  FILTER(BOUND(?musicbrainz) || BOUND(?discogs))  # at least one ID exists
+
+  SERVICE wikibase:label {
+    bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en".
+  }
+}
+ORDER BY ?artistLabel
+LIMIT 200

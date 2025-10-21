@@ -1,0 +1,43 @@
+# unique genres in muziekweb in EN
+# SPARQL endpoint: https://api.data.muziekweb.nl/datasets/MuziekwebOrganization/Muziekweb/services/Muziekweb/sparql
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix vocab: <https://data.muziekweb.nl/vocab/>
+
+select DISTINCT ?genre ?genreLabel where {
+  ?genre rdf:type <https://data.muziekweb.nl/vocab/Genre> .
+  ?genre rdfs:label ?genreLabel
+   FILTER (lang(?genreLabel) = "en")
+} 
+GROUP BY ?genre ?genreLabel
+ORDER BY ?genreLabel
+
+
+# 10 random musical genres
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix vocab: <https://data.muziekweb.nl/vocab/>
+
+select DISTINCT ?genre ?genreLabel where {
+  ?genre rdf:type <https://data.muziekweb.nl/vocab/Genre> .
+  ?genre rdfs:label ?genreLabel
+   FILTER (lang(?genreLabel) = "en")
+} 
+GROUP BY ?genre ?genreLabel
+ORDER BY RAND()
+LIMIT 10
+
+
+# top 100 most used genres in muziekweb, with count
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix vocab: <https://data.muziekweb.nl/vocab/>
+
+SELECT DISTINCT ?genre ?genreLabel (COUNT(*) AS ?count) WHERE {
+  ?item vocab:genre ?genre .
+  ?genre rdfs:label ?genreLabel .
+  FILTER (lang(?genreLabel) = "en")
+}
+GROUP BY ?genre ?genreLabel
+ORDER BY DESC(?count)
+LIMIT 100

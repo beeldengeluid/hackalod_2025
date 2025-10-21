@@ -1,0 +1,11 @@
+# SPARQL endpoint: https://query.wikidata.org
+# get all triples where the resource is either a subject or object:
+SELECT ?subject ?predicate ?object ?subjectLabel ?predicateLabel ?objectLabel WHERE {
+  { VALUES ?subject { wd:Q729939 } ?subject ?predicate ?object }
+  UNION
+  { ?subject ?predicate ?object VALUES ?object { wd:Q729939 } } #Eric Vloeimans
+
+  SERVICE wikibase:label {
+    bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en".
+  }
+}

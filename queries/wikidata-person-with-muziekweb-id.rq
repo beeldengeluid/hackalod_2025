@@ -1,0 +1,9 @@
+# SELECT DISTINCT ?item ?itemLabel ?muziekweb_performer_id
+select (COUNT(distinct(?muziekweb_performer_id)) as ?total_performers)
+WHERE {
+    ?item wdt:P31 wd:Q5;            # Any instance of a human
+          wdt:P5882 ?muziekweb_performer_id .
+#   ;           wdt:P1741 ?gtaa_id
+#     SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],mul,en" }
+}
+ 

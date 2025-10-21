@@ -1,0 +1,22 @@
+#+ summary: Query to list persons X that were alife in the year Y
+#+ endpoint: https://api.data.muziekweb.nl/datasets/MuziekwebOrganization/Muziekweb/services/Muziekweb/sparql
+prefix vocab: <https://data.muziekweb.nl/vocab/>
+prefix schema: <http://schema.org/>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+select distinct ?s
+where {
+  values ?type {
+    schema:Person
+  }
+  values ?year {
+    "1970"^^xsd:gYear
+  }
+  ?s rdf:type ?type .
+  ?s vocab:beginYear ?bYear ;
+    vocab:endYear ?eYear
+  filter((?bYear <= ?year) && !(?eYear < ?year))
+
+}
+order by asc(?bYear)
+limit 100

@@ -1,5 +1,5 @@
-# artist X is related to album Y
-# SPARQL endpoint: https://api.data.muziekweb.nl/datasets/MuziekwebOrganization/Muziekweb/services/Muziekweb/sparql
+#+ summary: Query where artist X is related to album Y
+#+ endpoint: https://api.data.muziekweb.nl/datasets/MuziekwebOrganization/Muziekweb/services/Muziekweb/sparql
 prefix vocab: <https://data.muziekweb.nl/vocab/>
 prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 

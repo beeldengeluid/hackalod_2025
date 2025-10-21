@@ -1,5 +1,5 @@
-# all information related to an album X
-# SPARQL endpoint: https://api.data.muziekweb.nl/datasets/MuziekwebOrganization/Muziekweb/services/Muziekweb/sparql
+#+ summary: Query to get all information related to an album X
+#+ endpoint: https://api.data.muziekweb.nl/datasets/MuziekwebOrganization/Muziekweb/services/Muziekweb/sparql
 prefix vocab: <https://data.muziekweb.nl/vocab/>
 prefix Link: <https://data.muziekweb.nl/Link/>
 prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>

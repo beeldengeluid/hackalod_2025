@@ -1,5 +1,5 @@
-# artist X influenced by Y
-# SPARQL endpoint: https://api.data.muziekweb.nl/datasets/MuziekwebOrganization/Muziekweb/services/Muziekweb/sparql
+#+ summary: Query where artist X is influenced by Y
+#+ endpoint: https://api.data.muziekweb.nl/datasets/MuziekwebOrganization/Muziekweb/services/Muziekweb/sparql
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 prefix vocab: <https://data.muziekweb.nl/vocab/>
 select *

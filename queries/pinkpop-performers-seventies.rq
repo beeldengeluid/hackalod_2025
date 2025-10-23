@@ -1,0 +1,16 @@
+#+ summary: Query to get pinkpop performers in teh seventies
+#+ endpoint: https://graphdb-sandbox.rdlabs.beeldengeluid.nl/sparql
+PREFIX schema: <https://schema.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT DISTINCT ?performer ?performerLabel ?date
+WHERE {
+  ?performance a schema:PerformingArtsEvent ;
+               schema:startDate ?date ;
+               schema:performer ?performer .
+    ?performer schema:name ?performerLabel .
+  FILTER(
+    ?date >= "1970-01-01"^^xsd:date &&
+    ?date <  "1980-01-01"^^xsd:date
+  )
+}
+ORDER BY ?performerLabel 

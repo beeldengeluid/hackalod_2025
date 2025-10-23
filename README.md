@@ -8,3 +8,5 @@ To be used by the "Imagine all the people" team for HackaLOD 2025
 - [ToDo](./docs/todo.md)
 
 Some SPARQL queries for public Muziekweb data are added in `/queries`. These can be useful for the Musiant/LODster application idea.
+
+Some data files are located in `/data` and some helper files in `/support`.

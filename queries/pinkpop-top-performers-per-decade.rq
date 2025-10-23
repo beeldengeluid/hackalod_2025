@@ -1,0 +1,18 @@
+#+ summary: Query to get the top pinkpop performers per decade, that have more than 2 performances
+#+ endpoint: https://graphdb-sandbox.rdlabs.beeldengeluid.nl/sparql
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX schema: <https://schema.org/>
+SELECT ?performer ?performerLabel ?decade (COUNT(?performance) AS ?count)
+WHERE {
+  ?performance a schema:PerformingArtsEvent ;
+               schema:startDate ?date ;
+               schema:performer ?performer .
+  ?performer schema:name ?performerLabel .
+
+  BIND(xsd:integer(SUBSTR(STR(?date), 1, 4)) AS ?year)
+  BIND(FLOOR(?year / 10) * 10 AS ?dec)
+  BIND(CONCAT(STR(?dec), "s") AS ?decade)
+}
+GROUP BY ?performer ?performerLabel ?decade
+HAVING (?count > 2)
+ORDER BY DESC(?count)

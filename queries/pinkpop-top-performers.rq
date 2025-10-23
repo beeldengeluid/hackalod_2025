@@ -1,0 +1,15 @@
+#+ summary: Query to get the top pinkpop performers, having more than 2 performances
+#+ endpoint: https://graphdb-sandbox.rdlabs.beeldengeluid.nl/sparql
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX schema: <https://schema.org/>
+prefix skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?performer ?performerLabel (COUNT(*) AS ?count) WHERE {
+    ?performance a schema:PerformingArtsEvent .
+    ?performance schema:performer ?performer .
+	?performer schema:name ?performerLabel .
+}
+GROUP BY ?performer ?performerLabel
+HAVING (?count > 2)
+ORDER BY DESC(?count)
+LIMIT 100

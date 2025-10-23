@@ -1,5 +1,5 @@
-# SPARQL endpoint: https://query.wikidata.org
-# Musicians born in the Netherlands with a MusicBrainz, Discogs ID or GTAA ID
+#+ summary: Query to get musicians born in the Netherlands with a MusicBrainz, Discogs ID or GTAA ID
+#+ endpoint: https://query.wikidata.org/sparql
 SELECT ?artist ?artistLabel ?birthPlaceLabel ?musicbrainz ?discogs
 WHERE {
   ?artist wdt:P31 wd:Q5;               # instance of human

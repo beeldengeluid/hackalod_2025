@@ -1,5 +1,5 @@
-# SPARQL endpoint: https://query.wikidata.org
-# get all triples where the resource is either a subject or object:
+#+ summary: Query to get all triples where the resource is either a subject or object:
+#+ endpoint: https://query.wikidata.org/sparql
 SELECT ?subject ?predicate ?object ?subjectLabel ?predicateLabel ?objectLabel WHERE {
   { VALUES ?subject { wd:Q729939 } ?subject ?predicate ?object }
   UNION

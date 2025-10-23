@@ -1,5 +1,5 @@
-#+ summary: Person on wikidata that have muziekweb ID
-#+ endpoint: https://query.wikidata.org
+#+ summary: Query to get human on wikidata that have muziekweb ID
+#+ endpoint: https://query.wikidata.org/sparql
 # SELECT DISTINCT ?item ?itemLabel ?muziekweb_performer_id
 select (COUNT(distinct(?muziekweb_performer_id)) as ?total_performers)
 WHERE {

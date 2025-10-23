@@ -1,5 +1,5 @@
-# SPARQL endpoint: https://query.wikidata.org
-# Musicians per country or genre
+#+ summary: Query to get musicians per country or genre
+#+ endpoint: https://query.wikidata.org/sparql
 SELECT ?artist ?artistLabel ?birthDate ?countryLabel ?genreLabel
 WHERE {
   ?artist wdt:P31 wd:Q5;              # human

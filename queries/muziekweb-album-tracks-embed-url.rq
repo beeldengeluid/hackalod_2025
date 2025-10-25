@@ -1,0 +1,14 @@
+#+ summary: Get embed URLs for all tracks on album X
+#+ endpoint: https://graphdb-sandbox.rdlabs.beeldengeluid.nl/sparql
+prefix vocab: <https://data.muziekweb.nl/vocab/>
+prefix link: <https://data.muziekweb.nl/Link/>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix sdo: <https://schema.org/>
+prefix skos: <http://www.w3.org/2004/02/skos/core#>
+select *
+where {
+  VALUES ?album  {link:JE44551} # eric vloeimans album
+  ?track sdo:inAlbum ?album 
+    OPTIONAL{ ?track skos:prefLabel ?track_title }
+    BIND(IRI(REPLACE(STR(?track), "https://data.muziekweb.nl/Link/", "https://www.muziekweb.nl/embed/")) AS ?embed_url)
+} 

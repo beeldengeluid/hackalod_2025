@@ -41,7 +41,7 @@ def get_wd_graph_for_mw_id(mw_id: str = "") -> Graph:
     try:
         if mw_id:
             result: str = execute_wd_construct_query(
-                wikidata_query_muziekweb_performer(mw_id)
+                query=wikidata_query_muziekweb_performer(mw_id)
             )
             if result:
                 g.parse(data=result, format="application/rdf+xml")
@@ -74,17 +74,15 @@ def wikidata_query_muziekweb_performer(mw_id: str = "") -> str:
             """PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX schema: <http://schema.org/>
 PREFIX wdt: <http://www.wikidata.org/prop/direct/>
-PREFIX wdtn: <http://www.wikidata.org/prop/direct-normalized/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX wikibase: <http://wikiba.se/ontology#>
 PREFIX bd: <http://www.bigdata.com/rdf#>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
 CONSTRUCT {
     ?s wdt:P5882 ?mw_id .
     ?s rdfs:label ?sLabel .
     ?s schema:description ?sDescription .
     ?s skos:altLabel ?sAltLabel .
-    ?s wdt:P31 ?instance_of .
+    # ?s wdt:P31 ?instance_of .
     ?instance_of rdfs:label ?instance_ofLabel .
     ?s wdt:P21 ?gender .
     ?gender rdfs:label ?genderLabel .
@@ -100,7 +98,7 @@ CONSTRUCT {
 WHERE {
     VALUES ?mw_id { "%s" }
     ?s wdt:P5882 ?mw_id .
-    OPTIONAL{?s wdt:P31 ?instance_of }
+    # OPTIONAL{?s wdt:P31 ?instance_of }
     OPTIONAL{?s wdt:P21 ?gender }
         OPTIONAL{ ?s wdt:P569 ?born
             BIND(
@@ -129,7 +127,7 @@ WHERE {
         )
 
 
-def wd_mw_result_to_graph(data: dict = {}) -> Graph:
+def wd_mw_matches_to_graph(data: dict = {}) -> Graph:
     """Convert the results to Graph."""
     g = Graph()
     try:
@@ -303,7 +301,7 @@ class WikidataDownloader:
                 SELECT_QUERY_MUZIEKWEB_MATCHES + "LIMIT 10"
             )
             if result:
-                g = wd_mw_result_to_graph(result)
+                g = wd_mw_matches_to_graph(result)
 
                 alignment_path = os.path.join(
                     self.data_dir,

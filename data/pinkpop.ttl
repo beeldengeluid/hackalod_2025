@@ -3,33 +3,36 @@
 
 <http://hackalod.artsdata.nl/id/pinkpop/1970> a schema:Event,
         schema:Festival ;
+    schema:additionalType "pinkpop" ;
     schema:attendance "Aantal bezoekers: 10.000" ;
     schema:description "Zonnig" ;
-    schema:image "https://history.pinkpop.nl/wp-content/uploads/2019/02/0001-1024x803.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/02/0003-773x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/02/0005-883x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/02/0007-812x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/02/0009-900x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/02/0011-1024x776.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/02/0013-1024x812.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/02/0014-808x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/02/0015-759x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/02/0017-1024x802.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/02/0018-1024x690.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/02/0022-791x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/02/0023-1024x718.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/02/0025-729x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/02/0026-1024x804.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/02/0030-1024x766.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/02/0033-806x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/02/0034-748x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/02/0037-744x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/02/0038-776x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/02/1970-George-Kooymans-792x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/02/1970-Rinus-Gerritsen-510x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/02/1970-barry-Hay-788x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/02/1970-onbekend-707x1024.jpg" ;
+    schema:endDate "1970-05-18"^^xsd:date ;
+    schema:image <https://history.pinkpop.nl/wp-content/uploads/2019/02/0001-1024x803.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/02/0003-773x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/02/0005-883x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/02/0007-812x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/02/0009-900x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/02/0011-1024x776.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/02/0013-1024x812.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/02/0014-808x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/02/0015-759x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/02/0017-1024x802.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/02/0018-1024x690.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/02/0022-791x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/02/0023-1024x718.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/02/0025-729x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/02/0026-1024x804.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/02/0030-1024x766.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/02/0033-806x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/02/0034-748x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/02/0037-744x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/02/0038-776x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/02/1970-George-Kooymans-792x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/02/1970-Rinus-Gerritsen-510x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/02/1970-barry-Hay-788x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/02/1970-onbekend-707x1024.jpg> ;
     schema:name "Pinkpop 18 mei 1970" ;
+    schema:startDate "1970-05-18"^^xsd:date ;
     schema:subEvent <http://hackalod.artsdata.nl/id/pinkpop/1970/performance/1>,
         <http://hackalod.artsdata.nl/id/pinkpop/1970/performance/2>,
         <http://hackalod.artsdata.nl/id/pinkpop/1970/performance/3>,
@@ -42,19 +45,22 @@
 
 <http://hackalod.artsdata.nl/id/pinkpop/1971> a schema:Event,
         schema:Festival ;
+    schema:additionalType "pinkpop" ;
     schema:attendance "Aantal bezoekers: 16.000" ;
     schema:description "Zonnig en heet" ;
-    schema:image "https://history.pinkpop.nl/wp-content/uploads/2019/02/0001-1-713x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/02/0005-1-786x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/02/0006-1024x786.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/02/1971-Focus-865x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/02/1971-Hocus-Focus-799x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/02/1971-Robert-Jan-Stips-883x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/02/1971-mariska-veres-683x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/02/1971-onbekend-2-676x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/02/1971-onbekend-903x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/02/1971-supersisters-717x1024.jpg" ;
+    schema:endDate "1971-05-31"^^xsd:date ;
+    schema:image <https://history.pinkpop.nl/wp-content/uploads/2019/02/0001-1-713x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/02/0005-1-786x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/02/0006-1024x786.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/02/1971-Focus-865x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/02/1971-Hocus-Focus-799x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/02/1971-Robert-Jan-Stips-883x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/02/1971-mariska-veres-683x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/02/1971-onbekend-2-676x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/02/1971-onbekend-903x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/02/1971-supersisters-717x1024.jpg> ;
     schema:name "Pinkpop 31 mei 1971" ;
+    schema:startDate "1971-05-31"^^xsd:date ;
     schema:subEvent <http://hackalod.artsdata.nl/id/pinkpop/1971/performance/1>,
         <http://hackalod.artsdata.nl/id/pinkpop/1971/performance/2>,
         <http://hackalod.artsdata.nl/id/pinkpop/1971/performance/3>,
@@ -67,14 +73,17 @@
 
 <http://hackalod.artsdata.nl/id/pinkpop/1972> a schema:Event,
         schema:Festival ;
+    schema:additionalType "pinkpop" ;
     schema:attendance "Aantal bezoekers: 26.000" ;
     schema:description "Zonnig en heet" ;
-    schema:image "https://history.pinkpop.nl/wp-content/uploads/2019/04/0001-1024x893.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/1972-THIJS-van-Leer-1024x756.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/1972_Ian-mattheuws-1024x339.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/1972_Mungo-Jerry-665x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/1972_michael-chapman-752x1024.jpg" ;
+    schema:endDate "1972-05-22"^^xsd:date ;
+    schema:image <https://history.pinkpop.nl/wp-content/uploads/2019/04/0001-1024x893.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/1972-THIJS-van-Leer-1024x756.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/1972_Ian-mattheuws-1024x339.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/1972_Mungo-Jerry-665x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/1972_michael-chapman-752x1024.jpg> ;
     schema:name "Pinkpop 22 mei 1972" ;
+    schema:startDate "1972-05-22"^^xsd:date ;
     schema:subEvent <http://hackalod.artsdata.nl/id/pinkpop/1972/performance/1>,
         <http://hackalod.artsdata.nl/id/pinkpop/1972/performance/2>,
         <http://hackalod.artsdata.nl/id/pinkpop/1972/performance/3>,
@@ -86,15 +95,18 @@
 
 <http://hackalod.artsdata.nl/id/pinkpop/1973> a schema:Event,
         schema:Festival ;
+    schema:additionalType "pinkpop" ;
     schema:attendance "Aantal bezoekers: 26.000" ;
     schema:description "Warm maar niet drukkend" ;
-    schema:image "https://history.pinkpop.nl/wp-content/uploads/2019/04/0001-1-727x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0002-1024x585.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0003-390x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0005-734x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0006-729x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0007-729x1024.jpg" ;
+    schema:endDate "1973-06-11"^^xsd:date ;
+    schema:image <https://history.pinkpop.nl/wp-content/uploads/2019/04/0001-1-727x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0002-1024x585.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0003-390x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0005-734x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0006-729x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0007-729x1024.jpg> ;
     schema:name "Pinkpop 11 juni 1973" ;
+    schema:startDate "1973-06-11"^^xsd:date ;
     schema:subEvent <http://hackalod.artsdata.nl/id/pinkpop/1973/performance/1>,
         <http://hackalod.artsdata.nl/id/pinkpop/1973/performance/2>,
         <http://hackalod.artsdata.nl/id/pinkpop/1973/performance/3>,
@@ -106,15 +118,18 @@
 
 <http://hackalod.artsdata.nl/id/pinkpop/1974> a schema:Event,
         schema:Festival ;
+    schema:additionalType "pinkpop" ;
     schema:attendance "Aantal bezoekers: 30.000" ;
     schema:description "Druilerig, af en toe een bui" ;
-    schema:image "https://history.pinkpop.nl/wp-content/uploads/2019/04/0002-1-1024x621.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0010-717x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/1-466x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/cockney-rebel-785x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/madney-prior-744x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/rorey-720x1024.jpg" ;
+    schema:endDate "1974-06-03"^^xsd:date ;
+    schema:image <https://history.pinkpop.nl/wp-content/uploads/2019/04/0002-1-1024x621.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0010-717x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/1-466x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/cockney-rebel-785x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/madney-prior-744x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/rorey-720x1024.jpg> ;
     schema:name "Pinkpop 3 juni 1974" ;
+    schema:startDate "1974-06-03"^^xsd:date ;
     schema:subEvent <http://hackalod.artsdata.nl/id/pinkpop/1974/performance/1>,
         <http://hackalod.artsdata.nl/id/pinkpop/1974/performance/2>,
         <http://hackalod.artsdata.nl/id/pinkpop/1974/performance/3>,
@@ -125,21 +140,24 @@
 
 <http://hackalod.artsdata.nl/id/pinkpop/1975> a schema:Event,
         schema:Festival ;
+    schema:additionalType "pinkpop" ;
     schema:attendance "Aantal bezoekers: 32.000" ;
     schema:description "Kil maar droog" ;
-    schema:image "https://history.pinkpop.nl/wp-content/uploads/2019/04/0001-2-1024x740.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0004-1-1024x759.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0008-1024x807.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0013-733x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/2-678x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/3-1-1018x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/3_1-1024x699.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/Barry-1005x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/NILS-1024x951.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/RAY-761x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/boeyen-1024x953.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/sailor-345x1024.jpg" ;
+    schema:endDate "1975-05-19"^^xsd:date ;
+    schema:image <https://history.pinkpop.nl/wp-content/uploads/2019/04/0001-2-1024x740.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0004-1-1024x759.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0008-1024x807.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0013-733x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/2-678x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/3-1-1018x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/3_1-1024x699.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/Barry-1005x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/NILS-1024x951.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/RAY-761x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/boeyen-1024x953.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/sailor-345x1024.jpg> ;
     schema:name "Pinkpop 19 mei 1975" ;
+    schema:startDate "1975-05-19"^^xsd:date ;
     schema:subEvent <http://hackalod.artsdata.nl/id/pinkpop/1975/performance/1>,
         <http://hackalod.artsdata.nl/id/pinkpop/1975/performance/2>,
         <http://hackalod.artsdata.nl/id/pinkpop/1975/performance/3>,
@@ -150,16 +168,19 @@
 
 <http://hackalod.artsdata.nl/id/pinkpop/1976> a schema:Event,
         schema:Festival ;
+    schema:additionalType "pinkpop" ;
     schema:attendance "Aantal bezoekers: 40.000" ;
     schema:description "Zonnig en zeer warm" ;
-    schema:image "https://history.pinkpop.nl/wp-content/uploads/2019/04/0001-3-1024x739.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0002-2-734x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0003-1-731x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/Hoep-1024x727.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/Streetwalker-841x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/chieftaines-1024x545.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/little-fe4at-1024x866.jpg" ;
+    schema:endDate "1976-06-07"^^xsd:date ;
+    schema:image <https://history.pinkpop.nl/wp-content/uploads/2019/04/0001-3-1024x739.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0002-2-734x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0003-1-731x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/Hoep-1024x727.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/Streetwalker-841x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/chieftaines-1024x545.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/little-fe4at-1024x866.jpg> ;
     schema:name "Pinkpop 7 juni 1976" ;
+    schema:startDate "1976-06-07"^^xsd:date ;
     schema:subEvent <http://hackalod.artsdata.nl/id/pinkpop/1976/performance/1>,
         <http://hackalod.artsdata.nl/id/pinkpop/1976/performance/2>,
         <http://hackalod.artsdata.nl/id/pinkpop/1976/performance/3>,
@@ -171,17 +192,20 @@
 
 <http://hackalod.artsdata.nl/id/pinkpop/1977> a schema:Event,
         schema:Festival ;
+    schema:additionalType "pinkpop" ;
     schema:attendance "Aantal bezoekers: 45.000" ;
     schema:description "Minimum aan zon, temperatuur 15 °C" ;
-    schema:image "https://history.pinkpop.nl/wp-content/uploads/2019/04/0001-4-820x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0002-3-1024x820.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0003-2-1024x820.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0008-1-744x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0009-744x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0011-735x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0012-728x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0013-1-733x1024.jpg" ;
+    schema:endDate "1977-05-30"^^xsd:date ;
+    schema:image <https://history.pinkpop.nl/wp-content/uploads/2019/04/0001-4-820x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0002-3-1024x820.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0003-2-1024x820.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0008-1-744x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0009-744x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0011-735x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0012-728x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0013-1-733x1024.jpg> ;
     schema:name "Pinkpop 30 mei 1977" ;
+    schema:startDate "1977-05-30"^^xsd:date ;
     schema:subEvent <http://hackalod.artsdata.nl/id/pinkpop/1977/performance/1>,
         <http://hackalod.artsdata.nl/id/pinkpop/1977/performance/2>,
         <http://hackalod.artsdata.nl/id/pinkpop/1977/performance/3>,
@@ -193,32 +217,35 @@
 
 <http://hackalod.artsdata.nl/id/pinkpop/1978> a schema:Event,
         schema:Festival ;
+    schema:additionalType "pinkpop" ;
     schema:attendance "Aantal bezoekers: 42.000" ;
     schema:description "Kil en grauw" ;
-    schema:image "https://history.pinkpop.nl/wp-content/uploads/2019/04/0001-5-1024x740.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0002-4-1024x707.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0003-3-1024x758.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0004-2-1024x740.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0005-1-1024x718.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0006-1-1024x706.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0007-1-1024x700.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0008-2-1024x718.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0009-1-1024x706.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0011-1-1024x718.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0012-1-745x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0014-1-1024x771.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0015-1024x781.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0016-1024x773.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0017-1-1024x773.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0018-1-773x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0019-1-1024x773.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0020-1024x776.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0021-1-771x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0022-807x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0024-742x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0025-1-1024x761.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0026-780x1024.jpg" ;
+    schema:endDate "1978-05-15"^^xsd:date ;
+    schema:image <https://history.pinkpop.nl/wp-content/uploads/2019/04/0001-5-1024x740.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0002-4-1024x707.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0003-3-1024x758.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0004-2-1024x740.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0005-1-1024x718.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0006-1-1024x706.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0007-1-1024x700.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0008-2-1024x718.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0009-1-1024x706.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0011-1-1024x718.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0012-1-745x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0014-1-1024x771.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0015-1024x781.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0016-1024x773.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0017-1-1024x773.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0018-1-773x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0019-1-1024x773.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0020-1024x776.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0021-1-771x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0022-807x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0024-742x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0025-1-1024x761.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0026-780x1024.jpg> ;
     schema:name "Pinkpop 15 mei 1978" ;
+    schema:startDate "1978-05-15"^^xsd:date ;
     schema:subEvent <http://hackalod.artsdata.nl/id/pinkpop/1978/performance/1>,
         <http://hackalod.artsdata.nl/id/pinkpop/1978/performance/2>,
         <http://hackalod.artsdata.nl/id/pinkpop/1978/performance/3>,
@@ -230,35 +257,38 @@
 
 <http://hackalod.artsdata.nl/id/pinkpop/1979> a schema:Event,
         schema:Festival ;
+    schema:additionalType "pinkpop" ;
     schema:attendance "Aantal bezoekers: 50.000" ;
     schema:description "Zonnig en warm, onweer en hagelbui" ;
-    schema:image "https://history.pinkpop.nl/wp-content/uploads/2019/04/0001-7-1024x767.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0002-6-1024x767.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0003-5-1024x767.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0004-3-1024x657.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0005-2-1024x704.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0006-2-791x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0007-3-813x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0009-3-733x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0011-2-1024x754.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0012-3-754x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0013-2-762x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0014-3-1024x780.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0015-2-1024x780.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0016-1-1024x780.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0017-2-1024x780.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0018-2-1024x780.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0020-1-764x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0021-2-1024x764.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0022-1-1024x764.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0024-1-1024x740.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0026-1-1024x749.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0027-1024x783.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0028-1024x784.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/B-1024x757.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/C-1024x646.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/THE-POLICE-955x1024.jpg" ;
+    schema:endDate "1979-06-04"^^xsd:date ;
+    schema:image <https://history.pinkpop.nl/wp-content/uploads/2019/04/0001-7-1024x767.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0002-6-1024x767.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0003-5-1024x767.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0004-3-1024x657.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0005-2-1024x704.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0006-2-791x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0007-3-813x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0009-3-733x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0011-2-1024x754.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0012-3-754x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0013-2-762x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0014-3-1024x780.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0015-2-1024x780.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0016-1-1024x780.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0017-2-1024x780.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0018-2-1024x780.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0020-1-764x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0021-2-1024x764.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0022-1-1024x764.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0024-1-1024x740.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0026-1-1024x749.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0027-1024x783.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0028-1024x784.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/B-1024x757.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/C-1024x646.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/THE-POLICE-955x1024.jpg> ;
     schema:name "Pinkpop 4 juni 1979" ;
+    schema:startDate "1979-06-04"^^xsd:date ;
     schema:subEvent <http://hackalod.artsdata.nl/id/pinkpop/1979/performance/1>,
         <http://hackalod.artsdata.nl/id/pinkpop/1979/performance/2>,
         <http://hackalod.artsdata.nl/id/pinkpop/1979/performance/3>,
@@ -270,41 +300,44 @@
 
 <http://hackalod.artsdata.nl/id/pinkpop/1980> a schema:Event,
         schema:Festival ;
+    schema:additionalType "pinkpop" ;
     schema:attendance "Aantal bezoekers: 50.000" ;
     schema:description "Zonnig" ;
-    schema:image "https://history.pinkpop.nl/wp-content/uploads/2019/04/0001-14-1024x774.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0002-15-1024x774.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0003-11-1024x774.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0004-7-727x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0005-9-703x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0006-12-1024x780.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0007-12-1024x780.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0008-9-1024x780.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0010-7-1024x780.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0011-10-1024x780.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0012-8-1024x780.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0013-11-1024x780.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0014-7-1024x780.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0015-10-1024x778.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0016-11-1024x778.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0017-7-778x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0018-10-1024x704.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0019-10-782x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0020-7-782x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0021-6-1024x782.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0022-5-1024x755.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0023-5-1024x756.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0024-4-1024x756.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0025-8-1024x756.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0026-6-1024x704.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0027-5-1024x771.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0028-4-1024x771.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0029-3-1024x771.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/David-Lee-1-1024x456.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/Garland-Jeffreys-1-1024x608.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/Peter-wolf-1-1024x738.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/Van-het-Groenewoud-1-1024x789.jpg" ;
+    schema:endDate "1980-05-26"^^xsd:date ;
+    schema:image <https://history.pinkpop.nl/wp-content/uploads/2019/04/0001-14-1024x774.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0002-15-1024x774.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0003-11-1024x774.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0004-7-727x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0005-9-703x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0006-12-1024x780.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0007-12-1024x780.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0008-9-1024x780.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0010-7-1024x780.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0011-10-1024x780.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0012-8-1024x780.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0013-11-1024x780.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0014-7-1024x780.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0015-10-1024x778.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0016-11-1024x778.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0017-7-778x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0018-10-1024x704.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0019-10-782x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0020-7-782x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0021-6-1024x782.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0022-5-1024x755.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0023-5-1024x756.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0024-4-1024x756.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0025-8-1024x756.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0026-6-1024x704.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0027-5-1024x771.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0028-4-1024x771.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0029-3-1024x771.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/David-Lee-1-1024x456.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/Garland-Jeffreys-1-1024x608.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/Peter-wolf-1-1024x738.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/Van-het-Groenewoud-1-1024x789.jpg> ;
     schema:name "Pinkpop 26 mei 1980" ;
+    schema:startDate "1980-05-26"^^xsd:date ;
     schema:subEvent <http://hackalod.artsdata.nl/id/pinkpop/1980/performance/1>,
         <http://hackalod.artsdata.nl/id/pinkpop/1980/performance/2>,
         <http://hackalod.artsdata.nl/id/pinkpop/1980/performance/3>,
@@ -316,42 +349,45 @@
 
 <http://hackalod.artsdata.nl/id/pinkpop/1981> a schema:Event,
         schema:Festival ;
+    schema:additionalType "pinkpop" ;
     schema:attendance "Aantal bezoekers: 50.000" ;
     schema:description "Bewolkt en af en toe een bui" ;
-    schema:image "https://history.pinkpop.nl/wp-content/uploads/2019/04/0001-9-1024x712.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0002-8-1024x687.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0004-5-1024x754.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0005-4-1024x724.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0006-5-1024x765.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0007-5-1024x696.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0008-4-827x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0010-2-1024x753.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0011-5-1024x767.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0013-5-1024x733.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0014-5-849x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0015-5-857x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0016-3-1024x753.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0017-4-857x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0019-4-765x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0020-4-776x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0022-3-1024x753.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0023-2-748x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0025-5-1024x760.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0026-4-737x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0027-3-726x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0030-698x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0031-1-1024x766.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0032-1024x725.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0034-739x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0035-1024x910.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0036-782x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0037-1024x733.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0039-1024x775.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0040-1024x775.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0041-1024x713.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/Fischer-Z-1024x467.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/michael-schenker-571x1024.jpg" ;
+    schema:endDate "1981-06-08"^^xsd:date ;
+    schema:image <https://history.pinkpop.nl/wp-content/uploads/2019/04/0001-9-1024x712.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0002-8-1024x687.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0004-5-1024x754.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0005-4-1024x724.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0006-5-1024x765.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0007-5-1024x696.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0008-4-827x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0010-2-1024x753.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0011-5-1024x767.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0013-5-1024x733.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0014-5-849x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0015-5-857x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0016-3-1024x753.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0017-4-857x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0019-4-765x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0020-4-776x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0022-3-1024x753.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0023-2-748x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0025-5-1024x760.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0026-4-737x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0027-3-726x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0030-698x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0031-1-1024x766.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0032-1024x725.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0034-739x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0035-1024x910.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0036-782x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0037-1024x733.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0039-1024x775.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0040-1024x775.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0041-1024x713.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/Fischer-Z-1024x467.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/michael-schenker-571x1024.jpg> ;
     schema:name "Pinkpop 8 juni 1981" ;
+    schema:startDate "1981-06-08"^^xsd:date ;
     schema:subEvent <http://hackalod.artsdata.nl/id/pinkpop/1981/performance/1>,
         <http://hackalod.artsdata.nl/id/pinkpop/1981/performance/2>,
         <http://hackalod.artsdata.nl/id/pinkpop/1981/performance/3>,
@@ -363,26 +399,29 @@
 
 <http://hackalod.artsdata.nl/id/pinkpop/1982> a schema:Event,
         schema:Festival ;
+    schema:additionalType "pinkpop" ;
     schema:attendance "Aantal bezoekers: 30.000" ;
     schema:description "Zonnig en heet" ;
-    schema:image "https://history.pinkpop.nl/wp-content/uploads/2019/04/0001-10-1024x581.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0002-9-1024x745.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0004-6-752x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0005-5-1024x729.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0006-6-1024x780.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0007-8-1024x766.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0009-4-710x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0010-3-1024x754.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0011-6-1024x776.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0013-8-1024x747.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0015-6-789x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0016-6-818x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0017-5-1024x703.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0018-6-806x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0019-7-1024x771.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/A-1024x924.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/B-1-1024x673.jpg" ;
+    schema:endDate "1982-05-31"^^xsd:date ;
+    schema:image <https://history.pinkpop.nl/wp-content/uploads/2019/04/0001-10-1024x581.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0002-9-1024x745.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0004-6-752x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0005-5-1024x729.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0006-6-1024x780.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0007-8-1024x766.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0009-4-710x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0010-3-1024x754.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0011-6-1024x776.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0013-8-1024x747.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0015-6-789x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0016-6-818x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0017-5-1024x703.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0018-6-806x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0019-7-1024x771.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/A-1024x924.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/B-1-1024x673.jpg> ;
     schema:name "Pinkpop 31 mei 1982" ;
+    schema:startDate "1982-05-31"^^xsd:date ;
     schema:subEvent <http://hackalod.artsdata.nl/id/pinkpop/1982/performance/1>,
         <http://hackalod.artsdata.nl/id/pinkpop/1982/performance/2>,
         <http://hackalod.artsdata.nl/id/pinkpop/1982/performance/3>,
@@ -394,26 +433,29 @@
 
 <http://hackalod.artsdata.nl/id/pinkpop/1983> a schema:Event,
         schema:Festival ;
+    schema:additionalType "pinkpop" ;
     schema:attendance "Aantal bezoekers: 40.000" ;
     schema:description "Zonnig" ;
-    schema:image "https://history.pinkpop.nl/wp-content/uploads/2019/04/0002-10-728x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0003-7-1024x710.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0005-7-767x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0006-8-1024x736.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0008-6-1024x756.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0009-5-1024x721.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0010-4-1024x719.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0011-7-711x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0012-5-1024x718.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0015-8-1024x804.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0016-8-1024x773.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0018-8-1024x758.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0019-8-1024x716.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0020-5-1024x708.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0023-3-1024x578.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/B-2-908x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/DOE-MAAR-598x1024.jpg" ;
+    schema:endDate "1983-05-23"^^xsd:date ;
+    schema:image <https://history.pinkpop.nl/wp-content/uploads/2019/04/0002-10-728x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0003-7-1024x710.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0005-7-767x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0006-8-1024x736.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0008-6-1024x756.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0009-5-1024x721.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0010-4-1024x719.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0011-7-711x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0012-5-1024x718.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0015-8-1024x804.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0016-8-1024x773.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0018-8-1024x758.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0019-8-1024x716.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0020-5-1024x708.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0023-3-1024x578.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/B-2-908x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/DOE-MAAR-598x1024.jpg> ;
     schema:name "Pinkpop 23 mei 1983" ;
+    schema:startDate "1983-05-23"^^xsd:date ;
     schema:subEvent <http://hackalod.artsdata.nl/id/pinkpop/1983/performance/1>,
         <http://hackalod.artsdata.nl/id/pinkpop/1983/performance/2>,
         <http://hackalod.artsdata.nl/id/pinkpop/1983/performance/3>,
@@ -426,32 +468,35 @@
 
 <http://hackalod.artsdata.nl/id/pinkpop/1984> a schema:Event,
         schema:Festival ;
+    schema:additionalType "pinkpop" ;
     schema:attendance "Aantal bezoekers:  20.000" ;
     schema:description "Zonnig" ;
-    schema:image "https://history.pinkpop.nl/wp-content/uploads/2019/04/0001-11-1024x747.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0002-11-1024x714.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0003-8-737x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0006-9-1024x698.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0007-9-786x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0009-6-1024x714.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0011-8-708x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0012-6-690x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0013-9-733x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0014-6-695x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0015-9-1024x758.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0016-10-1024x764.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0017-6-738x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0018-9-708x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0019-9-1024x707.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0020-6-1024x745.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0021-5-752x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0022-4-730x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0023-4-752x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0024-3-728x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0025-6-1024x719.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/Jimm-cliff-1024x521.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/Marillon-1024x916.jpg" ;
+    schema:endDate "1984-06-11"^^xsd:date ;
+    schema:image <https://history.pinkpop.nl/wp-content/uploads/2019/04/0001-11-1024x747.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0002-11-1024x714.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0003-8-737x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0006-9-1024x698.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0007-9-786x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0009-6-1024x714.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0011-8-708x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0012-6-690x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0013-9-733x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0014-6-695x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0015-9-1024x758.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0016-10-1024x764.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0017-6-738x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0018-9-708x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0019-9-1024x707.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0020-6-1024x745.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0021-5-752x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0022-4-730x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0023-4-752x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0024-3-728x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0025-6-1024x719.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/Jimm-cliff-1024x521.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/Marillon-1024x916.jpg> ;
     schema:name "Pinkpop 11 juni 1984" ;
+    schema:startDate "1984-06-11"^^xsd:date ;
     schema:subEvent <http://hackalod.artsdata.nl/id/pinkpop/1984/performance/1>,
         <http://hackalod.artsdata.nl/id/pinkpop/1984/performance/2>,
         <http://hackalod.artsdata.nl/id/pinkpop/1984/performance/3>,
@@ -465,21 +510,24 @@
 
 <http://hackalod.artsdata.nl/id/pinkpop/1985> a schema:Event,
         schema:Festival ;
+    schema:additionalType "pinkpop" ;
     schema:attendance "Aantal bezoekers: 15.000" ;
     schema:description "Drukkend en zonnig" ;
-    schema:image "https://history.pinkpop.nl/wp-content/uploads/2019/04/0001-12-849x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0003-9-1024x295.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0005-8-770x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0006-10-1024x727.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0007-10-1024x750.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0008-7-1024x750.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0009-7-720x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0010-5-1024x747.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/A-1-1024x748.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/B-3-1024x940.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/C-1-1024x546.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/D-955x1024.jpg" ;
+    schema:endDate "1985-05-27"^^xsd:date ;
+    schema:image <https://history.pinkpop.nl/wp-content/uploads/2019/04/0001-12-849x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0003-9-1024x295.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0005-8-770x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0006-10-1024x727.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0007-10-1024x750.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0008-7-1024x750.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0009-7-720x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0010-5-1024x747.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/A-1-1024x748.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/B-3-1024x940.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/C-1-1024x546.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/D-955x1024.jpg> ;
     schema:name "Pinkpop 27 mei 1985" ;
+    schema:startDate "1985-05-27"^^xsd:date ;
     schema:subEvent <http://hackalod.artsdata.nl/id/pinkpop/1985/performance/1>,
         <http://hackalod.artsdata.nl/id/pinkpop/1985/performance/2>,
         <http://hackalod.artsdata.nl/id/pinkpop/1985/performance/3>,
@@ -492,11 +540,14 @@
 
 <http://hackalod.artsdata.nl/id/pinkpop/1986> a schema:Event,
         schema:Festival ;
+    schema:additionalType "pinkpop" ;
     schema:attendance "Aantal bezoekers: 50.000" ;
     schema:description "Schitterend" ;
-    schema:image "https://history.pinkpop.nl/wp-content/uploads/2019/04/0001-13-1024x510.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/0002-13-1024x731.jpg" ;
+    schema:endDate "1986-05-19"^^xsd:date ;
+    schema:image <https://history.pinkpop.nl/wp-content/uploads/2019/04/0001-13-1024x510.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/0002-13-1024x731.jpg> ;
     schema:name "Pinkpop 19 mei 1986" ;
+    schema:startDate "1986-05-19"^^xsd:date ;
     schema:subEvent <http://hackalod.artsdata.nl/id/pinkpop/1986/performance/1>,
         <http://hackalod.artsdata.nl/id/pinkpop/1986/performance/10>,
         <http://hackalod.artsdata.nl/id/pinkpop/1986/performance/2>,
@@ -511,20 +562,23 @@
 
 <http://hackalod.artsdata.nl/id/pinkpop/1987> a schema:Event,
         schema:Festival ;
+    schema:additionalType "pinkpop" ;
     schema:attendance "Aantal bezoekers: 32.000" ;
     schema:description "Regen en koud" ;
-    schema:image "https://history.pinkpop.nl/wp-content/uploads/2019/04/Baarlo-publiek-in-regen-1987-1024x450.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-1987-Iggy-Pop.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-Baarlo-berichtenbord-1987-1024x698.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-Baarlo-publiek-1987-1024x581.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-Baarlo-the-day-after-1987-1024x591.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-Echo-Bunnymen-1987.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Chris-Isaak-Baarlo-1987-1024x806.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Leslie-Dowdall-In-Tua-Nua-Baarlo-1987-1024x686.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Lou-Reed-Baarlo-1987-1024x927.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Maria-McKee-Lone-Justice-1987-1024x990.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinpop-Lou-Reed-setlist-Baarlo-1987-613x1024.jpg" ;
+    schema:endDate "1987-06-08"^^xsd:date ;
+    schema:image <https://history.pinkpop.nl/wp-content/uploads/2019/04/Baarlo-publiek-in-regen-1987-1024x450.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-1987-Iggy-Pop.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-Baarlo-berichtenbord-1987-1024x698.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-Baarlo-publiek-1987-1024x581.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-Baarlo-the-day-after-1987-1024x591.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-Echo-Bunnymen-1987.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Chris-Isaak-Baarlo-1987-1024x806.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Leslie-Dowdall-In-Tua-Nua-Baarlo-1987-1024x686.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Lou-Reed-Baarlo-1987-1024x927.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Maria-McKee-Lone-Justice-1987-1024x990.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinpop-Lou-Reed-setlist-Baarlo-1987-613x1024.jpg> ;
     schema:name "Pinkpop 8 juni 1987" ;
+    schema:startDate "1987-06-08"^^xsd:date ;
     schema:subEvent <http://hackalod.artsdata.nl/id/pinkpop/1987/performance/1>,
         <http://hackalod.artsdata.nl/id/pinkpop/1987/performance/2>,
         <http://hackalod.artsdata.nl/id/pinkpop/1987/performance/3>,
@@ -538,21 +592,24 @@
 
 <http://hackalod.artsdata.nl/id/pinkpop/1988> a schema:Event,
         schema:Festival ;
+    schema:additionalType "pinkpop" ;
     schema:attendance "Aantal bezoekers: 36.000" ;
     schema:description "Stralende zon, staalblauwe lucht" ;
-    schema:image "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-1e-keer-Landgraaf-1988-kopie-1024x642.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-Jan-Jan-Douwe-Luchtballon-1988-1024x791.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-Rainbirds-1988.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-Red-Hot-Cili-Peppers-1988.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-Sinead-Shane-backstage-1988.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-Tanita-Tikaram-1989.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-The-Christians-1988.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-The-Godfathers-1988.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-The-Pogues-portret-1988-1024x743.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Herman-Brood-Landgraaf-1988-628x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Joe-Cocker-Landgraaf-1988-773x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-publiek-Landgraaf-1988-1024x694.jpg" ;
+    schema:endDate "1988-05-23"^^xsd:date ;
+    schema:image <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-1e-keer-Landgraaf-1988-kopie-1024x642.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-Jan-Jan-Douwe-Luchtballon-1988-1024x791.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-Rainbirds-1988.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-Red-Hot-Cili-Peppers-1988.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-Sinead-Shane-backstage-1988.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-Tanita-Tikaram-1989.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-The-Christians-1988.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-The-Godfathers-1988.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-The-Pogues-portret-1988-1024x743.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Herman-Brood-Landgraaf-1988-628x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Joe-Cocker-Landgraaf-1988-773x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-publiek-Landgraaf-1988-1024x694.jpg> ;
     schema:name "Pinkpop 23 mei 1988" ;
+    schema:startDate "1988-05-23"^^xsd:date ;
     schema:subEvent <http://hackalod.artsdata.nl/id/pinkpop/1988/performance/1>,
         <http://hackalod.artsdata.nl/id/pinkpop/1988/performance/2>,
         <http://hackalod.artsdata.nl/id/pinkpop/1988/performance/3>,
@@ -566,21 +623,24 @@
 
 <http://hackalod.artsdata.nl/id/pinkpop/1989> a schema:Event,
         schema:Festival ;
+    schema:additionalType "pinkpop" ;
     schema:attendance "Aantal bezoekers: 40.000" ;
     schema:description "Zonnig" ;
-    schema:image "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-Nits-1989-1024x785.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-Publiek-1989.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-REM-1989-1024x780.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-The-Pixies-1989-1024x692.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-backstage-1989-1024x806.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-podium-1989-1024x794.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-sfeer-1989-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-sfeer-Publiek-1989.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-1989-1024x868.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Elvis-Costello-1989-624x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Fishbone-1989-1024x876.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Michael-Stipe-1989-1024x575.jpg" ;
+    schema:endDate "1989-05-15"^^xsd:date ;
+    schema:image <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-Nits-1989-1024x785.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-Publiek-1989.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-REM-1989-1024x780.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-The-Pixies-1989-1024x692.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-backstage-1989-1024x806.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-podium-1989-1024x794.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-sfeer-1989-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-sfeer-Publiek-1989.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-1989-1024x868.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Elvis-Costello-1989-624x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Fishbone-1989-1024x876.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Michael-Stipe-1989-1024x575.jpg> ;
     schema:name "Pinkpop 15 mei 1989" ;
+    schema:startDate "1989-05-15"^^xsd:date ;
     schema:subEvent <http://hackalod.artsdata.nl/id/pinkpop/1989/performance/1>,
         <http://hackalod.artsdata.nl/id/pinkpop/1989/performance/10>,
         <http://hackalod.artsdata.nl/id/pinkpop/1989/performance/2>,
@@ -595,23 +655,26 @@
 
 <http://hackalod.artsdata.nl/id/pinkpop/1990> a schema:Event,
         schema:Festival ;
+    schema:additionalType "pinkpop" ;
     schema:attendance "Aantal bezoekers: 42.500" ;
     schema:description "Regenachtig met stevige wind" ;
-    schema:image "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-Black-Crowes-1990-1024x704.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-Neville-Brothers-1990-893x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-Nick-Cave-1990-721x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-Nick-Cave-2-1990-1024x1000.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-Texas-1990-1024x783.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-Texas-2-1990.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-The-Mission-1990-1024x731.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-Van-Morisson-1990-1024x768.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-podium-1990-1024x753.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-podium-geheel-1990-1024x689.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-1990-1024x668.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Mano-Negra-1990-1024x813.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Melissa-Etheridge-1990-1024x999.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Van-Morrison-1990-832x1024.jpg" ;
+    schema:endDate "1990-06-04"^^xsd:date ;
+    schema:image <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-Black-Crowes-1990-1024x704.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-Neville-Brothers-1990-893x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-Nick-Cave-1990-721x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-Nick-Cave-2-1990-1024x1000.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-Texas-1990-1024x783.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-Texas-2-1990.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-The-Mission-1990-1024x731.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-Van-Morisson-1990-1024x768.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-podium-1990-1024x753.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-podium-geheel-1990-1024x689.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-1990-1024x668.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Mano-Negra-1990-1024x813.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Melissa-Etheridge-1990-1024x999.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Van-Morrison-1990-832x1024.jpg> ;
     schema:name "Pinkpop 4 juni 1990" ;
+    schema:startDate "1990-06-04"^^xsd:date ;
     schema:subEvent <http://hackalod.artsdata.nl/id/pinkpop/1990/performance/1>,
         <http://hackalod.artsdata.nl/id/pinkpop/1990/performance/10>,
         <http://hackalod.artsdata.nl/id/pinkpop/1990/performance/2>,
@@ -626,16 +689,19 @@
 
 <http://hackalod.artsdata.nl/id/pinkpop/1991> a schema:Event,
         schema:Festival ;
+    schema:additionalType "pinkpop" ;
     schema:attendance "Aantal bezoekers: 53.500" ;
     schema:description "Zonnig en warm" ;
-    schema:image "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-Happy-Monday-1991-1024x775.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-Lenny-Kravitz-1991.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-Living-Colour-2-1991-1024x650.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-Luka-Bloom-Kroeske-1991-1024x680.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-1991-1024x503.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Lenny-Kravitz-1991-1024x680.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Lenny-Kravitz-2-1991-1024x735.jpg" ;
+    schema:endDate "1991-05-20"^^xsd:date ;
+    schema:image <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-Happy-Monday-1991-1024x775.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-Lenny-Kravitz-1991.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-Living-Colour-2-1991-1024x650.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-Luka-Bloom-Kroeske-1991-1024x680.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-1991-1024x503.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Lenny-Kravitz-1991-1024x680.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Lenny-Kravitz-2-1991-1024x735.jpg> ;
     schema:name "Pinkpop 20 mei 1991" ;
+    schema:startDate "1991-05-20"^^xsd:date ;
     schema:subEvent <http://hackalod.artsdata.nl/id/pinkpop/1991/performance/1>,
         <http://hackalod.artsdata.nl/id/pinkpop/1991/performance/10>,
         <http://hackalod.artsdata.nl/id/pinkpop/1991/performance/2>,
@@ -650,21 +716,24 @@
 
 <http://hackalod.artsdata.nl/id/pinkpop/1992> a schema:Event,
         schema:Festival ;
+    schema:additionalType "pinkpop" ;
     schema:attendance "Aantal bezoekers: 55.300" ;
     schema:description "Onweersbuien, regen" ;
-    schema:image "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-Buffalo-Tom-3-1992.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-Eddy-Vedder-1992.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-Family-Stand-2-1992-1024x706.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-Lou-Reed-1992.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-PJ-Harvey-1992-806x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-Pearl-Jam-2-1992-1024x734.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-Rowwen-Hèze-1992-1024x530.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-Soundgarden-1992-1024x666.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-The-Cult-1992-1024x846.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-1992-1024x899.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Eddie-Vedder-1992-617x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Rowwen-Hèze-1992-1024x738.jpg" ;
+    schema:endDate "1992-06-08"^^xsd:date ;
+    schema:image <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-Buffalo-Tom-3-1992.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-Eddy-Vedder-1992.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-Family-Stand-2-1992-1024x706.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-Lou-Reed-1992.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-PJ-Harvey-1992-806x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-Pearl-Jam-2-1992-1024x734.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-Rowwen-He%CC%80ze-1992-1024x530.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-Soundgarden-1992-1024x666.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP-The-Cult-1992-1024x846.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-1992-1024x899.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Eddie-Vedder-1992-617x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Rowwen-He%CC%80ze-1992-1024x738.jpg> ;
     schema:name "Pinkpop 8 juni 1992" ;
+    schema:startDate "1992-06-08"^^xsd:date ;
     schema:subEvent <http://hackalod.artsdata.nl/id/pinkpop/1992/performance/1>,
         <http://hackalod.artsdata.nl/id/pinkpop/1992/performance/10>,
         <http://hackalod.artsdata.nl/id/pinkpop/1992/performance/2>,
@@ -679,20 +748,23 @@
 
 <http://hackalod.artsdata.nl/id/pinkpop/1993> a schema:Event,
         schema:Festival ;
+    schema:additionalType "pinkpop" ;
     schema:attendance "Aantal bezoekers: 64.300" ;
     schema:description "Droog maar winderig" ;
-    schema:image "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1993-RATM-02-686x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1993-RATM-03-1024x531.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1993-Sfeer-Publiek-01-1024x677.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1993-Sfeer-Publiek-02-662x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1993-Sfeer-Publiek-03-1024x671.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1993-Sfeer-Publiek-04-1024x675.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1993-lenny-Kravitz-02-716x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1993-lenny-Kravitz-05-1024x797.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Bettie-Serveert-1993-1024x593.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Bob-Forrest-1993-1006x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Claw-Boys-Claw-1993-1024x681.jpg" ;
+    schema:endDate "1993-05-31"^^xsd:date ;
+    schema:image <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1993-RATM-02-686x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1993-RATM-03-1024x531.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1993-Sfeer-Publiek-01-1024x677.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1993-Sfeer-Publiek-02-662x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1993-Sfeer-Publiek-03-1024x671.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1993-Sfeer-Publiek-04-1024x675.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1993-lenny-Kravitz-02-716x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1993-lenny-Kravitz-05-1024x797.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Bettie-Serveert-1993-1024x593.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Bob-Forrest-1993-1006x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Claw-Boys-Claw-1993-1024x681.jpg> ;
     schema:name "Pinkpop 31 mei 1993" ;
+    schema:startDate "1993-05-31"^^xsd:date ;
     schema:subEvent <http://hackalod.artsdata.nl/id/pinkpop/1993/performance/1>,
         <http://hackalod.artsdata.nl/id/pinkpop/1993/performance/2>,
         <http://hackalod.artsdata.nl/id/pinkpop/1993/performance/3>,
@@ -706,19 +778,22 @@
 
 <http://hackalod.artsdata.nl/id/pinkpop/1994> a schema:Event,
         schema:Festival ;
+    schema:additionalType "pinkpop" ;
     schema:attendance "Aantal bezoekers: 64.300" ;
     schema:description "Mooi" ;
-    schema:image "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1994-Chris-Isaak-01-1024x724.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1994-Hans-Dulfer-01-1024x688.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1994-RATM-01-1024x661.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1994-RATM-03-1024x745.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1994-Richard-Thompson-03-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1994-Sfeer-Publiek-01-1024x685.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1994-Urban-Dance-Squad01-1024x621.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1994-Urban-Dance-Squad02-738x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Björk-1994-778x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Candy-Dulfer-1994-1024x822.jpg" ;
+    schema:endDate "1994-05-23"^^xsd:date ;
+    schema:image <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1994-Chris-Isaak-01-1024x724.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1994-Hans-Dulfer-01-1024x688.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1994-RATM-01-1024x661.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1994-RATM-03-1024x745.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1994-Richard-Thompson-03-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1994-Sfeer-Publiek-01-1024x685.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1994-Urban-Dance-Squad01-1024x621.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1994-Urban-Dance-Squad02-738x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Bjo%CC%88rk-1994-778x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Candy-Dulfer-1994-1024x822.jpg> ;
     schema:name "Pinkpop 22-23 mei 1994" ;
+    schema:startDate "1994-05-22"^^xsd:date ;
     schema:subEvent <http://hackalod.artsdata.nl/id/pinkpop/1994/performance/1>,
         <http://hackalod.artsdata.nl/id/pinkpop/1994/performance/10>,
         <http://hackalod.artsdata.nl/id/pinkpop/1994/performance/11>,
@@ -748,19 +823,22 @@
 
 <http://hackalod.artsdata.nl/id/pinkpop/1995> a schema:Event,
         schema:Festival ;
+    schema:additionalType "pinkpop" ;
     schema:attendance "Aantal bezoekers: 49.000" ;
     schema:description "Wisselvallig" ;
-    schema:image "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1995-Biohazard-01-1024x696.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1995-Biohazard-02-1024x808.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1995-Deus-04-1024x774.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1995-Faith-No-More-01-1024x982.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1995-Jan-Smeets-01-598x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1995-Live-01-663x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1995-Shawn-McGowen-04-1024x675.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1995-Shinead-OConnor-01-1024x968.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1995-Shinead-OConnor-02-1009x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Heideroosjes-1995-1024x545.jpg" ;
+    schema:endDate "1995-06-05"^^xsd:date ;
+    schema:image <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1995-Biohazard-01-1024x696.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1995-Biohazard-02-1024x808.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1995-Deus-04-1024x774.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1995-Faith-No-More-01-1024x982.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1995-Jan-Smeets-01-598x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1995-Live-01-663x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1995-Shawn-McGowen-04-1024x675.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1995-Shinead-OConnor-01-1024x968.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1995-Shinead-OConnor-02-1009x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Heideroosjes-1995-1024x545.jpg> ;
     schema:name "Pinkpop 4-5 juni 1995" ;
+    schema:startDate "1995-06-04"^^xsd:date ;
     schema:subEvent <http://hackalod.artsdata.nl/id/pinkpop/1995/performance/1>,
         <http://hackalod.artsdata.nl/id/pinkpop/1995/performance/10>,
         <http://hackalod.artsdata.nl/id/pinkpop/1995/performance/11>,
@@ -793,22 +871,25 @@
 
 <http://hackalod.artsdata.nl/id/pinkpop/1996> a schema:Event,
         schema:Festival ;
+    schema:additionalType "pinkpop" ;
     schema:attendance "Aantal bezoekers: 59.000" ;
     schema:description "Veel regen" ;
-    schema:image "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1996-Alanis-Morissette-01-1024x668.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1996-Alanis-Morissette05-702x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1996-Brotherhood-F.-01-687x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1996-Dog-Eat-Dog-01-662x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1996-Osdorp-Posse-02-1024x701.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1996-Podium-01-1024x682.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1996-RATM-01-1024x724.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1996-RATM-03-1024x664.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1996-Sepultura-01-1024x721.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1996-The-Prodigy-02-1024x780.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1996-Therapy-03-675x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Heideroosjes-1996-1024x689.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Skunk-Anansie-1996-1024x832.jpg" ;
+    schema:endDate "1996-05-27"^^xsd:date ;
+    schema:image <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1996-Alanis-Morissette-01-1024x668.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1996-Alanis-Morissette05-702x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1996-Brotherhood-F.-01-687x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1996-Dog-Eat-Dog-01-662x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1996-Osdorp-Posse-02-1024x701.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1996-Podium-01-1024x682.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1996-RATM-01-1024x724.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1996-RATM-03-1024x664.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1996-Sepultura-01-1024x721.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1996-The-Prodigy-02-1024x780.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1996-Therapy%EF%80%A5-03-675x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Heideroosjes-1996-1024x689.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Skunk-Anansie-1996-1024x832.jpg> ;
     schema:name "Pinkpop 25-26-27 mei" ;
+    schema:startDate "1996-05-25"^^xsd:date ;
     schema:subEvent <http://hackalod.artsdata.nl/id/pinkpop/1996/performance/1>,
         <http://hackalod.artsdata.nl/id/pinkpop/1996/performance/10>,
         <http://hackalod.artsdata.nl/id/pinkpop/1996/performance/11>,
@@ -858,26 +939,29 @@
 
 <http://hackalod.artsdata.nl/id/pinkpop/1997> a schema:Event,
         schema:Festival ;
+    schema:additionalType "pinkpop" ;
     schema:attendance "Aantal bezoekers: 49.200" ;
     schema:description "Zonnig en warm met een regenhoos op zondag" ;
-    schema:image "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1997-Bush-02-774x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1997-Bush-03-670x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1997-Counting-Crows-01-790x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1997-Counting-Crows-04-651x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1997-Eels-01-709x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1997-Eels-06-755x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1997-Lamb-05-679x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1997-Limb-Bizkit-01-1024x745.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1997-Limb-Bizkit-03-618x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1997-Live-03-718x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1997-Marilyn-Manson-02-1024x794.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1997-Marilyn-Manson-04-711x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1997-Placebo-01-637x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1997-Placebo-02-1024x755.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1997-Ramstein-01-681x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1997-Ramstein-02-650x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1997-Sfeer-publiek-04-1024x645.jpg" ;
+    schema:endDate "1997-05-19"^^xsd:date ;
+    schema:image <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1997-Bush-02-774x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1997-Bush-03-670x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1997-Counting-Crows-01-790x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1997-Counting-Crows-04-651x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1997-Eels-01-709x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1997-Eels-06-755x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1997-Lamb-05-679x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1997-Limb-Bizkit-01-1024x745.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1997-Limb-Bizkit-03-618x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1997-Live-03-718x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1997-Marilyn-Manson-02-1024x794.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1997-Marilyn-Manson-04-711x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1997-Placebo-01-637x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1997-Placebo-02-1024x755.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1997-Ramstein-01-681x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1997-Ramstein-02-650x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1997-Sfeer-publiek-04-1024x645.jpg> ;
     schema:name "Pinkpop 17-18-19 mei 1997" ;
+    schema:startDate "1997-05-17"^^xsd:date ;
     schema:subEvent <http://hackalod.artsdata.nl/id/pinkpop/1997/performance/1>,
         <http://hackalod.artsdata.nl/id/pinkpop/1997/performance/10>,
         <http://hackalod.artsdata.nl/id/pinkpop/1997/performance/11>,
@@ -922,26 +1006,29 @@
 
 <http://hackalod.artsdata.nl/id/pinkpop/1998> a schema:Event,
         schema:Festival ;
+    schema:additionalType "pinkpop" ;
     schema:attendance "Aantal bezoekers: 51.500" ;
     schema:description "Zonnig en warm met op zondagnacht een regenhoos" ;
-    schema:image "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1998-16-Horsepower-04-698x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1998-Anouk-02-711x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1998-Anouk-06-676x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1998-Artificial-Joy-C-02-1024x695.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1998-Caesar-01-711x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1998-Dandy-Warhols-03-1024x692.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1998-Eagle-Eye-Cherry-01-1024x738.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1998-Faithless-01-689x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1998-Garbage-02-669x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1998-Junkie-XL-01-1024x671.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1998-Ks-Choice-01-662x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1998-Sfeer-publiek-01-1024x673.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1998-Smashing-Pump.-01-746x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1998-Smashing-Pump.-02-666x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1998-The-Verve-03-673x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1998-Van-Dik-Hout-04-693x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-1998-1024x564.jpg" ;
+    schema:endDate "1998-06-01"^^xsd:date ;
+    schema:image <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1998-16-Horsepower-04-698x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1998-Anouk-02-711x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1998-Anouk-06-676x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1998-Artificial-Joy-C-02-1024x695.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1998-Caesar-01-711x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1998-Dandy-Warhols-03-1024x692.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1998-Eagle-Eye-Cherry-01-1024x738.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1998-Faithless-01-689x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1998-Garbage-02-669x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1998-Junkie-XL-01-1024x671.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1998-Ks-Choice-01-662x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1998-Sfeer-publiek-01-1024x673.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1998-Smashing-Pump.-01-746x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1998-Smashing-Pump.-02-666x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1998-The-Verve-03-673x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1998-Van-Dik-Hout-04-693x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-1998-1024x564.jpg> ;
     schema:name "Pinkpop 30-31 mei en 1 juni 1998" ;
+    schema:startDate "1998-05-30"^^xsd:date ;
     schema:subEvent <http://hackalod.artsdata.nl/id/pinkpop/1998/performance/1>,
         <http://hackalod.artsdata.nl/id/pinkpop/1998/performance/10>,
         <http://hackalod.artsdata.nl/id/pinkpop/1998/performance/11>,
@@ -978,29 +1065,32 @@
 
 <http://hackalod.artsdata.nl/id/pinkpop/1999> a schema:Event,
         schema:Festival ;
+    schema:additionalType "pinkpop" ;
     schema:attendance "Aantal bezoekers: 61.250" ;
     schema:description "Zonnig en warm zonder regen" ;
-    schema:image "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1999-Band-Zonder-B.-02-713x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1999-Band-Zonder-B.-05-1024x501.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1999-Faithless-01-756x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1999-Heather-Nova-02-670x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1999-Heideroosjes-01-744x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1999-Heideroosjes-02-783x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1999-Luca-Bloom-01-631x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1999-Manic-Street-Pr.-02-625x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1999-Nashville-Pussy-01-712x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1999-Red-Snapper-04-1024x525.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1999-Robbie-Williams-03-627x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1999-Sfeer-Publiek-03-1024x619.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1999-Sfeer-Publiek-05-1024x581.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1999-Sfeer-Publiek-07-1024x686.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1999-Skunk-Anansie-01-966x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1999-Skunk-Anansie-03-1012x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1999-Soulfly-03-653x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1999-Urban-Dance-S.-01-739x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1999-Urban-Dance-S.-04-736x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Ilse-DeLange-1999-1020x1024.jpg" ;
+    schema:endDate "1999-05-24"^^xsd:date ;
+    schema:image <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1999-Band-Zonder-B.-02-713x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1999-Band-Zonder-B.-05-1024x501.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1999-Faithless-01-756x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1999-Heather-Nova-02-670x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1999-Heideroosjes-01-744x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1999-Heideroosjes-02-783x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1999-Luca-Bloom-01-631x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1999-Manic-Street-Pr.-02-625x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1999-Nashville-Pussy-01-712x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1999-Red-Snapper-04-1024x525.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1999-Robbie-Williams-03-627x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1999-Sfeer-Publiek-03-1024x619.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1999-Sfeer-Publiek-05-1024x581.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1999-Sfeer-Publiek-07-1024x686.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1999-Skunk-Anansie-01-966x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1999-Skunk-Anansie-03-1012x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1999-Soulfly-03-653x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1999-Urban-Dance-S.-01-739x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP1999-Urban-Dance-S.-04-736x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Ilse-DeLange-1999-1020x1024.jpg> ;
     schema:name "Pinkpop 22-23-24 mei 1999" ;
+    schema:startDate "1999-05-22"^^xsd:date ;
     schema:subEvent <http://hackalod.artsdata.nl/id/pinkpop/1999/performance/1>,
         <http://hackalod.artsdata.nl/id/pinkpop/1999/performance/10>,
         <http://hackalod.artsdata.nl/id/pinkpop/1999/performance/11>,
@@ -1040,21 +1130,24 @@
 
 <http://hackalod.artsdata.nl/id/pinkpop/2000> a schema:Event,
         schema:Festival ;
+    schema:additionalType "pinkpop" ;
     schema:attendance "Aantal bezoekers: 66.300" ;
     schema:description "Zeer zonnig en warm" ;
-    schema:image "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2000-Counting-Crows-05-712x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2000-De-Dijk-03-648x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2000-Kane-04-613x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2000-Korn-02-618x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2000-Krezip-02-622x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2000-Moby-02-1024x681.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2000-Oasis-01-740x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2000-Oasis-02-658x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2000-Pearl-Jam-01-805x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2000-Pearl-Jam-02-666x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2000-Tracy-Bonham-01-678x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Dead-Punk-Society-2000-523x1024.jpg" ;
+    schema:endDate "2000-06-12"^^xsd:date ;
+    schema:image <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2000-Counting-Crows-05-712x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2000-De-Dijk-03-648x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2000-Kane-04-613x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2000-Korn-02-618x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2000-Krezip-02-622x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2000-Moby-02-1024x681.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2000-Oasis-01-740x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2000-Oasis-02-658x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2000-Pearl-Jam-01-805x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2000-Pearl-Jam-02-666x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2000-Tracy-Bonham-01-678x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Dead-Punk-Society-2000-523x1024.jpg> ;
     schema:name "Pinkpop 10-11-12 juni" ;
+    schema:startDate "2000-06-10"^^xsd:date ;
     schema:subEvent <http://hackalod.artsdata.nl/id/pinkpop/2000/performance/1>,
         <http://hackalod.artsdata.nl/id/pinkpop/2000/performance/10>,
         <http://hackalod.artsdata.nl/id/pinkpop/2000/performance/11>,
@@ -1093,22 +1186,25 @@
 
 <http://hackalod.artsdata.nl/id/pinkpop/2001> a schema:Event,
         schema:Festival ;
+    schema:additionalType "pinkpop" ;
     schema:attendance "Aantal bezoekers: 64.200" ;
     schema:description "Fris, weinig zon, maar droog (zaterdag koud en regen)" ;
-    schema:image "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2001-3-Doors-Down-02-681x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2001-Anouk-04-702x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2001-Green-Lizard-01-648x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2001-Green-Lizard-03-653x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2001-Ks-Choice-02-977x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2001-Ks-Choice-03-772x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2001-Limp-Bizkit-01-936x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2001-Limp-Bizkit-02-1024x841.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2001-Papa-Roach-03-674x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2001-Radiohead-05-1024x918.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2001-Radiohead-09-752x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2001-Sfeer-publiek-04-1024x721.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Tool-2001-1024x845.jpg" ;
+    schema:endDate "2001-06-04"^^xsd:date ;
+    schema:image <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2001-3-Doors-Down-02-681x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2001-Anouk-04-702x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2001-Green-Lizard-01-648x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2001-Green-Lizard-03-653x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2001-Ks-Choice-02-977x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2001-Ks-Choice-03-772x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2001-Limp-Bizkit-01-936x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2001-Limp-Bizkit-02-1024x841.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2001-Papa-Roach-03-674x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2001-Radiohead-05-1024x918.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2001-Radiohead-09-752x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2001-Sfeer-publiek-04-1024x721.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Tool-2001-1024x845.jpg> ;
     schema:name "Pinkpop 2-3-4 juni 2001" ;
+    schema:startDate "2001-06-02"^^xsd:date ;
     schema:subEvent <http://hackalod.artsdata.nl/id/pinkpop/2001/performance/1>,
         <http://hackalod.artsdata.nl/id/pinkpop/2001/performance/10>,
         <http://hackalod.artsdata.nl/id/pinkpop/2001/performance/11>,
@@ -1145,28 +1241,31 @@
 
 <http://hackalod.artsdata.nl/id/pinkpop/2002> a schema:Event,
         schema:Festival ;
+    schema:additionalType "pinkpop" ;
     schema:attendance "Aantal bezoekers: 63.345" ;
     schema:description "Zonnig" ;
-    schema:image "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2002-Alien-Ant-Farm-02-1024x775.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2002-Alien-Ant-Farm-05-1024x792.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2002-Beatbusters-03-1024x697.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2002-Black-Rebel-MC-02-1024x854.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2002-Bush-01-1024x768.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2002-Direct-02-912x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2002-Dropkick-Murphys-02-719x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2002-Faithless-02-680x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2002-Heather-Nova-03-1024x726.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2002-KANE-05-706x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2002-KANE-08-1024x804.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2002-Lenny-Kravitz-01-605x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2002-Lenny-Kravitz-02-703x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2002-Live-07-692x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2002-MUSE-03-709x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2002-MUSE-05-814x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2002-Rammstein-01-661x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2002-System-of-A-Down-03-1024x910.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2002-System-of-a-Down-01-1024x800.jpg" ;
+    schema:endDate "2002-05-20"^^xsd:date ;
+    schema:image <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2002-Alien-Ant-Farm-02-1024x775.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2002-Alien-Ant-Farm-05-1024x792.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2002-Beatbusters-03-1024x697.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2002-Black-Rebel-MC-02-1024x854.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2002-Bush-01-1024x768.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2002-Direct-02-912x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2002-Dropkick-Murphys-02-719x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2002-Faithless-02-680x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2002-Heather-Nova-03-1024x726.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2002-KANE-05-706x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2002-KANE-08-1024x804.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2002-Lenny-Kravitz-01-605x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2002-Lenny-Kravitz-02-703x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2002-Live-07-692x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2002-MUSE-03-709x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2002-MUSE-05-814x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2002-Rammstein-01-661x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2002-System-of-A-Down-03-1024x910.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2002-System-of-a-Down-01-1024x800.jpg> ;
     schema:name "Pinkpop 18-19-20 mei 2002" ;
+    schema:startDate "2002-05-18"^^xsd:date ;
     schema:subEvent <http://hackalod.artsdata.nl/id/pinkpop/2002/performance/1>,
         <http://hackalod.artsdata.nl/id/pinkpop/2002/performance/10>,
         <http://hackalod.artsdata.nl/id/pinkpop/2002/performance/11>,
@@ -1205,20 +1304,23 @@
 
 <http://hackalod.artsdata.nl/id/pinkpop/2003> a schema:Event,
         schema:Festival ;
+    schema:additionalType "pinkpop" ;
     schema:attendance "Aantal bezoekers: 47.530" ;
     schema:description "Zonnig en warm (zondag veel regen)" ;
-    schema:image "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2003-Anouk-05-679x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2003-Counting-Crows-01-761x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2003-Evanescence-02-687x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2003-Flogging-Molly-02-873x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2003-Ilse-deLange-03-718x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2003-Ilse-deLange-04-1024x745.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2003-Manu-Chao-02-628x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2003-Massive-Attack-02-680x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2003-Queens-OTSA-02-670x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2003-The-Cardigans-01-643x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2003-Tom-McRea-03-936x1024.jpg" ;
+    schema:endDate "2003-06-07"^^xsd:date ;
+    schema:image <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2003-Anouk-05-679x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2003-Counting-Crows-01-761x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2003-Evanescence-02-687x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2003-Flogging-Molly-02-873x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2003-Ilse-deLange-03-718x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2003-Ilse-deLange-04-1024x745.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2003-Manu-Chao-02-628x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2003-Massive-Attack-02-680x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2003-Queens-OTSA-02-670x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2003-The-Cardigans-01-643x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2003-Tom-McRea-03-936x1024.jpg> ;
     schema:name "Pinkpop 7-8-9 juni 2003" ;
+    schema:startDate "2003-06-07"^^xsd:date ;
     schema:subEvent <http://hackalod.artsdata.nl/id/pinkpop/2003/performance/1>,
         <http://hackalod.artsdata.nl/id/pinkpop/2003/performance/10>,
         <http://hackalod.artsdata.nl/id/pinkpop/2003/performance/11>,
@@ -1257,22 +1359,25 @@
 
 <http://hackalod.artsdata.nl/id/pinkpop/2004> a schema:Event,
         schema:Festival ;
+    schema:additionalType "pinkpop" ;
     schema:attendance "Aantal bezoekers: 36.000" ;
     schema:description "Zonnig en warm (zondag en maandag een regenbui)" ;
-    schema:image "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2004-Black-Eyed-Peas-05-683x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2004-Black-Eyed-Peas-06-1024x1012.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2004-Black-Eyed-Peas-07-943x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2004-Claudia-de-Breij-01-576x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2004-Franz-Ferdinand-01-883x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2004-Franz-Ferdinand-03-685x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2004-Kaizers-Orchestra-02-971x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2004-MUSE-03-778x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2004-N.E.R.D.-01-675x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2004-Sugababes-02-628x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2004-Sugababes-06-1024x711.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2004-The-Roots-02-715x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2004-Tiesto-03-1024x676.jpg" ;
+    schema:endDate "2004-05-31"^^xsd:date ;
+    schema:image <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2004-Black-Eyed-Peas-05-683x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2004-Black-Eyed-Peas-06-1024x1012.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2004-Black-Eyed-Peas-07-943x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2004-Claudia-de-Breij-01-576x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2004-Franz-Ferdinand-01-883x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2004-Franz-Ferdinand-03-685x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2004-Kaizers-Orchestra-02-971x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2004-MUSE-03-778x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2004-N.E.R.D.-01-675x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2004-Sugababes-02-628x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2004-Sugababes-06-1024x711.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2004-The-Roots-02-715x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2004-Tiesto-03-1024x676.jpg> ;
     schema:name "Pinkpop 29-30-31 mei 2004" ;
+    schema:startDate "2004-05-29"^^xsd:date ;
     schema:subEvent <http://hackalod.artsdata.nl/id/pinkpop/2004/performance/1>,
         <http://hackalod.artsdata.nl/id/pinkpop/2004/performance/10>,
         <http://hackalod.artsdata.nl/id/pinkpop/2004/performance/11>,
@@ -1310,30 +1415,33 @@
 
 <http://hackalod.artsdata.nl/id/pinkpop/2005> a schema:Event,
         schema:Festival ;
+    schema:additionalType "pinkpop" ;
     schema:attendance "Aantal bezoekers: 20.000" ;
     schema:description "Zonnig en warm" ;
-    schema:image "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2005-BEEF-03-683x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2005-Beth-Hart-03-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2005-Beth-Hart-04-683x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2005-Bloc-Party-01-683x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2005-De-Heideroosjes-02-683x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2005-Direct-03-893x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2005-Direct-04-684x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2005-Faithless-01-735x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2005-Golden-Earring-01-683x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2005-Golden-Earring-03-631x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2005-KANE-08-704x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2005-Kaiser-Chiefs-06-968x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2005-Novastar-01-1024x675.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2005-Sick-of-it-All-01-683x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2005-The-Frames-02-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2005-The-Frames-03-683x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2005-The-Prodigy-03-700x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2005-The-Prodigy-05-683x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2005-Within-Temptation-02-1024x887.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2005-Within-Temptation-06-998x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Rowwen-Hèze-Heideroosjes-2005-1024x707.jpg" ;
+    schema:endDate "2005-05-16"^^xsd:date ;
+    schema:image <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2005-BEEF-03-683x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2005-Beth-Hart-03-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2005-Beth-Hart-04-683x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2005-Bloc-Party-01-683x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2005-De-Heideroosjes-02-683x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2005-Direct-03-893x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2005-Direct-04-684x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2005-Faithless-01-735x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2005-Golden-Earring-01-683x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2005-Golden-Earring-03-631x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2005-KANE-08-704x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2005-Kaiser-Chiefs-06-968x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2005-Novastar-01-1024x675.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2005-Sick-of-it-All-01-683x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2005-The-Frames-02-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2005-The-Frames-03-683x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2005-The-Prodigy-03-700x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2005-The-Prodigy-05-683x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2005-Within-Temptation-02-1024x887.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2005-Within-Temptation-06-998x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Rowwen-He%CC%80ze-Heideroosjes-2005-1024x707.jpg> ;
     schema:name "Pinkpop 14-15-16 mei 2005" ;
+    schema:startDate "2005-05-14"^^xsd:date ;
     schema:subEvent <http://hackalod.artsdata.nl/id/pinkpop/2005/performance/1>,
         <http://hackalod.artsdata.nl/id/pinkpop/2005/performance/10>,
         <http://hackalod.artsdata.nl/id/pinkpop/2005/performance/11>,
@@ -1369,17 +1477,20 @@
 
 <http://hackalod.artsdata.nl/id/pinkpop/2006> a schema:Event,
         schema:Festival ;
+    schema:additionalType "pinkpop" ;
     schema:attendance "Aantal bezoekers: 68.000" ;
     schema:description "Zonnig en warm" ;
-    schema:image "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2006-Editors-01-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2006-Red-Hot-Chili-Peppers-01-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2006-Red-Hot-Chili-Peppers-02-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2006-TOOL-01-683x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-2006-614x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Flaming-Lips-2006-662x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Paul-Weller-2006-1024x838.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Skin-2006-1024x853.jpg" ;
+    schema:endDate "2006-06-05"^^xsd:date ;
+    schema:image <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2006-Editors-01-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2006-Red-Hot-Chili-Peppers-01-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2006-Red-Hot-Chili-Peppers-02-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2006-TOOL-01-683x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-2006-614x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Flaming-Lips-2006-662x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Paul-Weller-2006-1024x838.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Skin-2006-1024x853.jpg> ;
     schema:name "Pinkpop 3-4-5 juni 68.000" ;
+    schema:startDate "2006-06-03"^^xsd:date ;
     schema:subEvent <http://hackalod.artsdata.nl/id/pinkpop/2006/performance/1>,
         <http://hackalod.artsdata.nl/id/pinkpop/2006/performance/10>,
         <http://hackalod.artsdata.nl/id/pinkpop/2006/performance/11>,
@@ -1423,23 +1534,26 @@
 
 <http://hackalod.artsdata.nl/id/pinkpop/2007> a schema:Event,
         schema:Festival ;
+    schema:additionalType "pinkpop" ;
     schema:attendance "Aantal bezoekers: 62.500" ;
     schema:description "Droog en aangenaam met op zaterdag een fikse bui" ;
-    schema:image "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2007-30-Seconds-to-Mars-05-1024x761.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2007-Arctic-Monkeys-02-1024x778.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2007-Gogol-Bordello-02-1024x690.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2007-Iggy-Pop-04-1024x1011.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2007-Linking-Park-03-1024x1010.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2007-Linking-Park-04-1024x843.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2007-Lostprophets-02-1024x673.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2007-Scissor-Sisters-01-1024x611.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2007-Scissor-Sisters-04-738x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2007-Sfeer-Publiek-03-1024x601.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2007-Snow-Patrol-06-738x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2007-Wolfmother-01-994x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Marilyn-Manson-2007-1024x764.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Smashing-Pumpkins-2007-1024x673.jpg" ;
+    schema:endDate "2007-05-28"^^xsd:date ;
+    schema:image <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2007-30-Seconds-to-Mars-05-1024x761.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2007-Arctic-Monkeys-02-1024x778.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2007-Gogol-Bordello-02-1024x690.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2007-Iggy-Pop-04-1024x1011.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2007-Linking-Park-03-1024x1010.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2007-Linking-Park-04-1024x843.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2007-Lostprophets-02-1024x673.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2007-Scissor-Sisters-01-1024x611.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2007-Scissor-Sisters-04-738x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2007-Sfeer-Publiek-03-1024x601.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2007-Snow-Patrol-06-738x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2007-Wolfmother-01-994x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Marilyn-Manson-2007-1024x764.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Smashing-Pumpkins-2007-1024x673.jpg> ;
     schema:name "Pinkpop 26-27-28 mei 2007" ;
+    schema:startDate "2007-05-26"^^xsd:date ;
     schema:subEvent <http://hackalod.artsdata.nl/id/pinkpop/2007/performance/1>,
         <http://hackalod.artsdata.nl/id/pinkpop/2007/performance/10>,
         <http://hackalod.artsdata.nl/id/pinkpop/2007/performance/11>,
@@ -1483,23 +1597,26 @@
 
 <http://hackalod.artsdata.nl/id/pinkpop/2008> a schema:Event,
         schema:Festival ;
+    schema:additionalType "pinkpop" ;
     schema:attendance "Aantal bezoekers: 94.000" ;
     schema:description "Droog en warm op zondag" ;
-    schema:image "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2008-Alanis-Morissette-04-668x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2008-Amy-McDonald-01-620x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2008-BadReligion-01-589x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2008-Counting-Crows-03-550x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2008-Editors-02-901x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2008-Editors-03-614x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2008-FooFighters-01-639x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2008-KTTunstall-03-593x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2008-KaiserChiefs-03-617x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2008-Metallica-04-1024x796.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2008-Metallica-06-820x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2008-Queens-OTSA-03-1024x1003.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2008-Rage-Against-the-Machine-01-1024x552.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2008-The-Hives-01-664x1024.jpg" ;
+    schema:endDate "2008-06-01"^^xsd:date ;
+    schema:image <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2008-Alanis-Morissette-04-668x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2008-Amy-McDonald-01-620x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2008-BadReligion-01-589x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2008-Counting-Crows-03-550x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2008-Editors-02-901x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2008-Editors-03-614x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2008-FooFighters-01-639x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2008-KTTunstall-03-593x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2008-KaiserChiefs-03-617x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2008-Metallica-04-1024x796.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2008-Metallica-06-820x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2008-Queens-OTSA-03-1024x1003.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2008-Rage-Against-the-Machine-01-1024x552.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2008-The-Hives-01-664x1024.jpg> ;
     schema:name "Pinkpop 30-31 mei en 1 juni 2008" ;
+    schema:startDate "2008-05-30"^^xsd:date ;
     schema:subEvent <http://hackalod.artsdata.nl/id/pinkpop/2008/performance/1>,
         <http://hackalod.artsdata.nl/id/pinkpop/2008/performance/10>,
         <http://hackalod.artsdata.nl/id/pinkpop/2008/performance/11>,
@@ -1544,25 +1661,28 @@
 
 <http://hackalod.artsdata.nl/id/pinkpop/2009> a schema:Event,
         schema:Festival ;
+    schema:additionalType "pinkpop" ;
     schema:attendance "Aantal bezoekers: 90.000" ;
     schema:description "Droog en warm" ;
-    schema:image "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2009-ANOUK-03-649x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2009-Bruce-Springsteen-06-1024x922.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2009-De-Jeugd-van-Tegenwoordig-02-679x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2009-De-Staat-02-764x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2009-Elbow-02-1024x808.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2009-Keane-04-1024x787.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2009-Krezip-04-947x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2009-Krezip-05-863x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2009-Kyteman-03-1024x809.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2009-Madness-03-853x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2009-Maria-Mena-03-645x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2009-Milo-01-620x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2009-Snow-Patrol-01-1024x583.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2009-The-Script-03-577x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2009-The-Script-04-1024x595.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2009-Volbeat-05-1024x476.jpg" ;
+    schema:endDate "2009-06-01"^^xsd:date ;
+    schema:image <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2009-ANOUK-03-649x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2009-Bruce-Springsteen-06-1024x922.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2009-De-Jeugd-van-Tegenwoordig-02-679x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2009-De-Staat-02-764x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2009-Elbow-02-1024x808.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2009-Keane-04-1024x787.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2009-Krezip-04-947x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2009-Krezip-05-863x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2009-Kyteman-03-1024x809.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2009-Madness-03-853x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2009-Maria-Mena-03-645x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2009-Milo-01-620x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2009-Snow-Patrol-01-1024x583.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2009-The-Script-03-577x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2009-The-Script-04-1024x595.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2009-Volbeat-05-1024x476.jpg> ;
     schema:name "Pinkpop 30-31 mei en 1 juni 2009" ;
+    schema:startDate "2009-05-30"^^xsd:date ;
     schema:subEvent <http://hackalod.artsdata.nl/id/pinkpop/2009/performance/1>,
         <http://hackalod.artsdata.nl/id/pinkpop/2009/performance/10>,
         <http://hackalod.artsdata.nl/id/pinkpop/2009/performance/11>,
@@ -1607,26 +1727,29 @@
 
 <http://hackalod.artsdata.nl/id/pinkpop/2010> a schema:Event,
         schema:Festival ;
+    schema:additionalType "pinkpop" ;
     schema:attendance "Aantal bezoekers: 72.100" ;
     schema:description "Zonnig afgewisseld met regen, aangename temperatuur" ;
-    schema:image "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP10-Sfeer-zaterdag-17-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2010-C-Mon-Kypski-01-1024x740.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2010-Green-Day-04-1024x672.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2010-John-Allen-01-1024x775.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2010-John-Mayer-01-987x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2010-John-Mayer-02-629x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2010-Kate-Nash-01-1024x631.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2010-Kitty-Daisy-Lewis-02-1024x679.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2010-Mika-01-1024x965.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2010-Motorhead-02-632x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2010-Paolo-Nutini-01-1024x923.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2010-Pixies-04-638x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2010-SLASH-01-683x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2010-SLASH-02-1024x712.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2010-Sfeer-Publiek-12-1024x635.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2010-Sfeer-Publiek-18-1024x492.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Pink-2010-714x1024.jpg" ;
+    schema:endDate "2010-05-30"^^xsd:date ;
+    schema:image <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP10-Sfeer-zaterdag-17-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2010-C-Mon-Kypski-01-1024x740.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2010-Green-Day-04-1024x672.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2010-John-Allen-01-1024x775.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2010-John-Mayer-01-987x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2010-John-Mayer-02-629x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2010-Kate-Nash-01-1024x631.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2010-Kitty-Daisy-Lewis-02-1024x679.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2010-Mika-01-1024x965.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2010-Motorhead-02-632x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2010-Paolo-Nutini-01-1024x923.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2010-Pixies-04-638x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2010-SLASH-01-683x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2010-SLASH-02-1024x712.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2010-Sfeer-Publiek-12-1024x635.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2010-Sfeer-Publiek-18-1024x492.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Pink-2010-714x1024.jpg> ;
     schema:name "Pinkpop 28-29-30 mei 2010" ;
+    schema:startDate "2010-05-28"^^xsd:date ;
     schema:subEvent <http://hackalod.artsdata.nl/id/pinkpop/2010/performance/1>,
         <http://hackalod.artsdata.nl/id/pinkpop/2010/performance/10>,
         <http://hackalod.artsdata.nl/id/pinkpop/2010/performance/11>,
@@ -1670,31 +1793,34 @@
 
 <http://hackalod.artsdata.nl/id/pinkpop/2011> a schema:Event,
         schema:Festival ;
+    schema:additionalType "pinkpop" ;
     schema:attendance "Aantal bezoekers: 91.900" ;
     schema:description "Zonnig en heerlijk weer, enkele bui op maandag (regenboog tijdens Foo Fighters!)" ;
-    schema:image "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2011-Alter-Bridge-03-1024x629.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2011-Alter-Bridge-04-675x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2011-Band-Of-Horses-02-1024x607.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2011-Beatsteaks-01-852x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2011-Coldplay-04-668x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2011-Coldplay-06-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2011-Dazzled-Kid-05-1024x597.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2011-De-Staat-01-612x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2011-Foo-Fighters-04-808x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2011-Go-Back-To-The-Zoo-04-1024x695.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2011-Justin-Nozuka-01-665x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2011-Kaiser-Chiefs-01-690x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2011-Kings-Of-Leon-02-654x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2011-Lifehouse-01-1024x440.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2011-Lifehouse-02-936x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2011-Simple-Plan-03-1024x489.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2011-The-Gaslight-Anthem-03-639x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2011-Tim-Knol-03-687x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2011-VOLBEAT-03-826x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2011-Wolfmother-01-997x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-2011-1024x709.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Madi-2011-1024x787.jpg" ;
+    schema:endDate "2011-06-13"^^xsd:date ;
+    schema:image <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2011-Alter-Bridge-03-1024x629.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2011-Alter-Bridge-04-675x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2011-Band-Of-Horses-02-1024x607.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2011-Beatsteaks-01-852x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2011-Coldplay-04-668x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2011-Coldplay-06-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2011-Dazzled-Kid-05-1024x597.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2011-De-Staat-01-612x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2011-Foo-Fighters-04-808x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2011-Go-Back-To-The-Zoo-04-1024x695.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2011-Justin-Nozuka-01-665x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2011-Kaiser-Chiefs-01-690x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2011-Kings-Of-Leon-02-654x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2011-Lifehouse-01-1024x440.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2011-Lifehouse-02-936x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2011-Simple-Plan-03-1024x489.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2011-The-Gaslight-Anthem-03-639x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2011-Tim-Knol-03-687x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2011-VOLBEAT-03-826x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2011-Wolfmother-01-997x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-2011-1024x709.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Madi-2011-1024x787.jpg> ;
     schema:name "Pinkpop 11-12-13 juni 2011" ;
+    schema:startDate "2011-06-11"^^xsd:date ;
     schema:subEvent <http://hackalod.artsdata.nl/id/pinkpop/2011/performance/1>,
         <http://hackalod.artsdata.nl/id/pinkpop/2011/performance/10>,
         <http://hackalod.artsdata.nl/id/pinkpop/2011/performance/11>,
@@ -1738,27 +1864,30 @@
 
 <http://hackalod.artsdata.nl/id/pinkpop/2012> a schema:Event,
         schema:Festival ;
+    schema:additionalType "pinkpop" ;
     schema:attendance "Aantal bezoekers: 79.000" ;
     schema:description "Zonnig en tropisch warm weer" ;
-    schema:image "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2012-ChefSpecial-03-1024x779.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2012-Gers-Pardoel-03-1024x540.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2012-James-Morrison-02-817x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2012-Keane-02-1024x682.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2012-Kyuss-Lives-02-1024x976.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2012-Linkin-Park-01-1024x894.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2012-Mastodon-01-706x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2012-Munford-Sons-01-1024x539.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2012-Racoon-03-1024x719.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2012-Seasick-Steve-01-1024x971.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2012-Seasick-Steve-03-933x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2012-Sharon-Jones-01-610x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2012-Soundgarden-01-1024x1012.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2012-The-Cure-01-1024x1011.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2012-The-Specials-01-1024x473.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2012-The-Ting-Things-02-1024x795.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2012-The-Ting-Things-03-1024x735.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Bruce-Springsteen-2012-1024x607.jpg" ;
+    schema:endDate "2012-05-28"^^xsd:date ;
+    schema:image <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2012-ChefSpecial-03-1024x779.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2012-Gers-Pardoel-03-1024x540.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2012-James-Morrison-02-817x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2012-Keane-02-1024x682.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2012-Kyuss-Lives-02-1024x976.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2012-Linkin-Park-01-1024x894.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2012-Mastodon-01-706x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2012-Munford-Sons-01-1024x539.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2012-Racoon-03-1024x719.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2012-Seasick-Steve-01-1024x971.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2012-Seasick-Steve-03-933x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2012-Sharon-Jones-01-610x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2012-Soundgarden-01-1024x1012.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2012-The-Cure-01-1024x1011.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2012-The-Specials-01-1024x473.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2012-The-Ting-Things-02-1024x795.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP2012-The-Ting-Things-03-1024x735.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-Bruce-Springsteen-2012-1024x607.jpg> ;
     schema:name "Pinkpop 26-27-28 mei 2012" ;
+    schema:startDate "2012-05-26"^^xsd:date ;
     schema:subEvent <http://hackalod.artsdata.nl/id/pinkpop/2012/performance/1>,
         <http://hackalod.artsdata.nl/id/pinkpop/2012/performance/10>,
         <http://hackalod.artsdata.nl/id/pinkpop/2012/performance/11>,
@@ -1801,39 +1930,42 @@
 
 <http://hackalod.artsdata.nl/id/pinkpop/2013> a schema:Event,
         schema:Festival ;
+    schema:additionalType "pinkpop" ;
     schema:attendance "Aantal bezoekers: 60.000" ;
     schema:description "Zonnig en aangenaam weer, regenbui op zondag" ;
-    schema:image "https://history.pinkpop.nl/wp-content/uploads/2019/04/9040238833_dde6c67b2f_o-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/9048326377_9e9d63336e_o-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/9049448633_34526e9eb1_o-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/9049776569_4d717d814f_o-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/9050200252_84ea7defa8_o-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/9050532593_57148e644b_o-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/9050533213_3640b7b4d6_k-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/9050944798_22d5fa6fa7_o-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/9051051741_b42c83ceb6_o-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/9051361508_676e9b59d5_o-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/9057257215_5bb3aafb54_o-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/9058000526_700787b06a_o-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/9058419825_ba38ec3609_o-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/9059004946_def72e2994_o-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/9059723748_b2b74bbe7f_o-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/9059746272_f08f481c94_o-1-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/9059784194_bc613504d7_o-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/9060642666_2b67f0f64a_o-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/9060661634_a7d4dfe3c7_o-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/antwor-2-681x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/ben-1-1024x681.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/ben-2-1024x681.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/kings-1-656x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/opposites.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/pag-1-681x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/passanger-1-681x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/publiek--1024x598.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/scip-2-681x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/sfeer-kid-1024x351.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/wil-and.jpg" ;
+    schema:endDate "2013-06-16"^^xsd:date ;
+    schema:image <https://history.pinkpop.nl/wp-content/uploads/2019/04/9040238833_dde6c67b2f_o-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/9048326377_9e9d63336e_o-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/9049448633_34526e9eb1_o-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/9049776569_4d717d814f_o-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/9050200252_84ea7defa8_o-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/9050532593_57148e644b_o-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/9050533213_3640b7b4d6_k-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/9050944798_22d5fa6fa7_o-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/9051051741_b42c83ceb6_o-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/9051361508_676e9b59d5_o-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/9057257215_5bb3aafb54_o-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/9058000526_700787b06a_o-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/9058419825_ba38ec3609_o-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/9059004946_def72e2994_o-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/9059723748_b2b74bbe7f_o-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/9059746272_f08f481c94_o-1-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/9059784194_bc613504d7_o-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/9060642666_2b67f0f64a_o-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/9060661634_a7d4dfe3c7_o-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/antwor-2-681x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/ben-1-1024x681.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/ben-2-1024x681.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/kings-1-656x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/opposites.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/pag-1-681x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/passanger-1-681x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/publiek--1024x598.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/scip-2-681x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/sfeer-kid-1024x351.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/wil-and.jpg> ;
     schema:name "Pinkpop 14-15-16 juni 2013" ;
+    schema:startDate "2013-06-14"^^xsd:date ;
     schema:subEvent <http://hackalod.artsdata.nl/id/pinkpop/2013/performance/1>,
         <http://hackalod.artsdata.nl/id/pinkpop/2013/performance/10>,
         <http://hackalod.artsdata.nl/id/pinkpop/2013/performance/11>,
@@ -1878,39 +2010,42 @@
 
 <http://hackalod.artsdata.nl/id/pinkpop/2014> a schema:Event,
         schema:Festival ;
+    schema:additionalType "pinkpop" ;
     schema:attendance "Aantal bezoekers: 134.000" ;
     schema:description "Zonnig en zeer warm weer, zware storm op maandagavond" ;
-    schema:image "https://history.pinkpop.nl/wp-content/uploads/2019/04/14187249548_a6015ca9fa_o-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/14187514620_898c7a6785_o-683x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/14196309990_378972a12b_o-648x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/14196584619_68b68772ca_o-1024x648.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/14198412598_649203172f_o-683x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/14199944417_f6abbe50a2_o-1024x669.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/14351250396_4236a7a124_o-683x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/14363802241_842e3b3f17_o-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/14365637054_5647a3f739_o-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/14368753295_3e1569cfaf_o-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/14374012844_860f91ff77_o-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/14374932252_5de36f3a8d_o-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/14375785915_78aac9b02b_o-1024x640.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/14378717831_fb29c908bc_o-1-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/14384742294_e95a287431_o-630x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/14388285593_b02151a572_o-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/14393805923_5faf71b400_o-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/14394056423_011c1fb485_o-1-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/14394666633_1c81d557e3_o-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP14-Arcade-Fire-09-1024x741.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP14-Arctic-Monkeys-05-669x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP14-Editors-08-1024x484.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP14-Erik-Corton-01-667x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP14-Joe-Bonamassa-03-624x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP14-John-Mayer-13-938x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP14-Onweer-02-1024x545.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP14-Robert-Plant-02-815x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP14-Sfeer-05-1024x737.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP14-The-Kooks-01-1024x530.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP14-TheÔ-Lau-The-Scene-02-660x1024.jpg" ;
+    schema:endDate "2014-06-09"^^xsd:date ;
+    schema:image <https://history.pinkpop.nl/wp-content/uploads/2019/04/14187249548_a6015ca9fa_o-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/14187514620_898c7a6785_o-683x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/14196309990_378972a12b_o-648x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/14196584619_68b68772ca_o-1024x648.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/14198412598_649203172f_o-683x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/14199944417_f6abbe50a2_o-1024x669.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/14351250396_4236a7a124_o-683x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/14363802241_842e3b3f17_o-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/14365637054_5647a3f739_o-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/14368753295_3e1569cfaf_o-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/14374012844_860f91ff77_o-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/14374932252_5de36f3a8d_o-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/14375785915_78aac9b02b_o-1024x640.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/14378717831_fb29c908bc_o-1-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/14384742294_e95a287431_o-630x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/14388285593_b02151a572_o-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/14393805923_5faf71b400_o-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/14394056423_011c1fb485_o-1-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/14394666633_1c81d557e3_o-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP14-Arcade-Fire-09-1024x741.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP14-Arctic-Monkeys-05-669x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP14-Editors-08-1024x484.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP14-Erik-Corton-01-667x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP14-Joe-Bonamassa-03-624x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP14-John-Mayer-13-938x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP14-Onweer-02-1024x545.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP14-Robert-Plant-02-815x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP14-Sfeer-05-1024x737.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP14-The%C3%94-Lau-The-Scene-02-660x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP14-The-Kooks-01-1024x530.jpg> ;
     schema:name "Pinkpop 7-8-9 juni 2014" ;
+    schema:startDate "None"^^xsd:date ;
     schema:subEvent <http://hackalod.artsdata.nl/id/pinkpop/2014/performance/1>,
         <http://hackalod.artsdata.nl/id/pinkpop/2014/performance/10>,
         <http://hackalod.artsdata.nl/id/pinkpop/2014/performance/11>,
@@ -1969,44 +2104,47 @@
 
 <http://hackalod.artsdata.nl/id/pinkpop/2015> a schema:Event,
         schema:Festival ;
+    schema:additionalType "pinkpop" ;
     schema:attendance "Aantal bezoekers: 112.500" ;
     schema:description "Zonnig en aangenaam weer, flinke regenbui op vrijdag" ;
-    schema:image "https://history.pinkpop.nl/wp-content/uploads/2019/04/18187027313_22820bd48d_o-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/18187610793_84e0ef631a_o-683x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/18188124484_e88c43db62_o-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/18188862173_cbbfc0e799_o-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/18613890778_3798cf2381_o-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/18615604920_ef4b0a0735_o-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/18617936438_3f30f1364f_o-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/18618989559_44acd83d84_o-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/18621798960_ebff5cfa35_o-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/18771754342_1a667d2f51_o-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/18773081055_5e958e1c73_o-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/18773644086_3bcb300502_o-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/18775490182_050e44e9fe_o-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/18775871355_59626e8f57_o-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/18802080191_5bbb8facf9_o-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/18811049745_e49719466e_o-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/18811236835_0b69217be6_o-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/18815591581_c27bb33ddb_o-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/18832169662_7f54d799e3_o-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP15-Anouk-05-1024x676.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP15-Counting-Crows-01-1024x976.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP15-Dotan-03-708x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP15-Frank-Turner-1024x1019.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP15-John-Coffey-05-1024x502.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP15-Marco-Roelofs-01-969x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP15-Pharrell-Williams-01-1024x636.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP15-Publiek-sfeer-05-1024x485.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP15-Robbie-Williams-04-1024x775.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP15-The-Script-03-1024x393.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP15-The-Script-07-1024x646.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/PP15-Triggerfinger-03-1024x1010.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop_GeorgeEzra_BartHeemskerk_01_HQ-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop_PalomaFaith_BartHeemskerk_02_HQ-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop_Sfeer_BartHeemskerk_04_HQ-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop_SlashFeatMyesKennedy_BartHeemskerk_02_HQ-1024x683.jpg" ;
+    schema:endDate "2015-06-14"^^xsd:date ;
+    schema:image <https://history.pinkpop.nl/wp-content/uploads/2019/04/18187027313_22820bd48d_o-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/18187610793_84e0ef631a_o-683x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/18188124484_e88c43db62_o-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/18188862173_cbbfc0e799_o-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/18613890778_3798cf2381_o-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/18615604920_ef4b0a0735_o-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/18617936438_3f30f1364f_o-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/18618989559_44acd83d84_o-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/18621798960_ebff5cfa35_o-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/18771754342_1a667d2f51_o-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/18773081055_5e958e1c73_o-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/18773644086_3bcb300502_o-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/18775490182_050e44e9fe_o-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/18775871355_59626e8f57_o-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/18802080191_5bbb8facf9_o-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/18811049745_e49719466e_o-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/18811236835_0b69217be6_o-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/18815591581_c27bb33ddb_o-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/18832169662_7f54d799e3_o-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP15-Anouk-05-1024x676.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP15-Counting-Crows-01-1024x976.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP15-Dotan-03-708x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP15-Frank-Turner-1024x1019.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP15-John-Coffey-05-1024x502.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP15-Marco-Roelofs-01-969x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP15-Pharrell-Williams-01-1024x636.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP15-Publiek-sfeer-05-1024x485.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP15-Robbie-Williams-04-1024x775.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP15-The-Script-03-1024x393.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP15-The-Script-07-1024x646.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/PP15-Triggerfinger-03-1024x1010.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop_GeorgeEzra_BartHeemskerk_01_HQ-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop_PalomaFaith_BartHeemskerk_02_HQ-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop_Sfeer_BartHeemskerk_04_HQ-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop_SlashFeatMyesKennedy_BartHeemskerk_02_HQ-1024x683.jpg> ;
     schema:name "Pinkpop 12-13-14 juni 2015" ;
+    schema:startDate "2015-06-12"^^xsd:date ;
     schema:subEvent <http://hackalod.artsdata.nl/id/pinkpop/2015/performance/1>,
         <http://hackalod.artsdata.nl/id/pinkpop/2015/performance/10>,
         <http://hackalod.artsdata.nl/id/pinkpop/2015/performance/11>,
@@ -2070,28 +2208,31 @@
 
 <http://hackalod.artsdata.nl/id/pinkpop/2016> a schema:Event,
         schema:Festival ;
+    schema:additionalType "pinkpop" ;
     schema:attendance "Aantal bezoekers: 116.750" ;
     schema:description "Zonnig en aangenaam weer, enkele flinke regenbuien (stortbuien) op zondag" ;
-    schema:image "https://history.pinkpop.nl/wp-content/uploads/2019/04/26972229754_6e322221df_o-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/26978320714_064f6c37d2_o-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/26989647924_880a53654e_o-1024x689.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/26995024074_2b5d29f599_o-683x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/27008937644_733ea71e2a_o-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/27014490224_d6c18e01b5_o-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/27019229644_68918d450e_o-722x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/27306954800_e903ebf665_o-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/27500294142_646bd24791_o-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/27501304192_f4e5fce818_o-683x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/27505085612_308f7b1025_o-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/27522655172_e9dd4725a0_o-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/27526594732_6321b41003_o-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/27553096076_ca9edbcca9_o-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/27556370701_689306561e_o-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/27584410205_ef92387c0f_o-1-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/27590562086_b0f86c720d_o-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/27594362606_f80d074c47_o-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/27620152405_f973769db4_o-1024x683.jpg" ;
+    schema:endDate "2016-06-12"^^xsd:date ;
+    schema:image <https://history.pinkpop.nl/wp-content/uploads/2019/04/26972229754_6e322221df_o-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/26978320714_064f6c37d2_o-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/26989647924_880a53654e_o-1024x689.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/26995024074_2b5d29f599_o-683x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/27008937644_733ea71e2a_o-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/27014490224_d6c18e01b5_o-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/27019229644_68918d450e_o-722x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/27306954800_e903ebf665_o-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/27500294142_646bd24791_o-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/27501304192_f4e5fce818_o-683x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/27505085612_308f7b1025_o-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/27522655172_e9dd4725a0_o-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/27526594732_6321b41003_o-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/27553096076_ca9edbcca9_o-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/27556370701_689306561e_o-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/27584410205_ef92387c0f_o-1-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/27590562086_b0f86c720d_o-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/27594362606_f80d074c47_o-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/27620152405_f973769db4_o-1024x683.jpg> ;
     schema:name "Pinkpop 10-11-12 juni 2016" ;
+    schema:startDate "2016-06-10"^^xsd:date ;
     schema:subEvent <http://hackalod.artsdata.nl/id/pinkpop/2016/performance/1>,
         <http://hackalod.artsdata.nl/id/pinkpop/2016/performance/10>,
         <http://hackalod.artsdata.nl/id/pinkpop/2016/performance/11>,
@@ -2156,9 +2297,12 @@
 
 <http://hackalod.artsdata.nl/id/pinkpop/2017> a schema:Event,
         schema:Festival ;
+    schema:additionalType "pinkpop" ;
     schema:attendance "Aantal bezoekers: 89.500" ;
     schema:description "Zonnig en aangenaam weer, flinke regenbui (stortbui) op zaterdag" ;
+    schema:endDate "2017-06-05"^^xsd:date ;
     schema:name "Pinkpop 3-4-5 juni 2017" ;
+    schema:startDate "2017-06-03"^^xsd:date ;
     schema:subEvent <http://hackalod.artsdata.nl/id/pinkpop/2017/performance/1>,
         <http://hackalod.artsdata.nl/id/pinkpop/2017/performance/10>,
         <http://hackalod.artsdata.nl/id/pinkpop/2017/performance/11>,
@@ -2219,31 +2363,34 @@
 
 <http://hackalod.artsdata.nl/id/pinkpop/2018> a schema:Event,
         schema:Festival ;
+    schema:additionalType "pinkpop" ;
     schema:attendance "Aantal bezoekers: 113.500" ;
     schema:description "Zonnig en zeer aangenaam weer, niet te warm." ;
-    schema:image "https://history.pinkpop.nl/wp-content/uploads/2019/02/42815561752_9bd696a103_o-1024x576.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/02/42815561942_e8c58757f8_o-1024x576.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/03/Pinkpop-2018-Brian-Fallon-The-Howling-Weather-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/03/Pinkpop-2018-Direct-1024x576.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/03/Pinkpop-2018-Don-Diablo-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/03/Pinkpop-2018-Editors-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/03/Pinkpop-2018-Greta-van-Fleet-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/03/Pinkpop-2018-Jessie-J-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/03/Pinkpop-2018-Maan-1024x576.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/03/Pinkpop-2018-Ronnie-Flex-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/03/Pinkpop-2018-Scarlet-Pleasure-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/03/Pinkpop-2018-Tom-Walker-683x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/03/Pinkpop-2018-Triggerfinger-683x1024.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/03/Pinkpop-2018-Years-Years-1024x670.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-2018-Sfeerfoto-Banners-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-2018-Sfeerfoto-Editors-1024x576.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-2018-Sfeerfoto-Foodtrucks-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-2018-Sfeerfoto-Garden-of-Love-1024x576.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-2018-Sfeerfoto-Kalm-aan-Laan-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-2018-Sfeerfoto-Recycle-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-2018-Sfeerfoto-Signeersessie-The-Overslept-1024x683.jpg",
-        "https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-2018-Sfeerfoto-Vuurwerk-1024x576.jpg" ;
+    schema:endDate "2018-06-17"^^xsd:date ;
+    schema:image <https://history.pinkpop.nl/wp-content/uploads/2019/02/42815561752_9bd696a103_o-1024x576.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/02/42815561942_e8c58757f8_o-1024x576.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/03/Pinkpop-2018-Brian-Fallon-The-Howling-Weather-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/03/Pinkpop-2018-Direct-1024x576.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/03/Pinkpop-2018-Don-Diablo-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/03/Pinkpop-2018-Editors-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/03/Pinkpop-2018-Greta-van-Fleet-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/03/Pinkpop-2018-Jessie-J-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/03/Pinkpop-2018-Maan-1024x576.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/03/Pinkpop-2018-Ronnie-Flex-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/03/Pinkpop-2018-Scarlet-Pleasure-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/03/Pinkpop-2018-Tom-Walker-683x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/03/Pinkpop-2018-Triggerfinger-683x1024.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/03/Pinkpop-2018-Years-Years-1024x670.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-2018-Sfeerfoto-Banners-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-2018-Sfeerfoto-Editors-1024x576.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-2018-Sfeerfoto-Foodtrucks-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-2018-Sfeerfoto-Garden-of-Love-1024x576.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-2018-Sfeerfoto-Kalm-aan-Laan-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-2018-Sfeerfoto-Recycle-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-2018-Sfeerfoto-Signeersessie-The-Overslept-1024x683.jpg>,
+        <https://history.pinkpop.nl/wp-content/uploads/2019/04/Pinkpop-2018-Sfeerfoto-Vuurwerk-1024x576.jpg> ;
     schema:name "Pinkpop 15-16-17 juni" ;
+    schema:startDate "2018-06-15"^^xsd:date ;
     schema:subEvent <http://hackalod.artsdata.nl/id/pinkpop/2018/performance/1>,
         <http://hackalod.artsdata.nl/id/pinkpop/2018/performance/10>,
         <http://hackalod.artsdata.nl/id/pinkpop/2018/performance/11>,
@@ -2302,9 +2449,12 @@
 
 <http://hackalod.artsdata.nl/id/pinkpop/2019> a schema:Event,
         schema:Festival ;
+    schema:additionalType "pinkpop" ;
     schema:attendance "Aantal bezoekers: 80.500" ;
     schema:description "Winderig op zaterdag, verder aangenaam festival weer, niet te warm niet te koud en op maandag 2 lange buien" ;
+    schema:endDate "2019-06-10"^^xsd:date ;
     schema:name "Pinkpop 8-9-10 juni" ;
+    schema:startDate "2019-06-08"^^xsd:date ;
     schema:subEvent <http://hackalod.artsdata.nl/id/pinkpop/2019/performance/1>,
         <http://hackalod.artsdata.nl/id/pinkpop/2019/performance/10>,
         <http://hackalod.artsdata.nl/id/pinkpop/2019/performance/11>,
@@ -2370,9 +2520,12 @@
 
 <http://hackalod.artsdata.nl/id/pinkpop/2022> a schema:Event,
         schema:Festival ;
+    schema:additionalType "pinkpop" ;
     schema:attendance "Aantal bezoekers: 108.250" ;
     schema:description "zonnig en tropisch warm weer, zondag meest aangename dag" ;
+    schema:endDate "2022-06-19"^^xsd:date ;
     schema:name "Pinkpop 17-18-19 juni" ;
+    schema:startDate "2022-06-17"^^xsd:date ;
     schema:subEvent <http://hackalod.artsdata.nl/id/pinkpop/2022/performance/1>,
         <http://hackalod.artsdata.nl/id/pinkpop/2022/performance/10>,
         <http://hackalod.artsdata.nl/id/pinkpop/2022/performance/11>,
@@ -2439,9 +2592,12 @@
 
 <http://hackalod.artsdata.nl/id/pinkpop/2023> a schema:Event,
         schema:Festival ;
+    schema:additionalType "pinkpop" ;
     schema:attendance "Aantal bezoekers: 104.600" ;
     schema:description "zonnig en tropisch warm weer, zondag lichte regen bij slotact" ;
+    schema:endDate "2023-06-18"^^xsd:date ;
     schema:name "Pinkpop 16-17-18 juni" ;
+    schema:startDate "2023-06-16"^^xsd:date ;
     schema:subEvent <http://hackalod.artsdata.nl/id/pinkpop/2023/performance/1>,
         <http://hackalod.artsdata.nl/id/pinkpop/2023/performance/10>,
         <http://hackalod.artsdata.nl/id/pinkpop/2023/performance/11>,
@@ -2507,9 +2663,12 @@
 
 <http://hackalod.artsdata.nl/id/pinkpop/2024> a schema:Event,
         schema:Festival ;
+    schema:additionalType "pinkpop" ;
     schema:attendance "Aantal bezoekers: 82.553" ;
     schema:description "Een editie met grote uitersten" ;
+    schema:endDate "2024-06-23"^^xsd:date ;
     schema:name "Pinkpop 21-22-23 juni" ;
+    schema:startDate "2024-06-21"^^xsd:date ;
     schema:subEvent <http://hackalod.artsdata.nl/id/pinkpop/2024/performance/1>,
         <http://hackalod.artsdata.nl/id/pinkpop/2024/performance/10>,
         <http://hackalod.artsdata.nl/id/pinkpop/2024/performance/11>,
@@ -2582,9 +2741,12 @@
 
 <http://hackalod.artsdata.nl/id/pinkpop/2025> a schema:Event,
         schema:Festival ;
+    schema:additionalType "pinkpop" ;
     schema:attendance "None" ;
     schema:description "(tropisch) warm en zon" ;
+    schema:endDate "2025-06-22"^^xsd:date ;
     schema:name "Pinkpop 20-21-22 juni" ;
+    schema:startDate "2025-06-20"^^xsd:date ;
     schema:subEvent <http://hackalod.artsdata.nl/id/pinkpop/2025/performance/1>,
         <http://hackalod.artsdata.nl/id/pinkpop/2025/performance/10>,
         <http://hackalod.artsdata.nl/id/pinkpop/2025/performance/11>,

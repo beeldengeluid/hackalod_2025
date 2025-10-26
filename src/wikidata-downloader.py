@@ -1,6 +1,7 @@
 import logging
 import os
 from time import sleep
+import re
 import requests
 from requests import HTTPError
 from requests.adapters import HTTPAdapter, Retry
@@ -79,7 +80,7 @@ PREFIX wikibase: <http://wikiba.se/ontology#>
 PREFIX bd: <http://www.bigdata.com/rdf#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 CONSTRUCT {
-    ?s wdtn:P5882 ?mw_id .
+    ?s wdt:P5882 ?mw_id .
     ?s rdfs:label ?sLabel .
     ?s schema:description ?sDescription .
     ?s skos:altLabel ?sAltLabel .
@@ -97,8 +98,8 @@ CONSTRUCT {
     ?nationality rdfs:label ?nationalityLabel .
     ?s wdt:P18 ?imageUrl }
 WHERE {
-    VALUES ?mw_id { <%s> }
-    ?s wdtn:P5882 ?mw_id .
+    VALUES ?mw_id { "%s" }
+    ?s wdt:P5882 ?mw_id .
     OPTIONAL{?s wdt:P31 ?instance_of }
     OPTIONAL{?s wdt:P21 ?gender }
         OPTIONAL{ ?s wdt:P569 ?born
@@ -270,15 +271,19 @@ class WikidataDownloader:
 
             # 2) Get the data using the wikidata query service
             g = Graph()
-            # g.bind("schema", URIRef(NS_SCHEMA))
-            # g.bind("wdt", URIRef(NS_WDT))
-            # g.bind("skos", URIRef(NS_SKOS))
-            # g.bind("wdtn", URIRef(NS_WDTN))
-
+            g.bind("schema", NS_SCHEMA)
+            g.bind("wdt", NS_WDT)
             logger.info("Get the data using the wikidata query service...")
-            for mw_id in mw_ids:
-                logger.info(f"Querying wikidata for: {mw_id}")
-                g += get_wd_graph_for_mw_id(mw_id)
+            for mw_id_url in mw_ids:
+                result = re.search(
+                    r"^https://data.muziekweb.nl/Link/(?P<performer_id>.*)",
+                    mw_id_url,
+                    re.I,
+                )
+                if result:
+                    mw_id: str = result.group("performer_id")
+                    logger.info(f"Querying wikidata for: {mw_id}")
+                    g += get_wd_graph_for_mw_id(mw_id)
 
             # 3) serialize the joined Graph to Turtle file.
             logger.info("Serialize the data to Turtle file....")

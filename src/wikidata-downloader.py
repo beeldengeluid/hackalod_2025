@@ -90,11 +90,14 @@ CONSTRUCT {
     ?s wdt:P570 ?deathDate .
     ?s wdt:P19 ?placeOfBirth .
     ?placeOfBirth rdfs:label ?placeOfBirthLabel .
+    ?placeOfBirth wdt:P625 ?_coordinatesPoB .
     ?s wdt:P20 ?placeOfDeath .
     ?placeOfDeath rdfs:label ?placeOfDeathLabel .
+    ?placeOfDeath wdt:P625 ?_coordinatesPoD .
     ?s wdt:P27 ?nationality .
     ?nationality rdfs:label ?nationalityLabel .
-    ?s wdt:P18 ?imageUrl }
+    ?s wdt:P18 ?imageUrl 
+    }
 WHERE {
     VALUES ?mw_id { "%s" }
     ?s wdt:P5882 ?mw_id .
@@ -115,8 +118,10 @@ WHERE {
     OPTIONAL{?s wdt:P570 ?dateOfDeath BIND (
         xsd:date(?dateOfDeath) AS ?deathDate
         ) }
-    OPTIONAL{?s wdt:P19 ?placeOfBirth }
+    OPTIONAL{ ?s wdt:P19 ?placeOfBirth }
+    OPTIONAL{ ?s wdt:P19/wdt:P625 ?_coordinatesPoB }
     OPTIONAL{?s wdt:P20 ?placeOfDeath }
+    OPTIONAL{ ?s wdt:P18/wdt:P625 ?_coordinatesPoD }
     OPTIONAL{?s wdt:P27 ?nationality }
     OPTIONAL{?s wdt:P18 ?imageUrl }
     SERVICE wikibase:label {
@@ -298,7 +303,7 @@ class WikidataDownloader:
         """
         try:
             result: dict = execute_wd_select_query(
-                SELECT_QUERY_MUZIEKWEB_MATCHES + "LIMIT 10"
+                SELECT_QUERY_MUZIEKWEB_MATCHES  # + "LIMIT 10"
             )
             if result:
                 g = wd_mw_matches_to_graph(result)

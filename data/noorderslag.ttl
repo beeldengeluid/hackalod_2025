@@ -1,0 +1,2238 @@
+#Get graph for 1987
+@prefix schema: <https://schema.org/> .
+
+<https://www.festivalinfo.nl/festival/35464/Noorderslag/1987/> a schema:Festival ;
+    schema:endDate "1987-01-03"^^<http://schema.org/Date> ;
+    schema:location [ a schema:Place ;
+            schema:name "Groningen" ] ;
+    schema:name "Noorderslag (1987)" ;
+    schema:additionalType "noorderslag" ;
+    schema:startDate "1987-01-03"^^<http://schema.org/Date> ;
+    schema:subEvent <https://www.festivalinfo.nl/festival/35464/Noorderslag/1987/performance/106375%2FSix-Plys-Tzar%2F>,
+        <https://www.festivalinfo.nl/festival/35464/Noorderslag/1987/performance/12055%2FSlagerij-van-Kampen%2F>,
+        <https://www.festivalinfo.nl/festival/35464/Noorderslag/1987/performance/151431%2FI-Spy%2F>,
+        <https://www.festivalinfo.nl/festival/35464/Noorderslag/1987/performance/165822%2FWorld-War-Rockers%2F>,
+        <https://www.festivalinfo.nl/festival/35464/Noorderslag/1987/performance/165823%2FUmberto-Di-Bosso%2F>,
+        <https://www.festivalinfo.nl/festival/35464/Noorderslag/1987/performance/165824%2FThe-Thought%2F>,
+        <https://www.festivalinfo.nl/festival/35464/Noorderslag/1987/performance/165825%2FPin-Baskets%2F>,
+        <https://www.festivalinfo.nl/festival/35464/Noorderslag/1987/performance/165826%2FKobus-gaat-naar-Appelscha%2F>,
+        <https://www.festivalinfo.nl/festival/35464/Noorderslag/1987/performance/165827%2FKiem%2F>,
+        <https://www.festivalinfo.nl/festival/35464/Noorderslag/1987/performance/165828%2FThe-Golden-Strings%2F>,
+        <https://www.festivalinfo.nl/festival/35464/Noorderslag/1987/performance/165829%2FCrimes-of-Nature%2F>,
+        <https://www.festivalinfo.nl/festival/35464/Noorderslag/1987/performance/165830%2FChrist-in-Concrete%2F>,
+        <https://www.festivalinfo.nl/festival/35464/Noorderslag/1987/performance/22003%2FClaw-Boys-Claw%2F>,
+        <https://www.festivalinfo.nl/festival/35464/Noorderslag/1987/performance/22219%2FWeekend-at-Waikiki%2F>,
+        <https://www.festivalinfo.nl/festival/35464/Noorderslag/1987/performance/27191%2FFunky-Stuff%2F>,
+        <https://www.festivalinfo.nl/festival/35464/Noorderslag/1987/performance/5061%2FSpasmodique%2F>,
+        <https://www.festivalinfo.nl/festival/35464/Noorderslag/1987/performance/53847%2FThe-Miners-of-Muzo%2F>,
+        <https://www.festivalinfo.nl/festival/35464/Noorderslag/1987/performance/5791%2FCandy-Dulfer%2F>,
+        <https://www.festivalinfo.nl/festival/35464/Noorderslag/1987/performance/57984%2FAA-the-Doctors%2F>,
+        <https://www.festivalinfo.nl/festival/35464/Noorderslag/1987/performance/96069%2FBoegies%2F> ;
+    schema:url <https://www.festivalinfo.nl/festival/35464/Noorderslag/1987/> .
+
+<https://www.festivalinfo.nl/festival/35464/Noorderslag/1987/performance/106375%2FSix-Plys-Tzar%2F> a schema:PerformingArtsEvent ;
+    schema:name "Six Plys Tzar concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/106375/Six-Plys-Tzar/> .
+
+<https://www.festivalinfo.nl/festival/35464/Noorderslag/1987/performance/12055%2FSlagerij-van-Kampen%2F> a schema:PerformingArtsEvent ;
+    schema:name "Slagerij van Kampen concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/12055/Slagerij-van-Kampen/> .
+
+<https://www.festivalinfo.nl/festival/35464/Noorderslag/1987/performance/151431%2FI-Spy%2F> a schema:PerformingArtsEvent ;
+    schema:name "I Spy concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/151431/I-Spy/> .
+
+<https://www.festivalinfo.nl/festival/35464/Noorderslag/1987/performance/165822%2FWorld-War-Rockers%2F> a schema:PerformingArtsEvent ;
+    schema:name "World War Rockers concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/165822/World-War-Rockers/> .
+
+<https://www.festivalinfo.nl/festival/35464/Noorderslag/1987/performance/165823%2FUmberto-Di-Bosso%2F> a schema:PerformingArtsEvent ;
+    schema:name "Umberto Di Bosso concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/165823/Umberto-Di-Bosso/> .
+
+<https://www.festivalinfo.nl/festival/35464/Noorderslag/1987/performance/165824%2FThe-Thought%2F> a schema:PerformingArtsEvent ;
+    schema:name "The Thought concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/165824/The-Thought/> .
+
+<https://www.festivalinfo.nl/festival/35464/Noorderslag/1987/performance/165825%2FPin-Baskets%2F> a schema:PerformingArtsEvent ;
+    schema:name "Pin Baskets concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/165825/Pin-Baskets/> .
+
+<https://www.festivalinfo.nl/festival/35464/Noorderslag/1987/performance/165826%2FKobus-gaat-naar-Appelscha%2F> a schema:PerformingArtsEvent ;
+    schema:name "Kobus gaat naar Appelscha concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/165826/Kobus-gaat-naar-Appelscha/> .
+
+<https://www.festivalinfo.nl/festival/35464/Noorderslag/1987/performance/165827%2FKiem%2F> a schema:PerformingArtsEvent ;
+    schema:name "Kiem concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/165827/Kiem/> .
+
+<https://www.festivalinfo.nl/festival/35464/Noorderslag/1987/performance/165828%2FThe-Golden-Strings%2F> a schema:PerformingArtsEvent ;
+    schema:name "The Golden Strings concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/165828/The-Golden-Strings/> .
+
+<https://www.festivalinfo.nl/festival/35464/Noorderslag/1987/performance/165829%2FCrimes-of-Nature%2F> a schema:PerformingArtsEvent ;
+    schema:name "Crimes of Nature concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/165829/Crimes-of-Nature/> .
+
+<https://www.festivalinfo.nl/festival/35464/Noorderslag/1987/performance/165830%2FChrist-in-Concrete%2F> a schema:PerformingArtsEvent ;
+    schema:name "Christ in Concrete concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/165830/Christ-in-Concrete/> .
+
+<https://www.festivalinfo.nl/festival/35464/Noorderslag/1987/performance/22003%2FClaw-Boys-Claw%2F> a schema:PerformingArtsEvent ;
+    schema:name "Claw Boys Claw concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/22003/Claw-Boys-Claw/> .
+
+<https://www.festivalinfo.nl/festival/35464/Noorderslag/1987/performance/22219%2FWeekend-at-Waikiki%2F> a schema:PerformingArtsEvent ;
+    schema:name "Weekend at Waikiki concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/22219/Weekend-at-Waikiki/> .
+
+<https://www.festivalinfo.nl/festival/35464/Noorderslag/1987/performance/27191%2FFunky-Stuff%2F> a schema:PerformingArtsEvent ;
+    schema:name "Funky Stuff concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/27191/Funky-Stuff/> .
+
+<https://www.festivalinfo.nl/festival/35464/Noorderslag/1987/performance/5061%2FSpasmodique%2F> a schema:PerformingArtsEvent ;
+    schema:name "Spasmodique concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/5061/Spasmodique/> .
+
+<https://www.festivalinfo.nl/festival/35464/Noorderslag/1987/performance/53847%2FThe-Miners-of-Muzo%2F> a schema:PerformingArtsEvent ;
+    schema:name "The Miners of Muzo concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/53847/The-Miners-of-Muzo/> .
+
+<https://www.festivalinfo.nl/festival/35464/Noorderslag/1987/performance/5791%2FCandy-Dulfer%2F> a schema:PerformingArtsEvent ;
+    schema:name "Candy Dulfer concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/5791/Candy-Dulfer/> .
+
+<https://www.festivalinfo.nl/festival/35464/Noorderslag/1987/performance/57984%2FAA-the-Doctors%2F> a schema:PerformingArtsEvent ;
+    schema:name "AA & the Doctors concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/57984/AA-the-Doctors/> .
+
+<https://www.festivalinfo.nl/festival/35464/Noorderslag/1987/performance/96069%2FBoegies%2F> a schema:PerformingArtsEvent ;
+    schema:name "Boegies concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/96069/Boegies/> .
+
+<https://www.festivalinfo.nl/artist/106375/Six-Plys-Tzar/> a schema:MusicGroup ;
+    schema:name "Six Plys Tzar" .
+
+<https://www.festivalinfo.nl/artist/12055/Slagerij-van-Kampen/> a schema:MusicGroup ;
+    schema:name "Slagerij van Kampen" .
+
+<https://www.festivalinfo.nl/artist/151431/I-Spy/> a schema:MusicGroup ;
+    schema:name "I Spy" .
+
+<https://www.festivalinfo.nl/artist/165822/World-War-Rockers/> a schema:MusicGroup ;
+    schema:name "World War Rockers" .
+
+<https://www.festivalinfo.nl/artist/165823/Umberto-Di-Bosso/> a schema:MusicGroup ;
+    schema:name "Umberto Di Bosso" .
+
+<https://www.festivalinfo.nl/artist/165824/The-Thought/> a schema:MusicGroup ;
+    schema:name "The Thought" .
+
+<https://www.festivalinfo.nl/artist/165825/Pin-Baskets/> a schema:MusicGroup ;
+    schema:name "Pin Baskets" .
+
+<https://www.festivalinfo.nl/artist/165826/Kobus-gaat-naar-Appelscha/> a schema:MusicGroup ;
+    schema:name "Kobus gaat naar Appelscha" .
+
+<https://www.festivalinfo.nl/artist/165827/Kiem/> a schema:MusicGroup ;
+    schema:name "Kiem" .
+
+<https://www.festivalinfo.nl/artist/165828/The-Golden-Strings/> a schema:MusicGroup ;
+    schema:name "The Golden Strings" .
+
+<https://www.festivalinfo.nl/artist/165829/Crimes-of-Nature/> a schema:MusicGroup ;
+    schema:name "Crimes of Nature" .
+
+<https://www.festivalinfo.nl/artist/165830/Christ-in-Concrete/> a schema:MusicGroup ;
+    schema:name "Christ in Concrete" .
+
+<https://www.festivalinfo.nl/artist/22003/Claw-Boys-Claw/> a schema:MusicGroup ;
+    schema:name "Claw Boys Claw" .
+
+<https://www.festivalinfo.nl/artist/22219/Weekend-at-Waikiki/> a schema:MusicGroup ;
+    schema:name "Weekend at Waikiki" .
+
+<https://www.festivalinfo.nl/artist/27191/Funky-Stuff/> a schema:MusicGroup ;
+    schema:name "Funky Stuff" .
+
+<https://www.festivalinfo.nl/artist/5061/Spasmodique/> a schema:MusicGroup ;
+    schema:name "Spasmodique" .
+
+<https://www.festivalinfo.nl/artist/53847/The-Miners-of-Muzo/> a schema:MusicGroup ;
+    schema:name "The Miners of Muzo" .
+
+<https://www.festivalinfo.nl/artist/5791/Candy-Dulfer/> a schema:MusicGroup ;
+    schema:name "Candy Dulfer" .
+
+<https://www.festivalinfo.nl/artist/57984/AA-the-Doctors/> a schema:MusicGroup ;
+    schema:name "AA & the Doctors" .
+
+<https://www.festivalinfo.nl/artist/96069/Boegies/> a schema:MusicGroup ;
+    schema:name "Boegies" .
+
+
+#Get graph for 1988
+@prefix schema: <https://schema.org/> .
+
+<https://www.festivalinfo.nl/festival/35465/Noorderslag/1988/> a schema:Festival ;
+    schema:endDate "1988-01-09"^^<http://schema.org/Date> ;
+    schema:location [ a schema:Place ;
+            schema:name "Groningen" ] ;
+    schema:name "Noorderslag (1988)" ;
+    schema:additionalType "noorderslag" ;
+    schema:startDate "1988-01-09"^^<http://schema.org/Date> ;
+    schema:subEvent <https://www.festivalinfo.nl/festival/35465/Noorderslag/1988/performance/117051%2FThe-Riff%2F>,
+        <https://www.festivalinfo.nl/festival/35465/Noorderslag/1988/performance/1214%2FExtince%2F>,
+        <https://www.festivalinfo.nl/festival/35465/Noorderslag/1988/performance/165831%2FZiffels%2F>,
+        <https://www.festivalinfo.nl/festival/35465/Noorderslag/1988/performance/165832%2FThe-Charming-Crew%2F>,
+        <https://www.festivalinfo.nl/festival/35465/Noorderslag/1988/performance/165833%2FMam%2F>,
+        <https://www.festivalinfo.nl/festival/35465/Noorderslag/1988/performance/165834%2FLongstoryshort%2F>,
+        <https://www.festivalinfo.nl/festival/35465/Noorderslag/1988/performance/165835%2FIvy-Green%2F>,
+        <https://www.festivalinfo.nl/festival/35465/Noorderslag/1988/performance/165836%2FFreakeristic%2F>,
+        <https://www.festivalinfo.nl/festival/35465/Noorderslag/1988/performance/165837%2FBornfree-MC%2F>,
+        <https://www.festivalinfo.nl/festival/35465/Noorderslag/1988/performance/165838%2FBeatmasters%2F>,
+        <https://www.festivalinfo.nl/festival/35465/Noorderslag/1988/performance/313%2FUrban-Dance-Squad%2F>,
+        <https://www.festivalinfo.nl/festival/35465/Noorderslag/1988/performance/444%2FTrockener-Kecks%2F>,
+        <https://www.festivalinfo.nl/festival/35465/Noorderslag/1988/performance/67112%2FFunky-Fresh%2F>,
+        <https://www.festivalinfo.nl/festival/35465/Noorderslag/1988/performance/69%2FDe-Dijk%2F>,
+        <https://www.festivalinfo.nl/festival/35465/Noorderslag/1988/performance/73597%2FJeugdensemble-orkest-Ons-Genoegen%2F>,
+        <https://www.festivalinfo.nl/festival/35465/Noorderslag/1988/performance/761%2FNits%2F>,
+        <https://www.festivalinfo.nl/festival/35465/Noorderslag/1988/performance/851%2FVengeance%2F>,
+        <https://www.festivalinfo.nl/festival/35465/Noorderslag/1988/performance/88788%2FIt-Dockumer-Lokaeltsje%2F>,
+        <https://www.festivalinfo.nl/festival/35465/Noorderslag/1988/performance/96069%2FBoegies%2F> ;
+    schema:url <https://www.festivalinfo.nl/festival/35465/Noorderslag/1988/> .
+
+<https://www.festivalinfo.nl/festival/35465/Noorderslag/1988/performance/117051%2FThe-Riff%2F> a schema:PerformingArtsEvent ;
+    schema:name "The Riff concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/117051/The-Riff/> .
+
+<https://www.festivalinfo.nl/festival/35465/Noorderslag/1988/performance/1214%2FExtince%2F> a schema:PerformingArtsEvent ;
+    schema:name "Extince concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/1214/Extince/> .
+
+<https://www.festivalinfo.nl/festival/35465/Noorderslag/1988/performance/165831%2FZiffels%2F> a schema:PerformingArtsEvent ;
+    schema:name "Ziffels concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/165831/Ziffels/> .
+
+<https://www.festivalinfo.nl/festival/35465/Noorderslag/1988/performance/165832%2FThe-Charming-Crew%2F> a schema:PerformingArtsEvent ;
+    schema:name "The Charming Crew concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/165832/The-Charming-Crew/> .
+
+<https://www.festivalinfo.nl/festival/35465/Noorderslag/1988/performance/165833%2FMam%2F> a schema:PerformingArtsEvent ;
+    schema:name "Mam concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/165833/Mam/> .
+
+<https://www.festivalinfo.nl/festival/35465/Noorderslag/1988/performance/165834%2FLongstoryshort%2F> a schema:PerformingArtsEvent ;
+    schema:name "Longstoryshort concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/165834/Longstoryshort/> .
+
+<https://www.festivalinfo.nl/festival/35465/Noorderslag/1988/performance/165835%2FIvy-Green%2F> a schema:PerformingArtsEvent ;
+    schema:name "Ivy Green concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/165835/Ivy-Green/> .
+
+<https://www.festivalinfo.nl/festival/35465/Noorderslag/1988/performance/165836%2FFreakeristic%2F> a schema:PerformingArtsEvent ;
+    schema:name "Freakeristic concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/165836/Freakeristic/> .
+
+<https://www.festivalinfo.nl/festival/35465/Noorderslag/1988/performance/165837%2FBornfree-MC%2F> a schema:PerformingArtsEvent ;
+    schema:name "Bornfree MC concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/165837/Bornfree-MC/> .
+
+<https://www.festivalinfo.nl/festival/35465/Noorderslag/1988/performance/165838%2FBeatmasters%2F> a schema:PerformingArtsEvent ;
+    schema:name "Beatmasters concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/165838/Beatmasters/> .
+
+<https://www.festivalinfo.nl/festival/35465/Noorderslag/1988/performance/313%2FUrban-Dance-Squad%2F> a schema:PerformingArtsEvent ;
+    schema:name "Urban Dance Squad concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/313/Urban-Dance-Squad/> .
+
+<https://www.festivalinfo.nl/festival/35465/Noorderslag/1988/performance/444%2FTrockener-Kecks%2F> a schema:PerformingArtsEvent ;
+    schema:name "Tröckener Kecks concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/444/Trockener-Kecks/> .
+
+<https://www.festivalinfo.nl/festival/35465/Noorderslag/1988/performance/67112%2FFunky-Fresh%2F> a schema:PerformingArtsEvent ;
+    schema:name "Funky Fresh concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/67112/Funky-Fresh/> .
+
+<https://www.festivalinfo.nl/festival/35465/Noorderslag/1988/performance/69%2FDe-Dijk%2F> a schema:PerformingArtsEvent ;
+    schema:name "De Dijk concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/69/De-Dijk/> .
+
+<https://www.festivalinfo.nl/festival/35465/Noorderslag/1988/performance/73597%2FJeugdensemble-orkest-Ons-Genoegen%2F> a schema:PerformingArtsEvent ;
+    schema:name "Jeugdensemble & orkest Ons Genoegen concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/73597/Jeugdensemble-orkest-Ons-Genoegen/> .
+
+<https://www.festivalinfo.nl/festival/35465/Noorderslag/1988/performance/761%2FNits%2F> a schema:PerformingArtsEvent ;
+    schema:name "Nits concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/761/Nits/> .
+
+<https://www.festivalinfo.nl/festival/35465/Noorderslag/1988/performance/851%2FVengeance%2F> a schema:PerformingArtsEvent ;
+    schema:name "Vengeance concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/851/Vengeance/> .
+
+<https://www.festivalinfo.nl/festival/35465/Noorderslag/1988/performance/88788%2FIt-Dockumer-Lokaeltsje%2F> a schema:PerformingArtsEvent ;
+    schema:name "It Dockumer Lokaeltsje concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/88788/It-Dockumer-Lokaeltsje/> .
+
+<https://www.festivalinfo.nl/festival/35465/Noorderslag/1988/performance/96069%2FBoegies%2F> a schema:PerformingArtsEvent ;
+    schema:name "Boegies concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/96069/Boegies/> .
+
+<https://www.festivalinfo.nl/artist/117051/The-Riff/> a schema:MusicGroup ;
+    schema:name "The Riff" .
+
+<https://www.festivalinfo.nl/artist/1214/Extince/> a schema:MusicGroup ;
+    schema:name "Extince" .
+
+<https://www.festivalinfo.nl/artist/165831/Ziffels/> a schema:MusicGroup ;
+    schema:name "Ziffels" .
+
+<https://www.festivalinfo.nl/artist/165832/The-Charming-Crew/> a schema:MusicGroup ;
+    schema:name "The Charming Crew" .
+
+<https://www.festivalinfo.nl/artist/165833/Mam/> a schema:MusicGroup ;
+    schema:name "Mam" .
+
+<https://www.festivalinfo.nl/artist/165834/Longstoryshort/> a schema:MusicGroup ;
+    schema:name "Longstoryshort" .
+
+<https://www.festivalinfo.nl/artist/165835/Ivy-Green/> a schema:MusicGroup ;
+    schema:name "Ivy Green" .
+
+<https://www.festivalinfo.nl/artist/165836/Freakeristic/> a schema:MusicGroup ;
+    schema:name "Freakeristic" .
+
+<https://www.festivalinfo.nl/artist/165837/Bornfree-MC/> a schema:MusicGroup ;
+    schema:name "Bornfree MC" .
+
+<https://www.festivalinfo.nl/artist/165838/Beatmasters/> a schema:MusicGroup ;
+    schema:name "Beatmasters" .
+
+<https://www.festivalinfo.nl/artist/313/Urban-Dance-Squad/> a schema:MusicGroup ;
+    schema:name "Urban Dance Squad" .
+
+<https://www.festivalinfo.nl/artist/444/Trockener-Kecks/> a schema:MusicGroup ;
+    schema:name "Tröckener Kecks" .
+
+<https://www.festivalinfo.nl/artist/67112/Funky-Fresh/> a schema:MusicGroup ;
+    schema:name "Funky Fresh" .
+
+<https://www.festivalinfo.nl/artist/69/De-Dijk/> a schema:MusicGroup ;
+    schema:name "De Dijk" .
+
+<https://www.festivalinfo.nl/artist/73597/Jeugdensemble-orkest-Ons-Genoegen/> a schema:MusicGroup ;
+    schema:name "Jeugdensemble & orkest Ons Genoegen" .
+
+<https://www.festivalinfo.nl/artist/761/Nits/> a schema:MusicGroup ;
+    schema:name "Nits" .
+
+<https://www.festivalinfo.nl/artist/851/Vengeance/> a schema:MusicGroup ;
+    schema:name "Vengeance" .
+
+<https://www.festivalinfo.nl/artist/88788/It-Dockumer-Lokaeltsje/> a schema:MusicGroup ;
+    schema:name "It Dockumer Lokaeltsje" .
+
+<https://www.festivalinfo.nl/artist/96069/Boegies/> a schema:MusicGroup ;
+    schema:name "Boegies" .
+
+
+
+#Get graph for 1990
+@prefix schema: <https://schema.org/> .
+
+<https://www.festivalinfo.nl/festival/35466/Noorderslag/1990/> a schema:Festival ;
+    schema:endDate "1990-01-06"^^<http://schema.org/Date> ;
+    schema:location [ a schema:Place ;
+            schema:name "Groningen" ] ;
+    schema:name "Noorderslag (1990)" ;
+    schema:additionalType "noorderslag" ;
+    schema:startDate "1990-01-06"^^<http://schema.org/Date> ;
+    schema:subEvent <https://www.festivalinfo.nl/festival/35466/Noorderslag/1990/performance/102881%2FThe-Nozems-%2F>,
+        <https://www.festivalinfo.nl/festival/35466/Noorderslag/1990/performance/104150%2FSjako%21%2F>,
+        <https://www.festivalinfo.nl/festival/35466/Noorderslag/1990/performance/12488%2FBatmobile%2F>,
+        <https://www.festivalinfo.nl/festival/35466/Noorderslag/1990/performance/13421%2FLois-Lane%2F>,
+        <https://www.festivalinfo.nl/festival/35466/Noorderslag/1990/performance/165842%2FLul%2F>,
+        <https://www.festivalinfo.nl/festival/35466/Noorderslag/1990/performance/165843%2FJan-Paul-van-der-Meij%2F>,
+        <https://www.festivalinfo.nl/festival/35466/Noorderslag/1990/performance/165844%2FThe-Fishhospital%2F>,
+        <https://www.festivalinfo.nl/festival/35466/Noorderslag/1990/performance/165845%2FDope-Syndicate%2F>,
+        <https://www.festivalinfo.nl/festival/35466/Noorderslag/1990/performance/165846%2FDe-Artsen%2F>,
+        <https://www.festivalinfo.nl/festival/35466/Noorderslag/1990/performance/1787%2FPigmeat%2F>,
+        <https://www.festivalinfo.nl/festival/35466/Noorderslag/1990/performance/17935%2FMieke-Stemerdink%2F>,
+        <https://www.festivalinfo.nl/festival/35466/Noorderslag/1990/performance/18991%2FGe-Reinders%2F>,
+        <https://www.festivalinfo.nl/festival/35466/Noorderslag/1990/performance/2001%2FKaz-Lux%2F>,
+        <https://www.festivalinfo.nl/festival/35466/Noorderslag/1990/performance/22220%2FBad-to-the-Bone%2F>,
+        <https://www.festivalinfo.nl/festival/35466/Noorderslag/1990/performance/22230%2FThe-Serenes%2F>,
+        <https://www.festivalinfo.nl/festival/35466/Noorderslag/1990/performance/313%2FUrban-Dance-Squad%2F>,
+        <https://www.festivalinfo.nl/festival/35466/Noorderslag/1990/performance/43141%2FD-A-M-N-%2F>,
+        <https://www.festivalinfo.nl/festival/35466/Noorderslag/1990/performance/4722%2FThe-Watchman%2F>,
+        <https://www.festivalinfo.nl/festival/35466/Noorderslag/1990/performance/5674%2FThe-Ex%2F>,
+        <https://www.festivalinfo.nl/festival/35466/Noorderslag/1990/performance/96069%2FBoegies%2F> ;
+    schema:url <https://www.festivalinfo.nl/festival/35466/Noorderslag/1990/> .
+
+<https://www.festivalinfo.nl/festival/35466/Noorderslag/1990/performance/102881%2FThe-Nozems-%2F> a schema:PerformingArtsEvent ;
+    schema:name "The Nozems  concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/102881/The-Nozems-/> .
+
+<https://www.festivalinfo.nl/festival/35466/Noorderslag/1990/performance/104150%2FSjako%21%2F> a schema:PerformingArtsEvent ;
+    schema:name "Sjako! concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/104150/Sjako!/> .
+
+<https://www.festivalinfo.nl/festival/35466/Noorderslag/1990/performance/12488%2FBatmobile%2F> a schema:PerformingArtsEvent ;
+    schema:name "Batmobile concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/12488/Batmobile/> .
+
+<https://www.festivalinfo.nl/festival/35466/Noorderslag/1990/performance/13421%2FLois-Lane%2F> a schema:PerformingArtsEvent ;
+    schema:name "Loïs Lane concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/13421/Lois-Lane/> .
+
+<https://www.festivalinfo.nl/festival/35466/Noorderslag/1990/performance/165842%2FLul%2F> a schema:PerformingArtsEvent ;
+    schema:name "Lul concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/165842/Lul/> .
+
+<https://www.festivalinfo.nl/festival/35466/Noorderslag/1990/performance/165843%2FJan-Paul-van-der-Meij%2F> a schema:PerformingArtsEvent ;
+    schema:name "Jan-Paul van der Meij concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/165843/Jan-Paul-van-der-Meij/> .
+
+<https://www.festivalinfo.nl/festival/35466/Noorderslag/1990/performance/165844%2FThe-Fishhospital%2F> a schema:PerformingArtsEvent ;
+    schema:name "The Fishhospital concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/165844/The-Fishhospital/> .
+
+<https://www.festivalinfo.nl/festival/35466/Noorderslag/1990/performance/165845%2FDope-Syndicate%2F> a schema:PerformingArtsEvent ;
+    schema:name "Dope Syndicate concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/165845/Dope-Syndicate/> .
+
+<https://www.festivalinfo.nl/festival/35466/Noorderslag/1990/performance/165846%2FDe-Artsen%2F> a schema:PerformingArtsEvent ;
+    schema:name "De Artsen concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/165846/De-Artsen/> .
+
+<https://www.festivalinfo.nl/festival/35466/Noorderslag/1990/performance/1787%2FPigmeat%2F> a schema:PerformingArtsEvent ;
+    schema:name "Pigmeat concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/1787/Pigmeat/> .
+
+<https://www.festivalinfo.nl/festival/35466/Noorderslag/1990/performance/17935%2FMieke-Stemerdink%2F> a schema:PerformingArtsEvent ;
+    schema:name "Mieke Stemerdink concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/17935/Mieke-Stemerdink/> .
+
+<https://www.festivalinfo.nl/festival/35466/Noorderslag/1990/performance/18991%2FGe-Reinders%2F> a schema:PerformingArtsEvent ;
+    schema:name "Gé Reinders concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/18991/Ge-Reinders/> .
+
+<https://www.festivalinfo.nl/festival/35466/Noorderslag/1990/performance/2001%2FKaz-Lux%2F> a schema:PerformingArtsEvent ;
+    schema:name "Kaz Lux concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/2001/Kaz-Lux/> .
+
+<https://www.festivalinfo.nl/festival/35466/Noorderslag/1990/performance/22220%2FBad-to-the-Bone%2F> a schema:PerformingArtsEvent ;
+    schema:name "Bad to the Bone concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/22220/Bad-to-the-Bone/> .
+
+<https://www.festivalinfo.nl/festival/35466/Noorderslag/1990/performance/22230%2FThe-Serenes%2F> a schema:PerformingArtsEvent ;
+    schema:name "The Serenes concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/22230/The-Serenes/> .
+
+<https://www.festivalinfo.nl/festival/35466/Noorderslag/1990/performance/313%2FUrban-Dance-Squad%2F> a schema:PerformingArtsEvent ;
+    schema:name "Urban Dance Squad concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/313/Urban-Dance-Squad/> .
+
+<https://www.festivalinfo.nl/festival/35466/Noorderslag/1990/performance/43141%2FD-A-M-N-%2F> a schema:PerformingArtsEvent ;
+    schema:name "D.A.M.N. concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/43141/D-A-M-N-/> .
+
+<https://www.festivalinfo.nl/festival/35466/Noorderslag/1990/performance/4722%2FThe-Watchman%2F> a schema:PerformingArtsEvent ;
+    schema:name "The Watchman concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/4722/The-Watchman/> .
+
+<https://www.festivalinfo.nl/festival/35466/Noorderslag/1990/performance/5674%2FThe-Ex%2F> a schema:PerformingArtsEvent ;
+    schema:name "The Ex concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/5674/The-Ex/> .
+
+<https://www.festivalinfo.nl/festival/35466/Noorderslag/1990/performance/96069%2FBoegies%2F> a schema:PerformingArtsEvent ;
+    schema:name "Boegies concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/96069/Boegies/> .
+
+<https://www.festivalinfo.nl/artist/102881/The-Nozems-/> a schema:MusicGroup ;
+    schema:name "The Nozems " .
+
+<https://www.festivalinfo.nl/artist/104150/Sjako!/> a schema:MusicGroup ;
+    schema:name "Sjako!" .
+
+<https://www.festivalinfo.nl/artist/12488/Batmobile/> a schema:MusicGroup ;
+    schema:name "Batmobile" .
+
+<https://www.festivalinfo.nl/artist/13421/Lois-Lane/> a schema:MusicGroup ;
+    schema:name "Loïs Lane" .
+
+<https://www.festivalinfo.nl/artist/165842/Lul/> a schema:MusicGroup ;
+    schema:name "Lul" .
+
+<https://www.festivalinfo.nl/artist/165843/Jan-Paul-van-der-Meij/> a schema:MusicGroup ;
+    schema:name "Jan-Paul van der Meij" .
+
+<https://www.festivalinfo.nl/artist/165844/The-Fishhospital/> a schema:MusicGroup ;
+    schema:name "The Fishhospital" .
+
+<https://www.festivalinfo.nl/artist/165845/Dope-Syndicate/> a schema:MusicGroup ;
+    schema:name "Dope Syndicate" .
+
+<https://www.festivalinfo.nl/artist/165846/De-Artsen/> a schema:MusicGroup ;
+    schema:name "De Artsen" .
+
+<https://www.festivalinfo.nl/artist/1787/Pigmeat/> a schema:MusicGroup ;
+    schema:name "Pigmeat" .
+
+<https://www.festivalinfo.nl/artist/17935/Mieke-Stemerdink/> a schema:MusicGroup ;
+    schema:name "Mieke Stemerdink" .
+
+<https://www.festivalinfo.nl/artist/18991/Ge-Reinders/> a schema:MusicGroup ;
+    schema:name "Gé Reinders" .
+
+<https://www.festivalinfo.nl/artist/2001/Kaz-Lux/> a schema:MusicGroup ;
+    schema:name "Kaz Lux" .
+
+<https://www.festivalinfo.nl/artist/22220/Bad-to-the-Bone/> a schema:MusicGroup ;
+    schema:name "Bad to the Bone" .
+
+<https://www.festivalinfo.nl/artist/22230/The-Serenes/> a schema:MusicGroup ;
+    schema:name "The Serenes" .
+
+<https://www.festivalinfo.nl/artist/313/Urban-Dance-Squad/> a schema:MusicGroup ;
+    schema:name "Urban Dance Squad" .
+
+<https://www.festivalinfo.nl/artist/43141/D-A-M-N-/> a schema:MusicGroup ;
+    schema:name "D.A.M.N." .
+
+<https://www.festivalinfo.nl/artist/4722/The-Watchman/> a schema:MusicGroup ;
+    schema:name "The Watchman" .
+
+<https://www.festivalinfo.nl/artist/5674/The-Ex/> a schema:MusicGroup ;
+    schema:name "The Ex" .
+
+<https://www.festivalinfo.nl/artist/96069/Boegies/> a schema:MusicGroup ;
+    schema:name "Boegies" .
+
+
+#Get graph for 1991
+@prefix schema: <https://schema.org/> .
+
+<https://www.festivalinfo.nl/festival/35467/Noorderslag/1991/> a schema:Festival ;
+    schema:endDate "1991-01-05"^^<http://schema.org/Date> ;
+    schema:location [ a schema:Place ;
+            schema:name "Groningen" ] ;
+    schema:name "Noorderslag (1991)" ;
+    schema:additionalType "noorderslag" ;
+    schema:startDate "1991-01-05"^^<http://schema.org/Date> ;
+    schema:subEvent <https://www.festivalinfo.nl/festival/35467/Noorderslag/1991/performance/18550%2FFrederique-Spigt%2F>,
+        <https://www.festivalinfo.nl/festival/35467/Noorderslag/1991/performance/21253%2F2000-And-One%2F>,
+        <https://www.festivalinfo.nl/festival/35467/Noorderslag/1991/performance/21499%2FArthur-Ebeling%2F>,
+        <https://www.festivalinfo.nl/festival/35467/Noorderslag/1991/performance/21830%2FJack-Of-Hearts%2F>,
+        <https://www.festivalinfo.nl/festival/35467/Noorderslag/1991/performance/22003%2FClaw-Boys-Claw%2F>,
+        <https://www.festivalinfo.nl/festival/35467/Noorderslag/1991/performance/22230%2FThe-Serenes%2F>,
+        <https://www.festivalinfo.nl/festival/35467/Noorderslag/1991/performance/27249%2FMoonlizards%2F>,
+        <https://www.festivalinfo.nl/festival/35467/Noorderslag/1991/performance/27442%2FSpo-Dee-O-Dee%2F>,
+        <https://www.festivalinfo.nl/festival/35467/Noorderslag/1991/performance/29031%2FDe-Raggende-Manne%2F>,
+        <https://www.festivalinfo.nl/festival/35467/Noorderslag/1991/performance/29237%2FGung-Ho%2F>,
+        <https://www.festivalinfo.nl/festival/35467/Noorderslag/1991/performance/34755%2FJan-Rot%2F>,
+        <https://www.festivalinfo.nl/festival/35467/Noorderslag/1991/performance/36918%2FSpock%2F>,
+        <https://www.festivalinfo.nl/festival/35467/Noorderslag/1991/performance/444%2FTrockener-Kecks%2F>,
+        <https://www.festivalinfo.nl/festival/35467/Noorderslag/1991/performance/45001%2FFierce-Ruling-Diva%2F>,
+        <https://www.festivalinfo.nl/festival/35467/Noorderslag/1991/performance/47476%2FEast-Meets-West%2F>,
+        <https://www.festivalinfo.nl/festival/35467/Noorderslag/1991/performance/48028%2FSurkus%2F>,
+        <https://www.festivalinfo.nl/festival/35467/Noorderslag/1991/performance/7898%2FHallo-Venray%2F>,
+        <https://www.festivalinfo.nl/festival/35467/Noorderslag/1991/performance/79571%2FWeekend-Warriors%2F>,
+        <https://www.festivalinfo.nl/festival/35467/Noorderslag/1991/performance/81850%2FEton-Crop%2F>,
+        <https://www.festivalinfo.nl/festival/35467/Noorderslag/1991/performance/90661%2FJan-van-der-Meij%2F> ;
+    schema:url <https://www.festivalinfo.nl/festival/35467/Noorderslag/1991/> .
+
+<https://www.festivalinfo.nl/festival/35467/Noorderslag/1991/performance/18550%2FFrederique-Spigt%2F> a schema:PerformingArtsEvent ;
+    schema:name "Frédérique Spigt concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/18550/Frederique-Spigt/> .
+
+<https://www.festivalinfo.nl/festival/35467/Noorderslag/1991/performance/21253%2F2000-And-One%2F> a schema:PerformingArtsEvent ;
+    schema:name "2000 And One concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/21253/2000-And-One/> .
+
+<https://www.festivalinfo.nl/festival/35467/Noorderslag/1991/performance/21499%2FArthur-Ebeling%2F> a schema:PerformingArtsEvent ;
+    schema:name "Arthur Ebeling concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/21499/Arthur-Ebeling/> .
+
+<https://www.festivalinfo.nl/festival/35467/Noorderslag/1991/performance/21830%2FJack-Of-Hearts%2F> a schema:PerformingArtsEvent ;
+    schema:name "Jack Of Hearts concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/21830/Jack-Of-Hearts/> .
+
+<https://www.festivalinfo.nl/festival/35467/Noorderslag/1991/performance/22003%2FClaw-Boys-Claw%2F> a schema:PerformingArtsEvent ;
+    schema:name "Claw Boys Claw concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/22003/Claw-Boys-Claw/> .
+
+<https://www.festivalinfo.nl/festival/35467/Noorderslag/1991/performance/22230%2FThe-Serenes%2F> a schema:PerformingArtsEvent ;
+    schema:name "The Serenes concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/22230/The-Serenes/> .
+
+<https://www.festivalinfo.nl/festival/35467/Noorderslag/1991/performance/27249%2FMoonlizards%2F> a schema:PerformingArtsEvent ;
+    schema:name "Moonlizards concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/27249/Moonlizards/> .
+
+<https://www.festivalinfo.nl/festival/35467/Noorderslag/1991/performance/27442%2FSpo-Dee-O-Dee%2F> a schema:PerformingArtsEvent ;
+    schema:name "Spo-Dee-O-Dee concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/27442/Spo-Dee-O-Dee/> .
+
+<https://www.festivalinfo.nl/festival/35467/Noorderslag/1991/performance/29031%2FDe-Raggende-Manne%2F> a schema:PerformingArtsEvent ;
+    schema:name "De Raggende Manne concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/29031/De-Raggende-Manne/> .
+
+<https://www.festivalinfo.nl/festival/35467/Noorderslag/1991/performance/29237%2FGung-Ho%2F> a schema:PerformingArtsEvent ;
+    schema:name "Gung Ho concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/29237/Gung-Ho/> .
+
+<https://www.festivalinfo.nl/festival/35467/Noorderslag/1991/performance/34755%2FJan-Rot%2F> a schema:PerformingArtsEvent ;
+    schema:name "Jan Rot concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/34755/Jan-Rot/> .
+
+<https://www.festivalinfo.nl/festival/35467/Noorderslag/1991/performance/36918%2FSpock%2F> a schema:PerformingArtsEvent ;
+    schema:name "Spock concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/36918/Spock/> .
+
+<https://www.festivalinfo.nl/festival/35467/Noorderslag/1991/performance/444%2FTrockener-Kecks%2F> a schema:PerformingArtsEvent ;
+    schema:name "Tröckener Kecks concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/444/Trockener-Kecks/> .
+
+<https://www.festivalinfo.nl/festival/35467/Noorderslag/1991/performance/45001%2FFierce-Ruling-Diva%2F> a schema:PerformingArtsEvent ;
+    schema:name "Fierce Ruling Diva concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/45001/Fierce-Ruling-Diva/> .
+
+<https://www.festivalinfo.nl/festival/35467/Noorderslag/1991/performance/47476%2FEast-Meets-West%2F> a schema:PerformingArtsEvent ;
+    schema:name "East Meets West concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/47476/East-Meets-West/> .
+
+<https://www.festivalinfo.nl/festival/35467/Noorderslag/1991/performance/48028%2FSurkus%2F> a schema:PerformingArtsEvent ;
+    schema:name "Surkus concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/48028/Surkus/> .
+
+<https://www.festivalinfo.nl/festival/35467/Noorderslag/1991/performance/7898%2FHallo-Venray%2F> a schema:PerformingArtsEvent ;
+    schema:name "Hallo Venray concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/7898/Hallo-Venray/> .
+
+<https://www.festivalinfo.nl/festival/35467/Noorderslag/1991/performance/79571%2FWeekend-Warriors%2F> a schema:PerformingArtsEvent ;
+    schema:name "Weekend Warriors concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/79571/Weekend-Warriors/> .
+
+<https://www.festivalinfo.nl/festival/35467/Noorderslag/1991/performance/81850%2FEton-Crop%2F> a schema:PerformingArtsEvent ;
+    schema:name "Eton Crop concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/81850/Eton-Crop/> .
+
+<https://www.festivalinfo.nl/festival/35467/Noorderslag/1991/performance/90661%2FJan-van-der-Meij%2F> a schema:PerformingArtsEvent ;
+    schema:name "Jan van der Meij concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/90661/Jan-van-der-Meij/> .
+
+<https://www.festivalinfo.nl/artist/18550/Frederique-Spigt/> a schema:MusicGroup ;
+    schema:name "Frédérique Spigt" .
+
+<https://www.festivalinfo.nl/artist/21253/2000-And-One/> a schema:MusicGroup ;
+    schema:name "2000 And One" .
+
+<https://www.festivalinfo.nl/artist/21499/Arthur-Ebeling/> a schema:MusicGroup ;
+    schema:name "Arthur Ebeling" .
+
+<https://www.festivalinfo.nl/artist/21830/Jack-Of-Hearts/> a schema:MusicGroup ;
+    schema:name "Jack Of Hearts" .
+
+<https://www.festivalinfo.nl/artist/22003/Claw-Boys-Claw/> a schema:MusicGroup ;
+    schema:name "Claw Boys Claw" .
+
+<https://www.festivalinfo.nl/artist/22230/The-Serenes/> a schema:MusicGroup ;
+    schema:name "The Serenes" .
+
+<https://www.festivalinfo.nl/artist/27249/Moonlizards/> a schema:MusicGroup ;
+    schema:name "Moonlizards" .
+
+<https://www.festivalinfo.nl/artist/27442/Spo-Dee-O-Dee/> a schema:MusicGroup ;
+    schema:name "Spo-Dee-O-Dee" .
+
+<https://www.festivalinfo.nl/artist/29031/De-Raggende-Manne/> a schema:MusicGroup ;
+    schema:name "De Raggende Manne" .
+
+<https://www.festivalinfo.nl/artist/29237/Gung-Ho/> a schema:MusicGroup ;
+    schema:name "Gung Ho" .
+
+<https://www.festivalinfo.nl/artist/34755/Jan-Rot/> a schema:MusicGroup ;
+    schema:name "Jan Rot" .
+
+<https://www.festivalinfo.nl/artist/36918/Spock/> a schema:MusicGroup ;
+    schema:name "Spock" .
+
+<https://www.festivalinfo.nl/artist/444/Trockener-Kecks/> a schema:MusicGroup ;
+    schema:name "Tröckener Kecks" .
+
+<https://www.festivalinfo.nl/artist/45001/Fierce-Ruling-Diva/> a schema:MusicGroup ;
+    schema:name "Fierce Ruling Diva" .
+
+<https://www.festivalinfo.nl/artist/47476/East-Meets-West/> a schema:MusicGroup ;
+    schema:name "East Meets West" .
+
+<https://www.festivalinfo.nl/artist/48028/Surkus/> a schema:MusicGroup ;
+    schema:name "Surkus" .
+
+<https://www.festivalinfo.nl/artist/7898/Hallo-Venray/> a schema:MusicGroup ;
+    schema:name "Hallo Venray" .
+
+<https://www.festivalinfo.nl/artist/79571/Weekend-Warriors/> a schema:MusicGroup ;
+    schema:name "Weekend Warriors" .
+
+<https://www.festivalinfo.nl/artist/81850/Eton-Crop/> a schema:MusicGroup ;
+    schema:name "Eton Crop" .
+
+<https://www.festivalinfo.nl/artist/90661/Jan-van-der-Meij/> a schema:MusicGroup ;
+    schema:name "Jan van der Meij" .
+
+
+#Get graph for 1992
+@prefix schema: <https://schema.org/> .
+
+<https://www.festivalinfo.nl/festival/35468/Noorderslag/1992/> a schema:Festival ;
+    schema:endDate "1992-01-04"^^<http://schema.org/Date> ;
+    schema:location [ a schema:Place ;
+            schema:name "Groningen" ] ;
+    schema:name "Noorderslag (1992)" ;
+    schema:additionalType "noorderslag" ;
+    schema:startDate "1992-01-04"^^<http://schema.org/Date> ;
+    schema:subEvent <https://www.festivalinfo.nl/festival/35468/Noorderslag/1992/performance/102881%2FThe-Nozems-%2F>,
+        <https://www.festivalinfo.nl/festival/35468/Noorderslag/1992/performance/12131%2FQuazar%2F>,
+        <https://www.festivalinfo.nl/festival/35468/Noorderslag/1992/performance/1271%2FKlinkhamer%2F>,
+        <https://www.festivalinfo.nl/festival/35468/Noorderslag/1992/performance/1591%2FDaryll-Ann%2F>,
+        <https://www.festivalinfo.nl/festival/35468/Noorderslag/1992/performance/165861%2FSuper-The-Allstars%2F>,
+        <https://www.festivalinfo.nl/festival/35468/Noorderslag/1992/performance/165862%2FSufgerukte-Wallies%2F>,
+        <https://www.festivalinfo.nl/festival/35468/Noorderslag/1992/performance/165867%2FCharmin-Children%2F>,
+        <https://www.festivalinfo.nl/festival/35468/Noorderslag/1992/performance/165868%2FCaptain-Nemo%2F>,
+        <https://www.festivalinfo.nl/festival/35468/Noorderslag/1992/performance/165869%2FBuzz-Buzz-de-Strippenkaarten%2F>,
+        <https://www.festivalinfo.nl/festival/35468/Noorderslag/1992/performance/22143%2FBeatcream%2F>,
+        <https://www.festivalinfo.nl/festival/35468/Noorderslag/1992/performance/24925%2FAlabama-Kids%2F>,
+        <https://www.festivalinfo.nl/festival/35468/Noorderslag/1992/performance/27241%2FHollands-Verdriet%2F>,
+        <https://www.festivalinfo.nl/festival/35468/Noorderslag/1992/performance/27442%2FSpo-Dee-O-Dee%2F>,
+        <https://www.festivalinfo.nl/festival/35468/Noorderslag/1992/performance/36347%2FIndian-Summer%2F>,
+        <https://www.festivalinfo.nl/festival/35468/Noorderslag/1992/performance/452%2FThe-Scene%2F>,
+        <https://www.festivalinfo.nl/festival/35468/Noorderslag/1992/performance/4673%2FGotcha%21%2F>,
+        <https://www.festivalinfo.nl/festival/35468/Noorderslag/1992/performance/52%2FRowwen-Heze%2F>,
+        <https://www.festivalinfo.nl/festival/35468/Noorderslag/1992/performance/52424%2FJacques-Herb%2F>,
+        <https://www.festivalinfo.nl/festival/35468/Noorderslag/1992/performance/5674%2FThe-Ex%2F>,
+        <https://www.festivalinfo.nl/festival/35468/Noorderslag/1992/performance/5937%2FThe-Pilgrims%2F> ;
+    schema:url <https://www.festivalinfo.nl/festival/35468/Noorderslag/1992/> .
+
+<https://www.festivalinfo.nl/festival/35468/Noorderslag/1992/performance/102881%2FThe-Nozems-%2F> a schema:PerformingArtsEvent ;
+    schema:name "The Nozems  concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/102881/The-Nozems-/> .
+
+<https://www.festivalinfo.nl/festival/35468/Noorderslag/1992/performance/12131%2FQuazar%2F> a schema:PerformingArtsEvent ;
+    schema:name "Quazar concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/12131/Quazar/> .
+
+<https://www.festivalinfo.nl/festival/35468/Noorderslag/1992/performance/1271%2FKlinkhamer%2F> a schema:PerformingArtsEvent ;
+    schema:name "Klinkhamer concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/1271/Klinkhamer/> .
+
+<https://www.festivalinfo.nl/festival/35468/Noorderslag/1992/performance/1591%2FDaryll-Ann%2F> a schema:PerformingArtsEvent ;
+    schema:name "Daryll-Ann concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/1591/Daryll-Ann/> .
+
+<https://www.festivalinfo.nl/festival/35468/Noorderslag/1992/performance/165861%2FSuper-The-Allstars%2F> a schema:PerformingArtsEvent ;
+    schema:name "Super & The Allstars concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/165861/Super-The-Allstars/> .
+
+<https://www.festivalinfo.nl/festival/35468/Noorderslag/1992/performance/165862%2FSufgerukte-Wallies%2F> a schema:PerformingArtsEvent ;
+    schema:name "Sufgerukte Wallies concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/165862/Sufgerukte-Wallies/> .
+
+<https://www.festivalinfo.nl/festival/35468/Noorderslag/1992/performance/165867%2FCharmin-Children%2F> a schema:PerformingArtsEvent ;
+    schema:name "Charmin' Children concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/165867/Charmin-Children/> .
+
+<https://www.festivalinfo.nl/festival/35468/Noorderslag/1992/performance/165868%2FCaptain-Nemo%2F> a schema:PerformingArtsEvent ;
+    schema:name "Captain Nemo concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/165868/Captain-Nemo/> .
+
+<https://www.festivalinfo.nl/festival/35468/Noorderslag/1992/performance/165869%2FBuzz-Buzz-de-Strippenkaarten%2F> a schema:PerformingArtsEvent ;
+    schema:name "Buzz Buzz & de Strippenkaarten concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/165869/Buzz-Buzz-de-Strippenkaarten/> .
+
+<https://www.festivalinfo.nl/festival/35468/Noorderslag/1992/performance/22143%2FBeatcream%2F> a schema:PerformingArtsEvent ;
+    schema:name "Beatcream concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/22143/Beatcream/> .
+
+<https://www.festivalinfo.nl/festival/35468/Noorderslag/1992/performance/24925%2FAlabama-Kids%2F> a schema:PerformingArtsEvent ;
+    schema:name "Alabama Kids concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/24925/Alabama-Kids/> .
+
+<https://www.festivalinfo.nl/festival/35468/Noorderslag/1992/performance/27241%2FHollands-Verdriet%2F> a schema:PerformingArtsEvent ;
+    schema:name "Hollands Verdriet concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/27241/Hollands-Verdriet/> .
+
+<https://www.festivalinfo.nl/festival/35468/Noorderslag/1992/performance/27442%2FSpo-Dee-O-Dee%2F> a schema:PerformingArtsEvent ;
+    schema:name "Spo-Dee-O-Dee concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/27442/Spo-Dee-O-Dee/> .
+
+<https://www.festivalinfo.nl/festival/35468/Noorderslag/1992/performance/36347%2FIndian-Summer%2F> a schema:PerformingArtsEvent ;
+    schema:name "Indian Summer concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/36347/Indian-Summer/> .
+
+<https://www.festivalinfo.nl/festival/35468/Noorderslag/1992/performance/452%2FThe-Scene%2F> a schema:PerformingArtsEvent ;
+    schema:name "The Scene concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/452/The-Scene/> .
+
+<https://www.festivalinfo.nl/festival/35468/Noorderslag/1992/performance/4673%2FGotcha%21%2F> a schema:PerformingArtsEvent ;
+    schema:name "Gotcha! concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/4673/Gotcha!/> .
+
+<https://www.festivalinfo.nl/festival/35468/Noorderslag/1992/performance/52%2FRowwen-Heze%2F> a schema:PerformingArtsEvent ;
+    schema:name "Rowwen Heze concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/52/Rowwen-Heze/> .
+
+<https://www.festivalinfo.nl/festival/35468/Noorderslag/1992/performance/52424%2FJacques-Herb%2F> a schema:PerformingArtsEvent ;
+    schema:name "Jacques Herb concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/52424/Jacques-Herb/> .
+
+<https://www.festivalinfo.nl/festival/35468/Noorderslag/1992/performance/5674%2FThe-Ex%2F> a schema:PerformingArtsEvent ;
+    schema:name "The Ex concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/5674/The-Ex/> .
+
+<https://www.festivalinfo.nl/festival/35468/Noorderslag/1992/performance/5937%2FThe-Pilgrims%2F> a schema:PerformingArtsEvent ;
+    schema:name "The Pilgrims concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/5937/The-Pilgrims/> .
+
+<https://www.festivalinfo.nl/artist/102881/The-Nozems-/> a schema:MusicGroup ;
+    schema:name "The Nozems " .
+
+<https://www.festivalinfo.nl/artist/12131/Quazar/> a schema:MusicGroup ;
+    schema:name "Quazar" .
+
+<https://www.festivalinfo.nl/artist/1271/Klinkhamer/> a schema:MusicGroup ;
+    schema:name "Klinkhamer" .
+
+<https://www.festivalinfo.nl/artist/1591/Daryll-Ann/> a schema:MusicGroup ;
+    schema:name "Daryll-Ann" .
+
+<https://www.festivalinfo.nl/artist/165861/Super-The-Allstars/> a schema:MusicGroup ;
+    schema:name "Super & The Allstars" .
+
+<https://www.festivalinfo.nl/artist/165862/Sufgerukte-Wallies/> a schema:MusicGroup ;
+    schema:name "Sufgerukte Wallies" .
+
+<https://www.festivalinfo.nl/artist/165867/Charmin-Children/> a schema:MusicGroup ;
+    schema:name "Charmin' Children" .
+
+<https://www.festivalinfo.nl/artist/165868/Captain-Nemo/> a schema:MusicGroup ;
+    schema:name "Captain Nemo" .
+
+<https://www.festivalinfo.nl/artist/165869/Buzz-Buzz-de-Strippenkaarten/> a schema:MusicGroup ;
+    schema:name "Buzz Buzz & de Strippenkaarten" .
+
+<https://www.festivalinfo.nl/artist/22143/Beatcream/> a schema:MusicGroup ;
+    schema:name "Beatcream" .
+
+<https://www.festivalinfo.nl/artist/24925/Alabama-Kids/> a schema:MusicGroup ;
+    schema:name "Alabama Kids" .
+
+<https://www.festivalinfo.nl/artist/27241/Hollands-Verdriet/> a schema:MusicGroup ;
+    schema:name "Hollands Verdriet" .
+
+<https://www.festivalinfo.nl/artist/27442/Spo-Dee-O-Dee/> a schema:MusicGroup ;
+    schema:name "Spo-Dee-O-Dee" .
+
+<https://www.festivalinfo.nl/artist/36347/Indian-Summer/> a schema:MusicGroup ;
+    schema:name "Indian Summer" .
+
+<https://www.festivalinfo.nl/artist/452/The-Scene/> a schema:MusicGroup ;
+    schema:name "The Scene" .
+
+<https://www.festivalinfo.nl/artist/4673/Gotcha!/> a schema:MusicGroup ;
+    schema:name "Gotcha!" .
+
+<https://www.festivalinfo.nl/artist/52/Rowwen-Heze/> a schema:MusicGroup ;
+    schema:name "Rowwen Heze" .
+
+<https://www.festivalinfo.nl/artist/52424/Jacques-Herb/> a schema:MusicGroup ;
+    schema:name "Jacques Herb" .
+
+<https://www.festivalinfo.nl/artist/5674/The-Ex/> a schema:MusicGroup ;
+    schema:name "The Ex" .
+
+<https://www.festivalinfo.nl/artist/5937/The-Pilgrims/> a schema:MusicGroup ;
+    schema:name "The Pilgrims" .
+
+
+#Get graph for 1993
+@prefix schema: <https://schema.org/> .
+
+<https://www.festivalinfo.nl/festival/35469/Noorderslag/1993/> a schema:Festival ;
+    schema:endDate "1993-01-09"^^<http://schema.org/Date> ;
+    schema:location [ a schema:Place ;
+            schema:name "Groningen" ] ;
+    schema:name "Noorderslag (1993)" ;
+    schema:additionalType "noorderslag" ;
+    schema:startDate "1993-01-09"^^<http://schema.org/Date> ;
+    schema:subEvent <https://www.festivalinfo.nl/festival/35469/Noorderslag/1993/performance/113370%2FBlue-Guitars%2F>,
+        <https://www.festivalinfo.nl/festival/35469/Noorderslag/1993/performance/12%2FOsdorp-Posse%2F>,
+        <https://www.festivalinfo.nl/festival/35469/Noorderslag/1993/performance/13421%2FLois-Lane%2F>,
+        <https://www.festivalinfo.nl/festival/35469/Noorderslag/1993/performance/22003%2FClaw-Boys-Claw%2F>,
+        <https://www.festivalinfo.nl/festival/35469/Noorderslag/1993/performance/2212%2FJammah-Tammah%2F>,
+        <https://www.festivalinfo.nl/festival/35469/Noorderslag/1993/performance/22239%2FLes-Charmeurs%2F>,
+        <https://www.festivalinfo.nl/festival/35469/Noorderslag/1993/performance/321%2FThe-Gathering%2F>,
+        <https://www.festivalinfo.nl/festival/35469/Noorderslag/1993/performance/3916%2FGorefest%2F>,
+        <https://www.festivalinfo.nl/festival/35469/Noorderslag/1993/performance/3919%2FNerve%2F>,
+        <https://www.festivalinfo.nl/festival/35469/Noorderslag/1993/performance/44806%2FDCO%2F>,
+        <https://www.festivalinfo.nl/festival/35469/Noorderslag/1993/performance/452%2FThe-Scene%2F>,
+        <https://www.festivalinfo.nl/festival/35469/Noorderslag/1993/performance/4722%2FThe-Watchman%2F>,
+        <https://www.festivalinfo.nl/festival/35469/Noorderslag/1993/performance/47233%2FKay-LC%2F>,
+        <https://www.festivalinfo.nl/festival/35469/Noorderslag/1993/performance/48134%2FCity-Pig-Unit%2F>,
+        <https://www.festivalinfo.nl/festival/35469/Noorderslag/1993/performance/5104%2FBurma-Shave%2F>,
+        <https://www.festivalinfo.nl/festival/35469/Noorderslag/1993/performance/587%2FPater-Moeskroen%2F>,
+        <https://www.festivalinfo.nl/festival/35469/Noorderslag/1993/performance/70271%2FUlanbator%2F>,
+        <https://www.festivalinfo.nl/festival/35469/Noorderslag/1993/performance/717%2FBettie-Serveert%2F>,
+        <https://www.festivalinfo.nl/festival/35469/Noorderslag/1993/performance/77514%2FKong%2F>,
+        <https://www.festivalinfo.nl/festival/35469/Noorderslag/1993/performance/7898%2FHallo-Venray%2F> ;
+    schema:url <https://www.festivalinfo.nl/festival/35469/Noorderslag/1993/> .
+
+<https://www.festivalinfo.nl/festival/35469/Noorderslag/1993/performance/113370%2FBlue-Guitars%2F> a schema:PerformingArtsEvent ;
+    schema:name "Blue Guitars concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/113370/Blue-Guitars/> .
+
+<https://www.festivalinfo.nl/festival/35469/Noorderslag/1993/performance/12%2FOsdorp-Posse%2F> a schema:PerformingArtsEvent ;
+    schema:name "Osdorp Posse concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/12/Osdorp-Posse/> .
+
+<https://www.festivalinfo.nl/festival/35469/Noorderslag/1993/performance/13421%2FLois-Lane%2F> a schema:PerformingArtsEvent ;
+    schema:name "Loïs Lane concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/13421/Lois-Lane/> .
+
+<https://www.festivalinfo.nl/festival/35469/Noorderslag/1993/performance/22003%2FClaw-Boys-Claw%2F> a schema:PerformingArtsEvent ;
+    schema:name "Claw Boys Claw concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/22003/Claw-Boys-Claw/> .
+
+<https://www.festivalinfo.nl/festival/35469/Noorderslag/1993/performance/2212%2FJammah-Tammah%2F> a schema:PerformingArtsEvent ;
+    schema:name "Jammah Tammah concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/2212/Jammah-Tammah/> .
+
+<https://www.festivalinfo.nl/festival/35469/Noorderslag/1993/performance/22239%2FLes-Charmeurs%2F> a schema:PerformingArtsEvent ;
+    schema:name "Les Charmeurs concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/22239/Les-Charmeurs/> .
+
+<https://www.festivalinfo.nl/festival/35469/Noorderslag/1993/performance/321%2FThe-Gathering%2F> a schema:PerformingArtsEvent ;
+    schema:name "The Gathering concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/321/The-Gathering/> .
+
+<https://www.festivalinfo.nl/festival/35469/Noorderslag/1993/performance/3916%2FGorefest%2F> a schema:PerformingArtsEvent ;
+    schema:name "Gorefest concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/3916/Gorefest/> .
+
+<https://www.festivalinfo.nl/festival/35469/Noorderslag/1993/performance/3919%2FNerve%2F> a schema:PerformingArtsEvent ;
+    schema:name "Nerve concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/3919/Nerve/> .
+
+<https://www.festivalinfo.nl/festival/35469/Noorderslag/1993/performance/44806%2FDCO%2F> a schema:PerformingArtsEvent ;
+    schema:name "DCO concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/44806/DCO/> .
+
+<https://www.festivalinfo.nl/festival/35469/Noorderslag/1993/performance/452%2FThe-Scene%2F> a schema:PerformingArtsEvent ;
+    schema:name "The Scene concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/452/The-Scene/> .
+
+<https://www.festivalinfo.nl/festival/35469/Noorderslag/1993/performance/4722%2FThe-Watchman%2F> a schema:PerformingArtsEvent ;
+    schema:name "The Watchman concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/4722/The-Watchman/> .
+
+<https://www.festivalinfo.nl/festival/35469/Noorderslag/1993/performance/47233%2FKay-LC%2F> a schema:PerformingArtsEvent ;
+    schema:name "Kay LC concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/47233/Kay-LC/> .
+
+<https://www.festivalinfo.nl/festival/35469/Noorderslag/1993/performance/48134%2FCity-Pig-Unit%2F> a schema:PerformingArtsEvent ;
+    schema:name "City Pig Unit concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/48134/City-Pig-Unit/> .
+
+<https://www.festivalinfo.nl/festival/35469/Noorderslag/1993/performance/5104%2FBurma-Shave%2F> a schema:PerformingArtsEvent ;
+    schema:name "Burma Shave concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/5104/Burma-Shave/> .
+
+<https://www.festivalinfo.nl/festival/35469/Noorderslag/1993/performance/587%2FPater-Moeskroen%2F> a schema:PerformingArtsEvent ;
+    schema:name "Pater Moeskroen concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/587/Pater-Moeskroen/> .
+
+<https://www.festivalinfo.nl/festival/35469/Noorderslag/1993/performance/70271%2FUlanbator%2F> a schema:PerformingArtsEvent ;
+    schema:name "Ulanbator concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/70271/Ulanbator/> .
+
+<https://www.festivalinfo.nl/festival/35469/Noorderslag/1993/performance/717%2FBettie-Serveert%2F> a schema:PerformingArtsEvent ;
+    schema:name "Bettie Serveert concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/717/Bettie-Serveert/> .
+
+<https://www.festivalinfo.nl/festival/35469/Noorderslag/1993/performance/77514%2FKong%2F> a schema:PerformingArtsEvent ;
+    schema:name "Kong concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/77514/Kong/> .
+
+<https://www.festivalinfo.nl/festival/35469/Noorderslag/1993/performance/7898%2FHallo-Venray%2F> a schema:PerformingArtsEvent ;
+    schema:name "Hallo Venray concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/7898/Hallo-Venray/> .
+
+<https://www.festivalinfo.nl/artist/113370/Blue-Guitars/> a schema:MusicGroup ;
+    schema:name "Blue Guitars" .
+
+<https://www.festivalinfo.nl/artist/12/Osdorp-Posse/> a schema:MusicGroup ;
+    schema:name "Osdorp Posse" .
+
+<https://www.festivalinfo.nl/artist/13421/Lois-Lane/> a schema:MusicGroup ;
+    schema:name "Loïs Lane" .
+
+<https://www.festivalinfo.nl/artist/22003/Claw-Boys-Claw/> a schema:MusicGroup ;
+    schema:name "Claw Boys Claw" .
+
+<https://www.festivalinfo.nl/artist/2212/Jammah-Tammah/> a schema:MusicGroup ;
+    schema:name "Jammah Tammah" .
+
+<https://www.festivalinfo.nl/artist/22239/Les-Charmeurs/> a schema:MusicGroup ;
+    schema:name "Les Charmeurs" .
+
+<https://www.festivalinfo.nl/artist/321/The-Gathering/> a schema:MusicGroup ;
+    schema:name "The Gathering" .
+
+<https://www.festivalinfo.nl/artist/3916/Gorefest/> a schema:MusicGroup ;
+    schema:name "Gorefest" .
+
+<https://www.festivalinfo.nl/artist/3919/Nerve/> a schema:MusicGroup ;
+    schema:name "Nerve" .
+
+<https://www.festivalinfo.nl/artist/44806/DCO/> a schema:MusicGroup ;
+    schema:name "DCO" .
+
+<https://www.festivalinfo.nl/artist/452/The-Scene/> a schema:MusicGroup ;
+    schema:name "The Scene" .
+
+<https://www.festivalinfo.nl/artist/4722/The-Watchman/> a schema:MusicGroup ;
+    schema:name "The Watchman" .
+
+<https://www.festivalinfo.nl/artist/47233/Kay-LC/> a schema:MusicGroup ;
+    schema:name "Kay LC" .
+
+<https://www.festivalinfo.nl/artist/48134/City-Pig-Unit/> a schema:MusicGroup ;
+    schema:name "City Pig Unit" .
+
+<https://www.festivalinfo.nl/artist/5104/Burma-Shave/> a schema:MusicGroup ;
+    schema:name "Burma Shave" .
+
+<https://www.festivalinfo.nl/artist/587/Pater-Moeskroen/> a schema:MusicGroup ;
+    schema:name "Pater Moeskroen" .
+
+<https://www.festivalinfo.nl/artist/70271/Ulanbator/> a schema:MusicGroup ;
+    schema:name "Ulanbator" .
+
+<https://www.festivalinfo.nl/artist/717/Bettie-Serveert/> a schema:MusicGroup ;
+    schema:name "Bettie Serveert" .
+
+<https://www.festivalinfo.nl/artist/77514/Kong/> a schema:MusicGroup ;
+    schema:name "Kong" .
+
+<https://www.festivalinfo.nl/artist/7898/Hallo-Venray/> a schema:MusicGroup ;
+    schema:name "Hallo Venray" .
+
+
+#Get graph for 1994
+@prefix schema: <https://schema.org/> .
+
+<https://www.festivalinfo.nl/festival/35470/Noorderslag/1994/> a schema:Festival ;
+    schema:endDate "1994-01-08"^^<http://schema.org/Date> ;
+    schema:location [ a schema:Place ;
+            schema:name "Groningen" ] ;
+    schema:name "Noorderslag (1994)" ;
+    schema:additionalType "noorderslag" ;
+    schema:startDate "1994-01-08"^^<http://schema.org/Date> ;
+    schema:subEvent <https://www.festivalinfo.nl/festival/35470/Noorderslag/1994/performance/10079%2FChords%2F>,
+        <https://www.festivalinfo.nl/festival/35470/Noorderslag/1994/performance/104150%2FSjako%21%2F>,
+        <https://www.festivalinfo.nl/festival/35470/Noorderslag/1994/performance/10620%2FProdigal-Sons%2F>,
+        <https://www.festivalinfo.nl/festival/35470/Noorderslag/1994/performance/1244%2FDe-Kift%2F>,
+        <https://www.festivalinfo.nl/festival/35470/Noorderslag/1994/performance/1591%2FDaryll-Ann%2F>,
+        <https://www.festivalinfo.nl/festival/35470/Noorderslag/1994/performance/165875%2FThe-Kliek%2F>,
+        <https://www.festivalinfo.nl/festival/35470/Noorderslag/1994/performance/22144%2FHorn-Of-Plenty%2F>,
+        <https://www.festivalinfo.nl/festival/35470/Noorderslag/1994/performance/22230%2FThe-Serenes%2F>,
+        <https://www.festivalinfo.nl/festival/35470/Noorderslag/1994/performance/27183%2FChicas-del-Rock%2F>,
+        <https://www.festivalinfo.nl/festival/35470/Noorderslag/1994/performance/27249%2FMoonlizards%2F>,
+        <https://www.festivalinfo.nl/festival/35470/Noorderslag/1994/performance/3161%2FYgdrassil%2F>,
+        <https://www.festivalinfo.nl/festival/35470/Noorderslag/1994/performance/3428%2FBoh-Foi-Toch%2F>,
+        <https://www.festivalinfo.nl/festival/35470/Noorderslag/1994/performance/4173%2FKrontjong-Devils%2F>,
+        <https://www.festivalinfo.nl/festival/35470/Noorderslag/1994/performance/48050%2FTupelo-Honey%2F>,
+        <https://www.festivalinfo.nl/festival/35470/Noorderslag/1994/performance/48063%2FShine%2F>,
+        <https://www.festivalinfo.nl/festival/35470/Noorderslag/1994/performance/717%2FBettie-Serveert%2F>,
+        <https://www.festivalinfo.nl/festival/35470/Noorderslag/1994/performance/7898%2FHallo-Venray%2F>,
+        <https://www.festivalinfo.nl/festival/35470/Noorderslag/1994/performance/844%2FDead-Head%2F>,
+        <https://www.festivalinfo.nl/festival/35470/Noorderslag/1994/performance/9051%2FSfeQ%2F>,
+        <https://www.festivalinfo.nl/festival/35470/Noorderslag/1994/performance/9783%2FThe-Firebirds%2F> ;
+    schema:url <https://www.festivalinfo.nl/festival/35470/Noorderslag/1994/> .
+
+<https://www.festivalinfo.nl/festival/35470/Noorderslag/1994/performance/10079%2FChords%2F> a schema:PerformingArtsEvent ;
+    schema:name "Chords concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/10079/Chords/> .
+
+<https://www.festivalinfo.nl/festival/35470/Noorderslag/1994/performance/104150%2FSjako%21%2F> a schema:PerformingArtsEvent ;
+    schema:name "Sjako! concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/104150/Sjako!/> .
+
+<https://www.festivalinfo.nl/festival/35470/Noorderslag/1994/performance/10620%2FProdigal-Sons%2F> a schema:PerformingArtsEvent ;
+    schema:name "Prodigal Sons concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/10620/Prodigal-Sons/> .
+
+<https://www.festivalinfo.nl/festival/35470/Noorderslag/1994/performance/1244%2FDe-Kift%2F> a schema:PerformingArtsEvent ;
+    schema:name "De Kift concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/1244/De-Kift/> .
+
+<https://www.festivalinfo.nl/festival/35470/Noorderslag/1994/performance/1591%2FDaryll-Ann%2F> a schema:PerformingArtsEvent ;
+    schema:name "Daryll-Ann concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/1591/Daryll-Ann/> .
+
+<https://www.festivalinfo.nl/festival/35470/Noorderslag/1994/performance/165875%2FThe-Kliek%2F> a schema:PerformingArtsEvent ;
+    schema:name "The Kliek concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/165875/The-Kliek/> .
+
+<https://www.festivalinfo.nl/festival/35470/Noorderslag/1994/performance/22144%2FHorn-Of-Plenty%2F> a schema:PerformingArtsEvent ;
+    schema:name "Horn Of Plenty concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/22144/Horn-Of-Plenty/> .
+
+<https://www.festivalinfo.nl/festival/35470/Noorderslag/1994/performance/22230%2FThe-Serenes%2F> a schema:PerformingArtsEvent ;
+    schema:name "The Serenes concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/22230/The-Serenes/> .
+
+<https://www.festivalinfo.nl/festival/35470/Noorderslag/1994/performance/27183%2FChicas-del-Rock%2F> a schema:PerformingArtsEvent ;
+    schema:name "Chicas del Rock concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/27183/Chicas-del-Rock/> .
+
+<https://www.festivalinfo.nl/festival/35470/Noorderslag/1994/performance/27249%2FMoonlizards%2F> a schema:PerformingArtsEvent ;
+    schema:name "Moonlizards concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/27249/Moonlizards/> .
+
+<https://www.festivalinfo.nl/festival/35470/Noorderslag/1994/performance/3161%2FYgdrassil%2F> a schema:PerformingArtsEvent ;
+    schema:name "Ygdrassil concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/3161/Ygdrassil/> .
+
+<https://www.festivalinfo.nl/festival/35470/Noorderslag/1994/performance/3428%2FBoh-Foi-Toch%2F> a schema:PerformingArtsEvent ;
+    schema:name "Boh Foi Toch concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/3428/Boh-Foi-Toch/> .
+
+<https://www.festivalinfo.nl/festival/35470/Noorderslag/1994/performance/4173%2FKrontjong-Devils%2F> a schema:PerformingArtsEvent ;
+    schema:name "Krontjong Devils concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/4173/Krontjong-Devils/> .
+
+<https://www.festivalinfo.nl/festival/35470/Noorderslag/1994/performance/48050%2FTupelo-Honey%2F> a schema:PerformingArtsEvent ;
+    schema:name "Tupelo Honey concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/48050/Tupelo-Honey/> .
+
+<https://www.festivalinfo.nl/festival/35470/Noorderslag/1994/performance/48063%2FShine%2F> a schema:PerformingArtsEvent ;
+    schema:name "Shine concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/48063/Shine/> .
+
+<https://www.festivalinfo.nl/festival/35470/Noorderslag/1994/performance/717%2FBettie-Serveert%2F> a schema:PerformingArtsEvent ;
+    schema:name "Bettie Serveert concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/717/Bettie-Serveert/> .
+
+<https://www.festivalinfo.nl/festival/35470/Noorderslag/1994/performance/7898%2FHallo-Venray%2F> a schema:PerformingArtsEvent ;
+    schema:name "Hallo Venray concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/7898/Hallo-Venray/> .
+
+<https://www.festivalinfo.nl/festival/35470/Noorderslag/1994/performance/844%2FDead-Head%2F> a schema:PerformingArtsEvent ;
+    schema:name "Dead Head concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/844/Dead-Head/> .
+
+<https://www.festivalinfo.nl/festival/35470/Noorderslag/1994/performance/9051%2FSfeQ%2F> a schema:PerformingArtsEvent ;
+    schema:name "SfeQ concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/9051/SfeQ/> .
+
+<https://www.festivalinfo.nl/festival/35470/Noorderslag/1994/performance/9783%2FThe-Firebirds%2F> a schema:PerformingArtsEvent ;
+    schema:name "The Firebirds concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/9783/The-Firebirds/> .
+
+<https://www.festivalinfo.nl/artist/10079/Chords/> a schema:MusicGroup ;
+    schema:name "Chords" .
+
+<https://www.festivalinfo.nl/artist/104150/Sjako!/> a schema:MusicGroup ;
+    schema:name "Sjako!" .
+
+<https://www.festivalinfo.nl/artist/10620/Prodigal-Sons/> a schema:MusicGroup ;
+    schema:name "Prodigal Sons" .
+
+<https://www.festivalinfo.nl/artist/1244/De-Kift/> a schema:MusicGroup ;
+    schema:name "De Kift" .
+
+<https://www.festivalinfo.nl/artist/1591/Daryll-Ann/> a schema:MusicGroup ;
+    schema:name "Daryll-Ann" .
+
+<https://www.festivalinfo.nl/artist/165875/The-Kliek/> a schema:MusicGroup ;
+    schema:name "The Kliek" .
+
+<https://www.festivalinfo.nl/artist/22144/Horn-Of-Plenty/> a schema:MusicGroup ;
+    schema:name "Horn Of Plenty" .
+
+<https://www.festivalinfo.nl/artist/22230/The-Serenes/> a schema:MusicGroup ;
+    schema:name "The Serenes" .
+
+<https://www.festivalinfo.nl/artist/27183/Chicas-del-Rock/> a schema:MusicGroup ;
+    schema:name "Chicas del Rock" .
+
+<https://www.festivalinfo.nl/artist/27249/Moonlizards/> a schema:MusicGroup ;
+    schema:name "Moonlizards" .
+
+<https://www.festivalinfo.nl/artist/3161/Ygdrassil/> a schema:MusicGroup ;
+    schema:name "Ygdrassil" .
+
+<https://www.festivalinfo.nl/artist/3428/Boh-Foi-Toch/> a schema:MusicGroup ;
+    schema:name "Boh Foi Toch" .
+
+<https://www.festivalinfo.nl/artist/4173/Krontjong-Devils/> a schema:MusicGroup ;
+    schema:name "Krontjong Devils" .
+
+<https://www.festivalinfo.nl/artist/48050/Tupelo-Honey/> a schema:MusicGroup ;
+    schema:name "Tupelo Honey" .
+
+<https://www.festivalinfo.nl/artist/48063/Shine/> a schema:MusicGroup ;
+    schema:name "Shine" .
+
+<https://www.festivalinfo.nl/artist/717/Bettie-Serveert/> a schema:MusicGroup ;
+    schema:name "Bettie Serveert" .
+
+<https://www.festivalinfo.nl/artist/7898/Hallo-Venray/> a schema:MusicGroup ;
+    schema:name "Hallo Venray" .
+
+<https://www.festivalinfo.nl/artist/844/Dead-Head/> a schema:MusicGroup ;
+    schema:name "Dead Head" .
+
+<https://www.festivalinfo.nl/artist/9051/SfeQ/> a schema:MusicGroup ;
+    schema:name "SfeQ" .
+
+<https://www.festivalinfo.nl/artist/9783/The-Firebirds/> a schema:MusicGroup ;
+    schema:name "The Firebirds" .
+
+
+#Get graph for 1995
+@prefix schema: <https://schema.org/> .
+
+<https://www.festivalinfo.nl/festival/35471/Noorderslag/1995/> a schema:Festival ;
+    schema:endDate "1995-01-07"^^<http://schema.org/Date> ;
+    schema:location [ a schema:Place ;
+            schema:name "Groningen" ] ;
+    schema:name "Noorderslag (1995)" ;
+    schema:additionalType "noorderslag" ;
+    schema:startDate "1995-01-07"^^<http://schema.org/Date> ;
+    schema:subEvent <https://www.festivalinfo.nl/festival/35471/Noorderslag/1995/performance/1552%2FSpeedy-J%2F>,
+        <https://www.festivalinfo.nl/festival/35471/Noorderslag/1995/performance/165889%2F2-Chord-Genius%2F>,
+        <https://www.festivalinfo.nl/festival/35471/Noorderslag/1995/performance/1787%2FPigmeat%2F>,
+        <https://www.festivalinfo.nl/festival/35471/Noorderslag/1995/performance/17917%2FJabberwockey%2F>,
+        <https://www.festivalinfo.nl/festival/35471/Noorderslag/1995/performance/20853%2FSaskia-Laroo%2F>,
+        <https://www.festivalinfo.nl/festival/35471/Noorderslag/1995/performance/22003%2FClaw-Boys-Claw%2F>,
+        <https://www.festivalinfo.nl/festival/35471/Noorderslag/1995/performance/22035%2FTreble-Spankers%2F>,
+        <https://www.festivalinfo.nl/festival/35471/Noorderslag/1995/performance/27252%2FJulia-P-Hersheimer%2F>,
+        <https://www.festivalinfo.nl/festival/35471/Noorderslag/1995/performance/30430%2FPlunk%2F>,
+        <https://www.festivalinfo.nl/festival/35471/Noorderslag/1995/performance/3916%2FGorefest%2F>,
+        <https://www.festivalinfo.nl/festival/35471/Noorderslag/1995/performance/3954%2F35007%2F>,
+        <https://www.festivalinfo.nl/festival/35471/Noorderslag/1995/performance/3987%2FCooper-NL-%2F>,
+        <https://www.festivalinfo.nl/festival/35471/Noorderslag/1995/performance/40489%2F2-Unlimited%2F>,
+        <https://www.festivalinfo.nl/festival/35471/Noorderslag/1995/performance/4481%2FSeein-Red%2F>,
+        <https://www.festivalinfo.nl/festival/35471/Noorderslag/1995/performance/47337%2FThe-Harries%2F>,
+        <https://www.festivalinfo.nl/festival/35471/Noorderslag/1995/performance/48067%2FHuman-Beings%2F>,
+        <https://www.festivalinfo.nl/festival/35471/Noorderslag/1995/performance/53342%2FMr-Review%2F>,
+        <https://www.festivalinfo.nl/festival/35471/Noorderslag/1995/performance/61%2FVan-Dik-Hout%2F>,
+        <https://www.festivalinfo.nl/festival/35471/Noorderslag/1995/performance/65849%2FHannibal%2F>,
+        <https://www.festivalinfo.nl/festival/35471/Noorderslag/1995/performance/7203%2FNRA%2F> ;
+    schema:url <https://www.festivalinfo.nl/festival/35471/Noorderslag/1995/> .
+
+<https://www.festivalinfo.nl/festival/35471/Noorderslag/1995/performance/1552%2FSpeedy-J%2F> a schema:PerformingArtsEvent ;
+    schema:name "Speedy J concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/1552/Speedy-J/> .
+
+<https://www.festivalinfo.nl/festival/35471/Noorderslag/1995/performance/165889%2F2-Chord-Genius%2F> a schema:PerformingArtsEvent ;
+    schema:name "2 Chord Genius concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/165889/2-Chord-Genius/> .
+
+<https://www.festivalinfo.nl/festival/35471/Noorderslag/1995/performance/1787%2FPigmeat%2F> a schema:PerformingArtsEvent ;
+    schema:name "Pigmeat concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/1787/Pigmeat/> .
+
+<https://www.festivalinfo.nl/festival/35471/Noorderslag/1995/performance/17917%2FJabberwockey%2F> a schema:PerformingArtsEvent ;
+    schema:name "Jabberwockey concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/17917/Jabberwockey/> .
+
+<https://www.festivalinfo.nl/festival/35471/Noorderslag/1995/performance/20853%2FSaskia-Laroo%2F> a schema:PerformingArtsEvent ;
+    schema:name "Saskia Laroo concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/20853/Saskia-Laroo/> .
+
+<https://www.festivalinfo.nl/festival/35471/Noorderslag/1995/performance/22003%2FClaw-Boys-Claw%2F> a schema:PerformingArtsEvent ;
+    schema:name "Claw Boys Claw concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/22003/Claw-Boys-Claw/> .
+
+<https://www.festivalinfo.nl/festival/35471/Noorderslag/1995/performance/22035%2FTreble-Spankers%2F> a schema:PerformingArtsEvent ;
+    schema:name "Treble Spankers concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/22035/Treble-Spankers/> .
+
+<https://www.festivalinfo.nl/festival/35471/Noorderslag/1995/performance/27252%2FJulia-P-Hersheimer%2F> a schema:PerformingArtsEvent ;
+    schema:name "Julia P. Hersheimer concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/27252/Julia-P-Hersheimer/> .
+
+<https://www.festivalinfo.nl/festival/35471/Noorderslag/1995/performance/30430%2FPlunk%2F> a schema:PerformingArtsEvent ;
+    schema:name "Plunk concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/30430/Plunk/> .
+
+<https://www.festivalinfo.nl/festival/35471/Noorderslag/1995/performance/3916%2FGorefest%2F> a schema:PerformingArtsEvent ;
+    schema:name "Gorefest concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/3916/Gorefest/> .
+
+<https://www.festivalinfo.nl/festival/35471/Noorderslag/1995/performance/3954%2F35007%2F> a schema:PerformingArtsEvent ;
+    schema:name "35007 concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/3954/35007/> .
+
+<https://www.festivalinfo.nl/festival/35471/Noorderslag/1995/performance/3987%2FCooper-NL-%2F> a schema:PerformingArtsEvent ;
+    schema:name "Cooper (NL) concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/3987/Cooper-NL-/> .
+
+<https://www.festivalinfo.nl/festival/35471/Noorderslag/1995/performance/40489%2F2-Unlimited%2F> a schema:PerformingArtsEvent ;
+    schema:name "2 Unlimited concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/40489/2-Unlimited/> .
+
+<https://www.festivalinfo.nl/festival/35471/Noorderslag/1995/performance/4481%2FSeein-Red%2F> a schema:PerformingArtsEvent ;
+    schema:name "Seein' Red concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/4481/Seein-Red/> .
+
+<https://www.festivalinfo.nl/festival/35471/Noorderslag/1995/performance/47337%2FThe-Harries%2F> a schema:PerformingArtsEvent ;
+    schema:name "The Harries concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/47337/The-Harries/> .
+
+<https://www.festivalinfo.nl/festival/35471/Noorderslag/1995/performance/48067%2FHuman-Beings%2F> a schema:PerformingArtsEvent ;
+    schema:name "Human Beings concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/48067/Human-Beings/> .
+
+<https://www.festivalinfo.nl/festival/35471/Noorderslag/1995/performance/53342%2FMr-Review%2F> a schema:PerformingArtsEvent ;
+    schema:name "Mr. Review concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/53342/Mr-Review/> .
+
+<https://www.festivalinfo.nl/festival/35471/Noorderslag/1995/performance/61%2FVan-Dik-Hout%2F> a schema:PerformingArtsEvent ;
+    schema:name "Van Dik Hout concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/61/Van-Dik-Hout/> .
+
+<https://www.festivalinfo.nl/festival/35471/Noorderslag/1995/performance/65849%2FHannibal%2F> a schema:PerformingArtsEvent ;
+    schema:name "Hannibal concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/65849/Hannibal/> .
+
+<https://www.festivalinfo.nl/festival/35471/Noorderslag/1995/performance/7203%2FNRA%2F> a schema:PerformingArtsEvent ;
+    schema:name "NRA concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/7203/NRA/> .
+
+<https://www.festivalinfo.nl/artist/1552/Speedy-J/> a schema:MusicGroup ;
+    schema:name "Speedy J" .
+
+<https://www.festivalinfo.nl/artist/165889/2-Chord-Genius/> a schema:MusicGroup ;
+    schema:name "2 Chord Genius" .
+
+<https://www.festivalinfo.nl/artist/1787/Pigmeat/> a schema:MusicGroup ;
+    schema:name "Pigmeat" .
+
+<https://www.festivalinfo.nl/artist/17917/Jabberwockey/> a schema:MusicGroup ;
+    schema:name "Jabberwockey" .
+
+<https://www.festivalinfo.nl/artist/20853/Saskia-Laroo/> a schema:MusicGroup ;
+    schema:name "Saskia Laroo" .
+
+<https://www.festivalinfo.nl/artist/22003/Claw-Boys-Claw/> a schema:MusicGroup ;
+    schema:name "Claw Boys Claw" .
+
+<https://www.festivalinfo.nl/artist/22035/Treble-Spankers/> a schema:MusicGroup ;
+    schema:name "Treble Spankers" .
+
+<https://www.festivalinfo.nl/artist/27252/Julia-P-Hersheimer/> a schema:MusicGroup ;
+    schema:name "Julia P. Hersheimer" .
+
+<https://www.festivalinfo.nl/artist/30430/Plunk/> a schema:MusicGroup ;
+    schema:name "Plunk" .
+
+<https://www.festivalinfo.nl/artist/3916/Gorefest/> a schema:MusicGroup ;
+    schema:name "Gorefest" .
+
+<https://www.festivalinfo.nl/artist/3954/35007/> a schema:MusicGroup ;
+    schema:name "35007" .
+
+<https://www.festivalinfo.nl/artist/3987/Cooper-NL-/> a schema:MusicGroup ;
+    schema:name "Cooper (NL)" .
+
+<https://www.festivalinfo.nl/artist/40489/2-Unlimited/> a schema:MusicGroup ;
+    schema:name "2 Unlimited" .
+
+<https://www.festivalinfo.nl/artist/4481/Seein-Red/> a schema:MusicGroup ;
+    schema:name "Seein' Red" .
+
+<https://www.festivalinfo.nl/artist/47337/The-Harries/> a schema:MusicGroup ;
+    schema:name "The Harries" .
+
+<https://www.festivalinfo.nl/artist/48067/Human-Beings/> a schema:MusicGroup ;
+    schema:name "Human Beings" .
+
+<https://www.festivalinfo.nl/artist/53342/Mr-Review/> a schema:MusicGroup ;
+    schema:name "Mr. Review" .
+
+<https://www.festivalinfo.nl/artist/61/Van-Dik-Hout/> a schema:MusicGroup ;
+    schema:name "Van Dik Hout" .
+
+<https://www.festivalinfo.nl/artist/65849/Hannibal/> a schema:MusicGroup ;
+    schema:name "Hannibal" .
+
+<https://www.festivalinfo.nl/artist/7203/NRA/> a schema:MusicGroup ;
+    schema:name "NRA" .
+
+#Get graph for 2002
+@prefix schema: <https://schema.org/> .
+
+<https://www.festivalinfo.nl/festival/287/Noorderslag/2002/> a schema:Festival ;
+    schema:endDate "2002-01-12"^^<http://schema.org/Date> ;
+    schema:location [ a schema:Place ;
+            schema:name "Groningen" ] ;
+    schema:name "Noorderslag (2002)" ;
+    schema:additionalType "noorderslag" ;
+    schema:startDate "2002-01-12"^^<http://schema.org/Date> ;
+    schema:subEvent <https://www.festivalinfo.nl/festival/287/Noorderslag/2002/performance/10%2FPeter-Pan-Speedrock%2F>,
+        <https://www.festivalinfo.nl/festival/287/Noorderslag/2002/performance/1008%2FWealthy-Beggar%2F>,
+        <https://www.festivalinfo.nl/festival/287/Noorderslag/2002/performance/1237%2FBlof%2F>,
+        <https://www.festivalinfo.nl/festival/287/Noorderslag/2002/performance/1244%2FDe-Kift%2F>,
+        <https://www.festivalinfo.nl/festival/287/Noorderslag/2002/performance/1246%2FE-Life%2F>,
+        <https://www.festivalinfo.nl/festival/287/Noorderslag/2002/performance/1252%2FKirsten%2F>,
+        <https://www.festivalinfo.nl/festival/287/Noorderslag/2002/performance/1257%2FRelax%2F>,
+        <https://www.festivalinfo.nl/festival/287/Noorderslag/2002/performance/1260%2FSoulvation%2F>,
+        <https://www.festivalinfo.nl/festival/287/Noorderslag/2002/performance/1261%2FTashas-World%2F>,
+        <https://www.festivalinfo.nl/festival/287/Noorderslag/2002/performance/148%2FLuie-Hond%2F>,
+        <https://www.festivalinfo.nl/festival/287/Noorderslag/2002/performance/150%2F16-Down%2F>,
+        <https://www.festivalinfo.nl/festival/287/Noorderslag/2002/performance/198%2FBirgit-Schuurman%2F>,
+        <https://www.festivalinfo.nl/festival/287/Noorderslag/2002/performance/243%2FDi-rect%2F>,
+        <https://www.festivalinfo.nl/festival/287/Noorderslag/2002/performance/275%2FJohan%2F>,
+        <https://www.festivalinfo.nl/festival/287/Noorderslag/2002/performance/297%2FStuurbaard-Bakkebaard%2F>,
+        <https://www.festivalinfo.nl/festival/287/Noorderslag/2002/performance/298%2FSuimasen%2F>,
+        <https://www.festivalinfo.nl/festival/287/Noorderslag/2002/performance/55%2FAfter-Forever%2F>,
+        <https://www.festivalinfo.nl/festival/287/Noorderslag/2002/performance/564%2FThe-Sheer%2F>,
+        <https://www.festivalinfo.nl/festival/287/Noorderslag/2002/performance/681%2FLegowelt%2F>,
+        <https://www.festivalinfo.nl/festival/287/Noorderslag/2002/performance/75%2FRacoon%2F> ;
+    schema:url <https://www.festivalinfo.nl/festival/287/Noorderslag/2002/> .
+
+<https://www.festivalinfo.nl/festival/287/Noorderslag/2002/performance/10%2FPeter-Pan-Speedrock%2F> a schema:PerformingArtsEvent ;
+    schema:name "Peter Pan Speedrock concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/10/Peter-Pan-Speedrock/> .
+
+<https://www.festivalinfo.nl/festival/287/Noorderslag/2002/performance/1008%2FWealthy-Beggar%2F> a schema:PerformingArtsEvent ;
+    schema:name "Wealthy Beggar concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/1008/Wealthy-Beggar/> .
+
+<https://www.festivalinfo.nl/festival/287/Noorderslag/2002/performance/1237%2FBlof%2F> a schema:PerformingArtsEvent ;
+    schema:name "Bløf concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/1237/Blof/> .
+
+<https://www.festivalinfo.nl/festival/287/Noorderslag/2002/performance/1244%2FDe-Kift%2F> a schema:PerformingArtsEvent ;
+    schema:name "De Kift concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/1244/De-Kift/> .
+
+<https://www.festivalinfo.nl/festival/287/Noorderslag/2002/performance/1246%2FE-Life%2F> a schema:PerformingArtsEvent ;
+    schema:name "E-Life concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/1246/E-Life/> .
+
+<https://www.festivalinfo.nl/festival/287/Noorderslag/2002/performance/1252%2FKirsten%2F> a schema:PerformingArtsEvent ;
+    schema:name "Kirsten concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/1252/Kirsten/> .
+
+<https://www.festivalinfo.nl/festival/287/Noorderslag/2002/performance/1257%2FRelax%2F> a schema:PerformingArtsEvent ;
+    schema:name "Relax concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/1257/Relax/> .
+
+<https://www.festivalinfo.nl/festival/287/Noorderslag/2002/performance/1260%2FSoulvation%2F> a schema:PerformingArtsEvent ;
+    schema:name "Soulvation concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/1260/Soulvation/> .
+
+<https://www.festivalinfo.nl/festival/287/Noorderslag/2002/performance/1261%2FTashas-World%2F> a schema:PerformingArtsEvent ;
+    schema:name "Tasha's World concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/1261/Tashas-World/> .
+
+<https://www.festivalinfo.nl/festival/287/Noorderslag/2002/performance/148%2FLuie-Hond%2F> a schema:PerformingArtsEvent ;
+    schema:name "Luie Hond concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/148/Luie-Hond/> .
+
+<https://www.festivalinfo.nl/festival/287/Noorderslag/2002/performance/150%2F16-Down%2F> a schema:PerformingArtsEvent ;
+    schema:name "16 Down concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/150/16-Down/> .
+
+<https://www.festivalinfo.nl/festival/287/Noorderslag/2002/performance/198%2FBirgit-Schuurman%2F> a schema:PerformingArtsEvent ;
+    schema:name "Birgit Schuurman concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/198/Birgit-Schuurman/> .
+
+<https://www.festivalinfo.nl/festival/287/Noorderslag/2002/performance/243%2FDi-rect%2F> a schema:PerformingArtsEvent ;
+    schema:name "Di-rect concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/243/Di-rect/> .
+
+<https://www.festivalinfo.nl/festival/287/Noorderslag/2002/performance/275%2FJohan%2F> a schema:PerformingArtsEvent ;
+    schema:name "Johan concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/275/Johan/> .
+
+<https://www.festivalinfo.nl/festival/287/Noorderslag/2002/performance/297%2FStuurbaard-Bakkebaard%2F> a schema:PerformingArtsEvent ;
+    schema:name "Stuurbaard Bakkebaard concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/297/Stuurbaard-Bakkebaard/> .
+
+<https://www.festivalinfo.nl/festival/287/Noorderslag/2002/performance/298%2FSuimasen%2F> a schema:PerformingArtsEvent ;
+    schema:name "Suimasen concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/298/Suimasen/> .
+
+<https://www.festivalinfo.nl/festival/287/Noorderslag/2002/performance/55%2FAfter-Forever%2F> a schema:PerformingArtsEvent ;
+    schema:name "After Forever concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/55/After-Forever/> .
+
+<https://www.festivalinfo.nl/festival/287/Noorderslag/2002/performance/564%2FThe-Sheer%2F> a schema:PerformingArtsEvent ;
+    schema:name "The Sheer concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/564/The-Sheer/> .
+
+<https://www.festivalinfo.nl/festival/287/Noorderslag/2002/performance/681%2FLegowelt%2F> a schema:PerformingArtsEvent ;
+    schema:name "Legowelt concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/681/Legowelt/> .
+
+<https://www.festivalinfo.nl/festival/287/Noorderslag/2002/performance/75%2FRacoon%2F> a schema:PerformingArtsEvent ;
+    schema:name "Racoon concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/75/Racoon/> .
+
+<https://www.festivalinfo.nl/artist/10/Peter-Pan-Speedrock/> a schema:MusicGroup ;
+    schema:name "Peter Pan Speedrock" .
+
+<https://www.festivalinfo.nl/artist/1008/Wealthy-Beggar/> a schema:MusicGroup ;
+    schema:name "Wealthy Beggar" .
+
+<https://www.festivalinfo.nl/artist/1237/Blof/> a schema:MusicGroup ;
+    schema:name "Bløf" .
+
+<https://www.festivalinfo.nl/artist/1244/De-Kift/> a schema:MusicGroup ;
+    schema:name "De Kift" .
+
+<https://www.festivalinfo.nl/artist/1246/E-Life/> a schema:MusicGroup ;
+    schema:name "E-Life" .
+
+<https://www.festivalinfo.nl/artist/1252/Kirsten/> a schema:MusicGroup ;
+    schema:name "Kirsten" .
+
+<https://www.festivalinfo.nl/artist/1257/Relax/> a schema:MusicGroup ;
+    schema:name "Relax" .
+
+<https://www.festivalinfo.nl/artist/1260/Soulvation/> a schema:MusicGroup ;
+    schema:name "Soulvation" .
+
+<https://www.festivalinfo.nl/artist/1261/Tashas-World/> a schema:MusicGroup ;
+    schema:name "Tasha's World" .
+
+<https://www.festivalinfo.nl/artist/148/Luie-Hond/> a schema:MusicGroup ;
+    schema:name "Luie Hond" .
+
+<https://www.festivalinfo.nl/artist/150/16-Down/> a schema:MusicGroup ;
+    schema:name "16 Down" .
+
+<https://www.festivalinfo.nl/artist/198/Birgit-Schuurman/> a schema:MusicGroup ;
+    schema:name "Birgit Schuurman" .
+
+<https://www.festivalinfo.nl/artist/243/Di-rect/> a schema:MusicGroup ;
+    schema:name "Di-rect" .
+
+<https://www.festivalinfo.nl/artist/275/Johan/> a schema:MusicGroup ;
+    schema:name "Johan" .
+
+<https://www.festivalinfo.nl/artist/297/Stuurbaard-Bakkebaard/> a schema:MusicGroup ;
+    schema:name "Stuurbaard Bakkebaard" .
+
+<https://www.festivalinfo.nl/artist/298/Suimasen/> a schema:MusicGroup ;
+    schema:name "Suimasen" .
+
+<https://www.festivalinfo.nl/artist/55/After-Forever/> a schema:MusicGroup ;
+    schema:name "After Forever" .
+
+<https://www.festivalinfo.nl/artist/564/The-Sheer/> a schema:MusicGroup ;
+    schema:name "The Sheer" .
+
+<https://www.festivalinfo.nl/artist/681/Legowelt/> a schema:MusicGroup ;
+    schema:name "Legowelt" .
+
+<https://www.festivalinfo.nl/artist/75/Racoon/> a schema:MusicGroup ;
+    schema:name "Racoon" .
+
+
+#Get graph for 2003
+@prefix schema: <https://schema.org/> .
+
+<https://www.festivalinfo.nl/festival/791/Noorderslag/2003/> a schema:Festival ;
+    schema:endDate "2003-01-11"^^<http://schema.org/Date> ;
+    schema:location [ a schema:Place ;
+            schema:name "Groningen" ] ;
+    schema:name "Noorderslag (2003)" ;
+    schema:additionalType "noorderslag" ;
+    schema:startDate "2003-01-11"^^<http://schema.org/Date> ;
+    schema:subEvent <https://www.festivalinfo.nl/festival/791/Noorderslag/2003/performance/1257%2FRelax%2F>,
+        <https://www.festivalinfo.nl/festival/791/Noorderslag/2003/performance/1841%2FThe-Spades%2F>,
+        <https://www.festivalinfo.nl/festival/791/Noorderslag/2003/performance/19%2FAnouk%2F>,
+        <https://www.festivalinfo.nl/festival/791/Noorderslag/2003/performance/1954%2FVanKatoen%2F>,
+        <https://www.festivalinfo.nl/festival/791/Noorderslag/2003/performance/222%2FSilkstone%2F>,
+        <https://www.festivalinfo.nl/festival/791/Noorderslag/2003/performance/2559%2FRaymzter%2F>,
+        <https://www.festivalinfo.nl/festival/791/Noorderslag/2003/performance/281%2FZuco-103%2F>,
+        <https://www.festivalinfo.nl/festival/791/Noorderslag/2003/performance/33665%2FHausmagger%2F>,
+        <https://www.festivalinfo.nl/festival/791/Noorderslag/2003/performance/351%2FLucien-Foort%2F>,
+        <https://www.festivalinfo.nl/festival/791/Noorderslag/2003/performance/362%2FLaidback-Luke%2F>,
+        <https://www.festivalinfo.nl/festival/791/Noorderslag/2003/performance/4329%2FSpinvis%2F>,
+        <https://www.festivalinfo.nl/festival/791/Noorderslag/2003/performance/4414%2FVoicst%2F>,
+        <https://www.festivalinfo.nl/festival/791/Noorderslag/2003/performance/4818%2FAlamo-Race-Track%2F>,
+        <https://www.festivalinfo.nl/festival/791/Noorderslag/2003/performance/4819%2FC-Mon-Kypski%2F>,
+        <https://www.festivalinfo.nl/festival/791/Noorderslag/2003/performance/4873%2FJoris-Voorn%2F>,
+        <https://www.festivalinfo.nl/festival/791/Noorderslag/2003/performance/4881%2FThe-Riplets%2F>,
+        <https://www.festivalinfo.nl/festival/791/Noorderslag/2003/performance/56%2FGreen-Lizard%2F>,
+        <https://www.festivalinfo.nl/festival/791/Noorderslag/2003/performance/590%2FSmogus%2F>,
+        <https://www.festivalinfo.nl/festival/791/Noorderslag/2003/performance/60%2FBeef%2F>,
+        <https://www.festivalinfo.nl/festival/791/Noorderslag/2003/performance/637%2FFace-Tomorrow%2F> ;
+    schema:url <https://www.festivalinfo.nl/festival/791/Noorderslag/2003/> .
+
+<https://www.festivalinfo.nl/festival/791/Noorderslag/2003/performance/1257%2FRelax%2F> a schema:PerformingArtsEvent ;
+    schema:name "Relax concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/1257/Relax/> .
+
+<https://www.festivalinfo.nl/festival/791/Noorderslag/2003/performance/1841%2FThe-Spades%2F> a schema:PerformingArtsEvent ;
+    schema:name "The Spades concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/1841/The-Spades/> .
+
+<https://www.festivalinfo.nl/festival/791/Noorderslag/2003/performance/19%2FAnouk%2F> a schema:PerformingArtsEvent ;
+    schema:name "Anouk concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/19/Anouk/> .
+
+<https://www.festivalinfo.nl/festival/791/Noorderslag/2003/performance/1954%2FVanKatoen%2F> a schema:PerformingArtsEvent ;
+    schema:name "VanKatoen concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/1954/VanKatoen/> .
+
+<https://www.festivalinfo.nl/festival/791/Noorderslag/2003/performance/222%2FSilkstone%2F> a schema:PerformingArtsEvent ;
+    schema:name "Silkstone concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/222/Silkstone/> .
+
+<https://www.festivalinfo.nl/festival/791/Noorderslag/2003/performance/2559%2FRaymzter%2F> a schema:PerformingArtsEvent ;
+    schema:name "Raymzter concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/2559/Raymzter/> .
+
+<https://www.festivalinfo.nl/festival/791/Noorderslag/2003/performance/281%2FZuco-103%2F> a schema:PerformingArtsEvent ;
+    schema:name "Zuco 103 concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/281/Zuco-103/> .
+
+<https://www.festivalinfo.nl/festival/791/Noorderslag/2003/performance/33665%2FHausmagger%2F> a schema:PerformingArtsEvent ;
+    schema:name "Hausmagger concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/33665/Hausmagger/> .
+
+<https://www.festivalinfo.nl/festival/791/Noorderslag/2003/performance/351%2FLucien-Foort%2F> a schema:PerformingArtsEvent ;
+    schema:name "Lucien Foort concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/351/Lucien-Foort/> .
+
+<https://www.festivalinfo.nl/festival/791/Noorderslag/2003/performance/362%2FLaidback-Luke%2F> a schema:PerformingArtsEvent ;
+    schema:name "Laidback Luke concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/362/Laidback-Luke/> .
+
+<https://www.festivalinfo.nl/festival/791/Noorderslag/2003/performance/4329%2FSpinvis%2F> a schema:PerformingArtsEvent ;
+    schema:name "Spinvis concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/4329/Spinvis/> .
+
+<https://www.festivalinfo.nl/festival/791/Noorderslag/2003/performance/4414%2FVoicst%2F> a schema:PerformingArtsEvent ;
+    schema:name "Voicst concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/4414/Voicst/> .
+
+<https://www.festivalinfo.nl/festival/791/Noorderslag/2003/performance/4818%2FAlamo-Race-Track%2F> a schema:PerformingArtsEvent ;
+    schema:name "Alamo Race Track concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/4818/Alamo-Race-Track/> .
+
+<https://www.festivalinfo.nl/festival/791/Noorderslag/2003/performance/4819%2FC-Mon-Kypski%2F> a schema:PerformingArtsEvent ;
+    schema:name "C-Mon & Kypski concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/4819/C-Mon-Kypski/> .
+
+<https://www.festivalinfo.nl/festival/791/Noorderslag/2003/performance/4873%2FJoris-Voorn%2F> a schema:PerformingArtsEvent ;
+    schema:name "Joris Voorn concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/4873/Joris-Voorn/> .
+
+<https://www.festivalinfo.nl/festival/791/Noorderslag/2003/performance/4881%2FThe-Riplets%2F> a schema:PerformingArtsEvent ;
+    schema:name "The Riplets concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/4881/The-Riplets/> .
+
+<https://www.festivalinfo.nl/festival/791/Noorderslag/2003/performance/56%2FGreen-Lizard%2F> a schema:PerformingArtsEvent ;
+    schema:name "Green Lizard concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/56/Green-Lizard/> .
+
+<https://www.festivalinfo.nl/festival/791/Noorderslag/2003/performance/590%2FSmogus%2F> a schema:PerformingArtsEvent ;
+    schema:name "Smogus concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/590/Smogus/> .
+
+<https://www.festivalinfo.nl/festival/791/Noorderslag/2003/performance/60%2FBeef%2F> a schema:PerformingArtsEvent ;
+    schema:name "Beef concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/60/Beef/> .
+
+<https://www.festivalinfo.nl/festival/791/Noorderslag/2003/performance/637%2FFace-Tomorrow%2F> a schema:PerformingArtsEvent ;
+    schema:name "Face Tomorrow concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/637/Face-Tomorrow/> .
+
+<https://www.festivalinfo.nl/artist/1257/Relax/> a schema:MusicGroup ;
+    schema:name "Relax" .
+
+<https://www.festivalinfo.nl/artist/1841/The-Spades/> a schema:MusicGroup ;
+    schema:name "The Spades" .
+
+<https://www.festivalinfo.nl/artist/19/Anouk/> a schema:MusicGroup ;
+    schema:name "Anouk" .
+
+<https://www.festivalinfo.nl/artist/1954/VanKatoen/> a schema:MusicGroup ;
+    schema:name "VanKatoen" .
+
+<https://www.festivalinfo.nl/artist/222/Silkstone/> a schema:MusicGroup ;
+    schema:name "Silkstone" .
+
+<https://www.festivalinfo.nl/artist/2559/Raymzter/> a schema:MusicGroup ;
+    schema:name "Raymzter" .
+
+<https://www.festivalinfo.nl/artist/281/Zuco-103/> a schema:MusicGroup ;
+    schema:name "Zuco 103" .
+
+<https://www.festivalinfo.nl/artist/33665/Hausmagger/> a schema:MusicGroup ;
+    schema:name "Hausmagger" .
+
+<https://www.festivalinfo.nl/artist/351/Lucien-Foort/> a schema:MusicGroup ;
+    schema:name "Lucien Foort" .
+
+<https://www.festivalinfo.nl/artist/362/Laidback-Luke/> a schema:MusicGroup ;
+    schema:name "Laidback Luke" .
+
+<https://www.festivalinfo.nl/artist/4329/Spinvis/> a schema:MusicGroup ;
+    schema:name "Spinvis" .
+
+<https://www.festivalinfo.nl/artist/4414/Voicst/> a schema:MusicGroup ;
+    schema:name "Voicst" .
+
+<https://www.festivalinfo.nl/artist/4818/Alamo-Race-Track/> a schema:MusicGroup ;
+    schema:name "Alamo Race Track" .
+
+<https://www.festivalinfo.nl/artist/4819/C-Mon-Kypski/> a schema:MusicGroup ;
+    schema:name "C-Mon & Kypski" .
+
+<https://www.festivalinfo.nl/artist/4873/Joris-Voorn/> a schema:MusicGroup ;
+    schema:name "Joris Voorn" .
+
+<https://www.festivalinfo.nl/artist/4881/The-Riplets/> a schema:MusicGroup ;
+    schema:name "The Riplets" .
+
+<https://www.festivalinfo.nl/artist/56/Green-Lizard/> a schema:MusicGroup ;
+    schema:name "Green Lizard" .
+
+<https://www.festivalinfo.nl/artist/590/Smogus/> a schema:MusicGroup ;
+    schema:name "Smogus" .
+
+<https://www.festivalinfo.nl/artist/60/Beef/> a schema:MusicGroup ;
+    schema:name "Beef" .
+
+<https://www.festivalinfo.nl/artist/637/Face-Tomorrow/> a schema:MusicGroup ;
+    schema:name "Face Tomorrow" .
+
+
+#Get graph for 2004
+@prefix schema: <https://schema.org/> .
+
+<https://www.festivalinfo.nl/festival/1087/Noorderslag/2004/> a schema:Festival ;
+    schema:endDate "2004-01-10"^^<http://schema.org/Date> ;
+    schema:location [ a schema:Place ;
+            schema:name "Groningen" ] ;
+    schema:name "Noorderslag (2004)" ;
+    schema:additionalType "noorderslag" ;
+    schema:startDate "2004-01-10"^^<http://schema.org/Date> ;
+    schema:subEvent <https://www.festivalinfo.nl/festival/1087/Noorderslag/2004/performance/10%2FPeter-Pan-Speedrock%2F>,
+        <https://www.festivalinfo.nl/festival/1087/Noorderslag/2004/performance/15863%2F433fm-Silent-Disco%2F>,
+        <https://www.festivalinfo.nl/festival/1087/Noorderslag/2004/performance/1596%2FOpgezwolle%2F>,
+        <https://www.festivalinfo.nl/festival/1087/Noorderslag/2004/performance/1598%2FGreen-Hornet%2F>,
+        <https://www.festivalinfo.nl/festival/1087/Noorderslag/2004/performance/243%2FDi-rect%2F>,
+        <https://www.festivalinfo.nl/festival/1087/Noorderslag/2004/performance/297%2FStuurbaard-Bakkebaard%2F>,
+        <https://www.festivalinfo.nl/festival/1087/Noorderslag/2004/performance/4215%2FTreble%2F>,
+        <https://www.festivalinfo.nl/festival/1087/Noorderslag/2004/performance/4414%2FVoicst%2F>,
+        <https://www.festivalinfo.nl/festival/1087/Noorderslag/2004/performance/4818%2FAlamo-Race-Track%2F>,
+        <https://www.festivalinfo.nl/festival/1087/Noorderslag/2004/performance/5202%2FWoost%2F>,
+        <https://www.festivalinfo.nl/festival/1087/Noorderslag/2004/performance/5618%2FIntwine%2F>,
+        <https://www.festivalinfo.nl/festival/1087/Noorderslag/2004/performance/5864%2FEpica%2F>,
+        <https://www.festivalinfo.nl/festival/1087/Noorderslag/2004/performance/6048%2FzZz%2F>,
+        <https://www.festivalinfo.nl/festival/1087/Noorderslag/2004/performance/6061%2FDon-Diablo%2F>,
+        <https://www.festivalinfo.nl/festival/1087/Noorderslag/2004/performance/638%2FThis-Beautiful-Mess%2F>,
+        <https://www.festivalinfo.nl/festival/1087/Noorderslag/2004/performance/66%2FWithin-Temptation%2F>,
+        <https://www.festivalinfo.nl/festival/1087/Noorderslag/2004/performance/6706%2FBart-Skils%2F>,
+        <https://www.festivalinfo.nl/festival/1087/Noorderslag/2004/performance/7580%2FChuckie%2F>,
+        <https://www.festivalinfo.nl/festival/1087/Noorderslag/2004/performance/8819%2FMoss%2F>,
+        <https://www.festivalinfo.nl/festival/1087/Noorderslag/2004/performance/8940%2FSneakerFreak%2F> ;
+    schema:url <https://www.festivalinfo.nl/festival/1087/Noorderslag/2004/> .
+
+<https://www.festivalinfo.nl/festival/1087/Noorderslag/2004/performance/10%2FPeter-Pan-Speedrock%2F> a schema:PerformingArtsEvent ;
+    schema:name "Peter Pan Speedrock concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/10/Peter-Pan-Speedrock/> .
+
+<https://www.festivalinfo.nl/festival/1087/Noorderslag/2004/performance/15863%2F433fm-Silent-Disco%2F> a schema:PerformingArtsEvent ;
+    schema:name "433fm Silent Disco concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/15863/433fm-Silent-Disco/> .
+
+<https://www.festivalinfo.nl/festival/1087/Noorderslag/2004/performance/1596%2FOpgezwolle%2F> a schema:PerformingArtsEvent ;
+    schema:name "Opgezwolle concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/1596/Opgezwolle/> .
+
+<https://www.festivalinfo.nl/festival/1087/Noorderslag/2004/performance/1598%2FGreen-Hornet%2F> a schema:PerformingArtsEvent ;
+    schema:name "Green Hornet concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/1598/Green-Hornet/> .
+
+<https://www.festivalinfo.nl/festival/1087/Noorderslag/2004/performance/243%2FDi-rect%2F> a schema:PerformingArtsEvent ;
+    schema:name "Di-rect concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/243/Di-rect/> .
+
+<https://www.festivalinfo.nl/festival/1087/Noorderslag/2004/performance/297%2FStuurbaard-Bakkebaard%2F> a schema:PerformingArtsEvent ;
+    schema:name "Stuurbaard Bakkebaard concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/297/Stuurbaard-Bakkebaard/> .
+
+<https://www.festivalinfo.nl/festival/1087/Noorderslag/2004/performance/4215%2FTreble%2F> a schema:PerformingArtsEvent ;
+    schema:name "Treble concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/4215/Treble/> .
+
+<https://www.festivalinfo.nl/festival/1087/Noorderslag/2004/performance/4414%2FVoicst%2F> a schema:PerformingArtsEvent ;
+    schema:name "Voicst concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/4414/Voicst/> .
+
+<https://www.festivalinfo.nl/festival/1087/Noorderslag/2004/performance/4818%2FAlamo-Race-Track%2F> a schema:PerformingArtsEvent ;
+    schema:name "Alamo Race Track concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/4818/Alamo-Race-Track/> .
+
+<https://www.festivalinfo.nl/festival/1087/Noorderslag/2004/performance/5202%2FWoost%2F> a schema:PerformingArtsEvent ;
+    schema:name "Woost concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/5202/Woost/> .
+
+<https://www.festivalinfo.nl/festival/1087/Noorderslag/2004/performance/5618%2FIntwine%2F> a schema:PerformingArtsEvent ;
+    schema:name "Intwine concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/5618/Intwine/> .
+
+<https://www.festivalinfo.nl/festival/1087/Noorderslag/2004/performance/5864%2FEpica%2F> a schema:PerformingArtsEvent ;
+    schema:name "Epica concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/5864/Epica/> .
+
+<https://www.festivalinfo.nl/festival/1087/Noorderslag/2004/performance/6048%2FzZz%2F> a schema:PerformingArtsEvent ;
+    schema:name "zZz concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/6048/zZz/> .
+
+<https://www.festivalinfo.nl/festival/1087/Noorderslag/2004/performance/6061%2FDon-Diablo%2F> a schema:PerformingArtsEvent ;
+    schema:name "Don Diablo concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/6061/Don-Diablo/> .
+
+<https://www.festivalinfo.nl/festival/1087/Noorderslag/2004/performance/638%2FThis-Beautiful-Mess%2F> a schema:PerformingArtsEvent ;
+    schema:name "This Beautiful Mess concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/638/This-Beautiful-Mess/> .
+
+<https://www.festivalinfo.nl/festival/1087/Noorderslag/2004/performance/66%2FWithin-Temptation%2F> a schema:PerformingArtsEvent ;
+    schema:name "Within Temptation concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/66/Within-Temptation/> .
+
+<https://www.festivalinfo.nl/festival/1087/Noorderslag/2004/performance/6706%2FBart-Skils%2F> a schema:PerformingArtsEvent ;
+    schema:name "Bart Skils concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/6706/Bart-Skils/> .
+
+<https://www.festivalinfo.nl/festival/1087/Noorderslag/2004/performance/7580%2FChuckie%2F> a schema:PerformingArtsEvent ;
+    schema:name "Chuckie concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/7580/Chuckie/> .
+
+<https://www.festivalinfo.nl/festival/1087/Noorderslag/2004/performance/8819%2FMoss%2F> a schema:PerformingArtsEvent ;
+    schema:name "Moss concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/8819/Moss/> .
+
+<https://www.festivalinfo.nl/festival/1087/Noorderslag/2004/performance/8940%2FSneakerFreak%2F> a schema:PerformingArtsEvent ;
+    schema:name "SneakerFreak concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/8940/SneakerFreak/> .
+
+<https://www.festivalinfo.nl/artist/10/Peter-Pan-Speedrock/> a schema:MusicGroup ;
+    schema:name "Peter Pan Speedrock" .
+
+<https://www.festivalinfo.nl/artist/15863/433fm-Silent-Disco/> a schema:MusicGroup ;
+    schema:name "433fm Silent Disco" .
+
+<https://www.festivalinfo.nl/artist/1596/Opgezwolle/> a schema:MusicGroup ;
+    schema:name "Opgezwolle" .
+
+<https://www.festivalinfo.nl/artist/1598/Green-Hornet/> a schema:MusicGroup ;
+    schema:name "Green Hornet" .
+
+<https://www.festivalinfo.nl/artist/243/Di-rect/> a schema:MusicGroup ;
+    schema:name "Di-rect" .
+
+<https://www.festivalinfo.nl/artist/297/Stuurbaard-Bakkebaard/> a schema:MusicGroup ;
+    schema:name "Stuurbaard Bakkebaard" .
+
+<https://www.festivalinfo.nl/artist/4215/Treble/> a schema:MusicGroup ;
+    schema:name "Treble" .
+
+<https://www.festivalinfo.nl/artist/4414/Voicst/> a schema:MusicGroup ;
+    schema:name "Voicst" .
+
+<https://www.festivalinfo.nl/artist/4818/Alamo-Race-Track/> a schema:MusicGroup ;
+    schema:name "Alamo Race Track" .
+
+<https://www.festivalinfo.nl/artist/5202/Woost/> a schema:MusicGroup ;
+    schema:name "Woost" .
+
+<https://www.festivalinfo.nl/artist/5618/Intwine/> a schema:MusicGroup ;
+    schema:name "Intwine" .
+
+<https://www.festivalinfo.nl/artist/5864/Epica/> a schema:MusicGroup ;
+    schema:name "Epica" .
+
+<https://www.festivalinfo.nl/artist/6048/zZz/> a schema:MusicGroup ;
+    schema:name "zZz" .
+
+<https://www.festivalinfo.nl/artist/6061/Don-Diablo/> a schema:MusicGroup ;
+    schema:name "Don Diablo" .
+
+<https://www.festivalinfo.nl/artist/638/This-Beautiful-Mess/> a schema:MusicGroup ;
+    schema:name "This Beautiful Mess" .
+
+<https://www.festivalinfo.nl/artist/66/Within-Temptation/> a schema:MusicGroup ;
+    schema:name "Within Temptation" .
+
+<https://www.festivalinfo.nl/artist/6706/Bart-Skils/> a schema:MusicGroup ;
+    schema:name "Bart Skils" .
+
+<https://www.festivalinfo.nl/artist/7580/Chuckie/> a schema:MusicGroup ;
+    schema:name "Chuckie" .
+
+<https://www.festivalinfo.nl/artist/8819/Moss/> a schema:MusicGroup ;
+    schema:name "Moss" .
+
+<https://www.festivalinfo.nl/artist/8940/SneakerFreak/> a schema:MusicGroup ;
+    schema:name "SneakerFreak" .
+
+
+#Get graph for 2007
+@prefix schema: <https://schema.org/> .
+
+<https://www.festivalinfo.nl/festival/4875/Noorderslag/2007/> a schema:Festival ;
+    schema:endDate "2007-01-13"^^<http://schema.org/Date> ;
+    schema:location [ a schema:Place ;
+            schema:name "Groningen" ] ;
+    schema:name "Noorderslag (2007)" ;
+    schema:additionalType "noorderslag" ;
+    schema:startDate "2007-01-11"^^<http://schema.org/Date> ;
+    schema:subEvent <https://www.festivalinfo.nl/festival/4875/Noorderslag/2007/performance/11686%2FBoris-NL-%2F>,
+        <https://www.festivalinfo.nl/festival/4875/Noorderslag/2007/performance/11708%2FAux-Raus%2F>,
+        <https://www.festivalinfo.nl/festival/4875/Noorderslag/2007/performance/13677%2FKraak-Smaak%2F>,
+        <https://www.festivalinfo.nl/festival/4875/Noorderslag/2007/performance/148%2FLuie-Hond%2F>,
+        <https://www.festivalinfo.nl/festival/4875/Noorderslag/2007/performance/151%2FIlse-DeLange%2F>,
+        <https://www.festivalinfo.nl/festival/4875/Noorderslag/2007/performance/18161%2FThe-Bloody-Honkies%2F>,
+        <https://www.festivalinfo.nl/festival/4875/Noorderslag/2007/performance/20296%2FLucky-Fonz-III%2F>,
+        <https://www.festivalinfo.nl/festival/4875/Noorderslag/2007/performance/20587%2FPostmen%2F>,
+        <https://www.festivalinfo.nl/festival/4875/Noorderslag/2007/performance/21256%2FRoom-Eleven%2F>,
+        <https://www.festivalinfo.nl/festival/4875/Noorderslag/2007/performance/21868%2FDelain%2F>,
+        <https://www.festivalinfo.nl/festival/4875/Noorderslag/2007/performance/275%2FJohan%2F>,
+        <https://www.festivalinfo.nl/festival/4875/Noorderslag/2007/performance/288%2FCoparck%2F>,
+        <https://www.festivalinfo.nl/festival/4875/Noorderslag/2007/performance/33930%2FKubus-BangBang%2F>,
+        <https://www.festivalinfo.nl/festival/4875/Noorderslag/2007/performance/34444%2FJiggy-Dje%2F>,
+        <https://www.festivalinfo.nl/festival/4875/Noorderslag/2007/performance/4329%2FSpinvis%2F>,
+        <https://www.festivalinfo.nl/festival/4875/Noorderslag/2007/performance/4818%2FAlamo-Race-Track%2F>,
+        <https://www.festivalinfo.nl/festival/4875/Noorderslag/2007/performance/4819%2FC-Mon-Kypski%2F>,
+        <https://www.festivalinfo.nl/festival/4875/Noorderslag/2007/performance/5188%2Fa-balladeer%2F>,
+        <https://www.festivalinfo.nl/festival/4875/Noorderslag/2007/performance/6037%2FNoisia%2F>,
+        <https://www.festivalinfo.nl/festival/4875/Noorderslag/2007/performance/9909%2FRoosbeef%2F> ;
+    schema:url <https://www.festivalinfo.nl/festival/4875/Noorderslag/2007/> .
+
+<https://www.festivalinfo.nl/festival/4875/Noorderslag/2007/performance/11686%2FBoris-NL-%2F> a schema:PerformingArtsEvent ;
+    schema:name "Boris (NL) concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/11686/Boris-NL-/> .
+
+<https://www.festivalinfo.nl/festival/4875/Noorderslag/2007/performance/11708%2FAux-Raus%2F> a schema:PerformingArtsEvent ;
+    schema:name "Aux Raus concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/11708/Aux-Raus/> .
+
+<https://www.festivalinfo.nl/festival/4875/Noorderslag/2007/performance/13677%2FKraak-Smaak%2F> a schema:PerformingArtsEvent ;
+    schema:name "Kraak & Smaak concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/13677/Kraak-Smaak/> .
+
+<https://www.festivalinfo.nl/festival/4875/Noorderslag/2007/performance/148%2FLuie-Hond%2F> a schema:PerformingArtsEvent ;
+    schema:name "Luie Hond concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/148/Luie-Hond/> .
+
+<https://www.festivalinfo.nl/festival/4875/Noorderslag/2007/performance/151%2FIlse-DeLange%2F> a schema:PerformingArtsEvent ;
+    schema:name "Ilse DeLange concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/151/Ilse-DeLange/> .
+
+<https://www.festivalinfo.nl/festival/4875/Noorderslag/2007/performance/18161%2FThe-Bloody-Honkies%2F> a schema:PerformingArtsEvent ;
+    schema:name "The Bloody Honkies concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/18161/The-Bloody-Honkies/> .
+
+<https://www.festivalinfo.nl/festival/4875/Noorderslag/2007/performance/20296%2FLucky-Fonz-III%2F> a schema:PerformingArtsEvent ;
+    schema:name "Lucky Fonz III concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/20296/Lucky-Fonz-III/> .
+
+<https://www.festivalinfo.nl/festival/4875/Noorderslag/2007/performance/20587%2FPostmen%2F> a schema:PerformingArtsEvent ;
+    schema:name "Postmen concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/20587/Postmen/> .
+
+<https://www.festivalinfo.nl/festival/4875/Noorderslag/2007/performance/21256%2FRoom-Eleven%2F> a schema:PerformingArtsEvent ;
+    schema:name "Room Eleven concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/21256/Room-Eleven/> .
+
+<https://www.festivalinfo.nl/festival/4875/Noorderslag/2007/performance/21868%2FDelain%2F> a schema:PerformingArtsEvent ;
+    schema:name "Delain concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/21868/Delain/> .
+
+<https://www.festivalinfo.nl/festival/4875/Noorderslag/2007/performance/275%2FJohan%2F> a schema:PerformingArtsEvent ;
+    schema:name "Johan concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/275/Johan/> .
+
+<https://www.festivalinfo.nl/festival/4875/Noorderslag/2007/performance/288%2FCoparck%2F> a schema:PerformingArtsEvent ;
+    schema:name "Coparck concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/288/Coparck/> .
+
+<https://www.festivalinfo.nl/festival/4875/Noorderslag/2007/performance/33930%2FKubus-BangBang%2F> a schema:PerformingArtsEvent ;
+    schema:name "Kubus & BangBang concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/33930/Kubus-BangBang/> .
+
+<https://www.festivalinfo.nl/festival/4875/Noorderslag/2007/performance/34444%2FJiggy-Dje%2F> a schema:PerformingArtsEvent ;
+    schema:name "Jiggy Djé concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/34444/Jiggy-Dje/> .
+
+<https://www.festivalinfo.nl/festival/4875/Noorderslag/2007/performance/4329%2FSpinvis%2F> a schema:PerformingArtsEvent ;
+    schema:name "Spinvis concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/4329/Spinvis/> .
+
+<https://www.festivalinfo.nl/festival/4875/Noorderslag/2007/performance/4818%2FAlamo-Race-Track%2F> a schema:PerformingArtsEvent ;
+    schema:name "Alamo Race Track concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/4818/Alamo-Race-Track/> .
+
+<https://www.festivalinfo.nl/festival/4875/Noorderslag/2007/performance/4819%2FC-Mon-Kypski%2F> a schema:PerformingArtsEvent ;
+    schema:name "C-Mon & Kypski concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/4819/C-Mon-Kypski/> .
+
+<https://www.festivalinfo.nl/festival/4875/Noorderslag/2007/performance/5188%2Fa-balladeer%2F> a schema:PerformingArtsEvent ;
+    schema:name "a balladeer concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/5188/a-balladeer/> .
+
+<https://www.festivalinfo.nl/festival/4875/Noorderslag/2007/performance/6037%2FNoisia%2F> a schema:PerformingArtsEvent ;
+    schema:name "Noisia concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/6037/Noisia/> .
+
+<https://www.festivalinfo.nl/festival/4875/Noorderslag/2007/performance/9909%2FRoosbeef%2F> a schema:PerformingArtsEvent ;
+    schema:name "Roosbeef concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/9909/Roosbeef/> .
+
+<https://www.festivalinfo.nl/artist/11686/Boris-NL-/> a schema:MusicGroup ;
+    schema:name "Boris (NL)" .
+
+<https://www.festivalinfo.nl/artist/11708/Aux-Raus/> a schema:MusicGroup ;
+    schema:name "Aux Raus" .
+
+<https://www.festivalinfo.nl/artist/13677/Kraak-Smaak/> a schema:MusicGroup ;
+    schema:name "Kraak & Smaak" .
+
+<https://www.festivalinfo.nl/artist/148/Luie-Hond/> a schema:MusicGroup ;
+    schema:name "Luie Hond" .
+
+<https://www.festivalinfo.nl/artist/151/Ilse-DeLange/> a schema:MusicGroup ;
+    schema:name "Ilse DeLange" .
+
+<https://www.festivalinfo.nl/artist/18161/The-Bloody-Honkies/> a schema:MusicGroup ;
+    schema:name "The Bloody Honkies" .
+
+<https://www.festivalinfo.nl/artist/20296/Lucky-Fonz-III/> a schema:MusicGroup ;
+    schema:name "Lucky Fonz III" .
+
+<https://www.festivalinfo.nl/artist/20587/Postmen/> a schema:MusicGroup ;
+    schema:name "Postmen" .
+
+<https://www.festivalinfo.nl/artist/21256/Room-Eleven/> a schema:MusicGroup ;
+    schema:name "Room Eleven" .
+
+<https://www.festivalinfo.nl/artist/21868/Delain/> a schema:MusicGroup ;
+    schema:name "Delain" .
+
+<https://www.festivalinfo.nl/artist/275/Johan/> a schema:MusicGroup ;
+    schema:name "Johan" .
+
+<https://www.festivalinfo.nl/artist/288/Coparck/> a schema:MusicGroup ;
+    schema:name "Coparck" .
+
+<https://www.festivalinfo.nl/artist/33930/Kubus-BangBang/> a schema:MusicGroup ;
+    schema:name "Kubus & BangBang" .
+
+<https://www.festivalinfo.nl/artist/34444/Jiggy-Dje/> a schema:MusicGroup ;
+    schema:name "Jiggy Djé" .
+
+<https://www.festivalinfo.nl/artist/4329/Spinvis/> a schema:MusicGroup ;
+    schema:name "Spinvis" .
+
+<https://www.festivalinfo.nl/artist/4818/Alamo-Race-Track/> a schema:MusicGroup ;
+    schema:name "Alamo Race Track" .
+
+<https://www.festivalinfo.nl/artist/4819/C-Mon-Kypski/> a schema:MusicGroup ;
+    schema:name "C-Mon & Kypski" .
+
+<https://www.festivalinfo.nl/artist/5188/a-balladeer/> a schema:MusicGroup ;
+    schema:name "a balladeer" .
+
+<https://www.festivalinfo.nl/artist/6037/Noisia/> a schema:MusicGroup ;
+    schema:name "Noisia" .
+
+<https://www.festivalinfo.nl/artist/9909/Roosbeef/> a schema:MusicGroup ;
+    schema:name "Roosbeef" .
+
+
+
+<https://www.festivalinfo.nl/festival/8150/Noorderslag/2000/> a schema:Festival ;
+    schema:endDate "2000-01-08"^^<http://schema.org/Date> ;
+    schema:location [ a schema:Place ;
+            schema:name "Groningen" ] ;
+    schema:name "Noorderslag (2000)" ;
+    schema:additionalType "noorderslag" ;
+    schema:startDate "2000-01-08"^^<http://schema.org/Date> ;
+    schema:subEvent <https://www.festivalinfo.nl/festival/8150/Noorderslag/2000/performance/1591%2FDaryll-Ann%2F>,
+        <https://www.festivalinfo.nl/festival/8150/Noorderslag/2000/performance/162%2FDef-Rhymz%2F>,
+        <https://www.festivalinfo.nl/festival/8150/Noorderslag/2000/performance/1749%2FGod-Dethroned%2F>,
+        <https://www.festivalinfo.nl/festival/8150/Noorderslag/2000/performance/1969%2FAbel-band-%2F>,
+        <https://www.festivalinfo.nl/festival/8150/Noorderslag/2000/performance/20655%2FCelestial-Season%2F>,
+        <https://www.festivalinfo.nl/festival/8150/Noorderslag/2000/performance/2094%2FAcid-Junkies%2F>,
+        <https://www.festivalinfo.nl/festival/8150/Noorderslag/2000/performance/220%2FEllen-ten-Damme%2F>,
+        <https://www.festivalinfo.nl/festival/8150/Noorderslag/2000/performance/2214%2FRude-Rich-and-the-High-Notes%2F>,
+        <https://www.festivalinfo.nl/festival/8150/Noorderslag/2000/performance/23054%2FU-Niq%2F>,
+        <https://www.festivalinfo.nl/festival/8150/Noorderslag/2000/performance/2363%2FCirith-Gorgor%2F>,
+        <https://www.festivalinfo.nl/festival/8150/Noorderslag/2000/performance/26996%2FCilvaringz%2F>,
+        <https://www.festivalinfo.nl/festival/8150/Noorderslag/2000/performance/280%2FJunkie-XL%2F>,
+        <https://www.festivalinfo.nl/festival/8150/Noorderslag/2000/performance/31607%2FSpookrijders%2F>,
+        <https://www.festivalinfo.nl/festival/8150/Noorderslag/2000/performance/376%2FI-Against-I%2F>,
+        <https://www.festivalinfo.nl/festival/8150/Noorderslag/2000/performance/62%2FKane%2F>,
+        <https://www.festivalinfo.nl/festival/8150/Noorderslag/2000/performance/70%2FWipneus-en-Pim%2F>,
+        <https://www.festivalinfo.nl/festival/8150/Noorderslag/2000/performance/74%2FKrezip%2F>,
+        <https://www.festivalinfo.nl/festival/8150/Noorderslag/2000/performance/803%2FZea%2F>,
+        <https://www.festivalinfo.nl/festival/8150/Noorderslag/2000/performance/842%2FAltar%2F>,
+        <https://www.festivalinfo.nl/festival/8150/Noorderslag/2000/performance/87%2FBrainpower%2F> ;
+    schema:url <https://www.festivalinfo.nl/festival/8150/Noorderslag/2000/> .
+
+<https://www.festivalinfo.nl/festival/8150/Noorderslag/2000/performance/1591%2FDaryll-Ann%2F> a schema:PerformingArtsEvent ;
+    schema:name "Daryll-Ann concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/1591/Daryll-Ann/> .
+
+<https://www.festivalinfo.nl/festival/8150/Noorderslag/2000/performance/162%2FDef-Rhymz%2F> a schema:PerformingArtsEvent ;
+    schema:name "Def Rhymz concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/162/Def-Rhymz/> .
+
+<https://www.festivalinfo.nl/festival/8150/Noorderslag/2000/performance/1749%2FGod-Dethroned%2F> a schema:PerformingArtsEvent ;
+    schema:name "God Dethroned concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/1749/God-Dethroned/> .
+
+<https://www.festivalinfo.nl/festival/8150/Noorderslag/2000/performance/1969%2FAbel-band-%2F> a schema:PerformingArtsEvent ;
+    schema:name "Abel (band) concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/1969/Abel-band-/> .
+
+<https://www.festivalinfo.nl/festival/8150/Noorderslag/2000/performance/20655%2FCelestial-Season%2F> a schema:PerformingArtsEvent ;
+    schema:name "Celestial Season concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/20655/Celestial-Season/> .
+
+<https://www.festivalinfo.nl/festival/8150/Noorderslag/2000/performance/2094%2FAcid-Junkies%2F> a schema:PerformingArtsEvent ;
+    schema:name "Acid Junkies concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/2094/Acid-Junkies/> .
+
+<https://www.festivalinfo.nl/festival/8150/Noorderslag/2000/performance/220%2FEllen-ten-Damme%2F> a schema:PerformingArtsEvent ;
+    schema:name "Ellen ten Damme concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/220/Ellen-ten-Damme/> .
+
+<https://www.festivalinfo.nl/festival/8150/Noorderslag/2000/performance/2214%2FRude-Rich-and-the-High-Notes%2F> a schema:PerformingArtsEvent ;
+    schema:name "Rude Rich and the High Notes concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/2214/Rude-Rich-and-the-High-Notes/> .
+
+<https://www.festivalinfo.nl/festival/8150/Noorderslag/2000/performance/23054%2FU-Niq%2F> a schema:PerformingArtsEvent ;
+    schema:name "U-Niq concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/23054/U-Niq/> .
+
+<https://www.festivalinfo.nl/festival/8150/Noorderslag/2000/performance/2363%2FCirith-Gorgor%2F> a schema:PerformingArtsEvent ;
+    schema:name "Cirith Gorgor concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/2363/Cirith-Gorgor/> .
+
+<https://www.festivalinfo.nl/festival/8150/Noorderslag/2000/performance/26996%2FCilvaringz%2F> a schema:PerformingArtsEvent ;
+    schema:name "Cilvaringz concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/26996/Cilvaringz/> .
+
+<https://www.festivalinfo.nl/festival/8150/Noorderslag/2000/performance/280%2FJunkie-XL%2F> a schema:PerformingArtsEvent ;
+    schema:name "Junkie XL concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/280/Junkie-XL/> .
+
+<https://www.festivalinfo.nl/festival/8150/Noorderslag/2000/performance/31607%2FSpookrijders%2F> a schema:PerformingArtsEvent ;
+    schema:name "Spookrijders concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/31607/Spookrijders/> .
+
+<https://www.festivalinfo.nl/festival/8150/Noorderslag/2000/performance/376%2FI-Against-I%2F> a schema:PerformingArtsEvent ;
+    schema:name "I Against I concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/376/I-Against-I/> .
+
+<https://www.festivalinfo.nl/festival/8150/Noorderslag/2000/performance/62%2FKane%2F> a schema:PerformingArtsEvent ;
+    schema:name "Kane concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/62/Kane/> .
+
+<https://www.festivalinfo.nl/festival/8150/Noorderslag/2000/performance/70%2FWipneus-en-Pim%2F> a schema:PerformingArtsEvent ;
+    schema:name "Wipneus en Pim concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/70/Wipneus-en-Pim/> .
+
+<https://www.festivalinfo.nl/festival/8150/Noorderslag/2000/performance/74%2FKrezip%2F> a schema:PerformingArtsEvent ;
+    schema:name "Krezip concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/74/Krezip/> .
+
+<https://www.festivalinfo.nl/festival/8150/Noorderslag/2000/performance/803%2FZea%2F> a schema:PerformingArtsEvent ;
+    schema:name "Zea concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/803/Zea/> .
+
+<https://www.festivalinfo.nl/festival/8150/Noorderslag/2000/performance/842%2FAltar%2F> a schema:PerformingArtsEvent ;
+    schema:name "Altar concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/842/Altar/> .
+
+<https://www.festivalinfo.nl/festival/8150/Noorderslag/2000/performance/87%2FBrainpower%2F> a schema:PerformingArtsEvent ;
+    schema:name "Brainpower concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/87/Brainpower/> .
+
+<https://www.festivalinfo.nl/artist/1591/Daryll-Ann/> a schema:MusicGroup ;
+    schema:name "Daryll-Ann" .
+
+<https://www.festivalinfo.nl/artist/162/Def-Rhymz/> a schema:MusicGroup ;
+    schema:name "Def Rhymz" .
+
+<https://www.festivalinfo.nl/artist/1749/God-Dethroned/> a schema:MusicGroup ;
+    schema:name "God Dethroned" .
+
+<https://www.festivalinfo.nl/artist/1969/Abel-band-/> a schema:MusicGroup ;
+    schema:name "Abel (band)" .
+
+<https://www.festivalinfo.nl/artist/20655/Celestial-Season/> a schema:MusicGroup ;
+    schema:name "Celestial Season" .
+
+<https://www.festivalinfo.nl/artist/2094/Acid-Junkies/> a schema:MusicGroup ;
+    schema:name "Acid Junkies" .
+
+<https://www.festivalinfo.nl/artist/220/Ellen-ten-Damme/> a schema:MusicGroup ;
+    schema:name "Ellen ten Damme" .
+
+
+<https://www.festivalinfo.nl/artist/2214/Rude-Rich-and-the-High-Notes/> a schema:MusicGroup ;
+    schema:name "Rude Rich and the High Notes" .
+
+<https://www.festivalinfo.nl/artist/23054/U-Niq/> a schema:MusicGroup ;
+    schema:name "U-Niq" .
+
+<https://www.festivalinfo.nl/artist/2363/Cirith-Gorgor/> a schema:MusicGroup ;
+    schema:name "Cirith Gorgor" .
+
+<https://www.festivalinfo.nl/artist/26996/Cilvaringz/> a schema:MusicGroup ;
+    schema:name "Cilvaringz" .
+
+<https://www.festivalinfo.nl/artist/280/Junkie-XL/> a schema:MusicGroup ;
+    schema:name "Junkie XL" .
+
+<https://www.festivalinfo.nl/artist/31607/Spookrijders/> a schema:MusicGroup ;
+    schema:name "Spookrijders" .
+
+<https://www.festivalinfo.nl/artist/376/I-Against-I/> a schema:MusicGroup ;
+    schema:name "I Against I" .
+
+<https://www.festivalinfo.nl/artist/62/Kane/> a schema:MusicGroup ;
+    schema:name "Kane" .
+
+<https://www.festivalinfo.nl/artist/70/Wipneus-en-Pim/> a schema:MusicGroup ;
+    schema:name "Wipneus en Pim" .
+
+<https://www.festivalinfo.nl/artist/74/Krezip/> a schema:MusicGroup ;
+    schema:name "Krezip" .
+
+<https://www.festivalinfo.nl/artist/803/Zea/> a schema:MusicGroup ;
+    schema:name "Zea" .
+
+<https://www.festivalinfo.nl/artist/842/Altar/> a schema:MusicGroup ;
+    schema:name "Altar" .
+
+<https://www.festivalinfo.nl/artist/87/Brainpower/> a schema:MusicGroup ;
+    schema:name "Brainpower" .

@@ -254,7 +254,7 @@ class WikidataDownloader:
         """
         try:
             result: dict = execute_wd_select_query(
-                SELECT_QUERY_MUZIEKWEB_MATCHES + "LIMIT 10"
+                SELECT_QUERY_MUZIEKWEB_MATCHES  # + "LIMIT 10"
             )
             if result:
                 g = wd_mw_matches_to_graph(result)

@@ -6,7 +6,7 @@ import requests
 from requests import HTTPError
 from requests.adapters import HTTPAdapter, Retry
 from datetime import datetime
-from rdflib import Graph, URIRef
+from rdflib import Graph, URIRef, BNode
 from rdflib.namespace import Namespace
 from util.base_util import LOG_FORMAT, get_path_from_config, date_time_string
 
@@ -40,6 +40,7 @@ logger = logging.getLogger(__name__)
 
 def get_wd_graph_for_mw_id(mw_id: str = "") -> Graph:
     g = Graph()
+    g.bind("schema", NS_SCHEMA, override=True, replace=True)
     try:
         if mw_id:
             result: str = execute_wd_construct_query(
@@ -83,6 +84,7 @@ def get_query_wikidata_muziekweb_performer(mw_id: str = "") -> str:
 def wd_mw_matches_to_graph(data: dict = {}) -> Graph:
     """Convert the results to Graph."""
     g = Graph()
+    g.bind("schema", NS_SCHEMA, override=True, replace=True)
     try:
         vars = data.get("results", {}).get("bindings", {})
         for item in vars:
@@ -233,10 +235,19 @@ class WikidataDownloader:
                         mw_id: str = result.group("performer_id")
                         logger.info(f"Querying wikidata for: {mw_id}")
                         g = Graph()
-                        g.bind("schema", NS_SCHEMA)
+                        g.bind("schema", NS_SCHEMA, override=True, replace=True)
                         g.bind("wdt", NS_WDT)
                         g.bind("geo", NS_GEO)
                         g = get_wd_graph_for_mw_id(mw_id)
+                        # filter empty geo node: [] a geo:Geometry .
+                        for s, p, o in g:
+                            if isinstance(s, BNode) and o == URIRef(
+                                str(NS_GEO) + "Geometry"
+                            ):
+                                # if not this bnode has also a gwkLiteral as object, remove it
+                                # [ a geo:Geometry ; geo:asWKT "Point(13.575277777 42.854722222)"^^geo:wktLiteral ]
+                                if not (s, URIRef(str(NS_GEO) + "asWKT"), None) in g:
+                                    g.remove((s, p, o))
                         f.write(g.serialize(format="nt11"))
 
             # # 3) serialize the joined Graph to Turtle file.

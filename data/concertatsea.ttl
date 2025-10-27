@@ -1,0 +1,2623 @@
+#Get graph for 2025
+@prefix schema: <https://schema.org/> .
+
+<https://www.festivalinfo.nl/festival/33898/Concert-at-Sea/2025/> a schema:Festival ;
+    schema:endDate "2025-06-28"^^<http://schema.org/Date> ;
+    schema:location [ a schema:Place ;
+            schema:name "Brouwershaven" ] ;
+    schema:name "Concert at Sea (2025)" ;
+    schema:additionalType "concert at sea" ;
+    schema:startDate "2025-06-26"^^<http://schema.org/Date> ;
+    schema:subEvent <https://www.festivalinfo.nl/festival/33898/Concert-at-Sea/2025/performance/105378%2FClaude%2F>,
+        <https://www.festivalinfo.nl/festival/33898/Concert-at-Sea/2025/performance/1237%2FBlof%2F>,
+        <https://www.festivalinfo.nl/festival/33898/Concert-at-Sea/2025/performance/124450%2FThe-Vices%2F>,
+        <https://www.festivalinfo.nl/festival/33898/Concert-at-Sea/2025/performance/137%2FFaithless%2F>,
+        <https://www.festivalinfo.nl/festival/33898/Concert-at-Sea/2025/performance/15060%2FMental-Theo%2F>,
+        <https://www.festivalinfo.nl/festival/33898/Concert-at-Sea/2025/performance/15317%2FGuus-Meeuwis%2F>,
+        <https://www.festivalinfo.nl/festival/33898/Concert-at-Sea/2025/performance/15842%2FGavin-DeGraw%2F>,
+        <https://www.festivalinfo.nl/festival/33898/Concert-at-Sea/2025/performance/16154%2FDe-Jeugd-Van-Tegenwoordig%2F>,
+        <https://www.festivalinfo.nl/festival/33898/Concert-at-Sea/2025/performance/19%2FAnouk%2F>,
+        <https://www.festivalinfo.nl/festival/33898/Concert-at-Sea/2025/performance/43873%2FLa-Fuente%2F>,
+        <https://www.festivalinfo.nl/festival/33898/Concert-at-Sea/2025/performance/46226%2FSven-Hammond%2F>,
+        <https://www.festivalinfo.nl/festival/33898/Concert-at-Sea/2025/performance/51563%2FFeestDJRuud%2F>,
+        <https://www.festivalinfo.nl/festival/33898/Concert-at-Sea/2025/performance/62%2FKane%2F>,
+        <https://www.festivalinfo.nl/festival/33898/Concert-at-Sea/2025/performance/71692%2FDouwe-Bob%2F>,
+        <https://www.festivalinfo.nl/festival/33898/Concert-at-Sea/2025/performance/73%2FAcda-en-de-Munnik%2F>,
+        <https://www.festivalinfo.nl/festival/33898/Concert-at-Sea/2025/performance/75%2FRacoon%2F>,
+        <https://www.festivalinfo.nl/festival/33898/Concert-at-Sea/2025/performance/77054%2FBroederliefde%2F>,
+        <https://www.festivalinfo.nl/festival/33898/Concert-at-Sea/2025/performance/85306%2FGavin-James%2F>,
+        <https://www.festivalinfo.nl/festival/33898/Concert-at-Sea/2025/performance/87506%2FRonde%2F>,
+        <https://www.festivalinfo.nl/festival/33898/Concert-at-Sea/2025/performance/93718%2FSuzan-Freek%2F> ;
+    schema:url <https://www.festivalinfo.nl/festival/33898/Concert-at-Sea/2025/> .
+
+<https://www.festivalinfo.nl/festival/33898/Concert-at-Sea/2025/performance/105378%2FClaude%2F> a schema:PerformingArtsEvent ;
+    schema:name "Claude concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/105378/Claude/> .
+
+<https://www.festivalinfo.nl/festival/33898/Concert-at-Sea/2025/performance/1237%2FBlof%2F> a schema:PerformingArtsEvent ;
+    schema:name "Bløf concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/1237/Blof/> .
+
+<https://www.festivalinfo.nl/festival/33898/Concert-at-Sea/2025/performance/124450%2FThe-Vices%2F> a schema:PerformingArtsEvent ;
+    schema:name "The Vices concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/124450/The-Vices/> .
+
+<https://www.festivalinfo.nl/festival/33898/Concert-at-Sea/2025/performance/137%2FFaithless%2F> a schema:PerformingArtsEvent ;
+    schema:name "Faithless concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/137/Faithless/> .
+
+<https://www.festivalinfo.nl/festival/33898/Concert-at-Sea/2025/performance/15060%2FMental-Theo%2F> a schema:PerformingArtsEvent ;
+    schema:name "Mental Theo concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/15060/Mental-Theo/> .
+
+<https://www.festivalinfo.nl/festival/33898/Concert-at-Sea/2025/performance/15317%2FGuus-Meeuwis%2F> a schema:PerformingArtsEvent ;
+    schema:name "Guus Meeuwis concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/15317/Guus-Meeuwis/> .
+
+<https://www.festivalinfo.nl/festival/33898/Concert-at-Sea/2025/performance/15842%2FGavin-DeGraw%2F> a schema:PerformingArtsEvent ;
+    schema:name "Gavin DeGraw concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/15842/Gavin-DeGraw/> .
+
+<https://www.festivalinfo.nl/festival/33898/Concert-at-Sea/2025/performance/16154%2FDe-Jeugd-Van-Tegenwoordig%2F> a schema:PerformingArtsEvent ;
+    schema:name "De Jeugd Van Tegenwoordig concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/16154/De-Jeugd-Van-Tegenwoordig/> .
+
+<https://www.festivalinfo.nl/festival/33898/Concert-at-Sea/2025/performance/19%2FAnouk%2F> a schema:PerformingArtsEvent ;
+    schema:name "Anouk concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/19/Anouk/> .
+
+<https://www.festivalinfo.nl/festival/33898/Concert-at-Sea/2025/performance/43873%2FLa-Fuente%2F> a schema:PerformingArtsEvent ;
+    schema:name "La Fuente concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/43873/La-Fuente/> .
+
+<https://www.festivalinfo.nl/festival/33898/Concert-at-Sea/2025/performance/46226%2FSven-Hammond%2F> a schema:PerformingArtsEvent ;
+    schema:name "Sven Hammond concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/46226/Sven-Hammond/> .
+
+<https://www.festivalinfo.nl/festival/33898/Concert-at-Sea/2025/performance/51563%2FFeestDJRuud%2F> a schema:PerformingArtsEvent ;
+    schema:name "FeestDJRuud concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/51563/FeestDJRuud/> .
+
+<https://www.festivalinfo.nl/festival/33898/Concert-at-Sea/2025/performance/62%2FKane%2F> a schema:PerformingArtsEvent ;
+    schema:name "Kane concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/62/Kane/> .
+
+<https://www.festivalinfo.nl/festival/33898/Concert-at-Sea/2025/performance/71692%2FDouwe-Bob%2F> a schema:PerformingArtsEvent ;
+    schema:name "Douwe Bob concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/71692/Douwe-Bob/> .
+
+<https://www.festivalinfo.nl/festival/33898/Concert-at-Sea/2025/performance/73%2FAcda-en-de-Munnik%2F> a schema:PerformingArtsEvent ;
+    schema:name "Acda en de Munnik concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/73/Acda-en-de-Munnik/> .
+
+<https://www.festivalinfo.nl/festival/33898/Concert-at-Sea/2025/performance/75%2FRacoon%2F> a schema:PerformingArtsEvent ;
+    schema:name "Racoon concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/75/Racoon/> .
+
+<https://www.festivalinfo.nl/festival/33898/Concert-at-Sea/2025/performance/77054%2FBroederliefde%2F> a schema:PerformingArtsEvent ;
+    schema:name "Broederliefde concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/77054/Broederliefde/> .
+
+<https://www.festivalinfo.nl/festival/33898/Concert-at-Sea/2025/performance/85306%2FGavin-James%2F> a schema:PerformingArtsEvent ;
+    schema:name "Gavin James concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/85306/Gavin-James/> .
+
+<https://www.festivalinfo.nl/festival/33898/Concert-at-Sea/2025/performance/87506%2FRonde%2F> a schema:PerformingArtsEvent ;
+    schema:name "Rondé concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/87506/Ronde/> .
+
+<https://www.festivalinfo.nl/festival/33898/Concert-at-Sea/2025/performance/93718%2FSuzan-Freek%2F> a schema:PerformingArtsEvent ;
+    schema:name "Suzan & Freek concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/93718/Suzan-Freek/> .
+
+<https://www.festivalinfo.nl/artist/105378/Claude/> a schema:MusicGroup ;
+    schema:name "Claude" .
+
+<https://www.festivalinfo.nl/artist/1237/Blof/> a schema:MusicGroup ;
+    schema:name "Bløf" .
+
+<https://www.festivalinfo.nl/artist/124450/The-Vices/> a schema:MusicGroup ;
+    schema:name "The Vices" .
+
+<https://www.festivalinfo.nl/artist/137/Faithless/> a schema:MusicGroup ;
+    schema:name "Faithless" .
+
+<https://www.festivalinfo.nl/artist/15060/Mental-Theo/> a schema:MusicGroup ;
+    schema:name "Mental Theo" .
+
+<https://www.festivalinfo.nl/artist/15317/Guus-Meeuwis/> a schema:MusicGroup ;
+    schema:name "Guus Meeuwis" .
+
+<https://www.festivalinfo.nl/artist/15842/Gavin-DeGraw/> a schema:MusicGroup ;
+    schema:name "Gavin DeGraw" .
+
+<https://www.festivalinfo.nl/artist/16154/De-Jeugd-Van-Tegenwoordig/> a schema:MusicGroup ;
+    schema:name "De Jeugd Van Tegenwoordig" .
+
+<https://www.festivalinfo.nl/artist/19/Anouk/> a schema:MusicGroup ;
+    schema:name "Anouk" .
+
+<https://www.festivalinfo.nl/artist/43873/La-Fuente/> a schema:MusicGroup ;
+    schema:name "La Fuente" .
+
+<https://www.festivalinfo.nl/artist/46226/Sven-Hammond/> a schema:MusicGroup ;
+    schema:name "Sven Hammond" .
+
+<https://www.festivalinfo.nl/artist/51563/FeestDJRuud/> a schema:MusicGroup ;
+    schema:name "FeestDJRuud" .
+
+<https://www.festivalinfo.nl/artist/62/Kane/> a schema:MusicGroup ;
+    schema:name "Kane" .
+
+<https://www.festivalinfo.nl/artist/71692/Douwe-Bob/> a schema:MusicGroup ;
+    schema:name "Douwe Bob" .
+
+<https://www.festivalinfo.nl/artist/73/Acda-en-de-Munnik/> a schema:MusicGroup ;
+    schema:name "Acda en de Munnik" .
+
+<https://www.festivalinfo.nl/artist/75/Racoon/> a schema:MusicGroup ;
+    schema:name "Racoon" .
+
+<https://www.festivalinfo.nl/artist/77054/Broederliefde/> a schema:MusicGroup ;
+    schema:name "Broederliefde" .
+
+<https://www.festivalinfo.nl/artist/85306/Gavin-James/> a schema:MusicGroup ;
+    schema:name "Gavin James" .
+
+<https://www.festivalinfo.nl/artist/87506/Ronde/> a schema:MusicGroup ;
+    schema:name "Rondé" .
+
+<https://www.festivalinfo.nl/artist/93718/Suzan-Freek/> a schema:MusicGroup ;
+    schema:name "Suzan & Freek" .
+
+
+#Get graph for 2023
+@prefix schema: <https://schema.org/> .
+
+<https://www.festivalinfo.nl/festival/31535/Concert-at-Sea/2023/> a schema:Festival ;
+    schema:endDate "2023-06-24"^^<http://schema.org/Date> ;
+    schema:location [ a schema:Place ;
+            schema:name "Brouwershaven" ] ;
+    schema:name "Concert at Sea (2023)" ;
+    schema:additionalType "concert at sea" ;
+    schema:startDate "2023-06-22"^^<http://schema.org/Date> ;
+    schema:subEvent <https://www.festivalinfo.nl/festival/31535/Concert-at-Sea/2023/performance/105378%2FClaude%2F>,
+        <https://www.festivalinfo.nl/festival/31535/Concert-at-Sea/2023/performance/1237%2FBlof%2F>,
+        <https://www.festivalinfo.nl/festival/31535/Concert-at-Sea/2023/performance/131300%2FGoldband%2F>,
+        <https://www.festivalinfo.nl/festival/31535/Concert-at-Sea/2023/performance/135746%2FSophie-Straat%2F>,
+        <https://www.festivalinfo.nl/festival/31535/Concert-at-Sea/2023/performance/136102%2FAntoon%2F>,
+        <https://www.festivalinfo.nl/festival/31535/Concert-at-Sea/2023/performance/139638%2FFlemming%2F>,
+        <https://www.festivalinfo.nl/festival/31535/Concert-at-Sea/2023/performance/15317%2FGuus-Meeuwis%2F>,
+        <https://www.festivalinfo.nl/festival/31535/Concert-at-Sea/2023/performance/16154%2FDe-Jeugd-Van-Tegenwoordig%2F>,
+        <https://www.festivalinfo.nl/festival/31535/Concert-at-Sea/2023/performance/19%2FAnouk%2F>,
+        <https://www.festivalinfo.nl/festival/31535/Concert-at-Sea/2023/performance/2423%2FCristina-Branco%2F>,
+        <https://www.festivalinfo.nl/festival/31535/Concert-at-Sea/2023/performance/243%2FDi-rect%2F>,
+        <https://www.festivalinfo.nl/festival/31535/Concert-at-Sea/2023/performance/46192%2FLa-Pegatina%2F>,
+        <https://www.festivalinfo.nl/festival/31535/Concert-at-Sea/2023/performance/52%2FRowwen-Heze%2F>,
+        <https://www.festivalinfo.nl/festival/31535/Concert-at-Sea/2023/performance/53027%2FJungle-By-Night%2F>,
+        <https://www.festivalinfo.nl/festival/31535/Concert-at-Sea/2023/performance/5947%2FDanny-Vera%2F>,
+        <https://www.festivalinfo.nl/festival/31535/Concert-at-Sea/2023/performance/77054%2FBroederliefde%2F>,
+        <https://www.festivalinfo.nl/festival/31535/Concert-at-Sea/2023/performance/81279%2FGeorge-Ezra%2F>,
+        <https://www.festivalinfo.nl/festival/31535/Concert-at-Sea/2023/performance/87506%2FRonde%2F>,
+        <https://www.festivalinfo.nl/festival/31535/Concert-at-Sea/2023/performance/93718%2FSuzan-Freek%2F>,
+        <https://www.festivalinfo.nl/festival/31535/Concert-at-Sea/2023/performance/97184%2FSon-Mieux%2F> ;
+    schema:url <https://www.festivalinfo.nl/festival/31535/Concert-at-Sea/2023/> .
+
+<https://www.festivalinfo.nl/festival/31535/Concert-at-Sea/2023/performance/105378%2FClaude%2F> a schema:PerformingArtsEvent ;
+    schema:name "Claude concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/105378/Claude/> .
+
+<https://www.festivalinfo.nl/festival/31535/Concert-at-Sea/2023/performance/1237%2FBlof%2F> a schema:PerformingArtsEvent ;
+    schema:name "Bløf concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/1237/Blof/> .
+
+<https://www.festivalinfo.nl/festival/31535/Concert-at-Sea/2023/performance/131300%2FGoldband%2F> a schema:PerformingArtsEvent ;
+    schema:name "Goldband concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/131300/Goldband/> .
+
+<https://www.festivalinfo.nl/festival/31535/Concert-at-Sea/2023/performance/135746%2FSophie-Straat%2F> a schema:PerformingArtsEvent ;
+    schema:name "Sophie Straat concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/135746/Sophie-Straat/> .
+
+<https://www.festivalinfo.nl/festival/31535/Concert-at-Sea/2023/performance/136102%2FAntoon%2F> a schema:PerformingArtsEvent ;
+    schema:name "Antoon concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/136102/Antoon/> .
+
+<https://www.festivalinfo.nl/festival/31535/Concert-at-Sea/2023/performance/139638%2FFlemming%2F> a schema:PerformingArtsEvent ;
+    schema:name "Flemming concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/139638/Flemming/> .
+
+<https://www.festivalinfo.nl/festival/31535/Concert-at-Sea/2023/performance/15317%2FGuus-Meeuwis%2F> a schema:PerformingArtsEvent ;
+    schema:name "Guus Meeuwis concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/15317/Guus-Meeuwis/> .
+
+<https://www.festivalinfo.nl/festival/31535/Concert-at-Sea/2023/performance/16154%2FDe-Jeugd-Van-Tegenwoordig%2F> a schema:PerformingArtsEvent ;
+    schema:name "De Jeugd Van Tegenwoordig concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/16154/De-Jeugd-Van-Tegenwoordig/> .
+
+<https://www.festivalinfo.nl/festival/31535/Concert-at-Sea/2023/performance/19%2FAnouk%2F> a schema:PerformingArtsEvent ;
+    schema:name "Anouk concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/19/Anouk/> .
+
+<https://www.festivalinfo.nl/festival/31535/Concert-at-Sea/2023/performance/2423%2FCristina-Branco%2F> a schema:PerformingArtsEvent ;
+    schema:name "Cristina Branco concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/2423/Cristina-Branco/> .
+
+<https://www.festivalinfo.nl/festival/31535/Concert-at-Sea/2023/performance/243%2FDi-rect%2F> a schema:PerformingArtsEvent ;
+    schema:name "Di-rect concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/243/Di-rect/> .
+
+<https://www.festivalinfo.nl/festival/31535/Concert-at-Sea/2023/performance/46192%2FLa-Pegatina%2F> a schema:PerformingArtsEvent ;
+    schema:name "La Pegatina concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/46192/La-Pegatina/> .
+
+<https://www.festivalinfo.nl/festival/31535/Concert-at-Sea/2023/performance/52%2FRowwen-Heze%2F> a schema:PerformingArtsEvent ;
+    schema:name "Rowwen Heze concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/52/Rowwen-Heze/> .
+
+<https://www.festivalinfo.nl/festival/31535/Concert-at-Sea/2023/performance/53027%2FJungle-By-Night%2F> a schema:PerformingArtsEvent ;
+    schema:name "Jungle By Night concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/53027/Jungle-By-Night/> .
+
+<https://www.festivalinfo.nl/festival/31535/Concert-at-Sea/2023/performance/5947%2FDanny-Vera%2F> a schema:PerformingArtsEvent ;
+    schema:name "Danny Vera concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/5947/Danny-Vera/> .
+
+<https://www.festivalinfo.nl/festival/31535/Concert-at-Sea/2023/performance/77054%2FBroederliefde%2F> a schema:PerformingArtsEvent ;
+    schema:name "Broederliefde concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/77054/Broederliefde/> .
+
+<https://www.festivalinfo.nl/festival/31535/Concert-at-Sea/2023/performance/81279%2FGeorge-Ezra%2F> a schema:PerformingArtsEvent ;
+    schema:name "George Ezra concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/81279/George-Ezra/> .
+
+<https://www.festivalinfo.nl/festival/31535/Concert-at-Sea/2023/performance/87506%2FRonde%2F> a schema:PerformingArtsEvent ;
+    schema:name "Rondé concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/87506/Ronde/> .
+
+<https://www.festivalinfo.nl/festival/31535/Concert-at-Sea/2023/performance/93718%2FSuzan-Freek%2F> a schema:PerformingArtsEvent ;
+    schema:name "Suzan & Freek concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/93718/Suzan-Freek/> .
+
+<https://www.festivalinfo.nl/festival/31535/Concert-at-Sea/2023/performance/97184%2FSon-Mieux%2F> a schema:PerformingArtsEvent ;
+    schema:name "Son Mieux concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/97184/Son-Mieux/> .
+
+<https://www.festivalinfo.nl/artist/105378/Claude/> a schema:MusicGroup ;
+    schema:name "Claude" .
+
+<https://www.festivalinfo.nl/artist/1237/Blof/> a schema:MusicGroup ;
+    schema:name "Bløf" .
+
+<https://www.festivalinfo.nl/artist/131300/Goldband/> a schema:MusicGroup ;
+    schema:name "Goldband" .
+
+<https://www.festivalinfo.nl/artist/135746/Sophie-Straat/> a schema:MusicGroup ;
+    schema:name "Sophie Straat" .
+
+<https://www.festivalinfo.nl/artist/136102/Antoon/> a schema:MusicGroup ;
+    schema:name "Antoon" .
+
+<https://www.festivalinfo.nl/artist/139638/Flemming/> a schema:MusicGroup ;
+    schema:name "Flemming" .
+
+<https://www.festivalinfo.nl/artist/15317/Guus-Meeuwis/> a schema:MusicGroup ;
+    schema:name "Guus Meeuwis" .
+
+<https://www.festivalinfo.nl/artist/16154/De-Jeugd-Van-Tegenwoordig/> a schema:MusicGroup ;
+    schema:name "De Jeugd Van Tegenwoordig" .
+
+<https://www.festivalinfo.nl/artist/19/Anouk/> a schema:MusicGroup ;
+    schema:name "Anouk" .
+
+<https://www.festivalinfo.nl/artist/2423/Cristina-Branco/> a schema:MusicGroup ;
+    schema:name "Cristina Branco" .
+
+<https://www.festivalinfo.nl/artist/243/Di-rect/> a schema:MusicGroup ;
+    schema:name "Di-rect" .
+
+<https://www.festivalinfo.nl/artist/46192/La-Pegatina/> a schema:MusicGroup ;
+    schema:name "La Pegatina" .
+
+<https://www.festivalinfo.nl/artist/52/Rowwen-Heze/> a schema:MusicGroup ;
+    schema:name "Rowwen Heze" .
+
+<https://www.festivalinfo.nl/artist/53027/Jungle-By-Night/> a schema:MusicGroup ;
+    schema:name "Jungle By Night" .
+
+<https://www.festivalinfo.nl/artist/5947/Danny-Vera/> a schema:MusicGroup ;
+    schema:name "Danny Vera" .
+
+<https://www.festivalinfo.nl/artist/77054/Broederliefde/> a schema:MusicGroup ;
+    schema:name "Broederliefde" .
+
+<https://www.festivalinfo.nl/artist/81279/George-Ezra/> a schema:MusicGroup ;
+    schema:name "George Ezra" .
+
+<https://www.festivalinfo.nl/artist/87506/Ronde/> a schema:MusicGroup ;
+    schema:name "Rondé" .
+
+<https://www.festivalinfo.nl/artist/93718/Suzan-Freek/> a schema:MusicGroup ;
+    schema:name "Suzan & Freek" .
+
+<https://www.festivalinfo.nl/artist/97184/Son-Mieux/> a schema:MusicGroup ;
+    schema:name "Son Mieux" .
+
+
+#Get graph for 2022
+@prefix schema: <https://schema.org/> .
+
+<https://www.festivalinfo.nl/festival/29847/Concert-at-Sea/2022/> a schema:Festival ;
+    schema:endDate "2022-07-02"^^<http://schema.org/Date> ;
+    schema:location [ a schema:Place ;
+            schema:name "Brouwershaven" ] ;
+    schema:name "Concert at Sea (2022)" ;
+    schema:additionalType "concert at sea" ;
+    schema:startDate "2022-06-30"^^<http://schema.org/Date> ;
+    schema:subEvent <https://www.festivalinfo.nl/festival/29847/Concert-at-Sea/2022/performance/106537%2FS10%2F>,
+        <https://www.festivalinfo.nl/festival/29847/Concert-at-Sea/2022/performance/122816%2FDavina-Michelle%2F>,
+        <https://www.festivalinfo.nl/festival/29847/Concert-at-Sea/2022/performance/1237%2FBlof%2F>,
+        <https://www.festivalinfo.nl/festival/29847/Concert-at-Sea/2022/performance/134969%2FFroukje%2F>,
+        <https://www.festivalinfo.nl/festival/29847/Concert-at-Sea/2022/performance/136893%2FMeau%2F>,
+        <https://www.festivalinfo.nl/festival/29847/Concert-at-Sea/2022/performance/20611%2FKensington%2F>,
+        <https://www.festivalinfo.nl/festival/29847/Concert-at-Sea/2022/performance/23410%2FDiggy-Dex%2F>,
+        <https://www.festivalinfo.nl/festival/29847/Concert-at-Sea/2022/performance/243%2FDi-rect%2F>,
+        <https://www.festivalinfo.nl/festival/29847/Concert-at-Sea/2022/performance/30944%2FMiss-Montreal%2F>,
+        <https://www.festivalinfo.nl/festival/29847/Concert-at-Sea/2022/performance/36089%2FThe-Script%2F>,
+        <https://www.festivalinfo.nl/festival/29847/Concert-at-Sea/2022/performance/43156%2FNona%2F>,
+        <https://www.festivalinfo.nl/festival/29847/Concert-at-Sea/2022/performance/51601%2FChefSpecial%2F>,
+        <https://www.festivalinfo.nl/festival/29847/Concert-at-Sea/2022/performance/61%2FVan-Dik-Hout%2F>,
+        <https://www.festivalinfo.nl/festival/29847/Concert-at-Sea/2022/performance/73980%2FMaan%2F>,
+        <https://www.festivalinfo.nl/festival/29847/Concert-at-Sea/2022/performance/74%2FKrezip%2F>,
+        <https://www.festivalinfo.nl/festival/29847/Concert-at-Sea/2022/performance/75%2FRacoon%2F>,
+        <https://www.festivalinfo.nl/festival/29847/Concert-at-Sea/2022/performance/87506%2FRonde%2F>,
+        <https://www.festivalinfo.nl/festival/29847/Concert-at-Sea/2022/performance/93718%2FSuzan-Freek%2F>,
+        <https://www.festivalinfo.nl/festival/29847/Concert-at-Sea/2022/performance/97184%2FSon-Mieux%2F> ;
+    schema:url <https://www.festivalinfo.nl/festival/29847/Concert-at-Sea/2022/> .
+
+<https://www.festivalinfo.nl/festival/29847/Concert-at-Sea/2022/performance/106537%2FS10%2F> a schema:PerformingArtsEvent ;
+    schema:name "S10 concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/106537/S10/> .
+
+<https://www.festivalinfo.nl/festival/29847/Concert-at-Sea/2022/performance/122816%2FDavina-Michelle%2F> a schema:PerformingArtsEvent ;
+    schema:name "Davina Michelle concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/122816/Davina-Michelle/> .
+
+<https://www.festivalinfo.nl/festival/29847/Concert-at-Sea/2022/performance/1237%2FBlof%2F> a schema:PerformingArtsEvent ;
+    schema:name "Bløf concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/1237/Blof/> .
+
+<https://www.festivalinfo.nl/festival/29847/Concert-at-Sea/2022/performance/134969%2FFroukje%2F> a schema:PerformingArtsEvent ;
+    schema:name "Froukje concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/134969/Froukje/> .
+
+<https://www.festivalinfo.nl/festival/29847/Concert-at-Sea/2022/performance/136893%2FMeau%2F> a schema:PerformingArtsEvent ;
+    schema:name "Meau concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/136893/Meau/> .
+
+<https://www.festivalinfo.nl/festival/29847/Concert-at-Sea/2022/performance/20611%2FKensington%2F> a schema:PerformingArtsEvent ;
+    schema:name "Kensington concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/20611/Kensington/> .
+
+<https://www.festivalinfo.nl/festival/29847/Concert-at-Sea/2022/performance/23410%2FDiggy-Dex%2F> a schema:PerformingArtsEvent ;
+    schema:name "Diggy Dex concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/23410/Diggy-Dex/> .
+
+<https://www.festivalinfo.nl/festival/29847/Concert-at-Sea/2022/performance/243%2FDi-rect%2F> a schema:PerformingArtsEvent ;
+    schema:name "Di-rect concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/243/Di-rect/> .
+
+<https://www.festivalinfo.nl/festival/29847/Concert-at-Sea/2022/performance/30944%2FMiss-Montreal%2F> a schema:PerformingArtsEvent ;
+    schema:name "Miss Montreal concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/30944/Miss-Montreal/> .
+
+<https://www.festivalinfo.nl/festival/29847/Concert-at-Sea/2022/performance/36089%2FThe-Script%2F> a schema:PerformingArtsEvent ;
+    schema:name "The Script concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/36089/The-Script/> .
+
+<https://www.festivalinfo.nl/festival/29847/Concert-at-Sea/2022/performance/43156%2FNona%2F> a schema:PerformingArtsEvent ;
+    schema:name "Nona concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/43156/Nona/> .
+
+<https://www.festivalinfo.nl/festival/29847/Concert-at-Sea/2022/performance/51601%2FChefSpecial%2F> a schema:PerformingArtsEvent ;
+    schema:name "Chef'Special concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/51601/ChefSpecial/> .
+
+<https://www.festivalinfo.nl/festival/29847/Concert-at-Sea/2022/performance/61%2FVan-Dik-Hout%2F> a schema:PerformingArtsEvent ;
+    schema:name "Van Dik Hout concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/61/Van-Dik-Hout/> .
+
+<https://www.festivalinfo.nl/festival/29847/Concert-at-Sea/2022/performance/73980%2FMaan%2F> a schema:PerformingArtsEvent ;
+    schema:name "Maan concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/73980/Maan/> .
+
+<https://www.festivalinfo.nl/festival/29847/Concert-at-Sea/2022/performance/74%2FKrezip%2F> a schema:PerformingArtsEvent ;
+    schema:name "Krezip concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/74/Krezip/> .
+
+<https://www.festivalinfo.nl/festival/29847/Concert-at-Sea/2022/performance/75%2FRacoon%2F> a schema:PerformingArtsEvent ;
+    schema:name "Racoon concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/75/Racoon/> .
+
+<https://www.festivalinfo.nl/festival/29847/Concert-at-Sea/2022/performance/87506%2FRonde%2F> a schema:PerformingArtsEvent ;
+    schema:name "Rondé concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/87506/Ronde/> .
+
+<https://www.festivalinfo.nl/festival/29847/Concert-at-Sea/2022/performance/93718%2FSuzan-Freek%2F> a schema:PerformingArtsEvent ;
+    schema:name "Suzan & Freek concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/93718/Suzan-Freek/> .
+
+<https://www.festivalinfo.nl/festival/29847/Concert-at-Sea/2022/performance/97184%2FSon-Mieux%2F> a schema:PerformingArtsEvent ;
+    schema:name "Son Mieux concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/97184/Son-Mieux/> .
+
+<https://www.festivalinfo.nl/artist/106537/S10/> a schema:MusicGroup ;
+    schema:name "S10" .
+
+<https://www.festivalinfo.nl/artist/122816/Davina-Michelle/> a schema:MusicGroup ;
+    schema:name "Davina Michelle" .
+
+<https://www.festivalinfo.nl/artist/1237/Blof/> a schema:MusicGroup ;
+    schema:name "Bløf" .
+
+<https://www.festivalinfo.nl/artist/134969/Froukje/> a schema:MusicGroup ;
+    schema:name "Froukje" .
+
+<https://www.festivalinfo.nl/artist/136893/Meau/> a schema:MusicGroup ;
+    schema:name "Meau" .
+
+<https://www.festivalinfo.nl/artist/20611/Kensington/> a schema:MusicGroup ;
+    schema:name "Kensington" .
+
+<https://www.festivalinfo.nl/artist/23410/Diggy-Dex/> a schema:MusicGroup ;
+    schema:name "Diggy Dex" .
+
+<https://www.festivalinfo.nl/artist/243/Di-rect/> a schema:MusicGroup ;
+    schema:name "Di-rect" .
+
+<https://www.festivalinfo.nl/artist/30944/Miss-Montreal/> a schema:MusicGroup ;
+    schema:name "Miss Montreal" .
+
+<https://www.festivalinfo.nl/artist/36089/The-Script/> a schema:MusicGroup ;
+    schema:name "The Script" .
+
+<https://www.festivalinfo.nl/artist/43156/Nona/> a schema:MusicGroup ;
+    schema:name "Nona" .
+
+<https://www.festivalinfo.nl/artist/51601/ChefSpecial/> a schema:MusicGroup ;
+    schema:name "Chef'Special" .
+
+<https://www.festivalinfo.nl/artist/61/Van-Dik-Hout/> a schema:MusicGroup ;
+    schema:name "Van Dik Hout" .
+
+<https://www.festivalinfo.nl/artist/73980/Maan/> a schema:MusicGroup ;
+    schema:name "Maan" .
+
+<https://www.festivalinfo.nl/artist/74/Krezip/> a schema:MusicGroup ;
+    schema:name "Krezip" .
+
+<https://www.festivalinfo.nl/artist/75/Racoon/> a schema:MusicGroup ;
+    schema:name "Racoon" .
+
+<https://www.festivalinfo.nl/artist/87506/Ronde/> a schema:MusicGroup ;
+    schema:name "Rondé" .
+
+<https://www.festivalinfo.nl/artist/93718/Suzan-Freek/> a schema:MusicGroup ;
+    schema:name "Suzan & Freek" .
+
+<https://www.festivalinfo.nl/artist/97184/Son-Mieux/> a schema:MusicGroup ;
+    schema:name "Son Mieux" .
+
+
+#Get graph for 2021
+@prefix schema: <https://schema.org/> .
+
+<https://www.festivalinfo.nl/festival/29001/Concert-at-Sea/2021/> a schema:Festival ;
+    schema:endDate "2022-07-02"^^<http://schema.org/Date> ;
+    schema:location [ a schema:Place ;
+            schema:name "Brouwershaven" ] ;
+    schema:name "Concert at Sea (2021)" ;
+    schema:additionalType "concert at sea" ;
+    schema:startDate "2022-06-30"^^<http://schema.org/Date> ;
+    schema:subEvent <https://www.festivalinfo.nl/festival/29001/Concert-at-Sea/2021/performance/122452%2FRonnie-Flex-Deuxperience-Band%2F>,
+        <https://www.festivalinfo.nl/festival/29001/Concert-at-Sea/2021/performance/122816%2FDavina-Michelle%2F>,
+        <https://www.festivalinfo.nl/festival/29001/Concert-at-Sea/2021/performance/1237%2FBlof%2F>,
+        <https://www.festivalinfo.nl/festival/29001/Concert-at-Sea/2021/performance/125820%2FCover-at-SEA%2F>,
+        <https://www.festivalinfo.nl/festival/29001/Concert-at-Sea/2021/performance/126292%2FWipneus-Pim%2F>,
+        <https://www.festivalinfo.nl/festival/29001/Concert-at-Sea/2021/performance/135508%2FSnelle-De-lieve-jongens-band%2F>,
+        <https://www.festivalinfo.nl/festival/29001/Concert-at-Sea/2021/performance/20611%2FKensington%2F>,
+        <https://www.festivalinfo.nl/festival/29001/Concert-at-Sea/2021/performance/23410%2FDiggy-Dex%2F>,
+        <https://www.festivalinfo.nl/festival/29001/Concert-at-Sea/2021/performance/243%2FDi-rect%2F>,
+        <https://www.festivalinfo.nl/festival/29001/Concert-at-Sea/2021/performance/30944%2FMiss-Montreal%2F>,
+        <https://www.festivalinfo.nl/festival/29001/Concert-at-Sea/2021/performance/35900%2FTabitha%2F>,
+        <https://www.festivalinfo.nl/festival/29001/Concert-at-Sea/2021/performance/36089%2FThe-Script%2F>,
+        <https://www.festivalinfo.nl/festival/29001/Concert-at-Sea/2021/performance/51601%2FChefSpecial%2F>,
+        <https://www.festivalinfo.nl/festival/29001/Concert-at-Sea/2021/performance/61%2FVan-Dik-Hout%2F>,
+        <https://www.festivalinfo.nl/festival/29001/Concert-at-Sea/2021/performance/71088%2FAndre-Hazes-Jr-%2F>,
+        <https://www.festivalinfo.nl/festival/29001/Concert-at-Sea/2021/performance/73496%2FThe-Dirty-Daddies%2F>,
+        <https://www.festivalinfo.nl/festival/29001/Concert-at-Sea/2021/performance/73980%2FMaan%2F>,
+        <https://www.festivalinfo.nl/festival/29001/Concert-at-Sea/2021/performance/74%2FKrezip%2F>,
+        <https://www.festivalinfo.nl/festival/29001/Concert-at-Sea/2021/performance/75%2FRacoon%2F>,
+        <https://www.festivalinfo.nl/festival/29001/Concert-at-Sea/2021/performance/93718%2FSuzan-Freek%2F> ;
+    schema:url <https://www.festivalinfo.nl/festival/29001/Concert-at-Sea/2021/> .
+
+<https://www.festivalinfo.nl/festival/29001/Concert-at-Sea/2021/performance/122452%2FRonnie-Flex-Deuxperience-Band%2F> a schema:PerformingArtsEvent ;
+    schema:name "Ronnie Flex & Deuxperience Band concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/122452/Ronnie-Flex-Deuxperience-Band/> .
+
+<https://www.festivalinfo.nl/festival/29001/Concert-at-Sea/2021/performance/122816%2FDavina-Michelle%2F> a schema:PerformingArtsEvent ;
+    schema:name "Davina Michelle concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/122816/Davina-Michelle/> .
+
+<https://www.festivalinfo.nl/festival/29001/Concert-at-Sea/2021/performance/1237%2FBlof%2F> a schema:PerformingArtsEvent ;
+    schema:name "Bløf concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/1237/Blof/> .
+
+<https://www.festivalinfo.nl/festival/29001/Concert-at-Sea/2021/performance/125820%2FCover-at-SEA%2F> a schema:PerformingArtsEvent ;
+    schema:name "Cøver at SEA concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/125820/Cover-at-SEA/> .
+
+<https://www.festivalinfo.nl/festival/29001/Concert-at-Sea/2021/performance/126292%2FWipneus-Pim%2F> a schema:PerformingArtsEvent ;
+    schema:name "Wipneus & Pim concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/126292/Wipneus-Pim/> .
+
+<https://www.festivalinfo.nl/festival/29001/Concert-at-Sea/2021/performance/135508%2FSnelle-De-lieve-jongens-band%2F> a schema:PerformingArtsEvent ;
+    schema:name "Snelle & De lieve jongens band concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/135508/Snelle-De-lieve-jongens-band/> .
+
+<https://www.festivalinfo.nl/festival/29001/Concert-at-Sea/2021/performance/20611%2FKensington%2F> a schema:PerformingArtsEvent ;
+    schema:name "Kensington concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/20611/Kensington/> .
+
+<https://www.festivalinfo.nl/festival/29001/Concert-at-Sea/2021/performance/23410%2FDiggy-Dex%2F> a schema:PerformingArtsEvent ;
+    schema:name "Diggy Dex concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/23410/Diggy-Dex/> .
+
+<https://www.festivalinfo.nl/festival/29001/Concert-at-Sea/2021/performance/243%2FDi-rect%2F> a schema:PerformingArtsEvent ;
+    schema:name "Di-rect concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/243/Di-rect/> .
+
+<https://www.festivalinfo.nl/festival/29001/Concert-at-Sea/2021/performance/30944%2FMiss-Montreal%2F> a schema:PerformingArtsEvent ;
+    schema:name "Miss Montreal concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/30944/Miss-Montreal/> .
+
+<https://www.festivalinfo.nl/festival/29001/Concert-at-Sea/2021/performance/35900%2FTabitha%2F> a schema:PerformingArtsEvent ;
+    schema:name "Tabitha concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/35900/Tabitha/> .
+
+<https://www.festivalinfo.nl/festival/29001/Concert-at-Sea/2021/performance/36089%2FThe-Script%2F> a schema:PerformingArtsEvent ;
+    schema:name "The Script concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/36089/The-Script/> .
+
+<https://www.festivalinfo.nl/festival/29001/Concert-at-Sea/2021/performance/51601%2FChefSpecial%2F> a schema:PerformingArtsEvent ;
+    schema:name "Chef'Special concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/51601/ChefSpecial/> .
+
+<https://www.festivalinfo.nl/festival/29001/Concert-at-Sea/2021/performance/61%2FVan-Dik-Hout%2F> a schema:PerformingArtsEvent ;
+    schema:name "Van Dik Hout concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/61/Van-Dik-Hout/> .
+
+<https://www.festivalinfo.nl/festival/29001/Concert-at-Sea/2021/performance/71088%2FAndre-Hazes-Jr-%2F> a schema:PerformingArtsEvent ;
+    schema:name "Andre Hazes Jr. concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/71088/Andre-Hazes-Jr-/> .
+
+<https://www.festivalinfo.nl/festival/29001/Concert-at-Sea/2021/performance/73496%2FThe-Dirty-Daddies%2F> a schema:PerformingArtsEvent ;
+    schema:name "The Dirty Daddies concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/73496/The-Dirty-Daddies/> .
+
+<https://www.festivalinfo.nl/festival/29001/Concert-at-Sea/2021/performance/73980%2FMaan%2F> a schema:PerformingArtsEvent ;
+    schema:name "Maan concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/73980/Maan/> .
+
+<https://www.festivalinfo.nl/festival/29001/Concert-at-Sea/2021/performance/74%2FKrezip%2F> a schema:PerformingArtsEvent ;
+    schema:name "Krezip concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/74/Krezip/> .
+
+<https://www.festivalinfo.nl/festival/29001/Concert-at-Sea/2021/performance/75%2FRacoon%2F> a schema:PerformingArtsEvent ;
+    schema:name "Racoon concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/75/Racoon/> .
+
+<https://www.festivalinfo.nl/festival/29001/Concert-at-Sea/2021/performance/93718%2FSuzan-Freek%2F> a schema:PerformingArtsEvent ;
+    schema:name "Suzan & Freek concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/93718/Suzan-Freek/> .
+
+<https://www.festivalinfo.nl/artist/122452/Ronnie-Flex-Deuxperience-Band/> a schema:MusicGroup ;
+    schema:name "Ronnie Flex & Deuxperience Band" .
+
+<https://www.festivalinfo.nl/artist/122816/Davina-Michelle/> a schema:MusicGroup ;
+    schema:name "Davina Michelle" .
+
+<https://www.festivalinfo.nl/artist/1237/Blof/> a schema:MusicGroup ;
+    schema:name "Bløf" .
+
+<https://www.festivalinfo.nl/artist/125820/Cover-at-SEA/> a schema:MusicGroup ;
+    schema:name "Cøver at SEA" .
+
+<https://www.festivalinfo.nl/artist/126292/Wipneus-Pim/> a schema:MusicGroup ;
+    schema:name "Wipneus & Pim" .
+
+<https://www.festivalinfo.nl/artist/135508/Snelle-De-lieve-jongens-band/> a schema:MusicGroup ;
+    schema:name "Snelle & De lieve jongens band" .
+
+<https://www.festivalinfo.nl/artist/20611/Kensington/> a schema:MusicGroup ;
+    schema:name "Kensington" .
+
+<https://www.festivalinfo.nl/artist/23410/Diggy-Dex/> a schema:MusicGroup ;
+    schema:name "Diggy Dex" .
+
+<https://www.festivalinfo.nl/artist/243/Di-rect/> a schema:MusicGroup ;
+    schema:name "Di-rect" .
+
+<https://www.festivalinfo.nl/artist/30944/Miss-Montreal/> a schema:MusicGroup ;
+    schema:name "Miss Montreal" .
+
+<https://www.festivalinfo.nl/artist/35900/Tabitha/> a schema:MusicGroup ;
+    schema:name "Tabitha" .
+
+<https://www.festivalinfo.nl/artist/36089/The-Script/> a schema:MusicGroup ;
+    schema:name "The Script" .
+
+<https://www.festivalinfo.nl/artist/51601/ChefSpecial/> a schema:MusicGroup ;
+    schema:name "Chef'Special" .
+
+<https://www.festivalinfo.nl/artist/61/Van-Dik-Hout/> a schema:MusicGroup ;
+    schema:name "Van Dik Hout" .
+
+<https://www.festivalinfo.nl/artist/71088/Andre-Hazes-Jr-/> a schema:MusicGroup ;
+    schema:name "Andre Hazes Jr." .
+
+<https://www.festivalinfo.nl/artist/73496/The-Dirty-Daddies/> a schema:MusicGroup ;
+    schema:name "The Dirty Daddies" .
+
+<https://www.festivalinfo.nl/artist/73980/Maan/> a schema:MusicGroup ;
+    schema:name "Maan" .
+
+<https://www.festivalinfo.nl/artist/74/Krezip/> a schema:MusicGroup ;
+    schema:name "Krezip" .
+
+<https://www.festivalinfo.nl/artist/75/Racoon/> a schema:MusicGroup ;
+    schema:name "Racoon" .
+
+<https://www.festivalinfo.nl/artist/93718/Suzan-Freek/> a schema:MusicGroup ;
+    schema:name "Suzan & Freek" .
+
+
+#Get graph for 2020
+@prefix schema: <https://schema.org/> .
+
+<https://www.festivalinfo.nl/festival/27783/Concert-at-Sea/2020/> a schema:Festival ;
+    schema:endDate "2021-06-26"^^<http://schema.org/Date> ;
+    schema:location [ a schema:Place ;
+            schema:name "Brouwershaven" ] ;
+    schema:name "Concert at Sea (2020)" ;
+    schema:additionalType "concert at sea" ;
+    schema:startDate "2021-06-24"^^<http://schema.org/Date> ;
+    schema:subEvent <https://www.festivalinfo.nl/festival/27783/Concert-at-Sea/2020/performance/105645%2FSnelle%2F>,
+        <https://www.festivalinfo.nl/festival/27783/Concert-at-Sea/2020/performance/122452%2FRonnie-Flex-Deuxperience-Band%2F>,
+        <https://www.festivalinfo.nl/festival/27783/Concert-at-Sea/2020/performance/1237%2FBlof%2F>,
+        <https://www.festivalinfo.nl/festival/27783/Concert-at-Sea/2020/performance/126292%2FWipneus-Pim%2F>,
+        <https://www.festivalinfo.nl/festival/27783/Concert-at-Sea/2020/performance/20611%2FKensington%2F>,
+        <https://www.festivalinfo.nl/festival/27783/Concert-at-Sea/2020/performance/22028%2FCrowded-House%2F>,
+        <https://www.festivalinfo.nl/festival/27783/Concert-at-Sea/2020/performance/23410%2FDiggy-Dex%2F>,
+        <https://www.festivalinfo.nl/festival/27783/Concert-at-Sea/2020/performance/243%2FDi-rect%2F>,
+        <https://www.festivalinfo.nl/festival/27783/Concert-at-Sea/2020/performance/30944%2FMiss-Montreal%2F>,
+        <https://www.festivalinfo.nl/festival/27783/Concert-at-Sea/2020/performance/35900%2FTabitha%2F>,
+        <https://www.festivalinfo.nl/festival/27783/Concert-at-Sea/2020/performance/36089%2FThe-Script%2F>,
+        <https://www.festivalinfo.nl/festival/27783/Concert-at-Sea/2020/performance/51601%2FChefSpecial%2F>,
+        <https://www.festivalinfo.nl/festival/27783/Concert-at-Sea/2020/performance/61%2FVan-Dik-Hout%2F>,
+        <https://www.festivalinfo.nl/festival/27783/Concert-at-Sea/2020/performance/71088%2FAndre-Hazes-Jr-%2F>,
+        <https://www.festivalinfo.nl/festival/27783/Concert-at-Sea/2020/performance/73496%2FThe-Dirty-Daddies%2F>,
+        <https://www.festivalinfo.nl/festival/27783/Concert-at-Sea/2020/performance/73980%2FMaan%2F>,
+        <https://www.festivalinfo.nl/festival/27783/Concert-at-Sea/2020/performance/74%2FKrezip%2F>,
+        <https://www.festivalinfo.nl/festival/27783/Concert-at-Sea/2020/performance/75%2FRacoon%2F>,
+        <https://www.festivalinfo.nl/festival/27783/Concert-at-Sea/2020/performance/93718%2FSuzan-Freek%2F> ;
+    schema:url <https://www.festivalinfo.nl/festival/27783/Concert-at-Sea/2020/> .
+
+<https://www.festivalinfo.nl/festival/27783/Concert-at-Sea/2020/performance/105645%2FSnelle%2F> a schema:PerformingArtsEvent ;
+    schema:name "Snelle concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/105645/Snelle/> .
+
+<https://www.festivalinfo.nl/festival/27783/Concert-at-Sea/2020/performance/122452%2FRonnie-Flex-Deuxperience-Band%2F> a schema:PerformingArtsEvent ;
+    schema:name "Ronnie Flex & Deuxperience Band concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/122452/Ronnie-Flex-Deuxperience-Band/> .
+
+<https://www.festivalinfo.nl/festival/27783/Concert-at-Sea/2020/performance/1237%2FBlof%2F> a schema:PerformingArtsEvent ;
+    schema:name "Bløf concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/1237/Blof/> .
+
+<https://www.festivalinfo.nl/festival/27783/Concert-at-Sea/2020/performance/126292%2FWipneus-Pim%2F> a schema:PerformingArtsEvent ;
+    schema:name "Wipneus & Pim concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/126292/Wipneus-Pim/> .
+
+<https://www.festivalinfo.nl/festival/27783/Concert-at-Sea/2020/performance/20611%2FKensington%2F> a schema:PerformingArtsEvent ;
+    schema:name "Kensington concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/20611/Kensington/> .
+
+<https://www.festivalinfo.nl/festival/27783/Concert-at-Sea/2020/performance/22028%2FCrowded-House%2F> a schema:PerformingArtsEvent ;
+    schema:name "Crowded House concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/22028/Crowded-House/> .
+
+<https://www.festivalinfo.nl/festival/27783/Concert-at-Sea/2020/performance/23410%2FDiggy-Dex%2F> a schema:PerformingArtsEvent ;
+    schema:name "Diggy Dex concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/23410/Diggy-Dex/> .
+
+<https://www.festivalinfo.nl/festival/27783/Concert-at-Sea/2020/performance/243%2FDi-rect%2F> a schema:PerformingArtsEvent ;
+    schema:name "Di-rect concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/243/Di-rect/> .
+
+<https://www.festivalinfo.nl/festival/27783/Concert-at-Sea/2020/performance/30944%2FMiss-Montreal%2F> a schema:PerformingArtsEvent ;
+    schema:name "Miss Montreal concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/30944/Miss-Montreal/> .
+
+<https://www.festivalinfo.nl/festival/27783/Concert-at-Sea/2020/performance/35900%2FTabitha%2F> a schema:PerformingArtsEvent ;
+    schema:name "Tabitha concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/35900/Tabitha/> .
+
+<https://www.festivalinfo.nl/festival/27783/Concert-at-Sea/2020/performance/36089%2FThe-Script%2F> a schema:PerformingArtsEvent ;
+    schema:name "The Script concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/36089/The-Script/> .
+
+<https://www.festivalinfo.nl/festival/27783/Concert-at-Sea/2020/performance/51601%2FChefSpecial%2F> a schema:PerformingArtsEvent ;
+    schema:name "Chef'Special concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/51601/ChefSpecial/> .
+
+<https://www.festivalinfo.nl/festival/27783/Concert-at-Sea/2020/performance/61%2FVan-Dik-Hout%2F> a schema:PerformingArtsEvent ;
+    schema:name "Van Dik Hout concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/61/Van-Dik-Hout/> .
+
+<https://www.festivalinfo.nl/festival/27783/Concert-at-Sea/2020/performance/71088%2FAndre-Hazes-Jr-%2F> a schema:PerformingArtsEvent ;
+    schema:name "Andre Hazes Jr. concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/71088/Andre-Hazes-Jr-/> .
+
+<https://www.festivalinfo.nl/festival/27783/Concert-at-Sea/2020/performance/73496%2FThe-Dirty-Daddies%2F> a schema:PerformingArtsEvent ;
+    schema:name "The Dirty Daddies concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/73496/The-Dirty-Daddies/> .
+
+<https://www.festivalinfo.nl/festival/27783/Concert-at-Sea/2020/performance/73980%2FMaan%2F> a schema:PerformingArtsEvent ;
+    schema:name "Maan concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/73980/Maan/> .
+
+<https://www.festivalinfo.nl/festival/27783/Concert-at-Sea/2020/performance/74%2FKrezip%2F> a schema:PerformingArtsEvent ;
+    schema:name "Krezip concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/74/Krezip/> .
+
+<https://www.festivalinfo.nl/festival/27783/Concert-at-Sea/2020/performance/75%2FRacoon%2F> a schema:PerformingArtsEvent ;
+    schema:name "Racoon concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/75/Racoon/> .
+
+<https://www.festivalinfo.nl/festival/27783/Concert-at-Sea/2020/performance/93718%2FSuzan-Freek%2F> a schema:PerformingArtsEvent ;
+    schema:name "Suzan & Freek concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/93718/Suzan-Freek/> .
+
+<https://www.festivalinfo.nl/artist/105645/Snelle/> a schema:MusicGroup ;
+    schema:name "Snelle" .
+
+<https://www.festivalinfo.nl/artist/122452/Ronnie-Flex-Deuxperience-Band/> a schema:MusicGroup ;
+    schema:name "Ronnie Flex & Deuxperience Band" .
+
+<https://www.festivalinfo.nl/artist/1237/Blof/> a schema:MusicGroup ;
+    schema:name "Bløf" .
+
+<https://www.festivalinfo.nl/artist/126292/Wipneus-Pim/> a schema:MusicGroup ;
+    schema:name "Wipneus & Pim" .
+
+<https://www.festivalinfo.nl/artist/20611/Kensington/> a schema:MusicGroup ;
+    schema:name "Kensington" .
+
+<https://www.festivalinfo.nl/artist/22028/Crowded-House/> a schema:MusicGroup ;
+    schema:name "Crowded House" .
+
+<https://www.festivalinfo.nl/artist/23410/Diggy-Dex/> a schema:MusicGroup ;
+    schema:name "Diggy Dex" .
+
+<https://www.festivalinfo.nl/artist/243/Di-rect/> a schema:MusicGroup ;
+    schema:name "Di-rect" .
+
+<https://www.festivalinfo.nl/artist/30944/Miss-Montreal/> a schema:MusicGroup ;
+    schema:name "Miss Montreal" .
+
+<https://www.festivalinfo.nl/artist/35900/Tabitha/> a schema:MusicGroup ;
+    schema:name "Tabitha" .
+
+<https://www.festivalinfo.nl/artist/36089/The-Script/> a schema:MusicGroup ;
+    schema:name "The Script" .
+
+<https://www.festivalinfo.nl/artist/51601/ChefSpecial/> a schema:MusicGroup ;
+    schema:name "Chef'Special" .
+
+<https://www.festivalinfo.nl/artist/61/Van-Dik-Hout/> a schema:MusicGroup ;
+    schema:name "Van Dik Hout" .
+
+<https://www.festivalinfo.nl/artist/71088/Andre-Hazes-Jr-/> a schema:MusicGroup ;
+    schema:name "Andre Hazes Jr." .
+
+<https://www.festivalinfo.nl/artist/73496/The-Dirty-Daddies/> a schema:MusicGroup ;
+    schema:name "The Dirty Daddies" .
+
+<https://www.festivalinfo.nl/artist/73980/Maan/> a schema:MusicGroup ;
+    schema:name "Maan" .
+
+<https://www.festivalinfo.nl/artist/74/Krezip/> a schema:MusicGroup ;
+    schema:name "Krezip" .
+
+<https://www.festivalinfo.nl/artist/75/Racoon/> a schema:MusicGroup ;
+    schema:name "Racoon" .
+
+<https://www.festivalinfo.nl/artist/93718/Suzan-Freek/> a schema:MusicGroup ;
+    schema:name "Suzan & Freek" .
+
+
+#Get graph for 2019
+@prefix schema: <https://schema.org/> .
+
+<https://www.festivalinfo.nl/festival/25770/Concert-at-Sea/2019/> a schema:Festival ;
+    schema:endDate "2019-06-29"^^<http://schema.org/Date> ;
+    schema:location [ a schema:Place ;
+            schema:name "Brouwershaven" ] ;
+    schema:name "Concert at Sea (2019)" ;
+    schema:additionalType "concert at sea" ;
+    schema:startDate "2019-06-27"^^<http://schema.org/Date> ;
+    schema:subEvent <https://www.festivalinfo.nl/festival/25770/Concert-at-Sea/2019/performance/1237%2FBlof%2F>,
+        <https://www.festivalinfo.nl/festival/25770/Concert-at-Sea/2019/performance/131%2FNovastar%2F>,
+        <https://www.festivalinfo.nl/festival/25770/Concert-at-Sea/2019/performance/151%2FIlse-DeLange%2F>,
+        <https://www.festivalinfo.nl/festival/25770/Concert-at-Sea/2019/performance/15317%2FGuus-Meeuwis%2F>,
+        <https://www.festivalinfo.nl/festival/25770/Concert-at-Sea/2019/performance/1592%2FLive%2F>,
+        <https://www.festivalinfo.nl/festival/25770/Concert-at-Sea/2019/performance/16154%2FDe-Jeugd-Van-Tegenwoordig%2F>,
+        <https://www.festivalinfo.nl/festival/25770/Concert-at-Sea/2019/performance/239%2FLoco-Loco-Discoshow%2F>,
+        <https://www.festivalinfo.nl/festival/25770/Concert-at-Sea/2019/performance/32799%2FKraantje-Pappie%2F>,
+        <https://www.festivalinfo.nl/festival/25770/Concert-at-Sea/2019/performance/45067%2FLisa-Lois%2F>,
+        <https://www.festivalinfo.nl/festival/25770/Concert-at-Sea/2019/performance/47%2FGolden-Earring%2F>,
+        <https://www.festivalinfo.nl/festival/25770/Concert-at-Sea/2019/performance/5874%2FDaniel-Lohues%2F>,
+        <https://www.festivalinfo.nl/festival/25770/Concert-at-Sea/2019/performance/62263%2FNoel-Gallagher-s-High-Flying-Birds%2F>,
+        <https://www.festivalinfo.nl/festival/25770/Concert-at-Sea/2019/performance/6963%2FNile-Rodgers-Chic%2F>,
+        <https://www.festivalinfo.nl/festival/25770/Concert-at-Sea/2019/performance/71692%2FDouwe-Bob%2F>,
+        <https://www.festivalinfo.nl/festival/25770/Concert-at-Sea/2019/performance/71974%2FNielson%2F>,
+        <https://www.festivalinfo.nl/festival/25770/Concert-at-Sea/2019/performance/77935%2FJett-Rebel%2F>,
+        <https://www.festivalinfo.nl/festival/25770/Concert-at-Sea/2019/performance/81765%2FKovacs%2F>,
+        <https://www.festivalinfo.nl/festival/25770/Concert-at-Sea/2019/performance/84591%2FBazart%2F>,
+        <https://www.festivalinfo.nl/festival/25770/Concert-at-Sea/2019/performance/87506%2FRonde%2F>,
+        <https://www.festivalinfo.nl/festival/25770/Concert-at-Sea/2019/performance/97184%2FSon-Mieux%2F> ;
+    schema:url <https://www.festivalinfo.nl/festival/25770/Concert-at-Sea/2019/> .
+
+<https://www.festivalinfo.nl/festival/25770/Concert-at-Sea/2019/performance/1237%2FBlof%2F> a schema:PerformingArtsEvent ;
+    schema:name "Bløf concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/1237/Blof/> .
+
+<https://www.festivalinfo.nl/festival/25770/Concert-at-Sea/2019/performance/131%2FNovastar%2F> a schema:PerformingArtsEvent ;
+    schema:name "Novastar concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/131/Novastar/> .
+
+<https://www.festivalinfo.nl/festival/25770/Concert-at-Sea/2019/performance/151%2FIlse-DeLange%2F> a schema:PerformingArtsEvent ;
+    schema:name "Ilse DeLange concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/151/Ilse-DeLange/> .
+
+<https://www.festivalinfo.nl/festival/25770/Concert-at-Sea/2019/performance/15317%2FGuus-Meeuwis%2F> a schema:PerformingArtsEvent ;
+    schema:name "Guus Meeuwis concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/15317/Guus-Meeuwis/> .
+
+<https://www.festivalinfo.nl/festival/25770/Concert-at-Sea/2019/performance/1592%2FLive%2F> a schema:PerformingArtsEvent ;
+    schema:name "Live concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/1592/Live/> .
+
+<https://www.festivalinfo.nl/festival/25770/Concert-at-Sea/2019/performance/16154%2FDe-Jeugd-Van-Tegenwoordig%2F> a schema:PerformingArtsEvent ;
+    schema:name "De Jeugd Van Tegenwoordig concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/16154/De-Jeugd-Van-Tegenwoordig/> .
+
+<https://www.festivalinfo.nl/festival/25770/Concert-at-Sea/2019/performance/239%2FLoco-Loco-Discoshow%2F> a schema:PerformingArtsEvent ;
+    schema:name "Loco Loco Discoshow concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/239/Loco-Loco-Discoshow/> .
+
+<https://www.festivalinfo.nl/festival/25770/Concert-at-Sea/2019/performance/32799%2FKraantje-Pappie%2F> a schema:PerformingArtsEvent ;
+    schema:name "Kraantje Pappie concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/32799/Kraantje-Pappie/> .
+
+<https://www.festivalinfo.nl/festival/25770/Concert-at-Sea/2019/performance/45067%2FLisa-Lois%2F> a schema:PerformingArtsEvent ;
+    schema:name "Lisa Loïs concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/45067/Lisa-Lois/> .
+
+<https://www.festivalinfo.nl/festival/25770/Concert-at-Sea/2019/performance/47%2FGolden-Earring%2F> a schema:PerformingArtsEvent ;
+    schema:name "Golden Earring concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/47/Golden-Earring/> .
+
+<https://www.festivalinfo.nl/festival/25770/Concert-at-Sea/2019/performance/5874%2FDaniel-Lohues%2F> a schema:PerformingArtsEvent ;
+    schema:name "Daniel Lohues concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/5874/Daniel-Lohues/> .
+
+<https://www.festivalinfo.nl/festival/25770/Concert-at-Sea/2019/performance/62263%2FNoel-Gallagher-s-High-Flying-Birds%2F> a schema:PerformingArtsEvent ;
+    schema:name "Noel Gallagher’s High Flying Birds concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/62263/Noel-Gallagher-s-High-Flying-Birds/> .
+
+<https://www.festivalinfo.nl/festival/25770/Concert-at-Sea/2019/performance/6963%2FNile-Rodgers-Chic%2F> a schema:PerformingArtsEvent ;
+    schema:name "Nile Rodgers & Chic concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/6963/Nile-Rodgers-Chic/> .
+
+<https://www.festivalinfo.nl/festival/25770/Concert-at-Sea/2019/performance/71692%2FDouwe-Bob%2F> a schema:PerformingArtsEvent ;
+    schema:name "Douwe Bob concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/71692/Douwe-Bob/> .
+
+<https://www.festivalinfo.nl/festival/25770/Concert-at-Sea/2019/performance/71974%2FNielson%2F> a schema:PerformingArtsEvent ;
+    schema:name "Nielson concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/71974/Nielson/> .
+
+<https://www.festivalinfo.nl/festival/25770/Concert-at-Sea/2019/performance/77935%2FJett-Rebel%2F> a schema:PerformingArtsEvent ;
+    schema:name "Jett Rebel concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/77935/Jett-Rebel/> .
+
+<https://www.festivalinfo.nl/festival/25770/Concert-at-Sea/2019/performance/81765%2FKovacs%2F> a schema:PerformingArtsEvent ;
+    schema:name "Kovacs concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/81765/Kovacs/> .
+
+<https://www.festivalinfo.nl/festival/25770/Concert-at-Sea/2019/performance/84591%2FBazart%2F> a schema:PerformingArtsEvent ;
+    schema:name "Bazart concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/84591/Bazart/> .
+
+<https://www.festivalinfo.nl/festival/25770/Concert-at-Sea/2019/performance/87506%2FRonde%2F> a schema:PerformingArtsEvent ;
+    schema:name "Rondé concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/87506/Ronde/> .
+
+<https://www.festivalinfo.nl/festival/25770/Concert-at-Sea/2019/performance/97184%2FSon-Mieux%2F> a schema:PerformingArtsEvent ;
+    schema:name "Son Mieux concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/97184/Son-Mieux/> .
+
+<https://www.festivalinfo.nl/artist/1237/Blof/> a schema:MusicGroup ;
+    schema:name "Bløf" .
+
+<https://www.festivalinfo.nl/artist/131/Novastar/> a schema:MusicGroup ;
+    schema:name "Novastar" .
+
+<https://www.festivalinfo.nl/artist/151/Ilse-DeLange/> a schema:MusicGroup ;
+    schema:name "Ilse DeLange" .
+
+<https://www.festivalinfo.nl/artist/15317/Guus-Meeuwis/> a schema:MusicGroup ;
+    schema:name "Guus Meeuwis" .
+
+<https://www.festivalinfo.nl/artist/1592/Live/> a schema:MusicGroup ;
+    schema:name "Live" .
+
+<https://www.festivalinfo.nl/artist/16154/De-Jeugd-Van-Tegenwoordig/> a schema:MusicGroup ;
+    schema:name "De Jeugd Van Tegenwoordig" .
+
+<https://www.festivalinfo.nl/artist/239/Loco-Loco-Discoshow/> a schema:MusicGroup ;
+    schema:name "Loco Loco Discoshow" .
+
+<https://www.festivalinfo.nl/artist/32799/Kraantje-Pappie/> a schema:MusicGroup ;
+    schema:name "Kraantje Pappie" .
+
+<https://www.festivalinfo.nl/artist/45067/Lisa-Lois/> a schema:MusicGroup ;
+    schema:name "Lisa Loïs" .
+
+<https://www.festivalinfo.nl/artist/47/Golden-Earring/> a schema:MusicGroup ;
+    schema:name "Golden Earring" .
+
+<https://www.festivalinfo.nl/artist/5874/Daniel-Lohues/> a schema:MusicGroup ;
+    schema:name "Daniel Lohues" .
+
+<https://www.festivalinfo.nl/artist/62263/Noel-Gallagher-s-High-Flying-Birds/> a schema:MusicGroup ;
+    schema:name "Noel Gallagher’s High Flying Birds" .
+
+<https://www.festivalinfo.nl/artist/6963/Nile-Rodgers-Chic/> a schema:MusicGroup ;
+    schema:name "Nile Rodgers & Chic" .
+
+<https://www.festivalinfo.nl/artist/71692/Douwe-Bob/> a schema:MusicGroup ;
+    schema:name "Douwe Bob" .
+
+<https://www.festivalinfo.nl/artist/71974/Nielson/> a schema:MusicGroup ;
+    schema:name "Nielson" .
+
+<https://www.festivalinfo.nl/artist/77935/Jett-Rebel/> a schema:MusicGroup ;
+    schema:name "Jett Rebel" .
+
+<https://www.festivalinfo.nl/artist/81765/Kovacs/> a schema:MusicGroup ;
+    schema:name "Kovacs" .
+
+<https://www.festivalinfo.nl/artist/84591/Bazart/> a schema:MusicGroup ;
+    schema:name "Bazart" .
+
+<https://www.festivalinfo.nl/artist/87506/Ronde/> a schema:MusicGroup ;
+    schema:name "Rondé" .
+
+<https://www.festivalinfo.nl/artist/97184/Son-Mieux/> a schema:MusicGroup ;
+    schema:name "Son Mieux" .
+
+
+#Get graph for 2018
+@prefix schema: <https://schema.org/> .
+
+<https://www.festivalinfo.nl/festival/24554/Concert-at-Sea/2018/> a schema:Festival ;
+    schema:endDate "2018-06-30"^^<http://schema.org/Date> ;
+    schema:location [ a schema:Place ;
+            schema:name "Brouwershaven" ] ;
+    schema:name "Concert at Sea (2018)" ;
+    schema:additionalType "concert at sea" ;
+    schema:startDate "2018-06-29"^^<http://schema.org/Date> ;
+    schema:subEvent <https://www.festivalinfo.nl/festival/24554/Concert-at-Sea/2018/performance/105290%2FMichelle-David-The-Gospel-Sessions%2F>,
+        <https://www.festivalinfo.nl/festival/24554/Concert-at-Sea/2018/performance/111932%2FWulf%2F>,
+        <https://www.festivalinfo.nl/festival/24554/Concert-at-Sea/2018/performance/1237%2FBlof%2F>,
+        <https://www.festivalinfo.nl/festival/24554/Concert-at-Sea/2018/performance/124%2FSting%2F>,
+        <https://www.festivalinfo.nl/festival/24554/Concert-at-Sea/2018/performance/13584%2FAlanis-Morissette%2F>,
+        <https://www.festivalinfo.nl/festival/24554/Concert-at-Sea/2018/performance/15317%2FGuus-Meeuwis%2F>,
+        <https://www.festivalinfo.nl/festival/24554/Concert-at-Sea/2018/performance/243%2FDi-rect%2F>,
+        <https://www.festivalinfo.nl/festival/24554/Concert-at-Sea/2018/performance/30944%2FMiss-Montreal%2F>,
+        <https://www.festivalinfo.nl/festival/24554/Concert-at-Sea/2018/performance/35%2FShaggy%2F>,
+        <https://www.festivalinfo.nl/festival/24554/Concert-at-Sea/2018/performance/42310%2FJonathan-Jeremiah%2F>,
+        <https://www.festivalinfo.nl/festival/24554/Concert-at-Sea/2018/performance/53087%2FJacqueline-Govaert%2F>,
+        <https://www.festivalinfo.nl/festival/24554/Concert-at-Sea/2018/performance/59251%2FMuyayo-Rif%2F>,
+        <https://www.festivalinfo.nl/festival/24554/Concert-at-Sea/2018/performance/5947%2FDanny-Vera%2F>,
+        <https://www.festivalinfo.nl/festival/24554/Concert-at-Sea/2018/performance/61%2FVan-Dik-Hout%2F>,
+        <https://www.festivalinfo.nl/festival/24554/Concert-at-Sea/2018/performance/66039%2FRonnie-Flex%2F>,
+        <https://www.festivalinfo.nl/festival/24554/Concert-at-Sea/2018/performance/70%2FWipneus-en-Pim%2F>,
+        <https://www.festivalinfo.nl/festival/24554/Concert-at-Sea/2018/performance/75%2FRacoon%2F>,
+        <https://www.festivalinfo.nl/festival/24554/Concert-at-Sea/2018/performance/77054%2FBroederliefde%2F>,
+        <https://www.festivalinfo.nl/festival/24554/Concert-at-Sea/2018/performance/93718%2FSuzan-Freek%2F>,
+        <https://www.festivalinfo.nl/festival/24554/Concert-at-Sea/2018/performance/96210%2FHAEVN%2F> ;
+    schema:url <https://www.festivalinfo.nl/festival/24554/Concert-at-Sea/2018/> .
+
+<https://www.festivalinfo.nl/festival/24554/Concert-at-Sea/2018/performance/105290%2FMichelle-David-The-Gospel-Sessions%2F> a schema:PerformingArtsEvent ;
+    schema:name "Michelle David & The Gospel Sessions concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/105290/Michelle-David-The-Gospel-Sessions/> .
+
+<https://www.festivalinfo.nl/festival/24554/Concert-at-Sea/2018/performance/111932%2FWulf%2F> a schema:PerformingArtsEvent ;
+    schema:name "Wulf concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/111932/Wulf/> .
+
+<https://www.festivalinfo.nl/festival/24554/Concert-at-Sea/2018/performance/1237%2FBlof%2F> a schema:PerformingArtsEvent ;
+    schema:name "Bløf concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/1237/Blof/> .
+
+<https://www.festivalinfo.nl/festival/24554/Concert-at-Sea/2018/performance/124%2FSting%2F> a schema:PerformingArtsEvent ;
+    schema:name "Sting concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/124/Sting/> .
+
+<https://www.festivalinfo.nl/festival/24554/Concert-at-Sea/2018/performance/13584%2FAlanis-Morissette%2F> a schema:PerformingArtsEvent ;
+    schema:name "Alanis Morissette concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/13584/Alanis-Morissette/> .
+
+<https://www.festivalinfo.nl/festival/24554/Concert-at-Sea/2018/performance/15317%2FGuus-Meeuwis%2F> a schema:PerformingArtsEvent ;
+    schema:name "Guus Meeuwis concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/15317/Guus-Meeuwis/> .
+
+<https://www.festivalinfo.nl/festival/24554/Concert-at-Sea/2018/performance/243%2FDi-rect%2F> a schema:PerformingArtsEvent ;
+    schema:name "Di-rect concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/243/Di-rect/> .
+
+<https://www.festivalinfo.nl/festival/24554/Concert-at-Sea/2018/performance/30944%2FMiss-Montreal%2F> a schema:PerformingArtsEvent ;
+    schema:name "Miss Montreal concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/30944/Miss-Montreal/> .
+
+<https://www.festivalinfo.nl/festival/24554/Concert-at-Sea/2018/performance/35%2FShaggy%2F> a schema:PerformingArtsEvent ;
+    schema:name "Shaggy concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/35/Shaggy/> .
+
+<https://www.festivalinfo.nl/festival/24554/Concert-at-Sea/2018/performance/42310%2FJonathan-Jeremiah%2F> a schema:PerformingArtsEvent ;
+    schema:name "Jonathan Jeremiah concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/42310/Jonathan-Jeremiah/> .
+
+<https://www.festivalinfo.nl/festival/24554/Concert-at-Sea/2018/performance/53087%2FJacqueline-Govaert%2F> a schema:PerformingArtsEvent ;
+    schema:name "Jacqueline Govaert concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/53087/Jacqueline-Govaert/> .
+
+<https://www.festivalinfo.nl/festival/24554/Concert-at-Sea/2018/performance/59251%2FMuyayo-Rif%2F> a schema:PerformingArtsEvent ;
+    schema:name "Muyayo Rif concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/59251/Muyayo-Rif/> .
+
+<https://www.festivalinfo.nl/festival/24554/Concert-at-Sea/2018/performance/5947%2FDanny-Vera%2F> a schema:PerformingArtsEvent ;
+    schema:name "Danny Vera concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/5947/Danny-Vera/> .
+
+<https://www.festivalinfo.nl/festival/24554/Concert-at-Sea/2018/performance/61%2FVan-Dik-Hout%2F> a schema:PerformingArtsEvent ;
+    schema:name "Van Dik Hout concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/61/Van-Dik-Hout/> .
+
+<https://www.festivalinfo.nl/festival/24554/Concert-at-Sea/2018/performance/66039%2FRonnie-Flex%2F> a schema:PerformingArtsEvent ;
+    schema:name "Ronnie Flex concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/66039/Ronnie-Flex/> .
+
+<https://www.festivalinfo.nl/festival/24554/Concert-at-Sea/2018/performance/70%2FWipneus-en-Pim%2F> a schema:PerformingArtsEvent ;
+    schema:name "Wipneus en Pim concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/70/Wipneus-en-Pim/> .
+
+<https://www.festivalinfo.nl/festival/24554/Concert-at-Sea/2018/performance/75%2FRacoon%2F> a schema:PerformingArtsEvent ;
+    schema:name "Racoon concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/75/Racoon/> .
+
+<https://www.festivalinfo.nl/festival/24554/Concert-at-Sea/2018/performance/77054%2FBroederliefde%2F> a schema:PerformingArtsEvent ;
+    schema:name "Broederliefde concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/77054/Broederliefde/> .
+
+<https://www.festivalinfo.nl/festival/24554/Concert-at-Sea/2018/performance/93718%2FSuzan-Freek%2F> a schema:PerformingArtsEvent ;
+    schema:name "Suzan & Freek concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/93718/Suzan-Freek/> .
+
+<https://www.festivalinfo.nl/festival/24554/Concert-at-Sea/2018/performance/96210%2FHAEVN%2F> a schema:PerformingArtsEvent ;
+    schema:name "HAEVN concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/96210/HAEVN/> .
+
+<https://www.festivalinfo.nl/artist/105290/Michelle-David-The-Gospel-Sessions/> a schema:MusicGroup ;
+    schema:name "Michelle David & The Gospel Sessions" .
+
+<https://www.festivalinfo.nl/artist/111932/Wulf/> a schema:MusicGroup ;
+    schema:name "Wulf" .
+
+<https://www.festivalinfo.nl/artist/1237/Blof/> a schema:MusicGroup ;
+    schema:name "Bløf" .
+
+<https://www.festivalinfo.nl/artist/124/Sting/> a schema:MusicGroup ;
+    schema:name "Sting" .
+
+<https://www.festivalinfo.nl/artist/13584/Alanis-Morissette/> a schema:MusicGroup ;
+    schema:name "Alanis Morissette" .
+
+<https://www.festivalinfo.nl/artist/15317/Guus-Meeuwis/> a schema:MusicGroup ;
+    schema:name "Guus Meeuwis" .
+
+<https://www.festivalinfo.nl/artist/243/Di-rect/> a schema:MusicGroup ;
+    schema:name "Di-rect" .
+
+<https://www.festivalinfo.nl/artist/30944/Miss-Montreal/> a schema:MusicGroup ;
+    schema:name "Miss Montreal" .
+
+<https://www.festivalinfo.nl/artist/35/Shaggy/> a schema:MusicGroup ;
+    schema:name "Shaggy" .
+
+<https://www.festivalinfo.nl/artist/42310/Jonathan-Jeremiah/> a schema:MusicGroup ;
+    schema:name "Jonathan Jeremiah" .
+
+<https://www.festivalinfo.nl/artist/53087/Jacqueline-Govaert/> a schema:MusicGroup ;
+    schema:name "Jacqueline Govaert" .
+
+<https://www.festivalinfo.nl/artist/59251/Muyayo-Rif/> a schema:MusicGroup ;
+    schema:name "Muyayo Rif" .
+
+<https://www.festivalinfo.nl/artist/5947/Danny-Vera/> a schema:MusicGroup ;
+    schema:name "Danny Vera" .
+
+<https://www.festivalinfo.nl/artist/61/Van-Dik-Hout/> a schema:MusicGroup ;
+    schema:name "Van Dik Hout" .
+
+<https://www.festivalinfo.nl/artist/66039/Ronnie-Flex/> a schema:MusicGroup ;
+    schema:name "Ronnie Flex" .
+
+<https://www.festivalinfo.nl/artist/70/Wipneus-en-Pim/> a schema:MusicGroup ;
+    schema:name "Wipneus en Pim" .
+
+<https://www.festivalinfo.nl/artist/75/Racoon/> a schema:MusicGroup ;
+    schema:name "Racoon" .
+
+<https://www.festivalinfo.nl/artist/77054/Broederliefde/> a schema:MusicGroup ;
+    schema:name "Broederliefde" .
+
+<https://www.festivalinfo.nl/artist/93718/Suzan-Freek/> a schema:MusicGroup ;
+    schema:name "Suzan & Freek" .
+
+<https://www.festivalinfo.nl/artist/96210/HAEVN/> a schema:MusicGroup ;
+    schema:name "HAEVN" .
+
+
+#Get graph for 2017
+@prefix schema: <https://schema.org/> .
+
+<https://www.festivalinfo.nl/festival/22727/Concert-at-Sea/2017/> a schema:Festival ;
+    schema:endDate "2017-07-01"^^<http://schema.org/Date> ;
+    schema:location [ a schema:Place ;
+            schema:name "Brouwershaven" ] ;
+    schema:name "Concert at Sea (2017)" ;
+    schema:additionalType "concert at sea" ;
+    schema:startDate "2017-06-30"^^<http://schema.org/Date> ;
+    schema:subEvent <https://www.festivalinfo.nl/festival/22727/Concert-at-Sea/2017/performance/106292%2FRob-Dekay%2F>,
+        <https://www.festivalinfo.nl/festival/22727/Concert-at-Sea/2017/performance/1237%2FBlof%2F>,
+        <https://www.festivalinfo.nl/festival/22727/Concert-at-Sea/2017/performance/1679%2FUB40%2F>,
+        <https://www.festivalinfo.nl/festival/22727/Concert-at-Sea/2017/performance/19%2FAnouk%2F>,
+        <https://www.festivalinfo.nl/festival/22727/Concert-at-Sea/2017/performance/20611%2FKensington%2F>,
+        <https://www.festivalinfo.nl/festival/22727/Concert-at-Sea/2017/performance/21694%2FDoe-Maar%2F>,
+        <https://www.festivalinfo.nl/festival/22727/Concert-at-Sea/2017/performance/59863%2FSue-the-Night%2F>,
+        <https://www.festivalinfo.nl/festival/22727/Concert-at-Sea/2017/performance/61670%2FBokkers%2F>,
+        <https://www.festivalinfo.nl/festival/22727/Concert-at-Sea/2017/performance/73206%2FTom-Odell%2F>,
+        <https://www.festivalinfo.nl/festival/22727/Concert-at-Sea/2017/performance/75%2FRacoon%2F>,
+        <https://www.festivalinfo.nl/festival/22727/Concert-at-Sea/2017/performance/77054%2FBroederliefde%2F>,
+        <https://www.festivalinfo.nl/festival/22727/Concert-at-Sea/2017/performance/87506%2FRonde%2F>,
+        <https://www.festivalinfo.nl/festival/22727/Concert-at-Sea/2017/performance/99632%2FTeske%2F> ;
+    schema:url <https://www.festivalinfo.nl/festival/22727/Concert-at-Sea/2017/> .
+
+<https://www.festivalinfo.nl/festival/22727/Concert-at-Sea/2017/performance/106292%2FRob-Dekay%2F> a schema:PerformingArtsEvent ;
+    schema:name "Rob Dekay concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/106292/Rob-Dekay/> .
+
+<https://www.festivalinfo.nl/festival/22727/Concert-at-Sea/2017/performance/1237%2FBlof%2F> a schema:PerformingArtsEvent ;
+    schema:name "Bløf concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/1237/Blof/> .
+
+<https://www.festivalinfo.nl/festival/22727/Concert-at-Sea/2017/performance/1679%2FUB40%2F> a schema:PerformingArtsEvent ;
+    schema:name "UB40 concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/1679/UB40/> .
+
+<https://www.festivalinfo.nl/festival/22727/Concert-at-Sea/2017/performance/19%2FAnouk%2F> a schema:PerformingArtsEvent ;
+    schema:name "Anouk concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/19/Anouk/> .
+
+<https://www.festivalinfo.nl/festival/22727/Concert-at-Sea/2017/performance/20611%2FKensington%2F> a schema:PerformingArtsEvent ;
+    schema:name "Kensington concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/20611/Kensington/> .
+
+<https://www.festivalinfo.nl/festival/22727/Concert-at-Sea/2017/performance/21694%2FDoe-Maar%2F> a schema:PerformingArtsEvent ;
+    schema:name "Doe Maar concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/21694/Doe-Maar/> .
+
+<https://www.festivalinfo.nl/festival/22727/Concert-at-Sea/2017/performance/59863%2FSue-the-Night%2F> a schema:PerformingArtsEvent ;
+    schema:name "Sue the Night concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/59863/Sue-the-Night/> .
+
+<https://www.festivalinfo.nl/festival/22727/Concert-at-Sea/2017/performance/61670%2FBokkers%2F> a schema:PerformingArtsEvent ;
+    schema:name "Bökkers concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/61670/Bokkers/> .
+
+<https://www.festivalinfo.nl/festival/22727/Concert-at-Sea/2017/performance/73206%2FTom-Odell%2F> a schema:PerformingArtsEvent ;
+    schema:name "Tom Odell concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/73206/Tom-Odell/> .
+
+<https://www.festivalinfo.nl/festival/22727/Concert-at-Sea/2017/performance/75%2FRacoon%2F> a schema:PerformingArtsEvent ;
+    schema:name "Racoon concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/75/Racoon/> .
+
+<https://www.festivalinfo.nl/festival/22727/Concert-at-Sea/2017/performance/77054%2FBroederliefde%2F> a schema:PerformingArtsEvent ;
+    schema:name "Broederliefde concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/77054/Broederliefde/> .
+
+<https://www.festivalinfo.nl/festival/22727/Concert-at-Sea/2017/performance/87506%2FRonde%2F> a schema:PerformingArtsEvent ;
+    schema:name "Rondé concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/87506/Ronde/> .
+
+<https://www.festivalinfo.nl/festival/22727/Concert-at-Sea/2017/performance/99632%2FTeske%2F> a schema:PerformingArtsEvent ;
+    schema:name "Teske concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/99632/Teske/> .
+
+<https://www.festivalinfo.nl/artist/106292/Rob-Dekay/> a schema:MusicGroup ;
+    schema:name "Rob Dekay" .
+
+<https://www.festivalinfo.nl/artist/1237/Blof/> a schema:MusicGroup ;
+    schema:name "Bløf" .
+
+<https://www.festivalinfo.nl/artist/1679/UB40/> a schema:MusicGroup ;
+    schema:name "UB40" .
+
+<https://www.festivalinfo.nl/artist/19/Anouk/> a schema:MusicGroup ;
+    schema:name "Anouk" .
+
+<https://www.festivalinfo.nl/artist/20611/Kensington/> a schema:MusicGroup ;
+    schema:name "Kensington" .
+
+<https://www.festivalinfo.nl/artist/21694/Doe-Maar/> a schema:MusicGroup ;
+    schema:name "Doe Maar" .
+
+<https://www.festivalinfo.nl/artist/59863/Sue-the-Night/> a schema:MusicGroup ;
+    schema:name "Sue the Night" .
+
+<https://www.festivalinfo.nl/artist/61670/Bokkers/> a schema:MusicGroup ;
+    schema:name "Bökkers" .
+
+<https://www.festivalinfo.nl/artist/73206/Tom-Odell/> a schema:MusicGroup ;
+    schema:name "Tom Odell" .
+
+<https://www.festivalinfo.nl/artist/75/Racoon/> a schema:MusicGroup ;
+    schema:name "Racoon" .
+
+<https://www.festivalinfo.nl/artist/77054/Broederliefde/> a schema:MusicGroup ;
+    schema:name "Broederliefde" .
+
+<https://www.festivalinfo.nl/artist/87506/Ronde/> a schema:MusicGroup ;
+    schema:name "Rondé" .
+
+<https://www.festivalinfo.nl/artist/99632/Teske/> a schema:MusicGroup ;
+    schema:name "Teske" .
+
+
+#Get graph for 2016
+@prefix schema: <https://schema.org/> .
+
+<https://www.festivalinfo.nl/festival/21058/Concert-at-Sea/2016/> a schema:Festival ;
+    schema:endDate "2016-07-02"^^<http://schema.org/Date> ;
+    schema:location [ a schema:Place ;
+            schema:name "Brouwershaven" ] ;
+    schema:name "Concert at Sea (2016)" ;
+    schema:additionalType "concert at sea" ;
+    schema:startDate "2016-07-01"^^<http://schema.org/Date> ;
+    schema:subEvent <https://www.festivalinfo.nl/festival/21058/Concert-at-Sea/2016/performance/1135%2FNUHR%2F>,
+        <https://www.festivalinfo.nl/festival/21058/Concert-at-Sea/2016/performance/1237%2FBlof%2F>,
+        <https://www.festivalinfo.nl/festival/21058/Concert-at-Sea/2016/performance/137%2FFaithless%2F>,
+        <https://www.festivalinfo.nl/festival/21058/Concert-at-Sea/2016/performance/15317%2FGuus-Meeuwis%2F>,
+        <https://www.festivalinfo.nl/festival/21058/Concert-at-Sea/2016/performance/15554%2FTyphoon%2F>,
+        <https://www.festivalinfo.nl/festival/21058/Concert-at-Sea/2016/performance/16154%2FDe-Jeugd-Van-Tegenwoordig%2F>,
+        <https://www.festivalinfo.nl/festival/21058/Concert-at-Sea/2016/performance/21863%2FSkunk-Anansie%2F>,
+        <https://www.festivalinfo.nl/festival/21058/Concert-at-Sea/2016/performance/24474%2FMemphis-Maniacs%2F>,
+        <https://www.festivalinfo.nl/festival/21058/Concert-at-Sea/2016/performance/281%2FZuco-103%2F>,
+        <https://www.festivalinfo.nl/festival/21058/Concert-at-Sea/2016/performance/41357%2FTenTemPies%2F>,
+        <https://www.festivalinfo.nl/festival/21058/Concert-at-Sea/2016/performance/41593%2FBazzookas%2F>,
+        <https://www.festivalinfo.nl/festival/21058/Concert-at-Sea/2016/performance/60719%2FLucas-Hamming%2F>,
+        <https://www.festivalinfo.nl/festival/21058/Concert-at-Sea/2016/performance/70%2FWipneus-en-Pim%2F>,
+        <https://www.festivalinfo.nl/festival/21058/Concert-at-Sea/2016/performance/71692%2FDouwe-Bob%2F>,
+        <https://www.festivalinfo.nl/festival/21058/Concert-at-Sea/2016/performance/77935%2FJett-Rebel%2F>,
+        <https://www.festivalinfo.nl/festival/21058/Concert-at-Sea/2016/performance/81744%2FThe-Common-Linnets%2F>,
+        <https://www.festivalinfo.nl/festival/21058/Concert-at-Sea/2016/performance/87185%2FThe-Brahms%2F>,
+        <https://www.festivalinfo.nl/festival/21058/Concert-at-Sea/2016/performance/90251%2FCauses%2F>,
+        <https://www.festivalinfo.nl/festival/21058/Concert-at-Sea/2016/performance/96210%2FHAEVN%2F> ;
+    schema:url <https://www.festivalinfo.nl/festival/21058/Concert-at-Sea/2016/> .
+
+<https://www.festivalinfo.nl/festival/21058/Concert-at-Sea/2016/performance/1135%2FNUHR%2F> a schema:PerformingArtsEvent ;
+    schema:name "NUHR concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/1135/NUHR/> .
+
+<https://www.festivalinfo.nl/festival/21058/Concert-at-Sea/2016/performance/1237%2FBlof%2F> a schema:PerformingArtsEvent ;
+    schema:name "Bløf concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/1237/Blof/> .
+
+<https://www.festivalinfo.nl/festival/21058/Concert-at-Sea/2016/performance/137%2FFaithless%2F> a schema:PerformingArtsEvent ;
+    schema:name "Faithless concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/137/Faithless/> .
+
+<https://www.festivalinfo.nl/festival/21058/Concert-at-Sea/2016/performance/15317%2FGuus-Meeuwis%2F> a schema:PerformingArtsEvent ;
+    schema:name "Guus Meeuwis concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/15317/Guus-Meeuwis/> .
+
+<https://www.festivalinfo.nl/festival/21058/Concert-at-Sea/2016/performance/15554%2FTyphoon%2F> a schema:PerformingArtsEvent ;
+    schema:name "Typhoon concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/15554/Typhoon/> .
+
+<https://www.festivalinfo.nl/festival/21058/Concert-at-Sea/2016/performance/16154%2FDe-Jeugd-Van-Tegenwoordig%2F> a schema:PerformingArtsEvent ;
+    schema:name "De Jeugd Van Tegenwoordig concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/16154/De-Jeugd-Van-Tegenwoordig/> .
+
+<https://www.festivalinfo.nl/festival/21058/Concert-at-Sea/2016/performance/21863%2FSkunk-Anansie%2F> a schema:PerformingArtsEvent ;
+    schema:name "Skunk Anansie concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/21863/Skunk-Anansie/> .
+
+<https://www.festivalinfo.nl/festival/21058/Concert-at-Sea/2016/performance/24474%2FMemphis-Maniacs%2F> a schema:PerformingArtsEvent ;
+    schema:name "Memphis Maniacs concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/24474/Memphis-Maniacs/> .
+
+<https://www.festivalinfo.nl/festival/21058/Concert-at-Sea/2016/performance/281%2FZuco-103%2F> a schema:PerformingArtsEvent ;
+    schema:name "Zuco 103 concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/281/Zuco-103/> .
+
+<https://www.festivalinfo.nl/festival/21058/Concert-at-Sea/2016/performance/41357%2FTenTemPies%2F> a schema:PerformingArtsEvent ;
+    schema:name "TenTemPiés concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/41357/TenTemPies/> .
+
+<https://www.festivalinfo.nl/festival/21058/Concert-at-Sea/2016/performance/41593%2FBazzookas%2F> a schema:PerformingArtsEvent ;
+    schema:name "Bazzookas concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/41593/Bazzookas/> .
+
+<https://www.festivalinfo.nl/festival/21058/Concert-at-Sea/2016/performance/60719%2FLucas-Hamming%2F> a schema:PerformingArtsEvent ;
+    schema:name "Lucas Hamming concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/60719/Lucas-Hamming/> .
+
+<https://www.festivalinfo.nl/festival/21058/Concert-at-Sea/2016/performance/70%2FWipneus-en-Pim%2F> a schema:PerformingArtsEvent ;
+    schema:name "Wipneus en Pim concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/70/Wipneus-en-Pim/> .
+
+<https://www.festivalinfo.nl/festival/21058/Concert-at-Sea/2016/performance/71692%2FDouwe-Bob%2F> a schema:PerformingArtsEvent ;
+    schema:name "Douwe Bob concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/71692/Douwe-Bob/> .
+
+<https://www.festivalinfo.nl/festival/21058/Concert-at-Sea/2016/performance/77935%2FJett-Rebel%2F> a schema:PerformingArtsEvent ;
+    schema:name "Jett Rebel concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/77935/Jett-Rebel/> .
+
+<https://www.festivalinfo.nl/festival/21058/Concert-at-Sea/2016/performance/81744%2FThe-Common-Linnets%2F> a schema:PerformingArtsEvent ;
+    schema:name "The Common Linnets concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/81744/The-Common-Linnets/> .
+
+<https://www.festivalinfo.nl/festival/21058/Concert-at-Sea/2016/performance/87185%2FThe-Brahms%2F> a schema:PerformingArtsEvent ;
+    schema:name "The Brahms concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/87185/The-Brahms/> .
+
+<https://www.festivalinfo.nl/festival/21058/Concert-at-Sea/2016/performance/90251%2FCauses%2F> a schema:PerformingArtsEvent ;
+    schema:name "Causes concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/90251/Causes/> .
+
+<https://www.festivalinfo.nl/festival/21058/Concert-at-Sea/2016/performance/96210%2FHAEVN%2F> a schema:PerformingArtsEvent ;
+    schema:name "HAEVN concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/96210/HAEVN/> .
+
+<https://www.festivalinfo.nl/artist/1135/NUHR/> a schema:MusicGroup ;
+    schema:name "NUHR" .
+
+<https://www.festivalinfo.nl/artist/1237/Blof/> a schema:MusicGroup ;
+    schema:name "Bløf" .
+
+<https://www.festivalinfo.nl/artist/137/Faithless/> a schema:MusicGroup ;
+    schema:name "Faithless" .
+
+<https://www.festivalinfo.nl/artist/15317/Guus-Meeuwis/> a schema:MusicGroup ;
+    schema:name "Guus Meeuwis" .
+
+<https://www.festivalinfo.nl/artist/15554/Typhoon/> a schema:MusicGroup ;
+    schema:name "Typhoon" .
+
+<https://www.festivalinfo.nl/artist/16154/De-Jeugd-Van-Tegenwoordig/> a schema:MusicGroup ;
+    schema:name "De Jeugd Van Tegenwoordig" .
+
+<https://www.festivalinfo.nl/artist/21863/Skunk-Anansie/> a schema:MusicGroup ;
+    schema:name "Skunk Anansie" .
+
+<https://www.festivalinfo.nl/artist/24474/Memphis-Maniacs/> a schema:MusicGroup ;
+    schema:name "Memphis Maniacs" .
+
+<https://www.festivalinfo.nl/artist/281/Zuco-103/> a schema:MusicGroup ;
+    schema:name "Zuco 103" .
+
+<https://www.festivalinfo.nl/artist/41357/TenTemPies/> a schema:MusicGroup ;
+    schema:name "TenTemPiés" .
+
+<https://www.festivalinfo.nl/artist/41593/Bazzookas/> a schema:MusicGroup ;
+    schema:name "Bazzookas" .
+
+<https://www.festivalinfo.nl/artist/60719/Lucas-Hamming/> a schema:MusicGroup ;
+    schema:name "Lucas Hamming" .
+
+<https://www.festivalinfo.nl/artist/70/Wipneus-en-Pim/> a schema:MusicGroup ;
+    schema:name "Wipneus en Pim" .
+
+<https://www.festivalinfo.nl/artist/71692/Douwe-Bob/> a schema:MusicGroup ;
+    schema:name "Douwe Bob" .
+
+<https://www.festivalinfo.nl/artist/77935/Jett-Rebel/> a schema:MusicGroup ;
+    schema:name "Jett Rebel" .
+
+<https://www.festivalinfo.nl/artist/81744/The-Common-Linnets/> a schema:MusicGroup ;
+    schema:name "The Common Linnets" .
+
+<https://www.festivalinfo.nl/artist/87185/The-Brahms/> a schema:MusicGroup ;
+    schema:name "The Brahms" .
+
+<https://www.festivalinfo.nl/artist/90251/Causes/> a schema:MusicGroup ;
+    schema:name "Causes" .
+
+<https://www.festivalinfo.nl/artist/96210/HAEVN/> a schema:MusicGroup ;
+    schema:name "HAEVN" .
+
+
+#Get graph for 2015
+@prefix schema: <https://schema.org/> .
+
+<https://www.festivalinfo.nl/festival/19127/Concert-at-Sea/2015/> a schema:Festival ;
+    schema:endDate "2015-06-27"^^<http://schema.org/Date> ;
+    schema:location [ a schema:Place ;
+            schema:name "Brouwershaven" ] ;
+    schema:name "Concert at Sea (2015)" ;
+    schema:additionalType "concert at sea" ;
+    schema:startDate "2015-06-26"^^<http://schema.org/Date> ;
+    schema:subEvent <https://www.festivalinfo.nl/festival/19127/Concert-at-Sea/2015/performance/1237%2FBlof%2F>,
+        <https://www.festivalinfo.nl/festival/19127/Concert-at-Sea/2015/performance/1240%2FLenny-Kravitz%2F>,
+        <https://www.festivalinfo.nl/festival/19127/Concert-at-Sea/2015/performance/15554%2FTyphoon%2F>,
+        <https://www.festivalinfo.nl/festival/19127/Concert-at-Sea/2015/performance/1906%2FCounting-Crows%2F>,
+        <https://www.festivalinfo.nl/festival/19127/Concert-at-Sea/2015/performance/20611%2FKensington%2F>,
+        <https://www.festivalinfo.nl/festival/19127/Concert-at-Sea/2015/performance/30944%2FMiss-Montreal%2F>,
+        <https://www.festivalinfo.nl/festival/19127/Concert-at-Sea/2015/performance/3990%2FKeaton%2F>,
+        <https://www.festivalinfo.nl/festival/19127/Concert-at-Sea/2015/performance/51601%2FChefSpecial%2F>,
+        <https://www.festivalinfo.nl/festival/19127/Concert-at-Sea/2015/performance/52%2FRowwen-Heze%2F>,
+        <https://www.festivalinfo.nl/festival/19127/Concert-at-Sea/2015/performance/54773%2FLiptease%2F>,
+        <https://www.festivalinfo.nl/festival/19127/Concert-at-Sea/2015/performance/58563%2FDotan%2F>,
+        <https://www.festivalinfo.nl/festival/19127/Concert-at-Sea/2015/performance/63304%2FBade%2F>,
+        <https://www.festivalinfo.nl/festival/19127/Concert-at-Sea/2015/performance/66971%2FPEER%2F>,
+        <https://www.festivalinfo.nl/festival/19127/Concert-at-Sea/2015/performance/69809%2FSunday-Sun%2F>,
+        <https://www.festivalinfo.nl/festival/19127/Concert-at-Sea/2015/performance/70%2FWipneus-en-Pim%2F>,
+        <https://www.festivalinfo.nl/festival/19127/Concert-at-Sea/2015/performance/73259%2FOrange-Skyline%2F>,
+        <https://www.festivalinfo.nl/festival/19127/Concert-at-Sea/2015/performance/73496%2FThe-Dirty-Daddies%2F>,
+        <https://www.festivalinfo.nl/festival/19127/Concert-at-Sea/2015/performance/74396%2FMatt-Simons%2F>,
+        <https://www.festivalinfo.nl/festival/19127/Concert-at-Sea/2015/performance/75%2FRacoon%2F>,
+        <https://www.festivalinfo.nl/festival/19127/Concert-at-Sea/2015/performance/87506%2FRonde%2F> ;
+    schema:url <https://www.festivalinfo.nl/festival/19127/Concert-at-Sea/2015/> .
+
+<https://www.festivalinfo.nl/festival/19127/Concert-at-Sea/2015/performance/1237%2FBlof%2F> a schema:PerformingArtsEvent ;
+    schema:name "Bløf concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/1237/Blof/> .
+
+<https://www.festivalinfo.nl/festival/19127/Concert-at-Sea/2015/performance/1240%2FLenny-Kravitz%2F> a schema:PerformingArtsEvent ;
+    schema:name "Lenny Kravitz concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/1240/Lenny-Kravitz/> .
+
+<https://www.festivalinfo.nl/festival/19127/Concert-at-Sea/2015/performance/15554%2FTyphoon%2F> a schema:PerformingArtsEvent ;
+    schema:name "Typhoon concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/15554/Typhoon/> .
+
+<https://www.festivalinfo.nl/festival/19127/Concert-at-Sea/2015/performance/1906%2FCounting-Crows%2F> a schema:PerformingArtsEvent ;
+    schema:name "Counting Crows concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/1906/Counting-Crows/> .
+
+<https://www.festivalinfo.nl/festival/19127/Concert-at-Sea/2015/performance/20611%2FKensington%2F> a schema:PerformingArtsEvent ;
+    schema:name "Kensington concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/20611/Kensington/> .
+
+<https://www.festivalinfo.nl/festival/19127/Concert-at-Sea/2015/performance/30944%2FMiss-Montreal%2F> a schema:PerformingArtsEvent ;
+    schema:name "Miss Montreal concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/30944/Miss-Montreal/> .
+
+<https://www.festivalinfo.nl/festival/19127/Concert-at-Sea/2015/performance/3990%2FKeaton%2F> a schema:PerformingArtsEvent ;
+    schema:name "Keaton concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/3990/Keaton/> .
+
+<https://www.festivalinfo.nl/festival/19127/Concert-at-Sea/2015/performance/51601%2FChefSpecial%2F> a schema:PerformingArtsEvent ;
+    schema:name "Chef'Special concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/51601/ChefSpecial/> .
+
+<https://www.festivalinfo.nl/festival/19127/Concert-at-Sea/2015/performance/52%2FRowwen-Heze%2F> a schema:PerformingArtsEvent ;
+    schema:name "Rowwen Heze concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/52/Rowwen-Heze/> .
+
+<https://www.festivalinfo.nl/festival/19127/Concert-at-Sea/2015/performance/54773%2FLiptease%2F> a schema:PerformingArtsEvent ;
+    schema:name "Liptease concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/54773/Liptease/> .
+
+<https://www.festivalinfo.nl/festival/19127/Concert-at-Sea/2015/performance/58563%2FDotan%2F> a schema:PerformingArtsEvent ;
+    schema:name "Dotan concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/58563/Dotan/> .
+
+<https://www.festivalinfo.nl/festival/19127/Concert-at-Sea/2015/performance/63304%2FBade%2F> a schema:PerformingArtsEvent ;
+    schema:name "Bade concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/63304/Bade/> .
+
+<https://www.festivalinfo.nl/festival/19127/Concert-at-Sea/2015/performance/66971%2FPEER%2F> a schema:PerformingArtsEvent ;
+    schema:name "PEER concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/66971/PEER/> .
+
+<https://www.festivalinfo.nl/festival/19127/Concert-at-Sea/2015/performance/69809%2FSunday-Sun%2F> a schema:PerformingArtsEvent ;
+    schema:name "Sunday Sun concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/69809/Sunday-Sun/> .
+
+<https://www.festivalinfo.nl/festival/19127/Concert-at-Sea/2015/performance/70%2FWipneus-en-Pim%2F> a schema:PerformingArtsEvent ;
+    schema:name "Wipneus en Pim concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/70/Wipneus-en-Pim/> .
+
+<https://www.festivalinfo.nl/festival/19127/Concert-at-Sea/2015/performance/73259%2FOrange-Skyline%2F> a schema:PerformingArtsEvent ;
+    schema:name "Orange Skyline concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/73259/Orange-Skyline/> .
+
+<https://www.festivalinfo.nl/festival/19127/Concert-at-Sea/2015/performance/73496%2FThe-Dirty-Daddies%2F> a schema:PerformingArtsEvent ;
+    schema:name "The Dirty Daddies concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/73496/The-Dirty-Daddies/> .
+
+<https://www.festivalinfo.nl/festival/19127/Concert-at-Sea/2015/performance/74396%2FMatt-Simons%2F> a schema:PerformingArtsEvent ;
+    schema:name "Matt Simons concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/74396/Matt-Simons/> .
+
+<https://www.festivalinfo.nl/festival/19127/Concert-at-Sea/2015/performance/75%2FRacoon%2F> a schema:PerformingArtsEvent ;
+    schema:name "Racoon concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/75/Racoon/> .
+
+<https://www.festivalinfo.nl/festival/19127/Concert-at-Sea/2015/performance/87506%2FRonde%2F> a schema:PerformingArtsEvent ;
+    schema:name "Rondé concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/87506/Ronde/> .
+
+<https://www.festivalinfo.nl/artist/1237/Blof/> a schema:MusicGroup ;
+    schema:name "Bløf" .
+
+<https://www.festivalinfo.nl/artist/1240/Lenny-Kravitz/> a schema:MusicGroup ;
+    schema:name "Lenny Kravitz" .
+
+<https://www.festivalinfo.nl/artist/15554/Typhoon/> a schema:MusicGroup ;
+    schema:name "Typhoon" .
+
+<https://www.festivalinfo.nl/artist/1906/Counting-Crows/> a schema:MusicGroup ;
+    schema:name "Counting Crows" .
+
+<https://www.festivalinfo.nl/artist/20611/Kensington/> a schema:MusicGroup ;
+    schema:name "Kensington" .
+
+<https://www.festivalinfo.nl/artist/30944/Miss-Montreal/> a schema:MusicGroup ;
+    schema:name "Miss Montreal" .
+
+<https://www.festivalinfo.nl/artist/3990/Keaton/> a schema:MusicGroup ;
+    schema:name "Keaton" .
+
+<https://www.festivalinfo.nl/artist/51601/ChefSpecial/> a schema:MusicGroup ;
+    schema:name "Chef'Special" .
+
+<https://www.festivalinfo.nl/artist/52/Rowwen-Heze/> a schema:MusicGroup ;
+    schema:name "Rowwen Heze" .
+
+<https://www.festivalinfo.nl/artist/54773/Liptease/> a schema:MusicGroup ;
+    schema:name "Liptease" .
+
+<https://www.festivalinfo.nl/artist/58563/Dotan/> a schema:MusicGroup ;
+    schema:name "Dotan" .
+
+<https://www.festivalinfo.nl/artist/63304/Bade/> a schema:MusicGroup ;
+    schema:name "Bade" .
+
+<https://www.festivalinfo.nl/artist/66971/PEER/> a schema:MusicGroup ;
+    schema:name "PEER" .
+
+<https://www.festivalinfo.nl/artist/69809/Sunday-Sun/> a schema:MusicGroup ;
+    schema:name "Sunday Sun" .
+
+<https://www.festivalinfo.nl/artist/70/Wipneus-en-Pim/> a schema:MusicGroup ;
+    schema:name "Wipneus en Pim" .
+
+<https://www.festivalinfo.nl/artist/73259/Orange-Skyline/> a schema:MusicGroup ;
+    schema:name "Orange Skyline" .
+
+<https://www.festivalinfo.nl/artist/73496/The-Dirty-Daddies/> a schema:MusicGroup ;
+    schema:name "The Dirty Daddies" .
+
+<https://www.festivalinfo.nl/artist/74396/Matt-Simons/> a schema:MusicGroup ;
+    schema:name "Matt Simons" .
+
+<https://www.festivalinfo.nl/artist/75/Racoon/> a schema:MusicGroup ;
+    schema:name "Racoon" .
+
+<https://www.festivalinfo.nl/artist/87506/Ronde/> a schema:MusicGroup ;
+    schema:name "Rondé" .
+
+
+#Get graph for 2014
+@prefix schema: <https://schema.org/> .
+
+<https://www.festivalinfo.nl/festival/17179/Concert-at-Sea/2014/> a schema:Festival ;
+    schema:endDate "2014-06-28"^^<http://schema.org/Date> ;
+    schema:location [ a schema:Place ;
+            schema:name "Brouwershaven" ] ;
+    schema:name "Concert at Sea (2014)" ;
+    schema:additionalType "concert at sea" ;
+    schema:startDate "2014-06-27"^^<http://schema.org/Date> ;
+    schema:subEvent <https://www.festivalinfo.nl/festival/17179/Concert-at-Sea/2014/performance/1237%2FBlof%2F>,
+        <https://www.festivalinfo.nl/festival/17179/Concert-at-Sea/2014/performance/13027%2FNavarone%2F>,
+        <https://www.festivalinfo.nl/festival/17179/Concert-at-Sea/2014/performance/14616%2FThe-Opposites%2F>,
+        <https://www.festivalinfo.nl/festival/17179/Concert-at-Sea/2014/performance/151%2FIlse-DeLange%2F>,
+        <https://www.festivalinfo.nl/festival/17179/Concert-at-Sea/2014/performance/243%2FDi-rect%2F>,
+        <https://www.festivalinfo.nl/festival/17179/Concert-at-Sea/2014/performance/25348%2F3JS%2F>,
+        <https://www.festivalinfo.nl/festival/17179/Concert-at-Sea/2014/performance/32592%2FAlain-Clark%2F>,
+        <https://www.festivalinfo.nl/festival/17179/Concert-at-Sea/2014/performance/37325%2FPassenger-Singer-songwriter-%2F>,
+        <https://www.festivalinfo.nl/festival/17179/Concert-at-Sea/2014/performance/46421%2FCaro-Emerald%2F>,
+        <https://www.festivalinfo.nl/festival/17179/Concert-at-Sea/2014/performance/51563%2FFeestDJRuud%2F>,
+        <https://www.festivalinfo.nl/festival/17179/Concert-at-Sea/2014/performance/51601%2FChefSpecial%2F>,
+        <https://www.festivalinfo.nl/festival/17179/Concert-at-Sea/2014/performance/53087%2FJacqueline-Govaert%2F>,
+        <https://www.festivalinfo.nl/festival/17179/Concert-at-Sea/2014/performance/69%2FDe-Dijk%2F>,
+        <https://www.festivalinfo.nl/festival/17179/Concert-at-Sea/2014/performance/69809%2FSunday-Sun%2F>,
+        <https://www.festivalinfo.nl/festival/17179/Concert-at-Sea/2014/performance/71974%2FNielson%2F>,
+        <https://www.festivalinfo.nl/festival/17179/Concert-at-Sea/2014/performance/72674%2FStu-Larsen%2F>,
+        <https://www.festivalinfo.nl/festival/17179/Concert-at-Sea/2014/performance/72942%2FBastille%2F>,
+        <https://www.festivalinfo.nl/festival/17179/Concert-at-Sea/2014/performance/73496%2FThe-Dirty-Daddies%2F>,
+        <https://www.festivalinfo.nl/festival/17179/Concert-at-Sea/2014/performance/77635%2FNiels-Geusebroek%2F>,
+        <https://www.festivalinfo.nl/festival/17179/Concert-at-Sea/2014/performance/77935%2FJett-Rebel%2F> ;
+    schema:url <https://www.festivalinfo.nl/festival/17179/Concert-at-Sea/2014/> .
+
+<https://www.festivalinfo.nl/festival/17179/Concert-at-Sea/2014/performance/1237%2FBlof%2F> a schema:PerformingArtsEvent ;
+    schema:name "Bløf concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/1237/Blof/> .
+
+<https://www.festivalinfo.nl/festival/17179/Concert-at-Sea/2014/performance/13027%2FNavarone%2F> a schema:PerformingArtsEvent ;
+    schema:name "Navarone concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/13027/Navarone/> .
+
+<https://www.festivalinfo.nl/festival/17179/Concert-at-Sea/2014/performance/14616%2FThe-Opposites%2F> a schema:PerformingArtsEvent ;
+    schema:name "The Opposites concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/14616/The-Opposites/> .
+
+<https://www.festivalinfo.nl/festival/17179/Concert-at-Sea/2014/performance/151%2FIlse-DeLange%2F> a schema:PerformingArtsEvent ;
+    schema:name "Ilse DeLange concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/151/Ilse-DeLange/> .
+
+<https://www.festivalinfo.nl/festival/17179/Concert-at-Sea/2014/performance/243%2FDi-rect%2F> a schema:PerformingArtsEvent ;
+    schema:name "Di-rect concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/243/Di-rect/> .
+
+<https://www.festivalinfo.nl/festival/17179/Concert-at-Sea/2014/performance/25348%2F3JS%2F> a schema:PerformingArtsEvent ;
+    schema:name "3JS concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/25348/3JS/> .
+
+<https://www.festivalinfo.nl/festival/17179/Concert-at-Sea/2014/performance/32592%2FAlain-Clark%2F> a schema:PerformingArtsEvent ;
+    schema:name "Alain Clark concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/32592/Alain-Clark/> .
+
+<https://www.festivalinfo.nl/festival/17179/Concert-at-Sea/2014/performance/37325%2FPassenger-Singer-songwriter-%2F> a schema:PerformingArtsEvent ;
+    schema:name "Passenger (Singer-songwriter) concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/37325/Passenger-Singer-songwriter-/> .
+
+<https://www.festivalinfo.nl/festival/17179/Concert-at-Sea/2014/performance/46421%2FCaro-Emerald%2F> a schema:PerformingArtsEvent ;
+    schema:name "Caro Emerald concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/46421/Caro-Emerald/> .
+
+<https://www.festivalinfo.nl/festival/17179/Concert-at-Sea/2014/performance/51563%2FFeestDJRuud%2F> a schema:PerformingArtsEvent ;
+    schema:name "FeestDJRuud concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/51563/FeestDJRuud/> .
+
+<https://www.festivalinfo.nl/festival/17179/Concert-at-Sea/2014/performance/51601%2FChefSpecial%2F> a schema:PerformingArtsEvent ;
+    schema:name "Chef'Special concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/51601/ChefSpecial/> .
+
+<https://www.festivalinfo.nl/festival/17179/Concert-at-Sea/2014/performance/53087%2FJacqueline-Govaert%2F> a schema:PerformingArtsEvent ;
+    schema:name "Jacqueline Govaert concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/53087/Jacqueline-Govaert/> .
+
+<https://www.festivalinfo.nl/festival/17179/Concert-at-Sea/2014/performance/69%2FDe-Dijk%2F> a schema:PerformingArtsEvent ;
+    schema:name "De Dijk concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/69/De-Dijk/> .
+
+<https://www.festivalinfo.nl/festival/17179/Concert-at-Sea/2014/performance/69809%2FSunday-Sun%2F> a schema:PerformingArtsEvent ;
+    schema:name "Sunday Sun concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/69809/Sunday-Sun/> .
+
+<https://www.festivalinfo.nl/festival/17179/Concert-at-Sea/2014/performance/71974%2FNielson%2F> a schema:PerformingArtsEvent ;
+    schema:name "Nielson concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/71974/Nielson/> .
+
+<https://www.festivalinfo.nl/festival/17179/Concert-at-Sea/2014/performance/72674%2FStu-Larsen%2F> a schema:PerformingArtsEvent ;
+    schema:name "Stu Larsen concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/72674/Stu-Larsen/> .
+
+<https://www.festivalinfo.nl/festival/17179/Concert-at-Sea/2014/performance/72942%2FBastille%2F> a schema:PerformingArtsEvent ;
+    schema:name "Bastille concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/72942/Bastille/> .
+
+<https://www.festivalinfo.nl/festival/17179/Concert-at-Sea/2014/performance/73496%2FThe-Dirty-Daddies%2F> a schema:PerformingArtsEvent ;
+    schema:name "The Dirty Daddies concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/73496/The-Dirty-Daddies/> .
+
+<https://www.festivalinfo.nl/festival/17179/Concert-at-Sea/2014/performance/77635%2FNiels-Geusebroek%2F> a schema:PerformingArtsEvent ;
+    schema:name "Niels Geusebroek concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/77635/Niels-Geusebroek/> .
+
+<https://www.festivalinfo.nl/festival/17179/Concert-at-Sea/2014/performance/77935%2FJett-Rebel%2F> a schema:PerformingArtsEvent ;
+    schema:name "Jett Rebel concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/77935/Jett-Rebel/> .
+
+<https://www.festivalinfo.nl/artist/1237/Blof/> a schema:MusicGroup ;
+    schema:name "Bløf" .
+
+<https://www.festivalinfo.nl/artist/13027/Navarone/> a schema:MusicGroup ;
+    schema:name "Navarone" .
+
+<https://www.festivalinfo.nl/artist/14616/The-Opposites/> a schema:MusicGroup ;
+    schema:name "The Opposites" .
+
+<https://www.festivalinfo.nl/artist/151/Ilse-DeLange/> a schema:MusicGroup ;
+    schema:name "Ilse DeLange" .
+
+<https://www.festivalinfo.nl/artist/243/Di-rect/> a schema:MusicGroup ;
+    schema:name "Di-rect" .
+
+<https://www.festivalinfo.nl/artist/25348/3JS/> a schema:MusicGroup ;
+    schema:name "3JS" .
+
+<https://www.festivalinfo.nl/artist/32592/Alain-Clark/> a schema:MusicGroup ;
+    schema:name "Alain Clark" .
+
+<https://www.festivalinfo.nl/artist/37325/Passenger-Singer-songwriter-/> a schema:MusicGroup ;
+    schema:name "Passenger (Singer-songwriter)" .
+
+<https://www.festivalinfo.nl/artist/46421/Caro-Emerald/> a schema:MusicGroup ;
+    schema:name "Caro Emerald" .
+
+<https://www.festivalinfo.nl/artist/51563/FeestDJRuud/> a schema:MusicGroup ;
+    schema:name "FeestDJRuud" .
+
+<https://www.festivalinfo.nl/artist/51601/ChefSpecial/> a schema:MusicGroup ;
+    schema:name "Chef'Special" .
+
+<https://www.festivalinfo.nl/artist/53087/Jacqueline-Govaert/> a schema:MusicGroup ;
+    schema:name "Jacqueline Govaert" .
+
+<https://www.festivalinfo.nl/artist/69/De-Dijk/> a schema:MusicGroup ;
+    schema:name "De Dijk" .
+
+<https://www.festivalinfo.nl/artist/69809/Sunday-Sun/> a schema:MusicGroup ;
+    schema:name "Sunday Sun" .
+
+<https://www.festivalinfo.nl/artist/71974/Nielson/> a schema:MusicGroup ;
+    schema:name "Nielson" .
+
+<https://www.festivalinfo.nl/artist/72674/Stu-Larsen/> a schema:MusicGroup ;
+    schema:name "Stu Larsen" .
+
+<https://www.festivalinfo.nl/artist/72942/Bastille/> a schema:MusicGroup ;
+    schema:name "Bastille" .
+
+<https://www.festivalinfo.nl/artist/73496/The-Dirty-Daddies/> a schema:MusicGroup ;
+    schema:name "The Dirty Daddies" .
+
+<https://www.festivalinfo.nl/artist/77635/Niels-Geusebroek/> a schema:MusicGroup ;
+    schema:name "Niels Geusebroek" .
+
+<https://www.festivalinfo.nl/artist/77935/Jett-Rebel/> a schema:MusicGroup ;
+    schema:name "Jett Rebel" .
+
+
+#Get graph for 2013
+@prefix schema: <https://schema.org/> .
+
+<https://www.festivalinfo.nl/festival/15301/Concert-at-Sea/2013/> a schema:Festival ;
+    schema:endDate "2013-06-29"^^<http://schema.org/Date> ;
+    schema:location [ a schema:Place ;
+            schema:name "Ouddorp" ] ;
+    schema:name "Concert at Sea (2013)" ;
+    schema:additionalType "concert at sea" ;
+    schema:startDate "2013-06-28"^^<http://schema.org/Date> ;
+    schema:subEvent <https://www.festivalinfo.nl/festival/15301/Concert-at-Sea/2013/performance/1237%2FBlof%2F>,
+        <https://www.festivalinfo.nl/festival/15301/Concert-at-Sea/2013/performance/15317%2FGuus-Meeuwis%2F>,
+        <https://www.festivalinfo.nl/festival/15301/Concert-at-Sea/2013/performance/19970%2FMoke%2F>,
+        <https://www.festivalinfo.nl/festival/15301/Concert-at-Sea/2013/performance/20611%2FKensington%2F>,
+        <https://www.festivalinfo.nl/festival/15301/Concert-at-Sea/2013/performance/22594%2FJames-Morrison%2F>,
+        <https://www.festivalinfo.nl/festival/15301/Concert-at-Sea/2013/performance/23593%2FSabrina-Starke%2F>,
+        <https://www.festivalinfo.nl/festival/15301/Concert-at-Sea/2013/performance/24474%2FMemphis-Maniacs%2F>,
+        <https://www.festivalinfo.nl/festival/15301/Concert-at-Sea/2013/performance/30944%2FMiss-Montreal%2F>,
+        <https://www.festivalinfo.nl/festival/15301/Concert-at-Sea/2013/performance/36361%2FThe-New-Shining%2F>,
+        <https://www.festivalinfo.nl/festival/15301/Concert-at-Sea/2013/performance/40445%2FRigby%2F>,
+        <https://www.festivalinfo.nl/festival/15301/Concert-at-Sea/2013/performance/46091%2FHandsome-Poets%2F>,
+        <https://www.festivalinfo.nl/festival/15301/Concert-at-Sea/2013/performance/47413%2FWill-And-The-People%2F>,
+        <https://www.festivalinfo.nl/festival/15301/Concert-at-Sea/2013/performance/58235%2FThe-Kik%2F>,
+        <https://www.festivalinfo.nl/festival/15301/Concert-at-Sea/2013/performance/62%2FKane%2F>,
+        <https://www.festivalinfo.nl/festival/15301/Concert-at-Sea/2013/performance/71347%2F90S-NOW%2F>,
+        <https://www.festivalinfo.nl/festival/15301/Concert-at-Sea/2013/performance/71974%2FNielson%2F>,
+        <https://www.festivalinfo.nl/festival/15301/Concert-at-Sea/2013/performance/75%2FRacoon%2F>,
+        <https://www.festivalinfo.nl/festival/15301/Concert-at-Sea/2013/performance/8383%2FSplendid%2F> ;
+    schema:url <https://www.festivalinfo.nl/festival/15301/Concert-at-Sea/2013/> .
+
+<https://www.festivalinfo.nl/festival/15301/Concert-at-Sea/2013/performance/1237%2FBlof%2F> a schema:PerformingArtsEvent ;
+    schema:name "Bløf concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/1237/Blof/> .
+
+<https://www.festivalinfo.nl/festival/15301/Concert-at-Sea/2013/performance/15317%2FGuus-Meeuwis%2F> a schema:PerformingArtsEvent ;
+    schema:name "Guus Meeuwis concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/15317/Guus-Meeuwis/> .
+
+<https://www.festivalinfo.nl/festival/15301/Concert-at-Sea/2013/performance/19970%2FMoke%2F> a schema:PerformingArtsEvent ;
+    schema:name "Moke concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/19970/Moke/> .
+
+<https://www.festivalinfo.nl/festival/15301/Concert-at-Sea/2013/performance/20611%2FKensington%2F> a schema:PerformingArtsEvent ;
+    schema:name "Kensington concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/20611/Kensington/> .
+
+<https://www.festivalinfo.nl/festival/15301/Concert-at-Sea/2013/performance/22594%2FJames-Morrison%2F> a schema:PerformingArtsEvent ;
+    schema:name "James Morrison concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/22594/James-Morrison/> .
+
+<https://www.festivalinfo.nl/festival/15301/Concert-at-Sea/2013/performance/23593%2FSabrina-Starke%2F> a schema:PerformingArtsEvent ;
+    schema:name "Sabrina Starke concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/23593/Sabrina-Starke/> .
+
+<https://www.festivalinfo.nl/festival/15301/Concert-at-Sea/2013/performance/24474%2FMemphis-Maniacs%2F> a schema:PerformingArtsEvent ;
+    schema:name "Memphis Maniacs concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/24474/Memphis-Maniacs/> .
+
+<https://www.festivalinfo.nl/festival/15301/Concert-at-Sea/2013/performance/30944%2FMiss-Montreal%2F> a schema:PerformingArtsEvent ;
+    schema:name "Miss Montreal concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/30944/Miss-Montreal/> .
+
+<https://www.festivalinfo.nl/festival/15301/Concert-at-Sea/2013/performance/36361%2FThe-New-Shining%2F> a schema:PerformingArtsEvent ;
+    schema:name "The New Shining concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/36361/The-New-Shining/> .
+
+<https://www.festivalinfo.nl/festival/15301/Concert-at-Sea/2013/performance/40445%2FRigby%2F> a schema:PerformingArtsEvent ;
+    schema:name "Rigby concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/40445/Rigby/> .
+
+<https://www.festivalinfo.nl/festival/15301/Concert-at-Sea/2013/performance/46091%2FHandsome-Poets%2F> a schema:PerformingArtsEvent ;
+    schema:name "Handsome Poets concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/46091/Handsome-Poets/> .
+
+<https://www.festivalinfo.nl/festival/15301/Concert-at-Sea/2013/performance/47413%2FWill-And-The-People%2F> a schema:PerformingArtsEvent ;
+    schema:name "Will And The People concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/47413/Will-And-The-People/> .
+
+<https://www.festivalinfo.nl/festival/15301/Concert-at-Sea/2013/performance/58235%2FThe-Kik%2F> a schema:PerformingArtsEvent ;
+    schema:name "The Kik concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/58235/The-Kik/> .
+
+<https://www.festivalinfo.nl/festival/15301/Concert-at-Sea/2013/performance/62%2FKane%2F> a schema:PerformingArtsEvent ;
+    schema:name "Kane concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/62/Kane/> .
+
+<https://www.festivalinfo.nl/festival/15301/Concert-at-Sea/2013/performance/71347%2F90S-NOW%2F> a schema:PerformingArtsEvent ;
+    schema:name "90'S NOW concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/71347/90S-NOW/> .
+
+<https://www.festivalinfo.nl/festival/15301/Concert-at-Sea/2013/performance/71974%2FNielson%2F> a schema:PerformingArtsEvent ;
+    schema:name "Nielson concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/71974/Nielson/> .
+
+<https://www.festivalinfo.nl/festival/15301/Concert-at-Sea/2013/performance/75%2FRacoon%2F> a schema:PerformingArtsEvent ;
+    schema:name "Racoon concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/75/Racoon/> .
+
+<https://www.festivalinfo.nl/festival/15301/Concert-at-Sea/2013/performance/8383%2FSplendid%2F> a schema:PerformingArtsEvent ;
+    schema:name "Splendid concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/8383/Splendid/> .
+
+<https://www.festivalinfo.nl/artist/1237/Blof/> a schema:MusicGroup ;
+    schema:name "Bløf" .
+
+<https://www.festivalinfo.nl/artist/15317/Guus-Meeuwis/> a schema:MusicGroup ;
+    schema:name "Guus Meeuwis" .
+
+<https://www.festivalinfo.nl/artist/19970/Moke/> a schema:MusicGroup ;
+    schema:name "Moke" .
+
+<https://www.festivalinfo.nl/artist/20611/Kensington/> a schema:MusicGroup ;
+    schema:name "Kensington" .
+
+<https://www.festivalinfo.nl/artist/22594/James-Morrison/> a schema:MusicGroup ;
+    schema:name "James Morrison" .
+
+<https://www.festivalinfo.nl/artist/23593/Sabrina-Starke/> a schema:MusicGroup ;
+    schema:name "Sabrina Starke" .
+
+<https://www.festivalinfo.nl/artist/24474/Memphis-Maniacs/> a schema:MusicGroup ;
+    schema:name "Memphis Maniacs" .
+
+<https://www.festivalinfo.nl/artist/30944/Miss-Montreal/> a schema:MusicGroup ;
+    schema:name "Miss Montreal" .
+
+<https://www.festivalinfo.nl/artist/36361/The-New-Shining/> a schema:MusicGroup ;
+    schema:name "The New Shining" .
+
+<https://www.festivalinfo.nl/artist/40445/Rigby/> a schema:MusicGroup ;
+    schema:name "Rigby" .
+
+<https://www.festivalinfo.nl/artist/46091/Handsome-Poets/> a schema:MusicGroup ;
+    schema:name "Handsome Poets" .
+
+<https://www.festivalinfo.nl/artist/47413/Will-And-The-People/> a schema:MusicGroup ;
+    schema:name "Will And The People" .
+
+<https://www.festivalinfo.nl/artist/58235/The-Kik/> a schema:MusicGroup ;
+    schema:name "The Kik" .
+
+<https://www.festivalinfo.nl/artist/62/Kane/> a schema:MusicGroup ;
+    schema:name "Kane" .
+
+<https://www.festivalinfo.nl/artist/71347/90S-NOW/> a schema:MusicGroup ;
+    schema:name "90'S NOW" .
+
+<https://www.festivalinfo.nl/artist/71974/Nielson/> a schema:MusicGroup ;
+    schema:name "Nielson" .
+
+<https://www.festivalinfo.nl/artist/75/Racoon/> a schema:MusicGroup ;
+    schema:name "Racoon" .
+
+<https://www.festivalinfo.nl/artist/8383/Splendid/> a schema:MusicGroup ;
+    schema:name "Splendid" .
+
+
+#Get graph for 2012
+@prefix schema: <https://schema.org/> .
+
+<https://www.festivalinfo.nl/festival/13275/Concert-at-Sea/2012/> a schema:Festival ;
+    schema:endDate "2012-06-30"^^<http://schema.org/Date> ;
+    schema:location [ a schema:Place ;
+            schema:name "Ouddorp" ] ;
+    schema:name "Concert at Sea (2012)" ;
+    schema:additionalType "concert at sea" ;
+    schema:startDate "2012-06-29"^^<http://schema.org/Date> ;
+    schema:subEvent <https://www.festivalinfo.nl/festival/13275/Concert-at-Sea/2012/performance/1237%2FBlof%2F>,
+        <https://www.festivalinfo.nl/festival/13275/Concert-at-Sea/2012/performance/151%2FIlse-DeLange%2F>,
+        <https://www.festivalinfo.nl/festival/13275/Concert-at-Sea/2012/performance/1720%2FGemma-Hayes%2F>,
+        <https://www.festivalinfo.nl/festival/13275/Concert-at-Sea/2012/performance/218%2FTrijntje-Oosterhuis%2F>,
+        <https://www.festivalinfo.nl/festival/13275/Concert-at-Sea/2012/performance/22885%2FVanVelzen%2F>,
+        <https://www.festivalinfo.nl/festival/13275/Concert-at-Sea/2012/performance/23744%2FKrystl%2F>,
+        <https://www.festivalinfo.nl/festival/13275/Concert-at-Sea/2012/performance/24474%2FMemphis-Maniacs%2F>,
+        <https://www.festivalinfo.nl/festival/13275/Concert-at-Sea/2012/performance/35871%2FGo-Back-To-The-Zoo%2F>,
+        <https://www.festivalinfo.nl/festival/13275/Concert-at-Sea/2012/performance/38515%2FWaylon%2F>,
+        <https://www.festivalinfo.nl/festival/13275/Concert-at-Sea/2012/performance/47%2FGolden-Earring%2F>,
+        <https://www.festivalinfo.nl/festival/13275/Concert-at-Sea/2012/performance/51066%2FThe-Baseballs%2F>,
+        <https://www.festivalinfo.nl/festival/13275/Concert-at-Sea/2012/performance/5373%2FLefties-Soul-Connection%2F>,
+        <https://www.festivalinfo.nl/festival/13275/Concert-at-Sea/2012/performance/63015%2FLorrainville%2F>,
+        <https://www.festivalinfo.nl/festival/13275/Concert-at-Sea/2012/performance/63955%2FED%2F>,
+        <https://www.festivalinfo.nl/festival/13275/Concert-at-Sea/2012/performance/69%2FDe-Dijk%2F>,
+        <https://www.festivalinfo.nl/festival/13275/Concert-at-Sea/2012/performance/70%2FWipneus-en-Pim%2F>,
+        <https://www.festivalinfo.nl/festival/13275/Concert-at-Sea/2012/performance/73%2FAcda-en-de-Munnik%2F> ;
+    schema:url <https://www.festivalinfo.nl/festival/13275/Concert-at-Sea/2012/> .
+
+<https://www.festivalinfo.nl/festival/13275/Concert-at-Sea/2012/performance/1237%2FBlof%2F> a schema:PerformingArtsEvent ;
+    schema:name "Bløf concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/1237/Blof/> .
+
+<https://www.festivalinfo.nl/festival/13275/Concert-at-Sea/2012/performance/151%2FIlse-DeLange%2F> a schema:PerformingArtsEvent ;
+    schema:name "Ilse DeLange concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/151/Ilse-DeLange/> .
+
+<https://www.festivalinfo.nl/festival/13275/Concert-at-Sea/2012/performance/1720%2FGemma-Hayes%2F> a schema:PerformingArtsEvent ;
+    schema:name "Gemma Hayes concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/1720/Gemma-Hayes/> .
+
+<https://www.festivalinfo.nl/festival/13275/Concert-at-Sea/2012/performance/218%2FTrijntje-Oosterhuis%2F> a schema:PerformingArtsEvent ;
+    schema:name "Trijntje Oosterhuis concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/218/Trijntje-Oosterhuis/> .
+
+<https://www.festivalinfo.nl/festival/13275/Concert-at-Sea/2012/performance/22885%2FVanVelzen%2F> a schema:PerformingArtsEvent ;
+    schema:name "VanVelzen concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/22885/VanVelzen/> .
+
+<https://www.festivalinfo.nl/festival/13275/Concert-at-Sea/2012/performance/23744%2FKrystl%2F> a schema:PerformingArtsEvent ;
+    schema:name "Krystl concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/23744/Krystl/> .
+
+<https://www.festivalinfo.nl/festival/13275/Concert-at-Sea/2012/performance/24474%2FMemphis-Maniacs%2F> a schema:PerformingArtsEvent ;
+    schema:name "Memphis Maniacs concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/24474/Memphis-Maniacs/> .
+
+<https://www.festivalinfo.nl/festival/13275/Concert-at-Sea/2012/performance/35871%2FGo-Back-To-The-Zoo%2F> a schema:PerformingArtsEvent ;
+    schema:name "Go Back To The Zoo concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/35871/Go-Back-To-The-Zoo/> .
+
+<https://www.festivalinfo.nl/festival/13275/Concert-at-Sea/2012/performance/38515%2FWaylon%2F> a schema:PerformingArtsEvent ;
+    schema:name "Waylon concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/38515/Waylon/> .
+
+<https://www.festivalinfo.nl/festival/13275/Concert-at-Sea/2012/performance/47%2FGolden-Earring%2F> a schema:PerformingArtsEvent ;
+    schema:name "Golden Earring concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/47/Golden-Earring/> .
+
+<https://www.festivalinfo.nl/festival/13275/Concert-at-Sea/2012/performance/51066%2FThe-Baseballs%2F> a schema:PerformingArtsEvent ;
+    schema:name "The Baseballs concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/51066/The-Baseballs/> .
+
+<https://www.festivalinfo.nl/festival/13275/Concert-at-Sea/2012/performance/5373%2FLefties-Soul-Connection%2F> a schema:PerformingArtsEvent ;
+    schema:name "Lefties Soul Connection concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/5373/Lefties-Soul-Connection/> .
+
+<https://www.festivalinfo.nl/festival/13275/Concert-at-Sea/2012/performance/63015%2FLorrainville%2F> a schema:PerformingArtsEvent ;
+    schema:name "Lorrainville concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/63015/Lorrainville/> .
+
+<https://www.festivalinfo.nl/festival/13275/Concert-at-Sea/2012/performance/63955%2FED%2F> a schema:PerformingArtsEvent ;
+    schema:name "ED concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/63955/ED/> .
+
+<https://www.festivalinfo.nl/festival/13275/Concert-at-Sea/2012/performance/69%2FDe-Dijk%2F> a schema:PerformingArtsEvent ;
+    schema:name "De Dijk concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/69/De-Dijk/> .
+
+<https://www.festivalinfo.nl/festival/13275/Concert-at-Sea/2012/performance/70%2FWipneus-en-Pim%2F> a schema:PerformingArtsEvent ;
+    schema:name "Wipneus en Pim concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/70/Wipneus-en-Pim/> .
+
+<https://www.festivalinfo.nl/festival/13275/Concert-at-Sea/2012/performance/73%2FAcda-en-de-Munnik%2F> a schema:PerformingArtsEvent ;
+    schema:name "Acda en de Munnik concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/73/Acda-en-de-Munnik/> .
+
+<https://www.festivalinfo.nl/artist/1237/Blof/> a schema:MusicGroup ;
+    schema:name "Bløf" .
+
+<https://www.festivalinfo.nl/artist/151/Ilse-DeLange/> a schema:MusicGroup ;
+    schema:name "Ilse DeLange" .
+
+<https://www.festivalinfo.nl/artist/1720/Gemma-Hayes/> a schema:MusicGroup ;
+    schema:name "Gemma Hayes" .
+
+<https://www.festivalinfo.nl/artist/218/Trijntje-Oosterhuis/> a schema:MusicGroup ;
+    schema:name "Trijntje Oosterhuis" .
+
+<https://www.festivalinfo.nl/artist/22885/VanVelzen/> a schema:MusicGroup ;
+    schema:name "VanVelzen" .
+
+<https://www.festivalinfo.nl/artist/23744/Krystl/> a schema:MusicGroup ;
+    schema:name "Krystl" .
+
+<https://www.festivalinfo.nl/artist/24474/Memphis-Maniacs/> a schema:MusicGroup ;
+    schema:name "Memphis Maniacs" .
+
+<https://www.festivalinfo.nl/artist/35871/Go-Back-To-The-Zoo/> a schema:MusicGroup ;
+    schema:name "Go Back To The Zoo" .
+
+<https://www.festivalinfo.nl/artist/38515/Waylon/> a schema:MusicGroup ;
+    schema:name "Waylon" .
+
+<https://www.festivalinfo.nl/artist/47/Golden-Earring/> a schema:MusicGroup ;
+    schema:name "Golden Earring" .
+
+<https://www.festivalinfo.nl/artist/51066/The-Baseballs/> a schema:MusicGroup ;
+    schema:name "The Baseballs" .
+
+<https://www.festivalinfo.nl/artist/5373/Lefties-Soul-Connection/> a schema:MusicGroup ;
+    schema:name "Lefties Soul Connection" .
+
+<https://www.festivalinfo.nl/artist/63015/Lorrainville/> a schema:MusicGroup ;
+    schema:name "Lorrainville" .
+
+<https://www.festivalinfo.nl/artist/63955/ED/> a schema:MusicGroup ;
+    schema:name "ED" .
+
+<https://www.festivalinfo.nl/artist/69/De-Dijk/> a schema:MusicGroup ;
+    schema:name "De Dijk" .
+
+<https://www.festivalinfo.nl/artist/70/Wipneus-en-Pim/> a schema:MusicGroup ;
+    schema:name "Wipneus en Pim" .
+
+<https://www.festivalinfo.nl/artist/73/Acda-en-de-Munnik/> a schema:MusicGroup ;
+    schema:name "Acda en de Munnik" .
+
+
+#Get graph for 2011
+@prefix schema: <https://schema.org/> .
+
+<https://www.festivalinfo.nl/festival/12269/Concert-at-Sea/2011/> a schema:Festival ;
+    schema:endDate "2011-06-18"^^<http://schema.org/Date> ;
+    schema:location [ a schema:Place ;
+            schema:name "Ouddorp" ] ;
+    schema:name "Concert at Sea (2011)" ;
+    schema:additionalType "concert at sea" ;
+    schema:startDate "2011-06-17"^^<http://schema.org/Date> ;
+    schema:subEvent <https://www.festivalinfo.nl/festival/12269/Concert-at-Sea/2011/performance/1237%2FBlof%2F>,
+        <https://www.festivalinfo.nl/festival/12269/Concert-at-Sea/2011/performance/151%2FIlse-DeLange%2F>,
+        <https://www.festivalinfo.nl/festival/12269/Concert-at-Sea/2011/performance/19%2FAnouk%2F>,
+        <https://www.festivalinfo.nl/festival/12269/Concert-at-Sea/2011/performance/243%2FDi-rect%2F>,
+        <https://www.festivalinfo.nl/festival/12269/Concert-at-Sea/2011/performance/24474%2FMemphis-Maniacs%2F>,
+        <https://www.festivalinfo.nl/festival/12269/Concert-at-Sea/2011/performance/27536%2FValerius%2F>,
+        <https://www.festivalinfo.nl/festival/12269/Concert-at-Sea/2011/performance/35871%2FGo-Back-To-The-Zoo%2F>,
+        <https://www.festivalinfo.nl/festival/12269/Concert-at-Sea/2011/performance/46091%2FHandsome-Poets%2F>,
+        <https://www.festivalinfo.nl/festival/12269/Concert-at-Sea/2011/performance/46904%2FVolt-Violin%2F>,
+        <https://www.festivalinfo.nl/festival/12269/Concert-at-Sea/2011/performance/51066%2FThe-Baseballs%2F>,
+        <https://www.festivalinfo.nl/festival/12269/Concert-at-Sea/2011/performance/53087%2FJacqueline-Govaert%2F>,
+        <https://www.festivalinfo.nl/festival/12269/Concert-at-Sea/2011/performance/60741%2FDansen-Aan-Zee%2F>,
+        <https://www.festivalinfo.nl/festival/12269/Concert-at-Sea/2011/performance/69%2FDe-Dijk%2F>,
+        <https://www.festivalinfo.nl/festival/12269/Concert-at-Sea/2011/performance/70%2FWipneus-en-Pim%2F>,
+        <https://www.festivalinfo.nl/festival/12269/Concert-at-Sea/2011/performance/75%2FRacoon%2F>,
+        <https://www.festivalinfo.nl/festival/12269/Concert-at-Sea/2011/performance/8383%2FSplendid%2F> ;
+    schema:url <https://www.festivalinfo.nl/festival/12269/Concert-at-Sea/2011/> .
+
+<https://www.festivalinfo.nl/festival/12269/Concert-at-Sea/2011/performance/1237%2FBlof%2F> a schema:PerformingArtsEvent ;
+    schema:name "Bløf concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/1237/Blof/> .
+
+<https://www.festivalinfo.nl/festival/12269/Concert-at-Sea/2011/performance/151%2FIlse-DeLange%2F> a schema:PerformingArtsEvent ;
+    schema:name "Ilse DeLange concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/151/Ilse-DeLange/> .
+
+<https://www.festivalinfo.nl/festival/12269/Concert-at-Sea/2011/performance/19%2FAnouk%2F> a schema:PerformingArtsEvent ;
+    schema:name "Anouk concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/19/Anouk/> .
+
+<https://www.festivalinfo.nl/festival/12269/Concert-at-Sea/2011/performance/243%2FDi-rect%2F> a schema:PerformingArtsEvent ;
+    schema:name "Di-rect concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/243/Di-rect/> .
+
+<https://www.festivalinfo.nl/festival/12269/Concert-at-Sea/2011/performance/24474%2FMemphis-Maniacs%2F> a schema:PerformingArtsEvent ;
+    schema:name "Memphis Maniacs concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/24474/Memphis-Maniacs/> .
+
+<https://www.festivalinfo.nl/festival/12269/Concert-at-Sea/2011/performance/27536%2FValerius%2F> a schema:PerformingArtsEvent ;
+    schema:name "Valerius concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/27536/Valerius/> .
+
+<https://www.festivalinfo.nl/festival/12269/Concert-at-Sea/2011/performance/35871%2FGo-Back-To-The-Zoo%2F> a schema:PerformingArtsEvent ;
+    schema:name "Go Back To The Zoo concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/35871/Go-Back-To-The-Zoo/> .
+
+<https://www.festivalinfo.nl/festival/12269/Concert-at-Sea/2011/performance/46091%2FHandsome-Poets%2F> a schema:PerformingArtsEvent ;
+    schema:name "Handsome Poets concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/46091/Handsome-Poets/> .
+
+<https://www.festivalinfo.nl/festival/12269/Concert-at-Sea/2011/performance/46904%2FVolt-Violin%2F> a schema:PerformingArtsEvent ;
+    schema:name "Volt Violin concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/46904/Volt-Violin/> .
+
+<https://www.festivalinfo.nl/festival/12269/Concert-at-Sea/2011/performance/51066%2FThe-Baseballs%2F> a schema:PerformingArtsEvent ;
+    schema:name "The Baseballs concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/51066/The-Baseballs/> .
+
+<https://www.festivalinfo.nl/festival/12269/Concert-at-Sea/2011/performance/53087%2FJacqueline-Govaert%2F> a schema:PerformingArtsEvent ;
+    schema:name "Jacqueline Govaert concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/53087/Jacqueline-Govaert/> .
+
+<https://www.festivalinfo.nl/festival/12269/Concert-at-Sea/2011/performance/60741%2FDansen-Aan-Zee%2F> a schema:PerformingArtsEvent ;
+    schema:name "Dansen Aan Zee concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/60741/Dansen-Aan-Zee/> .
+
+<https://www.festivalinfo.nl/festival/12269/Concert-at-Sea/2011/performance/69%2FDe-Dijk%2F> a schema:PerformingArtsEvent ;
+    schema:name "De Dijk concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/69/De-Dijk/> .
+
+<https://www.festivalinfo.nl/festival/12269/Concert-at-Sea/2011/performance/70%2FWipneus-en-Pim%2F> a schema:PerformingArtsEvent ;
+    schema:name "Wipneus en Pim concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/70/Wipneus-en-Pim/> .
+
+<https://www.festivalinfo.nl/festival/12269/Concert-at-Sea/2011/performance/75%2FRacoon%2F> a schema:PerformingArtsEvent ;
+    schema:name "Racoon concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/75/Racoon/> .
+
+<https://www.festivalinfo.nl/festival/12269/Concert-at-Sea/2011/performance/8383%2FSplendid%2F> a schema:PerformingArtsEvent ;
+    schema:name "Splendid concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/8383/Splendid/> .
+
+<https://www.festivalinfo.nl/artist/1237/Blof/> a schema:MusicGroup ;
+    schema:name "Bløf" .
+
+<https://www.festivalinfo.nl/artist/151/Ilse-DeLange/> a schema:MusicGroup ;
+    schema:name "Ilse DeLange" .
+
+<https://www.festivalinfo.nl/artist/19/Anouk/> a schema:MusicGroup ;
+    schema:name "Anouk" .
+
+<https://www.festivalinfo.nl/artist/243/Di-rect/> a schema:MusicGroup ;
+    schema:name "Di-rect" .
+
+<https://www.festivalinfo.nl/artist/24474/Memphis-Maniacs/> a schema:MusicGroup ;
+    schema:name "Memphis Maniacs" .
+
+<https://www.festivalinfo.nl/artist/27536/Valerius/> a schema:MusicGroup ;
+    schema:name "Valerius" .
+
+<https://www.festivalinfo.nl/artist/35871/Go-Back-To-The-Zoo/> a schema:MusicGroup ;
+    schema:name "Go Back To The Zoo" .
+
+<https://www.festivalinfo.nl/artist/46091/Handsome-Poets/> a schema:MusicGroup ;
+    schema:name "Handsome Poets" .
+
+<https://www.festivalinfo.nl/artist/46904/Volt-Violin/> a schema:MusicGroup ;
+    schema:name "Volt Violin" .
+
+<https://www.festivalinfo.nl/artist/51066/The-Baseballs/> a schema:MusicGroup ;
+    schema:name "The Baseballs" .
+
+<https://www.festivalinfo.nl/artist/53087/Jacqueline-Govaert/> a schema:MusicGroup ;
+    schema:name "Jacqueline Govaert" .
+
+<https://www.festivalinfo.nl/artist/60741/Dansen-Aan-Zee/> a schema:MusicGroup ;
+    schema:name "Dansen Aan Zee" .
+
+<https://www.festivalinfo.nl/artist/69/De-Dijk/> a schema:MusicGroup ;
+    schema:name "De Dijk" .
+
+<https://www.festivalinfo.nl/artist/70/Wipneus-en-Pim/> a schema:MusicGroup ;
+    schema:name "Wipneus en Pim" .
+
+<https://www.festivalinfo.nl/artist/75/Racoon/> a schema:MusicGroup ;
+    schema:name "Racoon" .
+
+<https://www.festivalinfo.nl/artist/8383/Splendid/> a schema:MusicGroup ;
+    schema:name "Splendid" .
+
+
+#Get graph for 2010
+@prefix schema: <https://schema.org/> .
+
+<https://www.festivalinfo.nl/festival/10470/Concert-at-Sea/2010/> a schema:Festival ;
+    schema:endDate "2010-06-26"^^<http://schema.org/Date> ;
+    schema:location [ a schema:Place ;
+            schema:name "Ouddorp" ] ;
+    schema:name "Concert at Sea (2010)" ;
+    schema:additionalType "concert at sea" ;
+    schema:startDate "2010-06-25"^^<http://schema.org/Date> ;
+    schema:subEvent <https://www.festivalinfo.nl/festival/10470/Concert-at-Sea/2010/performance/1237%2FBlof%2F>,
+        <https://www.festivalinfo.nl/festival/10470/Concert-at-Sea/2010/performance/14376%2FMilow%2F>,
+        <https://www.festivalinfo.nl/festival/10470/Concert-at-Sea/2010/performance/15317%2FGuus-Meeuwis%2F>,
+        <https://www.festivalinfo.nl/festival/10470/Concert-at-Sea/2010/performance/239%2FLoco-Loco-Discoshow%2F>,
+        <https://www.festivalinfo.nl/festival/10470/Concert-at-Sea/2010/performance/32592%2FAlain-Clark%2F>,
+        <https://www.festivalinfo.nl/festival/10470/Concert-at-Sea/2010/performance/38515%2FWaylon%2F>,
+        <https://www.festivalinfo.nl/festival/10470/Concert-at-Sea/2010/performance/46421%2FCaro-Emerald%2F>,
+        <https://www.festivalinfo.nl/festival/10470/Concert-at-Sea/2010/performance/52%2FRowwen-Heze%2F>,
+        <https://www.festivalinfo.nl/festival/10470/Concert-at-Sea/2010/performance/53%2FKs-Choice%2F>,
+        <https://www.festivalinfo.nl/festival/10470/Concert-at-Sea/2010/performance/62%2FKane%2F>,
+        <https://www.festivalinfo.nl/festival/10470/Concert-at-Sea/2010/performance/70%2FWipneus-en-Pim%2F> ;
+    schema:url <https://www.festivalinfo.nl/festival/10470/Concert-at-Sea/2010/> .
+
+<https://www.festivalinfo.nl/festival/10470/Concert-at-Sea/2010/performance/1237%2FBlof%2F> a schema:PerformingArtsEvent ;
+    schema:name "Bløf concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/1237/Blof/> .
+
+<https://www.festivalinfo.nl/festival/10470/Concert-at-Sea/2010/performance/14376%2FMilow%2F> a schema:PerformingArtsEvent ;
+    schema:name "Milow concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/14376/Milow/> .
+
+<https://www.festivalinfo.nl/festival/10470/Concert-at-Sea/2010/performance/15317%2FGuus-Meeuwis%2F> a schema:PerformingArtsEvent ;
+    schema:name "Guus Meeuwis concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/15317/Guus-Meeuwis/> .
+
+<https://www.festivalinfo.nl/festival/10470/Concert-at-Sea/2010/performance/239%2FLoco-Loco-Discoshow%2F> a schema:PerformingArtsEvent ;
+    schema:name "Loco Loco Discoshow concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/239/Loco-Loco-Discoshow/> .
+
+<https://www.festivalinfo.nl/festival/10470/Concert-at-Sea/2010/performance/32592%2FAlain-Clark%2F> a schema:PerformingArtsEvent ;
+    schema:name "Alain Clark concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/32592/Alain-Clark/> .
+
+<https://www.festivalinfo.nl/festival/10470/Concert-at-Sea/2010/performance/38515%2FWaylon%2F> a schema:PerformingArtsEvent ;
+    schema:name "Waylon concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/38515/Waylon/> .
+
+<https://www.festivalinfo.nl/festival/10470/Concert-at-Sea/2010/performance/46421%2FCaro-Emerald%2F> a schema:PerformingArtsEvent ;
+    schema:name "Caro Emerald concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/46421/Caro-Emerald/> .
+
+<https://www.festivalinfo.nl/festival/10470/Concert-at-Sea/2010/performance/52%2FRowwen-Heze%2F> a schema:PerformingArtsEvent ;
+    schema:name "Rowwen Heze concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/52/Rowwen-Heze/> .
+
+<https://www.festivalinfo.nl/festival/10470/Concert-at-Sea/2010/performance/53%2FKs-Choice%2F> a schema:PerformingArtsEvent ;
+    schema:name "K's Choice concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/53/Ks-Choice/> .
+
+<https://www.festivalinfo.nl/festival/10470/Concert-at-Sea/2010/performance/62%2FKane%2F> a schema:PerformingArtsEvent ;
+    schema:name "Kane concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/62/Kane/> .
+
+<https://www.festivalinfo.nl/festival/10470/Concert-at-Sea/2010/performance/70%2FWipneus-en-Pim%2F> a schema:PerformingArtsEvent ;
+    schema:name "Wipneus en Pim concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/70/Wipneus-en-Pim/> .
+
+<https://www.festivalinfo.nl/artist/1237/Blof/> a schema:MusicGroup ;
+    schema:name "Bløf" .
+
+<https://www.festivalinfo.nl/artist/14376/Milow/> a schema:MusicGroup ;
+    schema:name "Milow" .
+
+<https://www.festivalinfo.nl/artist/15317/Guus-Meeuwis/> a schema:MusicGroup ;
+    schema:name "Guus Meeuwis" .
+
+<https://www.festivalinfo.nl/artist/239/Loco-Loco-Discoshow/> a schema:MusicGroup ;
+    schema:name "Loco Loco Discoshow" .
+
+<https://www.festivalinfo.nl/artist/32592/Alain-Clark/> a schema:MusicGroup ;
+    schema:name "Alain Clark" .
+
+<https://www.festivalinfo.nl/artist/38515/Waylon/> a schema:MusicGroup ;
+    schema:name "Waylon" .
+
+<https://www.festivalinfo.nl/artist/46421/Caro-Emerald/> a schema:MusicGroup ;
+    schema:name "Caro Emerald" .
+
+<https://www.festivalinfo.nl/artist/52/Rowwen-Heze/> a schema:MusicGroup ;
+    schema:name "Rowwen Heze" .
+
+<https://www.festivalinfo.nl/artist/53/Ks-Choice/> a schema:MusicGroup ;
+    schema:name "K's Choice" .
+
+<https://www.festivalinfo.nl/artist/62/Kane/> a schema:MusicGroup ;
+    schema:name "Kane" .
+
+<https://www.festivalinfo.nl/artist/70/Wipneus-en-Pim/> a schema:MusicGroup ;
+    schema:name "Wipneus en Pim" .
+
+
+#Get graph for 2009
+@prefix schema: <https://schema.org/> .
+
+<https://www.festivalinfo.nl/festival/8889/Concert-at-Sea/2009/> a schema:Festival ;
+    schema:endDate "2009-06-27"^^<http://schema.org/Date> ;
+    schema:location [ a schema:Place ;
+            schema:name "Ouddorp" ] ;
+    schema:name "Concert at Sea (2009)" ;
+    schema:additionalType "concert at sea" ;
+    schema:startDate "2009-06-26"^^<http://schema.org/Date> ;
+    schema:subEvent <https://www.festivalinfo.nl/festival/8889/Concert-at-Sea/2009/performance/1237%2FBlof%2F>,
+        <https://www.festivalinfo.nl/festival/8889/Concert-at-Sea/2009/performance/151%2FIlse-DeLange%2F>,
+        <https://www.festivalinfo.nl/festival/8889/Concert-at-Sea/2009/performance/20996%2FMaria-Mena%2F>,
+        <https://www.festivalinfo.nl/festival/8889/Concert-at-Sea/2009/performance/22885%2FVanVelzen%2F>,
+        <https://www.festivalinfo.nl/festival/8889/Concert-at-Sea/2009/performance/39542%2FBertolf%2F>,
+        <https://www.festivalinfo.nl/festival/8889/Concert-at-Sea/2009/performance/47%2FGolden-Earring%2F>,
+        <https://www.festivalinfo.nl/festival/8889/Concert-at-Sea/2009/performance/75%2FRacoon%2F>,
+        <https://www.festivalinfo.nl/festival/8889/Concert-at-Sea/2009/performance/9891%2FMarco-Borsato%2F> ;
+    schema:url <https://www.festivalinfo.nl/festival/8889/Concert-at-Sea/2009/> .
+
+<https://www.festivalinfo.nl/festival/8889/Concert-at-Sea/2009/performance/1237%2FBlof%2F> a schema:PerformingArtsEvent ;
+    schema:name "Bløf concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/1237/Blof/> .
+
+<https://www.festivalinfo.nl/festival/8889/Concert-at-Sea/2009/performance/151%2FIlse-DeLange%2F> a schema:PerformingArtsEvent ;
+    schema:name "Ilse DeLange concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/151/Ilse-DeLange/> .
+
+<https://www.festivalinfo.nl/festival/8889/Concert-at-Sea/2009/performance/20996%2FMaria-Mena%2F> a schema:PerformingArtsEvent ;
+    schema:name "Maria Mena concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/20996/Maria-Mena/> .
+
+<https://www.festivalinfo.nl/festival/8889/Concert-at-Sea/2009/performance/22885%2FVanVelzen%2F> a schema:PerformingArtsEvent ;
+    schema:name "VanVelzen concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/22885/VanVelzen/> .
+
+<https://www.festivalinfo.nl/festival/8889/Concert-at-Sea/2009/performance/39542%2FBertolf%2F> a schema:PerformingArtsEvent ;
+    schema:name "Bertolf concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/39542/Bertolf/> .
+
+<https://www.festivalinfo.nl/festival/8889/Concert-at-Sea/2009/performance/47%2FGolden-Earring%2F> a schema:PerformingArtsEvent ;
+    schema:name "Golden Earring concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/47/Golden-Earring/> .
+
+<https://www.festivalinfo.nl/festival/8889/Concert-at-Sea/2009/performance/75%2FRacoon%2F> a schema:PerformingArtsEvent ;
+    schema:name "Racoon concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/75/Racoon/> .
+
+<https://www.festivalinfo.nl/festival/8889/Concert-at-Sea/2009/performance/9891%2FMarco-Borsato%2F> a schema:PerformingArtsEvent ;
+    schema:name "Marco Borsato concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/9891/Marco-Borsato/> .
+
+<https://www.festivalinfo.nl/artist/1237/Blof/> a schema:MusicGroup ;
+    schema:name "Bløf" .
+
+<https://www.festivalinfo.nl/artist/151/Ilse-DeLange/> a schema:MusicGroup ;
+    schema:name "Ilse DeLange" .
+
+<https://www.festivalinfo.nl/artist/20996/Maria-Mena/> a schema:MusicGroup ;
+    schema:name "Maria Mena" .
+
+<https://www.festivalinfo.nl/artist/22885/VanVelzen/> a schema:MusicGroup ;
+    schema:name "VanVelzen" .
+
+<https://www.festivalinfo.nl/artist/39542/Bertolf/> a schema:MusicGroup ;
+    schema:name "Bertolf" .
+
+<https://www.festivalinfo.nl/artist/47/Golden-Earring/> a schema:MusicGroup ;
+    schema:name "Golden Earring" .
+
+<https://www.festivalinfo.nl/artist/75/Racoon/> a schema:MusicGroup ;
+    schema:name "Racoon" .
+
+<https://www.festivalinfo.nl/artist/9891/Marco-Borsato/> a schema:MusicGroup ;
+    schema:name "Marco Borsato" .
+
+
+#Get graph for 2008
+@prefix schema: <https://schema.org/> .
+
+<https://www.festivalinfo.nl/festival/6963/Concert-at-Sea/2008/> a schema:Festival ;
+    schema:endDate "2008-06-28"^^<http://schema.org/Date> ;
+    schema:location [ a schema:Place ;
+            schema:name "Ouddorp" ] ;
+    schema:name "Concert at Sea (2008)" ;
+    schema:additionalType "concert at sea" ;
+    schema:startDate "2008-06-28"^^<http://schema.org/Date> ;
+    schema:subEvent <https://www.festivalinfo.nl/festival/6963/Concert-at-Sea/2008/performance/11952%2FIOS-Is-Ook-Schitterend-%2F>,
+        <https://www.festivalinfo.nl/festival/6963/Concert-at-Sea/2008/performance/1237%2FBlof%2F>,
+        <https://www.festivalinfo.nl/festival/6963/Concert-at-Sea/2008/performance/14376%2FMilow%2F>,
+        <https://www.festivalinfo.nl/festival/6963/Concert-at-Sea/2008/performance/17297%2FStevie-Ann%2F>,
+        <https://www.festivalinfo.nl/festival/6963/Concert-at-Sea/2008/performance/1906%2FCounting-Crows%2F>,
+        <https://www.festivalinfo.nl/festival/6963/Concert-at-Sea/2008/performance/32592%2FAlain-Clark%2F>,
+        <https://www.festivalinfo.nl/festival/6963/Concert-at-Sea/2008/performance/36301%2FLos-Vapapenos%2F>,
+        <https://www.festivalinfo.nl/festival/6963/Concert-at-Sea/2008/performance/452%2FThe-Scene%2F>,
+        <https://www.festivalinfo.nl/festival/6963/Concert-at-Sea/2008/performance/60%2FBeef%2F>,
+        <https://www.festivalinfo.nl/festival/6963/Concert-at-Sea/2008/performance/74%2FKrezip%2F> ;
+    schema:url <https://www.festivalinfo.nl/festival/6963/Concert-at-Sea/2008/> .
+
+<https://www.festivalinfo.nl/festival/6963/Concert-at-Sea/2008/performance/11952%2FIOS-Is-Ook-Schitterend-%2F> a schema:PerformingArtsEvent ;
+    schema:name "IOS (Is Ook Schitterend) concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/11952/IOS-Is-Ook-Schitterend-/> .
+
+<https://www.festivalinfo.nl/festival/6963/Concert-at-Sea/2008/performance/1237%2FBlof%2F> a schema:PerformingArtsEvent ;
+    schema:name "Bløf concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/1237/Blof/> .
+
+<https://www.festivalinfo.nl/festival/6963/Concert-at-Sea/2008/performance/14376%2FMilow%2F> a schema:PerformingArtsEvent ;
+    schema:name "Milow concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/14376/Milow/> .
+
+<https://www.festivalinfo.nl/festival/6963/Concert-at-Sea/2008/performance/17297%2FStevie-Ann%2F> a schema:PerformingArtsEvent ;
+    schema:name "Stevie Ann concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/17297/Stevie-Ann/> .
+
+<https://www.festivalinfo.nl/festival/6963/Concert-at-Sea/2008/performance/1906%2FCounting-Crows%2F> a schema:PerformingArtsEvent ;
+    schema:name "Counting Crows concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/1906/Counting-Crows/> .
+
+<https://www.festivalinfo.nl/festival/6963/Concert-at-Sea/2008/performance/32592%2FAlain-Clark%2F> a schema:PerformingArtsEvent ;
+    schema:name "Alain Clark concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/32592/Alain-Clark/> .
+
+<https://www.festivalinfo.nl/festival/6963/Concert-at-Sea/2008/performance/36301%2FLos-Vapapenos%2F> a schema:PerformingArtsEvent ;
+    schema:name "Los Vapapenos concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/36301/Los-Vapapenos/> .
+
+<https://www.festivalinfo.nl/festival/6963/Concert-at-Sea/2008/performance/452%2FThe-Scene%2F> a schema:PerformingArtsEvent ;
+    schema:name "The Scene concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/452/The-Scene/> .
+
+<https://www.festivalinfo.nl/festival/6963/Concert-at-Sea/2008/performance/60%2FBeef%2F> a schema:PerformingArtsEvent ;
+    schema:name "Beef concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/60/Beef/> .
+
+<https://www.festivalinfo.nl/festival/6963/Concert-at-Sea/2008/performance/74%2FKrezip%2F> a schema:PerformingArtsEvent ;
+    schema:name "Krezip concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/74/Krezip/> .
+
+<https://www.festivalinfo.nl/artist/11952/IOS-Is-Ook-Schitterend-/> a schema:MusicGroup ;
+    schema:name "IOS (Is Ook Schitterend)" .
+
+<https://www.festivalinfo.nl/artist/1237/Blof/> a schema:MusicGroup ;
+    schema:name "Bløf" .
+
+<https://www.festivalinfo.nl/artist/14376/Milow/> a schema:MusicGroup ;
+    schema:name "Milow" .
+
+<https://www.festivalinfo.nl/artist/17297/Stevie-Ann/> a schema:MusicGroup ;
+    schema:name "Stevie Ann" .
+
+<https://www.festivalinfo.nl/artist/1906/Counting-Crows/> a schema:MusicGroup ;
+    schema:name "Counting Crows" .
+
+<https://www.festivalinfo.nl/artist/32592/Alain-Clark/> a schema:MusicGroup ;
+    schema:name "Alain Clark" .
+
+<https://www.festivalinfo.nl/artist/36301/Los-Vapapenos/> a schema:MusicGroup ;
+    schema:name "Los Vapapenos" .
+
+<https://www.festivalinfo.nl/artist/452/The-Scene/> a schema:MusicGroup ;
+    schema:name "The Scene" .
+
+<https://www.festivalinfo.nl/artist/60/Beef/> a schema:MusicGroup ;
+    schema:name "Beef" .
+
+<https://www.festivalinfo.nl/artist/74/Krezip/> a schema:MusicGroup ;
+    schema:name "Krezip" .
+
+
+#Get graph for 2007
+@prefix schema: <https://schema.org/> .
+
+<https://www.festivalinfo.nl/festival/5826/Concert-At-Sea/2007/> a schema:Festival ;
+    schema:endDate "2007-06-30"^^<http://schema.org/Date> ;
+    schema:location [ a schema:Place ;
+            schema:name "Ouddorp" ] ;
+    schema:name "Concert At Sea (2007)" ;
+    schema:additionalType "concert at sea" ;
+    schema:startDate "2007-06-30"^^<http://schema.org/Date> ;
+    schema:subEvent <https://www.festivalinfo.nl/festival/5826/Concert-At-Sea/2007/performance/1237%2FBlof%2F>,
+        <https://www.festivalinfo.nl/festival/5826/Concert-At-Sea/2007/performance/218%2FTrijntje-Oosterhuis%2F>,
+        <https://www.festivalinfo.nl/festival/5826/Concert-At-Sea/2007/performance/22885%2FVanVelzen%2F>,
+        <https://www.festivalinfo.nl/festival/5826/Concert-At-Sea/2007/performance/69%2FDe-Dijk%2F> ;
+    schema:url <https://www.festivalinfo.nl/festival/5826/Concert-At-Sea/2007/> .
+
+<https://www.festivalinfo.nl/festival/5826/Concert-At-Sea/2007/performance/1237%2FBlof%2F> a schema:PerformingArtsEvent ;
+    schema:name "Bløf concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/1237/Blof/> .
+
+<https://www.festivalinfo.nl/festival/5826/Concert-At-Sea/2007/performance/218%2FTrijntje-Oosterhuis%2F> a schema:PerformingArtsEvent ;
+    schema:name "Trijntje Oosterhuis concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/218/Trijntje-Oosterhuis/> .
+
+<https://www.festivalinfo.nl/festival/5826/Concert-At-Sea/2007/performance/22885%2FVanVelzen%2F> a schema:PerformingArtsEvent ;
+    schema:name "VanVelzen concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/22885/VanVelzen/> .
+
+<https://www.festivalinfo.nl/festival/5826/Concert-At-Sea/2007/performance/69%2FDe-Dijk%2F> a schema:PerformingArtsEvent ;
+    schema:name "De Dijk concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/69/De-Dijk/> .
+
+<https://www.festivalinfo.nl/artist/1237/Blof/> a schema:MusicGroup ;
+    schema:name "Bløf" .
+
+<https://www.festivalinfo.nl/artist/218/Trijntje-Oosterhuis/> a schema:MusicGroup ;
+    schema:name "Trijntje Oosterhuis" .
+
+<https://www.festivalinfo.nl/artist/22885/VanVelzen/> a schema:MusicGroup ;
+    schema:name "VanVelzen" .
+
+<https://www.festivalinfo.nl/artist/69/De-Dijk/> a schema:MusicGroup ;
+    schema:name "De Dijk" .
+
+
+#Get graph for 2006
+@prefix schema: <https://schema.org/> .
+
+<https://www.festivalinfo.nl/festival/4397/Concert-At-Sea/2006/> a schema:Festival ;
+    schema:endDate "2006-07-08"^^<http://schema.org/Date> ;
+    schema:location [ a schema:Place ;
+            schema:name "Ouddorp" ] ;
+    schema:name "Concert At Sea (2006)" ;
+    schema:additionalType "concert at sea" ;
+    schema:startDate "2006-07-08"^^<http://schema.org/Date> ;
+    schema:subEvent <https://www.festivalinfo.nl/festival/4397/Concert-At-Sea/2006/performance/1237%2FBlof%2F>,
+        <https://www.festivalinfo.nl/festival/4397/Concert-At-Sea/2006/performance/151%2FIlse-DeLange%2F>,
+        <https://www.festivalinfo.nl/festival/4397/Concert-At-Sea/2006/performance/75%2FRacoon%2F> ;
+    schema:url <https://www.festivalinfo.nl/festival/4397/Concert-At-Sea/2006/> .
+
+<https://www.festivalinfo.nl/festival/4397/Concert-At-Sea/2006/performance/1237%2FBlof%2F> a schema:PerformingArtsEvent ;
+    schema:name "Bløf concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/1237/Blof/> .
+
+<https://www.festivalinfo.nl/festival/4397/Concert-At-Sea/2006/performance/151%2FIlse-DeLange%2F> a schema:PerformingArtsEvent ;
+    schema:name "Ilse DeLange concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/151/Ilse-DeLange/> .
+
+<https://www.festivalinfo.nl/festival/4397/Concert-At-Sea/2006/performance/75%2FRacoon%2F> a schema:PerformingArtsEvent ;
+    schema:name "Racoon concert" ;
+    schema:performer <https://www.festivalinfo.nl/artist/75/Racoon/> .
+
+<https://www.festivalinfo.nl/artist/1237/Blof/> a schema:MusicGroup ;
+    schema:name "Bløf" .
+
+<https://www.festivalinfo.nl/artist/151/Ilse-DeLange/> a schema:MusicGroup ;
+    schema:name "Ilse DeLange" .
+
+<https://www.festivalinfo.nl/artist/75/Racoon/> a schema:MusicGroup ;
+    schema:name "Racoon" .
+
+

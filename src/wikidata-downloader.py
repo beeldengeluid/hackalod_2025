@@ -16,6 +16,7 @@ cfg: dict = {
     "WIKIDATA_QUERY_SERVICE_URL": "https://query.wikidata.org/bigdata/namespace/wdq/sparql",
     "DATA_DIR": "./data/",
     "FN_LINKSET": "wikidata_muziekweb_matches.csv",
+    "WD_MW_QUERY_FILE": "queries/wikidata-muziekweb-downloader.rq",
 }
 
 NS_SCHEMA = Namespace("http://schema.org/")
@@ -42,7 +43,7 @@ def get_wd_graph_for_mw_id(mw_id: str = "") -> Graph:
     try:
         if mw_id:
             result: str = execute_wd_construct_query(
-                query=wikidata_query_muziekweb_performer(mw_id)
+                query=get_query_wikidata_muziekweb_performer(mw_id)
             )
             if result:
                 g.parse(data=result, format="application/rdf+xml")
@@ -60,7 +61,7 @@ SELECT_QUERY_MUZIEKWEB_MATCHES = """SELECT ?wikidata_id ?muziekweb_performer_id
         """
 
 
-def wikidata_query_muziekweb_performer(mw_id: str = "") -> str:
+def get_query_wikidata_muziekweb_performer(mw_id: str = "") -> str:
     """Get a CONSTRUCT query that gets wikidata triples for a given Muziekweb id.
 
     :param mw_id: Muziekweb performer URI.
@@ -71,79 +72,12 @@ def wikidata_query_muziekweb_performer(mw_id: str = "") -> str:
     if mw_id == "":
         return ""
     else:
-        return (
-            """PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX schema: <http://schema.org/>
-PREFIX wdt: <http://www.wikidata.org/prop/direct/>
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX wikibase: <http://wikiba.se/ontology#>
-PREFIX bd: <http://www.bigdata.com/rdf#>
-PREFIX wgs84: <http://www.w3.org/2003/01/geo/wgs84_pos#>
-CONSTRUCT {
-    ?s wdt:P5882 ?mw_id .
-    ?s rdfs:label ?sLabel .
-    ?s schema:description ?sDescription .
-    ?s skos:altLabel ?sAltLabel .
-    # ?s wdt:P31 ?instance_of .
-    ?instance_of rdfs:label ?instance_ofLabel .
-    ?s wdt:P21 ?gender .
-    ?gender rdfs:label ?genderLabel .
-    ?s wdt:P569 ?birthDate .
-    ?s wdt:P570 ?deathDate .
-    ?s wdt:P19 ?placeOfBirth .
-    ?placeOfBirth rdfs:label ?placeOfBirthLabel .
-    ?placeOfBirth wdt:P625 ?_coordinatesPoB .
-    ?placeOfBirth wgs84:lat ?lat .
-    ?placeOfBirth wgs84:long ?lon .
-
-    ?s wdt:P20 ?placeOfDeath .
-    ?placeOfDeath rdfs:label ?placeOfDeathLabel .
-    ?placeOfDeath wdt:P625 ?_coordinatesPoD .
-    ?s wdt:P27 ?nationality .
-    ?nationality rdfs:label ?nationalityLabel .
-    ?s wdt:P18 ?imageUrl 
-    }
-WHERE {
-    VALUES ?mw_id { "%s" }
-    ?s wdt:P5882 ?mw_id .
-    # OPTIONAL{?s wdt:P31 ?instance_of }
-    OPTIONAL{?s wdt:P21 ?gender }
-        OPTIONAL{ ?s wdt:P569 ?born
-            BIND(
-            COALESCE(
-                IF(
-                (?born < "+1-00-00T00:00:00Z"^^xsd:dateTime),
-                CONCAT(STR(1+YEAR(?born)*-1), " BC"),
-                1/0),
-                xsd:date(?born)
-            )
-            AS ?birthDate
-            )
-        }
-    OPTIONAL{?s wdt:P570 ?dateOfDeath BIND (
-        xsd:date(?dateOfDeath) AS ?deathDate
-        ) }
-    OPTIONAL{ ?s wdt:P19 ?placeOfBirth }
-    OPTIONAL{ ?s wdt:P19/wdt:P625 ?_coordinatesPoB }
-    OPTIONAL{ ?s wdt:P19/p:P625 ?coords .
-             ?coords ps:P625 ?coord ;
-                     psv:P625 [
-                       wikibase:geoLongitude ?lon ;
-                       wikibase:geoLatitude ?lat 
-                     ] .
-            }
-    
-    OPTIONAL{?s wdt:P20 ?placeOfDeath }
-    OPTIONAL{ ?s wdt:P18/wdt:P625 ?_coordinatesPoD }
-
-    OPTIONAL{?s wdt:P27 ?nationality }
-    OPTIONAL{?s wdt:P18 ?imageUrl }
-    SERVICE wikibase:label {
-        bd:serviceParam wikibase:language "en" .
-    }
-}"""
-            % mw_id
-        )
+        q_path = get_path_from_config(cfg.get("WD_MW_QUERY_FILE", ""))
+        query: str = ""
+        if os.path.exists(q_path):
+            with open(q_path, "r") as f:
+                query = f.read()
+        return query.replace("mw_id_value", mw_id)
 
 
 def wd_mw_matches_to_graph(data: dict = {}) -> Graph:
@@ -320,7 +254,7 @@ class WikidataDownloader:
         """
         try:
             result: dict = execute_wd_select_query(
-                SELECT_QUERY_MUZIEKWEB_MATCHES  # + "LIMIT 10"
+                SELECT_QUERY_MUZIEKWEB_MATCHES + "LIMIT 10"
             )
             if result:
                 g = wd_mw_matches_to_graph(result)

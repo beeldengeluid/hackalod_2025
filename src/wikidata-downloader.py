@@ -26,6 +26,7 @@ NS_WIKIBASE = Namespace("http://wikiba.se/ontology#")
 NS_BD = Namespace("http://www.bigdata.com/rdf#")
 NS_OWL = Namespace("http://www.w3.org/2002/07/owl#")
 NS_MUZIEKWEB = Namespace("https://data.muziekweb.nl/Link/")
+NS_GEO = Namespace("http://www.opengis.net/ont/geosparql#")
 CSV_WIKIDATA_ID = "wikidata_id"
 CSV_MUZIEKWEB_ID = "muziekweb_performer_id"
 
@@ -77,6 +78,7 @@ PREFIX wdt: <http://www.wikidata.org/prop/direct/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX wikibase: <http://wikiba.se/ontology#>
 PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX wgs84: <http://www.w3.org/2003/01/geo/wgs84_pos#>
 CONSTRUCT {
     ?s wdt:P5882 ?mw_id .
     ?s rdfs:label ?sLabel .
@@ -91,6 +93,9 @@ CONSTRUCT {
     ?s wdt:P19 ?placeOfBirth .
     ?placeOfBirth rdfs:label ?placeOfBirthLabel .
     ?placeOfBirth wdt:P625 ?_coordinatesPoB .
+    ?placeOfBirth wgs84:lat ?lat .
+    ?placeOfBirth wgs84:long ?lon .
+
     ?s wdt:P20 ?placeOfDeath .
     ?placeOfDeath rdfs:label ?placeOfDeathLabel .
     ?placeOfDeath wdt:P625 ?_coordinatesPoD .
@@ -120,8 +125,17 @@ WHERE {
         ) }
     OPTIONAL{ ?s wdt:P19 ?placeOfBirth }
     OPTIONAL{ ?s wdt:P19/wdt:P625 ?_coordinatesPoB }
+    OPTIONAL{ ?s wdt:P19/p:P625 ?coords .
+             ?coords ps:P625 ?coord ;
+                     psv:P625 [
+                       wikibase:geoLongitude ?lon ;
+                       wikibase:geoLatitude ?lat 
+                     ] .
+            }
+    
     OPTIONAL{?s wdt:P20 ?placeOfDeath }
     OPTIONAL{ ?s wdt:P18/wdt:P625 ?_coordinatesPoD }
+
     OPTIONAL{?s wdt:P27 ?nationality }
     OPTIONAL{?s wdt:P18 ?imageUrl }
     SERVICE wikibase:label {
@@ -266,6 +280,9 @@ class WikidataDownloader:
         data_path = os.path.join(
             self.data_dir, f"wikidata_muziekweb_data_{date_time_string()}.ttl"
         )
+        data_path_nt = os.path.join(
+            self.data_dir, f"wikidata_muziekweb_data_{date_time_string()}.nt"
+        )
 
         try:
             # 1)  Get the wikidata identifiers
@@ -273,24 +290,27 @@ class WikidataDownloader:
             mw_ids: list = self.get_wikidata_mw_identifiers()
 
             # 2) Get the data using the wikidata query service
-            g = Graph()
-            g.bind("schema", NS_SCHEMA)
-            g.bind("wdt", NS_WDT)
             logger.info("Get the data using the wikidata query service...")
-            for mw_id_url in mw_ids:
-                result = re.search(
-                    r"^https://data.muziekweb.nl/Link/(?P<performer_id>.*)",
-                    mw_id_url,
-                    re.I,
-                )
-                if result:
-                    mw_id: str = result.group("performer_id")
-                    logger.info(f"Querying wikidata for: {mw_id}")
-                    g += get_wd_graph_for_mw_id(mw_id)
+            with open(data_path_nt, "wt") as f:
+                for mw_id_url in mw_ids:
+                    result = re.search(
+                        r"^https://data.muziekweb.nl/Link/(?P<performer_id>.*)",
+                        mw_id_url,
+                        re.I,
+                    )
+                    if result:
+                        mw_id: str = result.group("performer_id")
+                        logger.info(f"Querying wikidata for: {mw_id}")
+                        g = Graph()
+                        g.bind("schema", NS_SCHEMA)
+                        g.bind("wdt", NS_WDT)
+                        g.bind("geo", NS_GEO)
+                        g = get_wd_graph_for_mw_id(mw_id)
+                        f.write(g.serialize(format="nt11"))
 
-            # 3) serialize the joined Graph to Turtle file.
-            logger.info("Serialize the data to Turtle file....")
-            g.serialize(data_path)
+            # # 3) serialize the joined Graph to Turtle file.
+            # logger.info("Serialize the data to Turtle file....")
+            # g.serialize(data_path)
 
         except Exception as exc:
             logger.error(str(exc))
@@ -329,7 +349,7 @@ if __name__ == "__main__":
 
     Given the identifiers in Wikidata for resources that have a Muziekweb_ID property
     and given a list of properties to filter, the data is queried from the
-    Wikidata query service and stored in a Turtle file.
+    Wikidata query service and stored in a N-triples file.
     The Muziekweb to Wikidata alignment file is also saved.
     """
     start_time = datetime.now()

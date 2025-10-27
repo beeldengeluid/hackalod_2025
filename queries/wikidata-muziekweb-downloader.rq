@@ -20,10 +20,16 @@ CONSTRUCT {
     ?s wdt:P570 ?deathDate .
     ?s wdt:P19 ?placeOfBirth .
     ?placeOfBirth rdfs:label ?placeOfBirthLabel .
-    ?placeOfBirth wdt:P625 ?pob_geo .
+    ?placeOfBirth a geo:Feature ;
+                    geo:hasGeometry [ 
+                        a geo:Geometry ;
+                        geo:asWKT ?_coordinatesPoB ] .
     ?s wdt:P20 ?placeOfDeath .
     ?placeOfDeath rdfs:label ?placeOfDeathLabel .
-    ?placeOfDeath wdt:P625 ?pod_geo .
+    ?placeOfDeath a geo:Feature ;
+                    geo:hasGeometry [ 
+                        a geo:Geometry ;
+                        geo:asWKT ?_coordinatesPoD ] .
     ?s wdt:P27 ?nationality .
     ?nationality rdfs:label ?nationalityLabel .
     ?s wdt:P18 ?imageUrl 
@@ -49,21 +55,9 @@ WHERE {
         xsd:date(?dateOfDeath) AS ?deathDate
         ) }
     OPTIONAL{ ?s wdt:P19 ?placeOfBirth }
-    OPTIONAL{ ?s wdt:P19 ?pob_geo .
-        ?s wdt:P19/wdt:P625 ?_coordinatesPoB .
-        ?pob_geo a geo:Feature ;
-                    geo:hasGeometry [ 
-                        a geo:Geometry ;
-                        geo:asWKT ?_coordinatesPoB ] .
-    }
+    OPTIONAL{ ?s wdt:P19/wdt:P625 ?_coordinatesPoB }
     OPTIONAL{?s wdt:P20 ?placeOfDeath }
-    OPTIONAL{ ?s wdt:P20 ?pob_geo . 
-            ?s wdt:P20/wdt:P625 ?_coordinatesPoD .
-            ?pod_geo a geo:Feature ;
-                    geo:hasGeometry [ 
-                        a geo:Geometry ;
-                        geo:asWKT ?_coordinatesPoD ] .
-    }
+    OPTIONAL{ ?s wdt:P20/wdt:P625 ?_coordinatesPoD }
     OPTIONAL{?s wdt:P27 ?nationality }
     OPTIONAL{?s wdt:P18 ?imageUrl }
     SERVICE wikibase:label {

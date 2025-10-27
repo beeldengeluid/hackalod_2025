@@ -277,9 +277,6 @@ class WikidataDownloader:
         3) append the Turtle text to one big data file.
         """
         start_load = datetime.now()
-        data_path = os.path.join(
-            self.data_dir, f"wikidata_muziekweb_data_{date_time_string()}.ttl"
-        )
         data_path_nt = os.path.join(
             self.data_dir, f"wikidata_muziekweb_data_{date_time_string()}.nt"
         )

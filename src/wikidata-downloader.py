@@ -192,6 +192,19 @@ def execute_wd_construct_query(query: str = "") -> str:
         raise
 
 
+def filter_empty_geo_node(g: Graph) -> Graph:
+    """Given a Graph, filter out the empty geometry nodes.
+    Example: [] a geo:Geometry .
+    """
+    for s, p, o in g:
+        if isinstance(s, BNode) and o == URIRef(str(NS_GEO) + "Geometry"):
+            # if not this bnode has also a gwkLiteral as object, remove it
+            # [ a geo:Geometry ; geo:asWKT "Point(13.575277777 42.854722222)"^^geo:wktLiteral ]
+            if not (s, URIRef(str(NS_GEO) + "asWKT"), None) in g:
+                g.remove((s, p, o))
+    return g
+
+
 class WikidataDownloader:
     """Query wikidata for Muziekweb ID's and generate data dump.
 
@@ -239,15 +252,7 @@ class WikidataDownloader:
                         g.bind("wdt", NS_WDT)
                         g.bind("geo", NS_GEO)
                         g = get_wd_graph_for_mw_id(mw_id)
-                        # filter empty geo node: [] a geo:Geometry .
-                        for s, p, o in g:
-                            if isinstance(s, BNode) and o == URIRef(
-                                str(NS_GEO) + "Geometry"
-                            ):
-                                # if not this bnode has also a gwkLiteral as object, remove it
-                                # [ a geo:Geometry ; geo:asWKT "Point(13.575277777 42.854722222)"^^geo:wktLiteral ]
-                                if not (s, URIRef(str(NS_GEO) + "asWKT"), None) in g:
-                                    g.remove((s, p, o))
+                        g = filter_empty_geo_node(g)
                         f.write(g.serialize(format="nt11"))
 
             # # 3) serialize the joined Graph to Turtle file.

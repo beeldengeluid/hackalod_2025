@@ -1,5 +1,5 @@
 #+ summary: Get embed URLs for all tracks on album X
-#+ endpoint: https://graphdb-sandbox.rdlabs.beeldengeluid.nl/sparql
+#+ endpoint: http://zorin.beeldengeluid.nl:3021/repositories/muziekweb-internal
 prefix vocab: <https://data.muziekweb.nl/vocab/>
 prefix link: <https://data.muziekweb.nl/Link/>
 prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>

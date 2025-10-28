@@ -1,0 +1,21 @@
+#+ summary: Get all geometry triples from Wikidata for places that are related to Muziekweb preformers.
+#+ endpoint: https://query.wikidata.org/sparql
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+CONSTRUCT {
+    ?place a geo:Feature ;
+             geo:hasGeometry [ 
+               a geo:Geometry ;
+                 geo:asWKT ?_coordinates
+             ] .
+  ?place wdt:P625 ?_coordinates 
+    }
+WHERE {    
+  SELECT DISTINCT ?place ?_coordinates
+  WHERE {
+  ?s wdt:P19|wdt:P20 ?place ;
+     wdt:P5882 ?mw_id
+     FILTER ( bound(?mw_id) ) 
+  ?place wdt:P625 ?_coordinates 
+  }
+}

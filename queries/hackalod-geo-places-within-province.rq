@@ -1,0 +1,27 @@
+#+ summary: Query to get places within a province (name)
+#+ endpoint: https://graphdb-sandbox.rdlabs.beeldengeluid.nl/sparql
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX geof: <http://www.opengis.net/def/function/geosparql/>
+PREFIX uom: <http://www.opengis.net/def/uom/OGC/1.0/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+
+# get uri place name and geometries within a certain province
+select ?uri ?name ?wkt {
+    VALUES ?prov_name {'Groningen'}
+    ?province 
+        schema:additionalType ?type ;
+        geo:hasGeometry/geo:asWKT ?wktProvince;
+	    schema:name ?wktLabel .
+    FILTER (?type = 'province')
+    FILTER (regex(?wktLabel, ?prov_name, 'i')) .
+    
+    ?uri geo:hasGeometry/geo:asWKT ?wkt .
+    OPTIONAL {
+	    ?uri rdfs:label ?name .
+	}
+    filter(geof:sfWithin(?wkt, ?wktProvince))
+}
+ORDER BY ?name
+LIMIT 100

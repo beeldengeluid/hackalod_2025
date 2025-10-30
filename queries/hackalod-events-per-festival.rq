@@ -1,0 +1,20 @@
+#+ summary: Query to get all events of a particular festival
+, by name#+ endpoint: https://graphdb-sandbox.rdlabs.beeldengeluid.nl/sparql
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX schema: <https://schema.org/>
+prefix skos: <http://www.w3.org/2004/02/skos/core#>
+
+# festivals for a particular type
+select *
+where
+{
+    ?festival a schema:Festival ;
+	    schema:name ?name ;
+    	schema:startDate ?startDate ;
+    	schema:additionalType ?type .
+        #FILTER(?type ='noorderslag') .
+        FILTER(REGEX(STR(?name), "rabbit", "i"))
+    
+}
+ORDER BY ?startDate

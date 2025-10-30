@@ -4,5 +4,4 @@ dist/
 .DS_Store
 .vscode/
 __pycache__/
-data/
 .venv/

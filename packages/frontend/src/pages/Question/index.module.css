@@ -16,10 +16,12 @@
 }
 
 .question {
+	align-self: top;
+	color: #ffffff;
+	display: flex;
+	gap: 3rem;
 	font-size: 2.5rem;
 	font-weight: normal;
-	color: #ffffff;
-	align-self: top;
 	margin: 0;
 }
 

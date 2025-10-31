@@ -1,6 +1,6 @@
-import { useContext, useEffect, useState } from "react"
+import { useContext, useEffect, useRef, useState } from "react"
 import clsx from "clsx"
-import { type Question } from "@hackalod2025/common"
+import { QuestionType, type Question } from "@hackalod2025/common"
 import { Choice } from "./Choice"
 
 import { AnswerStatus, DispatchContext, StateContext } from "../../state"
@@ -8,14 +8,16 @@ import { IconHelpHexagonFilled, IconSparkles } from "@tabler/icons-react"
 import { Action, Actions } from "../../state/actions"
 
 import styles from "./index.module.css"
+import { Iframe } from "./Iframe"
 
 export function QuestionPage() {
 	const dispatch = useContext(DispatchContext)
 	const { current, total, question, score, status } = useContext(StateContext)
 
-	if (question == null) getQuestion(dispatch)
-
-	if (!question) return null
+	if (!question) {
+		getQuestion(dispatch)
+		return null
+	}
 
 	return (
 		<div className={clsx("page", styles.page)}>
@@ -26,9 +28,13 @@ export function QuestionPage() {
 						<IconHelpHexagonFilled size="36" color="yellow" /> {current}{" "}
 						of {total}
 					</span>
-					{status === AnswerStatus.Unanswered && (
-						<Timer time={12} dispatch={dispatch} />
-					)}
+					{
+						status === AnswerStatus.Unanswered &&
+						question.musicSample == null &&
+						(
+							<Timer time={12} dispatch={dispatch} />
+						)
+					}
 					<span className={styles.paginator}>
 						<IconSparkles size="36" color="yellow" /> {score}
 					</span>
@@ -60,7 +66,10 @@ export function QuestionPage() {
 function ChoicesBody({ question }: { question: Question }) {
 	return (
 		<>
-			<h2 className={styles.question}>{question.text}</h2>
+			<h2 className={styles.question}>
+				{question.text}
+				<Iframe question={question} />
+			</h2>
 			{question.choices.map((choice) => (
 				<Choice key={choice.uri} choice={choice} />
 			))}
@@ -116,7 +125,8 @@ function DoneAnwserBody({ dispatch }: { dispatch: React.Dispatch<Action> }) {
 }
 
 function getQuestion(dispatch: React.Dispatch<Action>) {
-	fetch("/api/random-question")
+	fetch('/api/question/4')
+	// fetch("/api/random-question")
 		.then((res) => res.json())
 		.then((question: Question) => {
 			dispatch({ type: Actions.SET_QUESTION, payload: { question } })

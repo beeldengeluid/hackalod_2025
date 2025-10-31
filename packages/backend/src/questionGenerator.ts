@@ -4,6 +4,52 @@ import {Question , Answer} from "./common/interfaces"
 import { QuestionType } from "./common/index"
 
 
+export async function generateGuessPerformerAtfFestival() {
+    console.log("Generating question #3");
+    const randomYear = 1980; // @todo 
+    const festivals = ["pinkpop", "concert-at-sea", "dauwpop", "dynamo", "eurosonic", "noorderslag", "northseajazz", "operadagen", "pukkelpop", "rabbithole", "rewire", "roadburn", "great-wide-open", "oerol", "parkpop", "simmerdeis", "vanderaa", "zwarte-cross"]
+    const randomFestival = festivals[Math.floor(Math.random() * festivals.length)];
+
+    console.log(randomFestival);
+    
+    // ok step 1; get active years for a given festival
+    // step 2 find performers who actually performed there
+    // step 3 find 1 performer who not performed there in that year
+    const incorrectTriples = await runMuziekWebQuery(
+        LIST_PEOPLE_THAT_LIVED_IN_YEAR.replace("1970", randomIncorrectYear + "")
+    );
+    //console.log(incorrectTriples);
+    const answerData = incorrectTriples ? incorrectTriples[0] : null;
+
+    // TODO fetch 1st result as answer
+    const correctAnswer:Answer = {
+        uri: answerData.uri,
+	    label: answerData.label,
+	    hasHint: false
+    } 
+    //console.log(correctAnswer);
+    const correctTriples = await runMuziekWebQuery(LIST_PEOPLE_THAT_LIVED_IN_YEAR.replace("1970", randomYear + ""));
+    //console.log(correctTriples[0]);
+    const choices: Answer[] = [];
+    for(let i=0;i<3; i++) {
+        let choiceData = correctTriples[i];
+        choices.push({
+            uri: choiceData.uri,
+            label: choiceData.label,
+            hasHint: false
+        })  
+    }
+    choices.push(correctAnswer);
+
+    return {
+        type: QuestionType.MULTIPLE_CHOICE,
+        text: "Raadt welke van deze artiesten niet in " + randomYear + " geboren is",
+    	choices: choices,
+	    anwser: correctAnswer,
+
+    };
+}
+
 function getRandomInt(min: number, max: number) {
   const minCeiled = Math.ceil(min);
   const maxFloored = Math.floor(max);

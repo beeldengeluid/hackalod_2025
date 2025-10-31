@@ -61,7 +61,7 @@ export async function generateGuessPerformerAtfFestival() {
 
     return {
         type: QuestionType.MULTIPLE_CHOICE,
-        text: "Welke van deze artiesten trad NIET op op FESTIVAL_NAME in FESTIVALE_YEAR?",
+        text: "Welke van deze artiesten trad NIET op op FESTIVAL_NAME in FESTIVAL_YEAR?".replace('FESTIVAL_NAME', randomFestival).replace('FESTIVAL_YEAR', randomYear),
     	choices: choices,
 	    anwser: correctAnswer,
 

@@ -127,6 +127,24 @@ WHERE {
 ORDER BY RAND()
 LIMIT 1`
 
+export const YEARS_FOR_FESTVAL = `PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+
+# years for a festival
+select ?year
+where
+{
+    ?festival a schema:Festival ;
+	    schema:name ?name ;
+    	schema:startDate ?startDate ;
+    	schema:additionalType ?type .
+    FILTER (?type = "FESTIVAL_NAME") 
+    BIND(YEAR(?startDate) as ?year)
+}
+ORDER BY ?startDate
+`
+
 
 const RANDOM_ALBUM = `
 prefix sdo: <https://schema.org/>

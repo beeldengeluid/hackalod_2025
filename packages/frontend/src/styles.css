@@ -57,21 +57,21 @@ body {
 }
 
 .card {
-	position: relative;
-	z-index: 1;
-	max-width: 48rem;
-	width: 100%;
-	padding: 2.75rem 2.5rem;
-	border-radius: 1.75rem;
 	background: linear-gradient(
 		160deg,
 		rgba(15, 23, 42, 0.85),
 		rgba(15, 23, 42, 0.6)
 	);
+	backdrop-filter: blur(18px);
+	border-radius: 1.75rem;
 	border: 1px solid rgba(148, 163, 184, 0.2);
 	box-shadow: 0 30px 80px rgba(15, 23, 42, 0.55);
-	backdrop-filter: blur(18px);
-	text-align: center;
+	max-width: 48rem;
+	padding: 2.75rem 2.5rem;
+	position: relative;
+	/* text-align: center; */
+	width: 100%;
+	z-index: 1;
 }
 
 .eyebrow {
@@ -155,14 +155,6 @@ body {
 .secondary-link:hover,
 .secondary-link:focus-visible {
 	color: #ffffff;
-}
-
-.step-list {
-	margin: 0 0 1.75rem;
-	padding-left: 1.25rem;
-	text-align: left;
-	color: rgba(226, 232, 240, 0.85);
-	line-height: 1.6;
 }
 
 .step-list li + li {

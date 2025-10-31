@@ -40,32 +40,28 @@ export async function generateGuessPerformerAtfFestival() {
         PERFORMERS_NOT_AT_FESTVAL.replace("FESTIVAL_NAME", randomFestival).replace("FESTIVAL_YEAR", randomYear)
     );
 
-    console.log(correctPerformers, incorrectPerformers);
-    // const answerData = incorrectTriples ? incorrectTriples[0] : null;
-
-    // // TODO fetch 1st result as answer
-    // const correctAnswer:Answer = {
-    //     uri: answerData.uri,
-	//     label: answerData.label,
-	//     hasHint: false
-    // } 
+    //return(correctPerformers['results']['bindings'])
+    const choices = []
+    const answerData = {}
+    correctPerformers['results']['bindings'].forEach(obj => {
+        choices.push({
+            uri: obj.uri.value,
+            label: obj.label.value,
+            hasHint: false
+        })
+    })
     
-    // const correctTriples = await runMuziekWebQuery(LIST_PEOPLE_THAT_LIVED_IN_YEAR.replace("1970", randomYear + ""));
-    // //console.log(correctTriples[0]);
-    // const choices: Answer[] = [];
-    // for(let i=0;i<3; i++) {
-    //     let choiceData = correctTriples[i];
-    //     choices.push({
-    //         uri: choiceData.uri,
-    //         label: choiceData.label,
-    //         hasHint: false
-    //     })  
-    // }
-    // choices.push(correctAnswer);
+    const correctAnswer:Answer = {
+        uri: incorrectPerformers['results']['bindings'][0].uri.value,
+	    label: incorrectPerformers['results']['bindings'][0].label.value,
+	    hasHint: false
+    } 
+    
+    choices.push(correctAnswer);
 
     return {
         type: QuestionType.MULTIPLE_CHOICE,
-        text: "Raadt welke van deze artiesten niet in " + randomYear + " geboren is",
+        text: "Welke van deze artiesten trad NIET op op FESTIVAL_NAME in FESTIVAL_YEAR?".replace('FESTIVAL_NAME', randomFestival).replace('FESTIVAL_YEAR', randomYear),
     	choices: choices,
 	    anwser: correctAnswer,
 

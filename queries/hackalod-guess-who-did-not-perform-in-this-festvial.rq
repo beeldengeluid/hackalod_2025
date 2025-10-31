@@ -1,0 +1,32 @@
+#+ summary: Query to get 3 performers of a specific festival and year
+#+ endpoint: https://graphdb-sandbox.rdlabs.beeldengeluid.nl/sparql
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX schema: <https://schema.org/>
+
+# select 3 performers who performed on a festival A in year B
+select (?performer as ?uri) (?performerName as ?label)
+where
+{
+    ?performer a schema:MusicGroup .
+    # in een optreden
+
+    ?performance schema:performer ?performer ;
+    	 a schema:PerformingArtsEvent .
+
+	# op een festival
+	?festival a schema:Festival ;
+		schema:subEvent ?performance ;
+		schema:startDate ?startDate ;
+        schema:additionalType ?type .
+        
+        BIND (YEAR(?startDate) as ?startYear) .
+		OPTIONAL {?performer schema:name ?performerName }.
+        OPTIONAL {?performer rdfs:label ?performerName }.
+
+        FILTER(?type = 'noorderslag') .
+	    FILTER(?startYear = 2020)
+
+}
+ORDER BY RAND()
+LIMIT 3

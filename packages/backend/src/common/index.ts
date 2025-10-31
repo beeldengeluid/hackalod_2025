@@ -1,4 +1,4 @@
-export { type Question } from "./interfaces"
+export type { Question, Choice } from "./interfaces"
 
 export enum QuestionType {
 	MULTIPLE_CHOICE = "MULTIPLE_CHOICE",

@@ -11,6 +11,7 @@ export function createApp() {
 
 	app.use((req, res, next) => {
 		debug({ method: req.method, url: req.url })
+		next()
 	})
 
 	app.get("/api/random-name", (_req: Request, res: Response) => {
@@ -19,6 +20,7 @@ export function createApp() {
 
 	app.get("/api/random-question", async (_req: Request, res: Response) => {
 		const question = dummyQuestions[Math.floor(Math.random() * dummyQuestions.length)];
+		debug("Serving question:", question);
 		res.json(question);
 	})
 

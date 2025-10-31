@@ -1,6 +1,6 @@
 import { QuestionType } from "."
 
-export interface Answer {
+export interface Choice {
 	uri: string
 	label: string
 	hasHint: boolean
@@ -9,6 +9,6 @@ export interface Answer {
 export interface Question {
 	type: QuestionType
 	text: string
-	choices: Answer[]
-	anwser: Answer
+	choices: Choice[]
+	anwser: Choice
 }

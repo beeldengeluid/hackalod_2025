@@ -1,4 +1,5 @@
-import { Question, QuestionType } from "./common/interfaces"
+import { QuestionType } from "./common"
+import { Question } from "./common/interfaces"
 
 const question1: Question = {
 	type: QuestionType.MULTIPLE_CHOICE,

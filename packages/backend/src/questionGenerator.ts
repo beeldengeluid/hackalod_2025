@@ -1,4 +1,4 @@
-import {LIST_PEOPLE_THAT_LIVED_IN_YEAR, LIST_PERONS_INFLUENCED_BY_X, LIST_PERSONS, LIST_FAMOUS_PERSONS} from "./queries"
+import {LIST_PEOPLE_THAT_LIVED_IN_YEAR, LIST_PERONS_INFLUENCED_BY_X, LIST_PERSONS, LIST_FAMOUS_PERSONS, YEARS_FOR_FESTVAL, PERFORMERS_AT_FESTVAL, PERFORMERS_NOT_AT_FESTVAL} from "./queries"
 import {runMuziekWebQuery, runGraphDBWebQuery} from "./muziekWeb"
 import {Question , Answer} from "./common/interfaces"
 import { QuestionType } from "./common/index"
@@ -10,36 +10,42 @@ export async function generateGuessPerformerAtfFestival() {
     const festivals = ["pinkpop", "concert-at-sea", "dauwpop", "dynamo", "eurosonic", "noorderslag", "northseajazz", "operadagen", "pukkelpop", "rabbithole", "rewire", "roadburn", "great-wide-open", "oerol", "parkpop", "simmerdeis", "vanderaa", "zwarte-cross"]
     const randomFestival = festivals[Math.floor(Math.random() * festivals.length)];
 
-    console.log(randomFestival);
     
     // ok step 1; get active years for a given festival
+    const yearTriples = await runGraphDBWebQuery(
+        YEARS_FOR_FESTVAL.replace("FESTIVAL_NAME", randomFestival)
+    );
+    console.log(YEARS_FOR_FESTVAL.replace("FESTIVAL_NAME", randomFestival))
+    console.log(yearTriples);
+
+
     // step 2 find performers who actually performed there
     // step 3 find 1 performer who not performed there in that year
-    const incorrectTriples = await runMuziekWebQuery(
-        LIST_PEOPLE_THAT_LIVED_IN_YEAR.replace("1970", randomIncorrectYear + "")
-    );
-    //console.log(incorrectTriples);
-    const answerData = incorrectTriples ? incorrectTriples[0] : null;
+    // const incorrectTriples = await runGraphDBWebQuery(
+    //     LIST_PEOPLE_THAT_LIVED_IN_YEAR.replace("1970",  + "")
+    // );
+    // //console.log(incorrectTriples);
+    // const answerData = incorrectTriples ? incorrectTriples[0] : null;
 
-    // TODO fetch 1st result as answer
-    const correctAnswer:Answer = {
-        uri: answerData.uri,
-	    label: answerData.label,
-	    hasHint: false
-    } 
-    //console.log(correctAnswer);
-    const correctTriples = await runMuziekWebQuery(LIST_PEOPLE_THAT_LIVED_IN_YEAR.replace("1970", randomYear + ""));
-    //console.log(correctTriples[0]);
-    const choices: Answer[] = [];
-    for(let i=0;i<3; i++) {
-        let choiceData = correctTriples[i];
-        choices.push({
-            uri: choiceData.uri,
-            label: choiceData.label,
-            hasHint: false
-        })  
-    }
-    choices.push(correctAnswer);
+    // // TODO fetch 1st result as answer
+    // const correctAnswer:Answer = {
+    //     uri: answerData.uri,
+	//     label: answerData.label,
+	//     hasHint: false
+    // } 
+    
+    // const correctTriples = await runMuziekWebQuery(LIST_PEOPLE_THAT_LIVED_IN_YEAR.replace("1970", randomYear + ""));
+    // //console.log(correctTriples[0]);
+    // const choices: Answer[] = [];
+    // for(let i=0;i<3; i++) {
+    //     let choiceData = correctTriples[i];
+    //     choices.push({
+    //         uri: choiceData.uri,
+    //         label: choiceData.label,
+    //         hasHint: false
+    //     })  
+    // }
+    // choices.push(correctAnswer);
 
     return {
         type: QuestionType.MULTIPLE_CHOICE,

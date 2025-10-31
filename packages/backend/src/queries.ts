@@ -18,18 +18,18 @@ values ?year {
 filter((?bYear <= ?year) && !(?eYear < ?year))
 
 }
-order by asc(?bYear)
-limit 100`
+order by rand()
+limit 50`
 
 // Queen = <https://data.muziekweb.nl/Link/M00000071922>
 export const LIST_PERONS_INFLUENCED_BY_X = `PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 prefix vocab: <https://data.muziekweb.nl/vocab/>
-select *
+select (?person AS ?uri) (?sLabel as ?label) ?oLabel
 where {
-  VALUES ?s {PERSON_URI}
-  ?s vocab:influencedBy ?o .
-    ?s rdfs:label ?sLabel .
-    ?o rdfs:label ?oLabel .
+  VALUES ?person {PERSON_URI}
+  ?person vocab:influencedBy ?o .
+    ?person rdfs:label ?sLabel .
+    ?person rdfs:label ?oLabel .
 } 
 limit 100`
 
@@ -52,6 +52,21 @@ WHERE {
 }
 order by rand() 
 limit 100`
+
+export const LIST_FAMOUS_PERSONS = `
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX schema: <https://schema.org/>
+prefix skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT (?performer AS ?uri) ?label (COUNT(*) AS ?count) WHERE {
+    ?performance a schema:PerformingArtsEvent .
+    ?performance schema:performer ?performer .
+	?performer schema:name ?label .
+}
+GROUP BY ?performer ?label
+HAVING (?count > 2)
+ORDER BY DESC(?count)
+LIMIT 100`
 
 
 // performers who performed at festival A in year B

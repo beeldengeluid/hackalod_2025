@@ -25,6 +25,7 @@ const DUMMY_MW_INTERNAL_QUERY = {
 
 
 export async function runMuziekWebQuery(query: string) {
+  console.log(query)
   try {
     const response = await fetch(SPARQL_URL, {
     method: "POST",
@@ -32,6 +33,30 @@ export async function runMuziekWebQuery(query: string) {
         "Content-Type": "application/json"
     },
     body: JSON.stringify({"query" : query}),
+    });
+    if (!response.ok) {
+      throw new Error(`Response status: ${response.status}`);
+    }
+
+    const result = await response.json();
+    //console.log(result);
+    return result
+  } catch (error) {
+    console.error("He getsie een error: " + error.message);
+    console.error(error)
+  }
+  return [];
+}
+
+//FIXME graphdb works a bit differently 
+export async function runGraphDBWebQuery(query: string) {
+  try {
+    const response = await fetch("https://graphdb-sandbox.rdlabs.beeldengeluid.nl/sparql", {
+    method: "POST",
+    headers: {
+        "Content-Type": "application/json"
+    },
+    body: JSON.stringify({"query" : query}), // does not work yet
     });
     if (!response.ok) {
       throw new Error(`Response status: ${response.status}`);

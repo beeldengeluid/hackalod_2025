@@ -1,5 +1,5 @@
-import {LIST_PEOPLE_THAT_LIVED_IN_YEAR, LIST_PERONS_INFLUENCED_BY_X, LIST_PERSONS} from "./queries"
-import {runMuziekWebQuery} from "./muziekWeb"
+import {LIST_PEOPLE_THAT_LIVED_IN_YEAR, LIST_PERONS_INFLUENCED_BY_X, LIST_PERSONS, LIST_FAMOUS_PERSONS} from "./queries"
+import {runMuziekWebQuery, runGraphDBWebQuery} from "./muziekWeb"
 import {Question , Answer} from "./common/interfaces"
 import { QuestionType } from "./common/index"
 
@@ -50,14 +50,37 @@ export async function generateGuessPerformerAtfFestival() {
     };
 }
 
+function getRandomInt(min: number, max: number) {
+  const minCeiled = Math.ceil(min);
+  const maxFloored = Math.floor(max);
+  return Math.floor(Math.random() * (maxFloored - minCeiled) + minCeiled); // The maximum is exclusive and the minimum is inclusive
+}
 
+function shuffle(array) {
+  let currentIndex = array.length;
+
+  // While there remain elements to shuffle...
+  while (currentIndex != 0) {
+
+    // Pick a remaining element...
+    let randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+
+    // And swap it with the current element.
+    [array[currentIndex], array[randomIndex]] = [
+      array[randomIndex], array[currentIndex]];
+  }
+}
+
+
+// question 1
 export async function generateGuessIncorrectBirthYearQ() {
     console.log("Generating question #1");
-    const randomYear = 1980; //TODO make this actually random 
-    const randomIncorrectYear = 1992;
+    const randomYear = getRandomInt(1910, 2024);
+    const randomIncorrectYear = getRandomInt(1910, 2024);
 
     const incorrectTriples = await runMuziekWebQuery(LIST_PEOPLE_THAT_LIVED_IN_YEAR.replace("1970", randomIncorrectYear + ""));
-    //console.log(incorrectTriples);
+    console.log(incorrectTriples.length);
     const answerData = incorrectTriples ? incorrectTriples[0] : null;
 
     // TODO fetch 1st result as answer
@@ -68,7 +91,7 @@ export async function generateGuessIncorrectBirthYearQ() {
     } 
     //console.log(correctAnswer);
     const correctTriples = await runMuziekWebQuery(LIST_PEOPLE_THAT_LIVED_IN_YEAR.replace("1970", randomYear + ""));
-    //console.log(correctTriples[0]);
+    console.log(correctTriples.length);
     const choices: Answer[] = [];
     for(let i=0;i<3; i++) {
         let choiceData = correctTriples[i];
@@ -79,19 +102,21 @@ export async function generateGuessIncorrectBirthYearQ() {
         })  
     }
     choices.push(correctAnswer);
+    shuffle(choices);
 
     return {
         type: QuestionType.MULTIPLE_CHOICE,
         text: "Raadt welke van deze artiesten niet in " + randomYear + " geboren is",
     	choices: choices,
 	    anwser: correctAnswer,
-
     };
 }
 
+// question 2
+//https://graphdb-sandbox.rdlabs.beeldengeluid.nl/sparql?name=Unnamed&query=PREFIX%20rdfs%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX%20xsd%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%0APREFIX%20schema%3A%20%3Chttps%3A%2F%2Fschema.org%2F%3E%0Aprefix%20skos%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E%0ASELECT%20DISTINCT%20%3Fperformer%20%3FperformerLabel%20(COUNT(*)%20AS%20%3Fcount)%20WHERE%20%7B%0A%20%20%20%20%3Fperformance%20a%20schema%3APerformingArtsEvent%20.%0A%20%20%20%20%3Fperformance%20schema%3Aperformer%20%3Fperformer%20.%0A%09%3Fperformer%20schema%3Aname%20%3FperformerLabel%20.%0A%7D%0AGROUP%20BY%20%3Fperformer%20%3FperformerLabel%0AHAVING%20(%3Fcount%20%3E%202)%0AORDER%20BY%20DESC(%3Fcount)%0ALIMIT%20100&infer=true&sameAs=true
 export async function generateGuessCorrectInfluence() {
     console.log("Generating question #2");
-    const personTriples = await runMuziekWebQuery(LIST_PERSONS.replace("100", "4")); // one random person
+    const personTriples = await runGraphDBWebQuery(LIST_FAMOUS_PERSONS.replace("100", "4")); // one random person
     let randomPerson = personTriples ? personTriples[0] : {
         uri: "https://data.muziekweb.nl/Link/M00000071922",
         label: "Queen"
@@ -106,14 +131,20 @@ export async function generateGuessCorrectInfluence() {
         })  
     })
 
-    const correctInfluences = await runMuziekWebQuery(LIST_PERONS_INFLUENCED_BY_X.replace("PERSON_URI", randomPerson.uri));
-    //console.log(correctInfluences);
+    const q = LIST_PERONS_INFLUENCED_BY_X.replace("PERSON_URI", "<" + randomPerson.uri + ">")
+    console.log(q)
+    const correctInfluences = await runMuziekWebQuery(q);
+    console.log(correctInfluences);
     const answerData = correctInfluences ? correctInfluences[0] : null;
+
+    if(!answerData) {
+        return {error : "Question could not be generated for person"}
+    }
 
     // TODO fetch 1st result as answer
     const correctAnswer:Answer = {
-        uri: answerData.person,
-	    label: answerData.name,
+        uri: answerData.uri,
+	    label: answerData.label,
 	    hasHint: false
     } 
 

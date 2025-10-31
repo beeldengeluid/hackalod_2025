@@ -25,6 +25,7 @@ const DUMMY_MW_INTERNAL_QUERY = {
 
 
 export async function runMuziekWebQuery(query: string) {
+  console.log(query)
   try {
     const response = await fetch(SPARQL_URL, {
     method: "POST",
@@ -32,6 +33,31 @@ export async function runMuziekWebQuery(query: string) {
         "Content-Type": "application/json"
     },
     body: JSON.stringify({"query" : query}),
+    });
+    if (!response.ok) {
+      throw new Error(`Response status: ${response.status}`);
+    }
+
+    const result = await response.json();
+    //console.log(result);
+    return result
+  } catch (error) {
+    console.error("He getsie een error: " + error.message);
+    console.error(error)
+  }
+  return [];
+}
+
+//FIXME graphdb works a bit differently 
+export async function runGraphDBWebQuery(query: string) {
+  try {
+    const response = await fetch("https://graphdb-sandbox.rdlabs.beeldengeluid.nl/repositories/hackalod-imagine", {
+    method: "POST",
+    headers: {
+        "Content-Type": "application/sparql-query",
+        "Accept": "application/sparql-results+json"
+    },
+    body: query, 
     });
     if (!response.ok) {
       throw new Error(`Response status: ${response.status}`);
@@ -47,7 +73,7 @@ export async function runMuziekWebQuery(query: string) {
   return [];
 }
 
-export async function getSomeTriplesFromMuziekWebInternal() {
+export async function runInternalMuziekWebQuery(query:string) {
   try {
     const response = await fetch(WM_INTERNAL_QUERY_URL, {
     method: "POST",
@@ -55,7 +81,7 @@ export async function getSomeTriplesFromMuziekWebInternal() {
         "Content-Type": "application/json",
         "Authorization" : "Basic aGFja2Fsb2RfMjAyNTpIQUNLLWxvb2Z0LTReX19ebWFhay1lci1XYXQtdmFu"
     },
-    body: JSON.stringify(DUMMY_MW_INTERNAL_QUERY),
+    body: JSON.stringify({"endpoint": "MUZIEKWEB_INTERNAL", "query" : query}),
     });
     if (!response.ok) {
       throw new Error(`Response status: ${response.status}`);
@@ -63,7 +89,7 @@ export async function getSomeTriplesFromMuziekWebInternal() {
 
     const result = await response.json();
     console.log(result);
-    return result
+    return result[0].result.results.bindings
   } catch (error) {
     console.error("He getsie een error: " + error.message);
   }

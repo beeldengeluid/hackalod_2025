@@ -106,6 +106,9 @@ body {
 }
 
 .action {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
 	appearance: none;
 	border: none;
 	border-radius: 999px;
@@ -118,6 +121,7 @@ body {
 	cursor: pointer;
 	box-shadow: 0 12px 30px rgba(56, 189, 248, 0.35);
 	transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+	text-decoration: none;
 }
 
 .action:hover:not(:disabled),
@@ -131,6 +135,38 @@ body {
 	cursor: wait;
 	filter: grayscale(35%);
 	opacity: 0.7;
+}
+
+.actions {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	align-items: center;
+}
+
+.secondary-link {
+	color: rgba(226, 232, 240, 0.85);
+	text-decoration: none;
+	font-weight: 600;
+	letter-spacing: 0.04em;
+	transition: color 0.2s ease;
+}
+
+.secondary-link:hover,
+.secondary-link:focus-visible {
+	color: #ffffff;
+}
+
+.step-list {
+	margin: 0 0 1.75rem;
+	padding-left: 1.25rem;
+	text-align: left;
+	color: rgba(226, 232, 240, 0.85);
+	line-height: 1.6;
+}
+
+.step-list li + li {
+	margin-top: 0.5rem;
 }
 
 @keyframes float {

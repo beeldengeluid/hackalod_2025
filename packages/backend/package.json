@@ -1,5 +1,5 @@
 {
-  "name": "backend",
+  "name": "@hackalod2025/backend",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -7,7 +7,8 @@
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "dev": "tsx watch src/server.ts",
-    "start": "node dist/server.js"
+    "start": "node dist/server.js",
+    "test": "vitest"
   },
   "dependencies": {
     "express": "^5.1.0"

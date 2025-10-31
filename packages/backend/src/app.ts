@@ -1,6 +1,7 @@
 import express, { Request, Response } from "express"
 import { generateRandomName } from "./randomName"
 import {getSomeTriplesFromMuziekWeb, getAlbumTracks, getSomeTriplesFromMuziekWebInternal} from "./muziekWeb"
+import { dummyQuestions } from './dummy-questions'
 
 
 export function createApp() {
@@ -10,7 +11,12 @@ export function createApp() {
 		res.json({ name: generateRandomName() })
 	})
 
-	app.get("/random-question", async (_req: Request, res: Response) => {
+	app.get("/random-triples", async (_req: Request, res: Response) => {
+		const question = dummyQuestions[Math.floor(Math.random() * dummyQuestions.length)];
+		res.json(question);
+	})
+
+	app.get("/random-triples", async (_req: Request, res: Response) => {
 		const triples = await getSomeTriplesFromMuziekWeb();
 		res.json(triples);
 	})

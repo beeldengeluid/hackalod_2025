@@ -13,6 +13,7 @@ export function createApp() {
 
 	app.use((req, res, next) => {
 		debug({ method: req.method, url: req.url })
+		next()
 	})
 
 	app.get("/api/random-name", (_req: Request, res: Response) => {
@@ -34,7 +35,7 @@ export function createApp() {
 		res.json(triples);
 	})
 
-	app.get("/question1", async (_req: Request, res: Response) => {
+	app.get("/api/question1", async (_req: Request, res: Response) => {
 		const question = await generateGuessIncorrectBirthYearQ();
 		res.json(question);
 	})

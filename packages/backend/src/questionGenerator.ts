@@ -1,6 +1,7 @@
 import {LIST_PEOPLE_THAT_LIVED_IN_YEAR} from "./queries"
 import {runMuziekWebQuery} from "./muziekWeb"
-import {Question, QuestionType, Answer} from "./interfaces"
+import {Question , Answer} from "./common/interfaces"
+import { QuestionType } from "./common/index"
 
 export async function generateGuessIncorrectBirthYearQ() {
     console.log("Generating question #1");

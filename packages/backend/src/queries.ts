@@ -54,19 +54,18 @@ order by rand()
 limit 100`
 
 export const LIST_FAMOUS_PERSONS = `
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX schema: <https://schema.org/>
+prefix vocab: <https://data.muziekweb.nl/vocab/>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 prefix skos: <http://www.w3.org/2004/02/skos/core#>
-SELECT DISTINCT (?performer AS ?uri) ?label (COUNT(*) AS ?count) WHERE {
-    ?performance a schema:PerformingArtsEvent .
-    ?performance schema:performer ?performer .
-	?performer schema:name ?label .
+SELECT DISTINCT ?s1 ?name1
+where {
+  ?s1 rdf:type vocab:ImportantPerformer ;
+    rdf:type vocab:PopularPerformer ;
+    skos:prefLabel ?name1 ;
+
 }
-GROUP BY ?performer ?label
-HAVING (?count > 2)
-ORDER BY DESC(?count)
-LIMIT 100`
+order by rand()
+limit 100`
 
 
 // performers who performed at festival A in year B
@@ -127,3 +126,36 @@ WHERE {
 }
 ORDER BY RAND()
 LIMIT 1`
+
+
+const RANDOM_ALBUM = `
+prefix sdo: <https://schema.org/>
+
+SELECT * WHERE {
+?uri a sdo:MusicAlbum
+} 
+ORDER BY RAND()
+LIMIT 300`
+
+
+const RANDOM_FAMOUS_TRACK = `
+prefix vocab: <https://data.muziekweb.nl/vocab/>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix skos: <http://www.w3.org/2004/02/skos/core#>
+  prefix sdo: <https://schema.org/>
+SELECT DISTINCT ?s1 ?name1 ?album ?track
+where {
+  ?s1 rdf:type vocab:ImportantPerformer ;
+    rdf:type vocab:PopularPerformer ;
+    skos:prefLabel ?name1 ;
+    vocab:album ?album .
+  ?track sdo:inAlbum ?album
+  
+  
+  
+    
+
+}
+order by rand()
+limit 100`
+

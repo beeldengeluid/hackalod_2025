@@ -51,12 +51,13 @@ export async function runMuziekWebQuery(query: string) {
 //FIXME graphdb works a bit differently 
 export async function runGraphDBWebQuery(query: string) {
   try {
-    const response = await fetch("https://graphdb-sandbox.rdlabs.beeldengeluid.nl/sparql", {
+    const response = await fetch("https://graphdb-sandbox.rdlabs.beeldengeluid.nl/repositories/hackalod-imagine", {
     method: "POST",
     headers: {
-        "Content-Type": "application/json"
+        "Content-Type": "application/sparql-query",
+        "Accept": "application/sparql-results+json"
     },
-    body: JSON.stringify({"query" : query}), // does not work yet
+    body: query, 
     });
     if (!response.ok) {
       throw new Error(`Response status: ${response.status}`);

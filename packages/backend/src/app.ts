@@ -1,3 +1,6 @@
+import Debug from 'debug'
+const debug = Debug("hackalod:app")
+
 import express, { Request, Response } from "express"
 import { generateRandomName } from "./randomName"
 import {LIST_PEOPLE_THAT_LIVED_IN_YEAR} from "./queries"
@@ -5,9 +8,12 @@ import {generateGuessIncorrectBirthYearQ} from "./questionGenerator"
 import {getAlbumTracks, getSomeTriplesFromMuziekWebInternal} from "./muziekWeb"
 import { dummyQuestions } from './dummy-questions'
 
-
 export function createApp() {
 	const app = express()
+
+	app.use((req, res, next) => {
+		debug({ method: req.method, url: req.url })
+	})
 
 	app.get("/api/random-name", (_req: Request, res: Response) => {
 		res.json({ name: generateRandomName() })

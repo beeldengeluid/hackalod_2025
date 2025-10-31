@@ -1,9 +1,4 @@
-export enum QuestionType {
-	MULTIPLE_CHOICE = "MULTIPLE_CHOICE",
-	HITSTER = "HITSTER",
-	MAP = "MAP",
-	SAMPLE = "SAMPLE",
-}
+import { QuestionType } from "."
 
 export interface Answer {
 	uri: string

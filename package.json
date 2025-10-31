@@ -7,10 +7,13 @@
   ],
   "scripts": {
     "dev:frontend": "npm run dev --workspace @hackalod2025/frontend",
-    "dev:backend": "npm run dev --workspace @hackalod2025/backend",
+    "dev:backend": "DEBUG=hackalod:* npm run dev --workspace @hackalod2025/backend",
     "test": "npm run test --workspace @hackalod2025/backend"
   },
   "devDependencies": {
+    "@hackalod2025/backend": "^0.0.0",
+    "@types/debug": "^4.1.12",
+    "debug": "^4.4.3",
     "typescript": "^5.9.3"
   },
   "dependencies": {

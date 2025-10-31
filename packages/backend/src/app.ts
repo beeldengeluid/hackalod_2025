@@ -4,7 +4,7 @@ const debug = Debug("hackalod:app")
 import express, { Request, Response } from "express"
 import { generateRandomName } from "./randomName"
 import {LIST_PEOPLE_THAT_LIVED_IN_YEAR} from "./queries"
-import {generateGuessIncorrectBirthYearQ} from "./questionGenerator"
+import {generateGuessIncorrectBirthYearQ, generateGuessCorrectInfluence} from "./questionGenerator"
 import {getAlbumTracks, getSomeTriplesFromMuziekWebInternal} from "./muziekWeb"
 import { dummyQuestions } from './dummy-questions'
 
@@ -38,6 +38,11 @@ export function createApp() {
 
 	app.get("/api/question1", async (_req: Request, res: Response) => {
 		const question = await generateGuessIncorrectBirthYearQ();
+		res.json(question);
+	})
+
+	app.get("/api/question2", async (_req: Request, res: Response) => {
+		const question = await generateGuessCorrectInfluence();
 		res.json(question);
 	})
 

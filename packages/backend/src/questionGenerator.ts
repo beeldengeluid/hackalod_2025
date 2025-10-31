@@ -1,4 +1,4 @@
-import {LIST_PEOPLE_THAT_LIVED_IN_YEAR} from "./queries"
+import {LIST_PEOPLE_THAT_LIVED_IN_YEAR, LIST_PERONS_INFLUENCED_BY_X, LIST_PERSONS} from "./queries"
 import {runMuziekWebQuery} from "./muziekWeb"
 import {Question , Answer} from "./common/interfaces"
 import { QuestionType } from "./common/index"
@@ -14,8 +14,8 @@ export async function generateGuessIncorrectBirthYearQ() {
 
     // TODO fetch 1st result as answer
     const correctAnswer:Answer = {
-        uri: answerData.person,
-	    label: answerData.name,
+        uri: answerData.uri,
+	    label: answerData.label,
 	    hasHint: false
     } 
     //console.log(correctAnswer);
@@ -25,21 +25,59 @@ export async function generateGuessIncorrectBirthYearQ() {
     for(let i=0;i<3; i++) {
         let choiceData = correctTriples[i];
         choices.push({
-            uri: choiceData.person,
-            label: choiceData.name,
+            uri: choiceData.uri,
+            label: choiceData.label,
             hasHint: false
         })  
     }
     choices.push(correctAnswer);
 
-    let question: Question = {
+    return {
         type: QuestionType.MULTIPLE_CHOICE,
         text: "Raadt welke van deze artiesten niet in " + randomYear + " geboren is",
     	choices: choices,
 	    anwser: correctAnswer,
 
     };
-    console.log("Should be ok");
-    return question;
 }
 
+export async function generateGuessCorrectInfluence() {
+    console.log("Generating question #2");
+    const personTriples = await runMuziekWebQuery(LIST_PERSONS.replace("100", "4")); // one random person
+    let randomPerson = personTriples ? personTriples[0] : {
+        uri: "https://data.muziekweb.nl/Link/M00000071922",
+        label: "Queen"
+    }
+
+    const choices: Answer[] = [];
+    personTriples.forEach(person => {
+        choices.push({
+            uri: person.uri,
+            label: person.label,
+            hasHint: false
+        })  
+    })
+
+    const correctInfluences = await runMuziekWebQuery(LIST_PERONS_INFLUENCED_BY_X.replace("PERSON_URI", randomPerson.uri));
+    //console.log(correctInfluences);
+    const answerData = correctInfluences ? correctInfluences[0] : null;
+
+    // TODO fetch 1st result as answer
+    const correctAnswer:Answer = {
+        uri: answerData.person,
+	    label: answerData.name,
+	    hasHint: false
+    } 
+
+    choices[4] = correctAnswer;
+
+    return {
+        type: QuestionType.MULTIPLE_CHOICE,
+        text: `Raadt wie ${randomPerson.label} heeft beinvloed op muzikaal vlak`,
+    	choices: choices,
+	    anwser: correctAnswer,
+
+    };
+
+    
+}

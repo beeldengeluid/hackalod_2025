@@ -7,26 +7,26 @@ import { dummyQuestions } from './dummy-questions'
 export function createApp() {
 	const app = express()
 
-	app.get("/random-name", (_req: Request, res: Response) => {
+	app.get("/api/random-name", (_req: Request, res: Response) => {
 		res.json({ name: generateRandomName() })
 	})
 
-	app.get("/random-triples", async (_req: Request, res: Response) => {
+	app.get("/api/random-question", async (_req: Request, res: Response) => {
 		const question = dummyQuestions[Math.floor(Math.random() * dummyQuestions.length)];
 		res.json(question);
 	})
 
-	app.get("/random-triples", async (_req: Request, res: Response) => {
+	app.get("/api/random-triples", async (_req: Request, res: Response) => {
 		const triples = await getSomeTriplesFromMuziekWeb();
 		res.json(triples);
 	})
 
-	app.get("/random-mw-internal", async (_req: Request, res: Response) => {
+	app.get("/api/random-mw-internal", async (_req: Request, res: Response) => {
 		const triples = await getSomeTriplesFromMuziekWebInternal();
 		res.json(triples);
 	})
 
-	app.get("/get-album/:album_id", async (_req: Request, res: Response) => {
+	app.get("/api/get-album/:album_id", async (_req: Request, res: Response) => {
 		const triples = await getAlbumTracks(_req.params.album_id);
 		res.json(triples);
 	})

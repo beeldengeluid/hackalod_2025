@@ -11,7 +11,7 @@ export default defineConfig({
 	},
 	server: {
 		proxy: {
-			"/random-name": "http://localhost:3000",
+			"/api": "http://localhost:3000",
 		},
 	},
 })

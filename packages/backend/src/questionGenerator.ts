@@ -1,5 +1,15 @@
-import {LIST_PEOPLE_THAT_LIVED_IN_YEAR, LIST_PERONS_INFLUENCED_BY_X, LIST_PERSONS, LIST_FAMOUS_PERSONS, YEARS_FOR_FESTVAL, PERFORMERS_AT_FESTVAL, PERFORMERS_NOT_AT_FESTVAL} from "./queries"
-import {runMuziekWebQuery, runGraphDBWebQuery} from "./muziekWeb"
+import {
+    LIST_PEOPLE_THAT_LIVED_IN_YEAR, 
+    LIST_PERONS_INFLUENCED_BY_X, 
+    LIST_PERSONS, 
+    LIST_FAMOUS_PERSONS, 
+    RANDOM_FAMOUS_ALBUM,
+    RANDOM_TRACK_FROM_ALBUM,
+     YEARS_FOR_FESTVAL, 
+     PERFORMERS_AT_FESTVAL, 
+     PERFORMERS_NOT_AT_FESTVAL
+} from "./queries"
+import {runMuziekWebQuery, runInternalMuziekWebQuery} from "./muziekWeb"
 import {Question , Answer} from "./common/interfaces"
 import { QuestionType } from "./common/index"
 
@@ -118,11 +128,12 @@ export async function generateGuessIncorrectBirthYearQ() {
     };
 }
 
+/*
 // question 2
 //https://graphdb-sandbox.rdlabs.beeldengeluid.nl/sparql?name=Unnamed&query=PREFIX%20rdfs%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX%20xsd%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%0APREFIX%20schema%3A%20%3Chttps%3A%2F%2Fschema.org%2F%3E%0Aprefix%20skos%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E%0ASELECT%20DISTINCT%20%3Fperformer%20%3FperformerLabel%20(COUNT(*)%20AS%20%3Fcount)%20WHERE%20%7B%0A%20%20%20%20%3Fperformance%20a%20schema%3APerformingArtsEvent%20.%0A%20%20%20%20%3Fperformance%20schema%3Aperformer%20%3Fperformer%20.%0A%09%3Fperformer%20schema%3Aname%20%3FperformerLabel%20.%0A%7D%0AGROUP%20BY%20%3Fperformer%20%3FperformerLabel%0AHAVING%20(%3Fcount%20%3E%202)%0AORDER%20BY%20DESC(%3Fcount)%0ALIMIT%20100&infer=true&sameAs=true
 export async function generateGuessCorrectInfluence() {
     console.log("Generating question #2");
-    const personTriples = await runGraphDBWebQuery(LIST_FAMOUS_PERSONS.replace("100", "4")); // one random person
+    const personTriples = await runMuziekWebQuery(LIST_FAMOUS_PERSONS.replace("100", "4")); // one random person
     let randomPerson = personTriples ? personTriples[0] : {
         uri: "https://data.muziekweb.nl/Link/M00000071922",
         label: "Queen"
@@ -165,4 +176,63 @@ export async function generateGuessCorrectInfluence() {
     };
 
     
+}*/
+
+
+// question 4
+//https://graphdb-sandbox.rdlabs.beeldengeluid.nl/sparql?name=Unnamed&query=PREFIX%20rdfs%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX%20xsd%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%0APREFIX%20schema%3A%20%3Chttps%3A%2F%2Fschema.org%2F%3E%0Aprefix%20skos%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E%0ASELECT%20DISTINCT%20%3Fperformer%20%3FperformerLabel%20(COUNT(*)%20AS%20%3Fcount)%20WHERE%20%7B%0A%20%20%20%20%3Fperformance%20a%20schema%3APerformingArtsEvent%20.%0A%20%20%20%20%3Fperformance%20schema%3Aperformer%20%3Fperformer%20.%0A%09%3Fperformer%20schema%3Aname%20%3FperformerLabel%20.%0A%7D%0AGROUP%20BY%20%3Fperformer%20%3FperformerLabel%0AHAVING%20(%3Fcount%20%3E%202)%0AORDER%20BY%20DESC(%3Fcount)%0ALIMIT%20100&infer=true&sameAs=true
+export async function generateGuessTrackPerformer() {
+    console.log("Generating question #4");
+    const personAlbumTriples = await runInternalMuziekWebQuery(RANDOM_FAMOUS_ALBUM.replace("100", "40"));
+    console.log(RANDOM_FAMOUS_ALBUM)
+    console.log("TRACKS")
+    console.log(personAlbumTriples)
+    const choices: Answer[] = [];
+    personAlbumTriples.forEach(album => {
+        choices.push({
+            uri: album.person.value,
+            label: album.person_name.value,
+            hasHint: false
+        })  
+    })
+
+    // const q = LIST_PERONS_INFLUENCED_BY_X.replace("PERSON_URI", "<" + randomPerson.uri + ">")
+    // console.log(q)
+    // const correctInfluences = await runMuziekWebQuery(q);
+    // console.log(correctInfluences);
+    // const answerData = correctInfluences ? correctInfluences[0] : null;
+
+    // if(!answerData) {
+    //     return {error : "Question could not be generated for person"}
+    // }
+
+    // // TODO fetch 1st result as answer
+    // const correctAnswer:Answer = {
+    //     uri: answerData.uri,
+	//     label: answerData.label,
+	//     hasHint: false
+    // } 
+
+    // choices[4] = correctAnswer;
+
+    return {
+        type: QuestionType.MULTIPLE_CHOICE,
+        text: `Raadt van wie de track is`,
+    	choices: choices,
+	    anwser: choices[4],
+        //musicSample: trackTriples[0].embed_url.value
+    };
+
+    
+}
+
+export async function loadQuestion(num:number) {
+    console.log("Loading question #" + num);
+    let question: Question | null = null; 
+    switch(num) {
+        case 1 : question = generateGuessIncorrectBirthYearQ(); break;
+        case 3 : question = generateGuessPerformerAtfFestival(); break;
+        case 4 : question = generateGuessTrackPerformer(); break;
+    }
+    return question
 }

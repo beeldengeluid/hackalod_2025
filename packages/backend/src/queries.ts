@@ -156,23 +156,36 @@ ORDER BY RAND()
 LIMIT 300`
 
 
-const RANDOM_FAMOUS_TRACK = `
+// MUST BE RUN ON INTERNAL MW via search API
+export const RANDOM_FAMOUS_ALBUM = `
 prefix vocab: <https://data.muziekweb.nl/vocab/>
 prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 prefix skos: <http://www.w3.org/2004/02/skos/core#>
   prefix sdo: <https://schema.org/>
-SELECT DISTINCT ?s1 ?name1 ?album ?track
+SELECT DISTINCT ?person ?person_name ?name1 ?album
 where {
-  ?s1 rdf:type vocab:ImportantPerformer ;
+  ?person rdf:type vocab:ImportantPerformer ;
+    rdfs:label ?person_name ;
     rdf:type vocab:PopularPerformer ;
     skos:prefLabel ?name1 ;
     vocab:album ?album .
-  ?track sdo:inAlbum ?album
-  
-  
-  
-    
+}
+order by rand()
+limit 100`
 
+export const RANDOM_TRACK_FROM_ALBUM = `
+prefix vocab: <https://data.muziekweb.nl/vocab/>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix skos: <http://www.w3.org/2004/02/skos/core#>
+  prefix sdo: <https://schema.org/>
+SELECT DISTINCT ?track_uri ?track_title ?embed_url
+where {
+  ?track sdo:inAlbum {FAMOUS_ALBUM} ;
+    skos:prefLabel ?track_title ; 
+    BIND(IRI(REPLACE(STR(?track), "https://data.muziekweb.nl/Link/", "https://www.muziekweb.nl/embed/")) AS ?embed_url)
+  
 }
 order by rand()
 limit 100`

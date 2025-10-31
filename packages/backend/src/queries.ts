@@ -52,3 +52,63 @@ WHERE {
 }
 order by rand() 
 limit 100`
+
+
+// performers who performed at festival A in year B
+export const PERFORMERS_AT_FESTVAL = `PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+
+select (?performer as ?uri) (?performerName as ?label)
+where
+{
+    ?performer a schema:MusicGroup .
+    # in een optreden
+
+    ?performance schema:performer ?performer ;
+    	 a schema:PerformingArtsEvent .
+
+	# op een festival
+	?festival a schema:Festival ;
+		schema:subEvent ?performance ;
+		schema:startDate ?startDate ;
+        schema:additionalType ?type .
+        
+        BIND (YEAR(?startDate) as ?startYear) .
+		OPTIONAL {?performer schema:name ?performerName }.
+        OPTIONAL {?performer rdfs:label ?performerName }.
+
+        FILTER(?type = 'FESTIVAL_NAME') .
+	    FILTER(?startYear = FESTIVAL_YEAR) 
+
+}
+ORDER BY RAND()
+LIMIT 3`
+
+export const PERFORMERS_NOT_AT_FESTVAL = `PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+
+SELECT (?performer AS ?uri) (?performerName AS ?label) 
+WHERE {
+  ?performer a schema:MusicGroup .
+
+  # exclude performers who performed at the given festival
+  FILTER NOT EXISTS {
+    ?performance a schema:PerformingArtsEvent ;
+                 schema:performer ?performer .
+    ?festival a schema:Festival ;
+              schema:subEvent ?performance ;
+              schema:startDate ?startDate ;
+              schema:additionalType ?type .
+
+    BIND(YEAR(?startDate) AS ?startYear)
+    FILTER(?type = 'FESTIVAL_NAME')
+    FILTER(?startYear = FESTIVAL_YEAR)
+  }
+
+  OPTIONAL { ?performer schema:name ?performerName }
+  OPTIONAL { ?performer rdfs:label ?performerName }
+}
+ORDER BY RAND()
+LIMIT 1`

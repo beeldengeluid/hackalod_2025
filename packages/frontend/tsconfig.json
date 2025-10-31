@@ -1,10 +1,13 @@
 {
-  "extends": "../../tsconfig.base.json",
-  "compilerOptions": {
-    "types": ["vite/client"],
-    "jsx": "react-jsx",
-	 "moduleResolution": "bundler"
-
-  },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "vite.config.ts", "vite-env.d.ts"]
+	"extends": "../../tsconfig.base.json",
+	"compilerOptions": {
+		"types": ["vite/client"],
+		"jsx": "react-jsx",
+		"moduleResolution": "bundler",
+		"paths": {
+			"@hackalod2025/common": ["../backend/src/common/index.ts"],
+			"@hackalod2025/common/*": ["../backend/src/common/*"]
+		}
+	},
+	"include": ["src/**/*.ts", "src/**/*.tsx", "vite.config.ts", "vite-env.d.ts"]
 }

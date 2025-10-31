@@ -2,7 +2,7 @@ import express, { Request, Response } from "express"
 import { generateRandomName } from "./randomName"
 import {LIST_PEOPLE_THAT_LIVED_IN_YEAR} from "./queries"
 import {generateGuessIncorrectBirthYearQ} from "./questionGenerator"
-import {runMuziekWebQuery, getSomeTriplesFromMuziekWeb, getAlbumTracks, getSomeTriplesFromMuziekWebInternal} from "./muziekWeb"
+import {getAlbumTracks, getSomeTriplesFromMuziekWebInternal} from "./muziekWeb"
 import { dummyQuestions } from './dummy-questions'
 
 
@@ -13,18 +13,11 @@ export function createApp() {
 		res.json({ name: generateRandomName() })
 	})
 
-	app.get("/mw-query", async (_req: Request, res: Response) => {
-		const triples = await runMuziekWebQuery(LIST_PEOPLE_THAT_LIVED_IN_YEAR);
 	app.get("/api/random-question", async (_req: Request, res: Response) => {
 		const question = dummyQuestions[Math.floor(Math.random() * dummyQuestions.length)];
 		res.json(question);
 	})
-
-	app.get("/api/random-triples", async (_req: Request, res: Response) => {
-		const triples = await getSomeTriplesFromMuziekWeb();
-		res.json(triples);
-	})
-
+	
 	app.get("/api/random-mw-internal", async (_req: Request, res: Response) => {
 		const triples = await getSomeTriplesFromMuziekWebInternal();
 		res.json(triples);

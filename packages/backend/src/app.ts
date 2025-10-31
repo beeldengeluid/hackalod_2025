@@ -2,6 +2,7 @@ import express, { Request, Response } from "express"
 import { generateRandomName } from "./randomName"
 import {runMuziekWebQuery, getAlbumTracks, getSomeTriplesFromMuziekWebInternal} from "./muziekWeb"
 import {LIST_PEOPLE_THAT_LIVED_IN_YEAR} from "./queries"
+import {generateGuessIncorrectBirthYearQ} from "./questionGenerator"
 
 export function createApp() {
 	const app = express()
@@ -23,6 +24,11 @@ export function createApp() {
 	app.get("/get-album/:album_id", async (_req: Request, res: Response) => {
 		const triples = await getAlbumTracks(_req.params.album_id);
 		res.json(triples);
+	})
+
+	app.get("/question1", async (_req: Request, res: Response) => {
+		const question = await generateGuessIncorrectBirthYearQ();
+		res.json(question);
 	})
 
 	return app

@@ -44,7 +44,7 @@ export async function runMuziekWebQuery(query: string) {
     console.error("He getsie een error: " + error.message);
     console.error(error)
   }
-  return null;
+  return [];
 }
 
 export async function getSomeTriplesFromMuziekWebInternal() {

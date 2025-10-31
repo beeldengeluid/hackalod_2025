@@ -5,36 +5,42 @@ import {
     LIST_FAMOUS_PERSONS, 
     RANDOM_FAMOUS_ALBUM,
     RANDOM_TRACK_FROM_ALBUM,
-     YEARS_FOR_FESTVAL, 
-     PERFORMERS_AT_FESTVAL, 
-     PERFORMERS_NOT_AT_FESTVAL
+    YEARS_FOR_FESTVAL, 
+    PERFORMERS_AT_FESTVAL, 
+    PERFORMERS_NOT_AT_FESTVAL
 } from "./queries"
-import {runMuziekWebQuery, runInternalMuziekWebQuery} from "./muziekWeb"
+import {runMuziekWebQuery, runInternalMuziekWebQuery, runGraphDBWebQuery} from "./muziekWeb"
 import {Question , Answer} from "./common/interfaces"
 import { QuestionType } from "./common/index"
 
 
 export async function generateGuessPerformerAtfFestival() {
     console.log("Generating question #3");
-    const randomYear = 1980; // @todo 
+    
     const festivals = ["pinkpop", "concert-at-sea", "dauwpop", "dynamo", "eurosonic", "noorderslag", "northseajazz", "operadagen", "pukkelpop", "rabbithole", "rewire", "roadburn", "great-wide-open", "oerol", "parkpop", "simmerdeis", "vanderaa", "zwarte-cross"]
     const randomFestival = festivals[Math.floor(Math.random() * festivals.length)];
-
     
-    // ok step 1; get active years for a given festival
+    // step 1; get active years for a given festival and pick a random one
     const yearTriples = await runGraphDBWebQuery(
         YEARS_FOR_FESTVAL.replace("FESTIVAL_NAME", randomFestival)
     );
-    console.log(YEARS_FOR_FESTVAL.replace("FESTIVAL_NAME", randomFestival))
-    console.log(yearTriples);
-
-
+    const years = yearTriples['results']['bindings'];
+    const year_list = years.map(obj => obj.year.value)
+    const randomYear = year_list[Math.floor(Math.random() * year_list.length)];
+    
+    console.log(randomFestival, randomYear)
+    
     // step 2 find performers who actually performed there
+    const correctPerformers = await runGraphDBWebQuery(
+        PERFORMERS_AT_FESTVAL.replace("FESTIVAL_NAME", randomFestival).replace("FESTIVAL_YEAR", randomYear)
+    );
+
     // step 3 find 1 performer who not performed there in that year
-    // const incorrectTriples = await runGraphDBWebQuery(
-    //     LIST_PEOPLE_THAT_LIVED_IN_YEAR.replace("1970",  + "")
-    // );
-    // //console.log(incorrectTriples);
+    const incorrectPerformers = await runGraphDBWebQuery(
+        PERFORMERS_NOT_AT_FESTVAL.replace("FESTIVAL_NAME", randomFestival).replace("FESTIVAL_YEAR", randomYear)
+    );
+
+    console.log(correctPerformers, incorrectPerformers);
     // const answerData = incorrectTriples ? incorrectTriples[0] : null;
 
     // // TODO fetch 1st result as answer

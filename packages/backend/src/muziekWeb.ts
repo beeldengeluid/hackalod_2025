@@ -1,6 +1,12 @@
 const SPARQL_URL = "https://data.muziekweb.nl/_api/datasets/MuziekwebOrganization/Muziekweb/services/Muziekweb/sparql";
+
 const DUMMY_QUERY = {"query":"select * where {?subj ?pred ?obj.} limit 10"};
+
+
 const TRACKS_QUERY_URL = "https://sandbox-search.rdlabs.beeldengeluid.nl/api/v1.1/lod/grlc/beeldengeluid/sparql-queries/getMuziekAlbumTracks/"
+
+
+
 const WM_INTERNAL_QUERY_URL = "https://sandbox-search.rdlabs.beeldengeluid.nl/api/v1.1/lod/sparql-direct"
 const DUMMY_TRACK_QUERY = {
   "endpoint": "MUZIEKWEB_INTERNAL",
@@ -18,14 +24,14 @@ const DUMMY_MW_INTERNAL_QUERY = {
 }
 
 
-export async function getSomeTriplesFromMuziekWeb() {
+export async function runMuziekWebQuery(query: string) {
   try {
     const response = await fetch(SPARQL_URL, {
     method: "POST",
     headers: {
         "Content-Type": "application/json"
     },
-    body: JSON.stringify(DUMMY_QUERY),
+    body: JSON.stringify({"query" : query}),
     });
     if (!response.ok) {
       throw new Error(`Response status: ${response.status}`);
@@ -36,8 +42,9 @@ export async function getSomeTriplesFromMuziekWeb() {
     return result
   } catch (error) {
     console.error("He getsie een error: " + error.message);
+    console.error(error)
   }
-  return null;
+  return [];
 }
 
 export async function getSomeTriplesFromMuziekWebInternal() {

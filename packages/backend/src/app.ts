@@ -3,7 +3,9 @@ const debug = Debug("hackalod:app")
 
 import express, { Request, Response } from "express"
 import { generateRandomName } from "./randomName"
-import {getSomeTriplesFromMuziekWeb, getAlbumTracks, getSomeTriplesFromMuziekWebInternal} from "./muziekWeb"
+import {LIST_PEOPLE_THAT_LIVED_IN_YEAR} from "./queries"
+import {generateGuessIncorrectBirthYearQ} from "./questionGenerator"
+import {getAlbumTracks, getSomeTriplesFromMuziekWebInternal} from "./muziekWeb"
 import { dummyQuestions } from './dummy-questions'
 
 export function createApp() {
@@ -23,12 +25,7 @@ export function createApp() {
 		debug("Serving question:", question);
 		res.json(question);
 	})
-
-	app.get("/api/random-triples", async (_req: Request, res: Response) => {
-		const triples = await getSomeTriplesFromMuziekWeb();
-		res.json(triples);
-	})
-
+	
 	app.get("/api/random-mw-internal", async (_req: Request, res: Response) => {
 		const triples = await getSomeTriplesFromMuziekWebInternal();
 		res.json(triples);
@@ -37,6 +34,11 @@ export function createApp() {
 	app.get("/api/get-album/:album_id", async (_req: Request, res: Response) => {
 		const triples = await getAlbumTracks(_req.params.album_id);
 		res.json(triples);
+	})
+
+	app.get("/api/question1", async (_req: Request, res: Response) => {
+		const question = await generateGuessIncorrectBirthYearQ();
+		res.json(question);
 	})
 
 	return app

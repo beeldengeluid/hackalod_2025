@@ -1,0 +1,36 @@
+#+ summary: Query to list geo-features within x KM of another, give searchName and searchDistance (in meters)
+#+ endpoint: https://graphdb-sandbox.rdlabs.beeldengeluid.nl/sparql
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX geof: <http://www.opengis.net/def/function/geosparql/>
+PREFIX uom: <http://www.opengis.net/def/uom/OGC/1.0/>
+PREFIX schema: <https://schema.org/>
+
+SELECT ?city ?cityName ?distanceKm
+WHERE {
+  # sub query: get geometry for city to search on
+  {
+    SELECT ?searchWKT
+    WHERE {
+      VALUES ?searchName  { 'Bunnik'@en } 
+      ?search a geo:Feature ;
+               rdfs:label ?searchName;
+               geo:hasGeometry/geo:asWKT ?searchWKT .
+    }
+    LIMIT 1
+    }
+    VALUES ?searchDistance  { 25000 } 
+  
+    # search other geofeature
+    ?city a geo:Feature;
+        geo:hasGeometry/geo:asWKT ?cityWKT .
+        OPTIONAL {?city schema:name ?cityName }.
+        OPTIONAL {?city rdfs:label ?cityName }.
+
+    # calculate and filter on distance
+    BIND(geof:distance(?utrechtWKT, ?cityWKT, uom:metre) AS ?distance)
+    BIND(ROUND(?distance / 1000) AS ?distanceKm) #rounded in KM
+
+    FILTER(?distance >= 3000 && ?distance <= ?searchDistance)
+}
+ORDER BY ?distance

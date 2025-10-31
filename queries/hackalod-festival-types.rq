@@ -1,0 +1,16 @@
+#+ summary: Query to list alll festival types
+#+ endpoint: https://graphdb-sandbox.rdlabs.beeldengeluid.nl/sparql
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX geof: <http://www.opengis.net/def/function/geosparql/>
+PREFIX uom: <http://www.opengis.net/def/uom/OGC/1.0/>
+PREFIX schema: <https://schema.org/>
+
+select DISTINCT ?type
+where
+{
+    ?festival a schema:Festival ;
+	    schema:name ?name ;
+    	schema:additionalType ?type .
+}
+ORDER BY ?type

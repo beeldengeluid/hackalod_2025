@@ -11,26 +11,3 @@ select DISTINCT ?genre ?genreLabel where {
 } 
 GROUP BY ?genre ?genreLabel
 ORDER BY ?genreLabel
-
-
-# top 100 most used genres in muziekweb, with count
-prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-prefix vocab: <https://data.muziekweb.nl/vocab/>
-
-SELECT DISTINCT ?genre ?genreLabel (COUNT(*) AS ?count) WHERE {
-  ?item vocab:genre ?genre .
-  ?genre rdfs:label ?genreLabel .
-  FILTER (lang(?genreLabel) = "en")
-}
-GROUP BY ?genre ?genreLabel
-ORDER BY DESC(?count)
-LIMIT 100
-
-SELECT DISTINCT ?performer (COUT(*) AS ?count) WHERE {
-    ?performance a schema:PerformingArtsEvent ;
-        schema:performer ?perfomer .
-GROUP BY ?performer
-ORDER BY DESC(?count)
-LIMIT 100
-}

@@ -11,4 +11,5 @@ export interface Question {
 	text: string
 	choices: Choice[]
 	anwser: Choice
+	musicSample: string| null
 }

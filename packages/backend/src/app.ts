@@ -3,9 +3,8 @@ const debug = Debug("hackalod:app")
 
 import express, { Request, Response } from "express"
 import { generateRandomName } from "./randomName"
-import {LIST_PEOPLE_THAT_LIVED_IN_YEAR} from "./queries"
-import {generateGuessIncorrectBirthYearQ, generateGuessCorrectInfluence, generateGuessPerformerAtfFestival} from "./questionGenerator"
-import {getAlbumTracks, getSomeTriplesFromMuziekWebInternal} from "./muziekWeb"
+import {loadQuestion} from "./questionGenerator"
+import {getAlbumTracks} from "./muziekWeb"
 import { dummyQuestions } from './dummy-questions'
 
 export function createApp() {
@@ -25,30 +24,30 @@ export function createApp() {
 		debug("Serving question:", question);
 		res.json(question);
 	})
-	
-	app.get("/api/random-mw-internal", async (_req: Request, res: Response) => {
-		const triples = await getSomeTriplesFromMuziekWebInternal();
-		res.json(triples);
-	})
 
 	app.get("/api/get-album/:album_id", async (_req: Request, res: Response) => {
 		const triples = await getAlbumTracks(_req.params.album_id);
 		res.json(triples);
 	})
 
-	app.get("/api/question1", async (_req: Request, res: Response) => {
-		const question = await generateGuessIncorrectBirthYearQ();
-		res.json(question);
+	app.get("/api/question/:num", async (_req: Request, res: Response) => {
+		const triples = await loadQuestion(parseInt(_req.params.num));
+		res.json(triples);
 	})
 
-	app.get("/api/question2", async (_req: Request, res: Response) => {
-		const question = await generateGuessCorrectInfluence();
-		res.json(question);
-	})
+	// app.get("/api/question1", async (_req: Request, res: Response) => {
+	// 	const question = await generateGuessIncorrectBirthYearQ();
+	// 	res.json(question);
+	// })
 
-    app.get("/api/question3", async (_req: Request, res: Response) => {
-		const question = await generateGuessPerformerAtfFestival();
-		res.json(question);
-	})
+	// app.get("/api/question2", async (_req: Request, res: Response) => {
+	// 	const question = await generateGuessCorrectInfluence();
+	// 	res.json(question);
+	// })
+
+    // app.get("/api/question3", async (_req: Request, res: Response) => {
+	// 	const question = await generateGuessPerformerAtfFestival();
+	// 	res.json(question);
+	// })
 	return app
 }

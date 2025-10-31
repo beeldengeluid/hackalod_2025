@@ -1,133 +1,171 @@
+import Debug from "debug"
+const debug = Debug("hackalod:generate")
+
 import {
-    LIST_PEOPLE_THAT_LIVED_IN_YEAR, 
-    LIST_PERONS_INFLUENCED_BY_X, 
-    LIST_PERSONS, 
-    LIST_FAMOUS_PERSONS, 
-    RANDOM_FAMOUS_ALBUM,
-    RANDOM_TRACK_FROM_ALBUM,
-    YEARS_FOR_FESTVAL, 
-    PERFORMERS_AT_FESTVAL, 
-    PERFORMERS_NOT_AT_FESTVAL
+	LIST_PEOPLE_THAT_LIVED_IN_YEAR,
+	LIST_PERONS_INFLUENCED_BY_X,
+	LIST_PERSONS,
+	LIST_FAMOUS_PERSONS,
+	RANDOM_FAMOUS_ALBUM,
+	RANDOM_TRACK_FROM_ALBUM,
+	YEARS_FOR_FESTVAL,
+	PERFORMERS_AT_FESTVAL,
+	PERFORMERS_NOT_AT_FESTVAL,
 } from "./queries"
-import {runMuziekWebQuery, runInternalMuziekWebQuery, runGraphDBWebQuery} from "./muziekWeb"
-import {Question , Answer} from "./common/interfaces"
+import {
+	runMuziekWebQuery,
+	runInternalMuziekWebQuery,
+	runGraphDBWebQuery,
+} from "./muziekWeb"
+import { Question, Answer } from "./common/interfaces"
 import { QuestionType } from "./common/index"
 
-
 export async function generateGuessPerformerAtfFestival() {
-    console.log("Generating question #3");
-    
-    const festivals = ["pinkpop", "concert-at-sea", "dauwpop", "dynamo", "eurosonic", "noorderslag", "northseajazz", "operadagen", "pukkelpop", "rabbithole", "rewire", "roadburn", "great-wide-open", "oerol", "parkpop", "simmerdeis", "vanderaa", "zwarte-cross"]
-    const randomFestival = festivals[Math.floor(Math.random() * festivals.length)];
-    
-    // step 1; get active years for a given festival and pick a random one
-    const yearTriples = await runGraphDBWebQuery(
-        YEARS_FOR_FESTVAL.replace("FESTIVAL_NAME", randomFestival)
-    );
-    const years = yearTriples['results']['bindings'];
-    const year_list = years.map(obj => obj.year.value)
-    const randomYear = year_list[Math.floor(Math.random() * year_list.length)];
-    
-    console.log(randomFestival, randomYear)
-    
-    // step 2 find performers who actually performed there
-    const correctPerformers = await runGraphDBWebQuery(
-        PERFORMERS_AT_FESTVAL.replace("FESTIVAL_NAME", randomFestival).replace("FESTIVAL_YEAR", randomYear)
-    );
+	debug("Generating question #3")
 
-    // step 3 find 1 performer who not performed there in that year
-    const incorrectPerformers = await runGraphDBWebQuery(
-        PERFORMERS_NOT_AT_FESTVAL.replace("FESTIVAL_NAME", randomFestival).replace("FESTIVAL_YEAR", randomYear)
-    );
+	const festivals = [
+		"pinkpop",
+		"concert-at-sea",
+		"dauwpop",
+		"dynamo",
+		"eurosonic",
+		"noorderslag",
+		"northseajazz",
+		"operadagen",
+		"pukkelpop",
+		"rabbithole",
+		"rewire",
+		"roadburn",
+		"great-wide-open",
+		"oerol",
+		"parkpop",
+		"simmerdeis",
+		"vanderaa",
+		"zwarte-cross",
+	]
+	const randomFestival =
+		festivals[Math.floor(Math.random() * festivals.length)]
 
-    //return(correctPerformers['results']['bindings'])
-    const choices = []
-    const answerData = {}
-    correctPerformers['results']['bindings'].forEach(obj => {
-        choices.push({
-            uri: obj.uri.value,
-            label: obj.label.value,
-            hasHint: false
-        })
-    })
-    
-    const correctAnswer:Answer = {
-        uri: incorrectPerformers['results']['bindings'][0].uri.value,
-	    label: incorrectPerformers['results']['bindings'][0].label.value,
-	    hasHint: false
-    } 
-    
-    choices.push(correctAnswer);
+	// step 1; get active years for a given festival and pick a random one
+	const yearTriples = await runGraphDBWebQuery(
+		YEARS_FOR_FESTVAL.replace("FESTIVAL_NAME", randomFestival),
+	)
+	const years = yearTriples["results"]["bindings"]
+	const year_list = years.map((obj) => obj.year.value)
+	const randomYear = year_list[Math.floor(Math.random() * year_list.length)]
 
-    return {
-        type: QuestionType.MULTIPLE_CHOICE,
-        text: "Welke van deze artiesten trad NIET op op FESTIVAL_NAME in FESTIVAL_YEAR?".replace('FESTIVAL_NAME', randomFestival).replace('FESTIVAL_YEAR', randomYear),
-    	choices: choices,
-	    anwser: correctAnswer,
+	debug(randomFestival, randomYear)
 
-    };
+	// step 2 find performers who actually performed there
+	const correctPerformers = await runGraphDBWebQuery(
+		PERFORMERS_AT_FESTVAL.replace("FESTIVAL_NAME", randomFestival).replace(
+			"FESTIVAL_YEAR",
+			randomYear,
+		),
+	)
+
+	// step 3 find 1 performer who not performed there in that year
+	const incorrectPerformers = await runGraphDBWebQuery(
+		PERFORMERS_NOT_AT_FESTVAL.replace(
+			"FESTIVAL_NAME",
+			randomFestival,
+		).replace("FESTIVAL_YEAR", randomYear),
+	)
+
+	//return(correctPerformers['results']['bindings'])
+	const choices = []
+	const answerData = {}
+	correctPerformers["results"]["bindings"].forEach((obj) => {
+		choices.push({
+			uri: obj.uri.value,
+			label: obj.label.value,
+			hasHint: false,
+		})
+	})
+
+	const correctAnswer: Answer = {
+		uri: incorrectPerformers["results"]["bindings"][0].uri.value,
+		label: incorrectPerformers["results"]["bindings"][0].label.value,
+		hasHint: false,
+	}
+
+	choices.push(correctAnswer)
+
+	return {
+		type: QuestionType.MULTIPLE_CHOICE,
+		text: "Welke van deze artiesten trad NIET op op FESTIVAL_NAME in FESTIVAL_YEAR?"
+			.replace("FESTIVAL_NAME", randomFestival)
+			.replace("FESTIVAL_YEAR", randomYear),
+		choices: choices,
+		anwser: correctAnswer,
+	}
 }
 
 function getRandomInt(min: number, max: number) {
-  const minCeiled = Math.ceil(min);
-  const maxFloored = Math.floor(max);
-  return Math.floor(Math.random() * (maxFloored - minCeiled) + minCeiled); // The maximum is exclusive and the minimum is inclusive
+	const minCeiled = Math.ceil(min)
+	const maxFloored = Math.floor(max)
+	return Math.floor(Math.random() * (maxFloored - minCeiled) + minCeiled) // The maximum is exclusive and the minimum is inclusive
 }
 
 function shuffle(array) {
-  let currentIndex = array.length;
+	let currentIndex = array.length
 
-  // While there remain elements to shuffle...
-  while (currentIndex != 0) {
+	// While there remain elements to shuffle...
+	while (currentIndex != 0) {
+		// Pick a remaining element...
+		let randomIndex = Math.floor(Math.random() * currentIndex)
+		currentIndex--
 
-    // Pick a remaining element...
-    let randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex--;
-
-    // And swap it with the current element.
-    [array[currentIndex], array[randomIndex]] = [
-      array[randomIndex], array[currentIndex]];
-  }
+		// And swap it with the current element.
+		;[array[currentIndex], array[randomIndex]] = [
+			array[randomIndex],
+			array[currentIndex],
+		]
+	}
 }
-
 
 // question 1
 export async function generateGuessIncorrectBirthYearQ() {
-    console.log("Generating question #1");
-    const randomYear = getRandomInt(1910, 2024);
-    const randomIncorrectYear = getRandomInt(1910, 2024);
+	debug("Generating question #1")
+	const randomYear = getRandomInt(1910, 2024)
+	const randomIncorrectYear = getRandomInt(1910, 2024)
 
-    const incorrectTriples = await runMuziekWebQuery(LIST_PEOPLE_THAT_LIVED_IN_YEAR.replace("1970", randomIncorrectYear + ""));
-    console.log(incorrectTriples.length);
-    const answerData = incorrectTriples ? incorrectTriples[0] : null;
+	const incorrectTriples = await runMuziekWebQuery(
+		LIST_PEOPLE_THAT_LIVED_IN_YEAR.replace("1970", randomIncorrectYear + ""),
+	)
+	debug(incorrectTriples.length)
+	const answerData = incorrectTriples ? incorrectTriples[0] : null
 
-    // TODO fetch 1st result as answer
-    const correctAnswer:Answer = {
-        uri: answerData.uri,
-	    label: answerData.label,
-	    hasHint: false
-    } 
-    //console.log(correctAnswer);
-    const correctTriples = await runMuziekWebQuery(LIST_PEOPLE_THAT_LIVED_IN_YEAR.replace("1970", randomYear + ""));
-    console.log(correctTriples.length);
-    const choices: Answer[] = [];
-    for(let i=0;i<3; i++) {
-        let choiceData = correctTriples[i];
-        choices.push({
-            uri: choiceData.uri,
-            label: choiceData.label,
-            hasHint: false
-        })  
-    }
-    choices.push(correctAnswer);
-    shuffle(choices);
+	// TODO fetch 1st result as answer
+	const correctAnswer: Answer = {
+		uri: answerData.uri,
+		label: answerData.label,
+		hasHint: false,
+	}
+	//console.log(correctAnswer);
+	const correctTriples = await runMuziekWebQuery(
+		LIST_PEOPLE_THAT_LIVED_IN_YEAR.replace("1970", randomYear + ""),
+	)
+	debug(correctTriples.length)
+	const choices: Answer[] = []
+	for (let i = 0; i < 3; i++) {
+		let choiceData = correctTriples[i]
+		choices.push({
+			uri: choiceData.uri,
+			label: choiceData.label,
+			hasHint: false,
+		})
+	}
+	choices.push(correctAnswer)
+	shuffle(choices)
 
-    return {
-        type: QuestionType.MULTIPLE_CHOICE,
-        text: "Raadt welke van deze artiesten niet in " + randomYear + " geboren is",
-    	choices: choices,
-	    anwser: correctAnswer,
-    };
+	return {
+		type: QuestionType.MULTIPLE_CHOICE,
+		text:
+			"Raadt welke van deze artiesten niet in " + randomYear + " geboren is",
+		choices: choices,
+		anwser: correctAnswer,
+	}
 }
 
 /*
@@ -180,58 +218,66 @@ export async function generateGuessCorrectInfluence() {
     
 }*/
 
-
 // question 4
 //https://graphdb-sandbox.rdlabs.beeldengeluid.nl/sparql?name=Unnamed&query=PREFIX%20rdfs%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX%20xsd%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%0APREFIX%20schema%3A%20%3Chttps%3A%2F%2Fschema.org%2F%3E%0Aprefix%20skos%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E%0ASELECT%20DISTINCT%20%3Fperformer%20%3FperformerLabel%20(COUNT(*)%20AS%20%3Fcount)%20WHERE%20%7B%0A%20%20%20%20%3Fperformance%20a%20schema%3APerformingArtsEvent%20.%0A%20%20%20%20%3Fperformance%20schema%3Aperformer%20%3Fperformer%20.%0A%09%3Fperformer%20schema%3Aname%20%3FperformerLabel%20.%0A%7D%0AGROUP%20BY%20%3Fperformer%20%3FperformerLabel%0AHAVING%20(%3Fcount%20%3E%202)%0AORDER%20BY%20DESC(%3Fcount)%0ALIMIT%20100&infer=true&sameAs=true
 export async function generateGuessTrackPerformer() {
-    console.log("Generating question #4");
-    const personAlbumTriples = await runInternalMuziekWebQuery(RANDOM_FAMOUS_ALBUM.replace("100", "100"));
-    console.log(RANDOM_FAMOUS_ALBUM)
-    console.log("ALBUMS")
-    console.log(personAlbumTriples)
-    const choices: Answer[] = [];
-    const unique = []
-    let selectedAlbum = null;
-    personAlbumTriples.forEach(album => {
-        if(!selectedAlbum) {
-            selectedAlbum = album.album.value;
-        }
-        let check = choices.some(el => el.uri === album.person.value)
-        if(!check) {
-           choices.push({
-                uri: album.person.value,
-                label: album.person_name.value,
-                hasHint: false
-            })
-        }
-    })
+	debug("Generating question #4")
+	const personAlbumTriples = await runInternalMuziekWebQuery(
+		RANDOM_FAMOUS_ALBUM.replace("100", "100"),
+	)
+	debug(RANDOM_FAMOUS_ALBUM)
+	debug("ALBUMS")
+	debug(personAlbumTriples)
+	const choices: Answer[] = []
+	const unique = []
+	let selectedAlbum = null
+	personAlbumTriples.forEach((album) => {
+		if (!selectedAlbum) {
+			selectedAlbum = album.album.value
+		}
+		let check = choices.some((el) => el.uri === album.person.value)
+		if (!check) {
+			choices.push({
+				uri: album.person.value,
+				label: album.person_name.value,
+				hasHint: false,
+			})
+		}
+	})
 
-    console.log("Selected album " + selectedAlbum)
-    const trackQuery = RANDOM_TRACK_FROM_ALBUM.replace("FAMOUS_ALBUM", selectedAlbum)
-    const trackTriples = await runInternalMuziekWebQuery(trackQuery);
-    console.log(trackQuery)
-    console.log("TRACKS")
-    console.log(trackTriples)
+	debug("Selected album " + selectedAlbum)
+	const trackQuery = RANDOM_TRACK_FROM_ALBUM.replace(
+		"FAMOUS_ALBUM",
+		selectedAlbum,
+	)
+	const trackTriples = await runInternalMuziekWebQuery(trackQuery)
+	debug(trackQuery)
+	debug("TRACKS")
+	debug(trackTriples)
 
-    const finalChoices = choices.slice(0,4)
-    return {
-        type: QuestionType.MULTIPLE_CHOICE,
-        text: `Raadt van wie de track is`,
-    	choices: finalChoices,
-	    anwser: finalChoices[0],
-        musicSample: trackTriples[0].embed_url.value
-    };
-
-    
+	const finalChoices = choices.slice(0, 4)
+	return {
+		type: QuestionType.MULTIPLE_CHOICE,
+		text: `Raadt van wie de track is`,
+		choices: finalChoices,
+		anwser: finalChoices[0],
+		musicSample: trackTriples[0].embed_url.value,
+	}
 }
 
-export async function loadQuestion(num:number) {
-    console.log("Loading question #" + num);
-    let question: Question | null = null; 
-    switch(num) {
-        case 1 : question = generateGuessIncorrectBirthYearQ(); break;
-        case 3 : question = generateGuessPerformerAtfFestival(); break;
-        case 4 : question = generateGuessTrackPerformer(); break;
-    }
-    return question
+export async function loadQuestion(num: number) {
+	debug("Loading question #" + num)
+	let question: Question | null = null
+	switch (num) {
+		case 1:
+			question = generateGuessIncorrectBirthYearQ()
+			break
+		case 3:
+			question = generateGuessPerformerAtfFestival()
+			break
+		case 4:
+			question = generateGuessTrackPerformer()
+			break
+	}
+	return question
 }

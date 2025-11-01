@@ -235,3 +235,54 @@ WHERE {
 }
 order by rand()
 limit 3`
+
+export const LAST_PLACE_TOP2000 = `
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <http://schema.org/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+
+# wie stond op de laatste plaats in year
+#SELECT ?artist ?artistName ?top2000Year ?top2000Position
+SELECT ?artist ?artistName
+#FROM <http://hackalod.artsdata.nl/top2000> 
+{
+	?song a schema:MusicRecording ;
+    	schema:datePublished ?year ;
+    	schema:name ?name ;
+        schema:byArtist ?artist .
+        ?wikiArtist owl:sameAs ?artist .
+        ?wikiArtist rdfs:label ?artistName .
+
+    ?observation a schema:Observation ;
+	    schema:observationAbout ?song ;
+	    schema:observationDate ?top2000Year ;
+    	schema:value ?top2000Position .
+    FILTER (?top2000Position = 2000)
+    FILTER (?top2000Year = "TOP_YEAR")
+}
+order by RAND()
+limit 1`
+
+export const NOT_LAST_PLACE_TOP2000 = `
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <http://schema.org/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+
+SELECT ?artist ?artistName
+#FROM <http://hackalod.artsdata.nl/top2000> 
+{
+	?song a schema:MusicRecording ;
+    	schema:datePublished ?year ;
+    	schema:name ?name ;
+        schema:byArtist ?artist .
+        ?wikiArtist owl:sameAs ?artist .
+        ?wikiArtist rdfs:label ?artistName .
+
+    ?observation a schema:Observation ;
+	    schema:observationAbout ?song ;
+	    schema:observationDate ?top2000Year ;
+    	schema:value ?top2000Position .
+    FILTER (?top2000Position > 1900)
+}
+order by RAND()
+limit 3`

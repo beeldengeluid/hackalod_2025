@@ -13,6 +13,8 @@ import {
 	PERFORMERS_NOT_AT_FESTVAL,
 	BAND_FROM_PLACE,
 	RANDOM_PLACES,
+    LAST_PLACE_TOP2000,
+    NOT_LAST_PLACE_TOP2000
 } from "./queries"
 import {
 	runMuziekWebQuery,
@@ -21,6 +23,44 @@ import {
 } from "./muziekWeb"
 import { Question, Choice } from "./common/interfaces"
 import { QuestionType } from "./common/index"
+
+export async function generateGuessLastPlaceTop2000() {
+	debug("Generating question #6")
+    const randomYear = getRandomInt(2000, 2024)
+
+    const correctAnswers = await runGraphDBWebQuery(
+		LAST_PLACE_TOP2000.replace("TOP_YEAR", randomYear),
+	)
+    
+    debug({ correctAnswers })
+	const correctAnswer: Choice = {
+		uri: correctAnswers["results"]["bindings"][0].artist.value,
+		label: correctAnswers["results"]["bindings"][0].artistName.value,
+		hasHint: false,
+	}
+
+	const inCorrectAnswers = await runGraphDBWebQuery(NOT_LAST_PLACE_TOP2000)
+	const choices = []
+	inCorrectAnswers["results"]["bindings"].forEach((obj) => {
+		choices.push({
+			uri: obj.artist.value,
+			label: obj.artistName.value,
+			hasHint: false,
+		})
+	})
+	choices.push(correctAnswer)
+
+	return {
+		type: QuestionType.MULTIPLE_CHOICE,
+		text: "Wie stond op de laatste plaats in de Top2000 in TOP_YEAR?".replace(
+			"TOP_YEAR",
+			randomYear,
+		),
+		choices: choices,
+		anwser: correctAnswer,
+	}
+}
+
 
 export async function generateGuessThePlaceOfOriginOfABand() {
 	debug("Generating question #5")
@@ -275,6 +315,9 @@ export async function loadQuestion(num: number) {
 			break
 		case 5:
 			question = generateGuessThePlaceOfOriginOfABand()
+        break
+        case 6:
+			question = generateGuessLastPlaceTop2000()
 			break
 	}
 	return question

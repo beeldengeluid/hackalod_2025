@@ -21,6 +21,54 @@ filter((?bYear <= ?year) && !(?eYear < ?year))
 order by rand()
 limit 50`
 
+
+export const LIST_PEOPLE_BORN_IN_YEAR = `
+prefix vocab: <https://data.muziekweb.nl/vocab/>
+prefix schema: <http://schema.org/>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+select distinct (?person AS ?uri) ?label ?bYear ?eYear
+where {
+values ?year {
+    "1970"^^xsd:gYear
+}
+?person rdf:type schema:Person .
+?person rdfs:label ?label .
+?person vocab:beginYear ?bYear ;
+    vocab:endYear ?eYear .
+filter(?bYear = ?year) 
+
+}
+order by rand()
+limit 1
+`
+
+export const LIST_PEOPLE_NOT_BORN_IN_YEAR = `
+prefix vocab: <https://data.muziekweb.nl/vocab/>
+prefix schema: <http://schema.org/>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+select distinct (?person AS ?uri) ?label ?bYear ?eYear
+where {
+values ?year {
+    "1970"^^xsd:gYear
+}
+?person rdf:type schema:Person .
+?person rdfs:label ?label .
+?person vocab:beginYear ?bYear ;
+    vocab:endYear ?eYear .
+filter(?bYear != ?year) 
+
+}
+order by rand()
+limit 3
+`
+
+
 // Queen = <https://data.muziekweb.nl/Link/M00000071922>
 export const LIST_PERONS_INFLUENCED_BY_X = `PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 prefix vocab: <https://data.muziekweb.nl/vocab/>

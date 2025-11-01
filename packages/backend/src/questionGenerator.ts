@@ -3,6 +3,8 @@ const debug = Debug("hackalod:generate")
 
 import {
 	LIST_PEOPLE_THAT_LIVED_IN_YEAR,
+    LIST_PEOPLE_BORN_IN_YEAR,
+    LIST_PEOPLE_NOT_BORN_IN_YEAR,
 	LIST_PERONS_INFLUENCED_BY_X,
 	LIST_PERSONS,
 	LIST_FAMOUS_PERSONS,
@@ -203,37 +205,33 @@ function shuffle(array: any[]) {
 // question 1
 export async function generateGuessIncorrectBirthYearQ() {
 	debug("Generating question #1")
-	const randomYear = getRandomInt(1910, 2024)
-	const randomIncorrectYear = getRandomInt(1910, 2024)
+	const randomYear = getRandomInt(1910, 2000)
+    
+    const correctAnswers = await runMuziekWebQuery(
+        LIST_PEOPLE_BORN_IN_YEAR.replace("1970", randomYear + ""),
+    )
 
-	const incorrectTriples = await runMuziekWebQuery(
-		LIST_PEOPLE_THAT_LIVED_IN_YEAR.replace("1970", randomIncorrectYear + ""),
+	const inCorrectAnswers = await runMuziekWebQuery(
+		LIST_PEOPLE_NOT_BORN_IN_YEAR.replace("1970", randomYear + ""),
 	)
-	debug(incorrectTriples.length)
-	const answerData = incorrectTriples ? incorrectTriples[0] : null
 
-	// TODO fetch 1st result as answer
+	debug ({ correctAnswers })
 	const correctAnswer: Choice = {
-		uri: answerData.uri,
-		label: answerData.label,
+		uri: correctAnswers[0].uri,
+		label: correctAnswers[0].label,
 		hasHint: false,
 	}
-	//console.log(correctAnswer);
-	const correctTriples = await runMuziekWebQuery(
-		LIST_PEOPLE_THAT_LIVED_IN_YEAR.replace("1970", randomYear + ""),
-	)
-	debug(correctTriples.length)
-	const choices: Choice[] = []
-	for (let i = 0; i < 3; i++) {
-		let choiceData = correctTriples[i]
+
+	const choices = []
+	inCorrectAnswers.forEach((obj) => {
 		choices.push({
-			uri: choiceData.uri,
-			label: choiceData.label,
+			uri: obj.uri,
+			label: obj.label,
 			hasHint: false,
 		})
-	}
+	})
 	choices.push(correctAnswer)
-	shuffle(choices)
+
 
 	return {
 		type: QuestionType.MULTIPLE_CHOICE,

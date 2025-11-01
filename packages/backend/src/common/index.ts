@@ -7,4 +7,4 @@ export enum QuestionType {
 	SAMPLE = "SAMPLE",
 }
 
-export const questionCases = [1, 3, 4, 5]
+export const questionCases = [3, 4, 5, 6]

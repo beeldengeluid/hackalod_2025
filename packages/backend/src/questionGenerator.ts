@@ -238,7 +238,7 @@ export async function generateGuessIncorrectBirthYearQ() {
 	return {
 		type: QuestionType.MULTIPLE_CHOICE,
 		text:
-			"Raadt welke van deze artiesten niet in " + randomYear + " geboren is",
+			"Raad welke van deze artiesten niet in " + randomYear + " geboren is",
 		choices: choices,
 		anwser: correctAnswer,
 	}
@@ -293,7 +293,7 @@ export async function generateGuessTrackPerformer() {
 	const finalChoices = choices.slice(0, 4)
 	return {
 		type: QuestionType.MULTIPLE_CHOICE,
-		text: `Raadt van wie de track is`,
+		text: `Raad van wie de track is`,
 		choices: finalChoices,
 		anwser: finalChoices[0],
 		musicSample: trackTriples[0].embed_url.value,
@@ -364,7 +364,7 @@ export async function generateGuessCorrectInfluence() {
 
     return {
         type: QuestionType.MULTIPLE_CHOICE,
-        text: `Raadt wie ${randomPerson.label} heeft beinvloed op muzikaal vlak`,
+        text: `Raad wie ${randomPerson.label} heeft beinvloed op muzikaal vlak`,
     	choices: choices,
 	    anwser: correctAnswer,
 

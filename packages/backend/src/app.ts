@@ -41,42 +41,44 @@ export function createApp() {
 		res.json(triples)
 	})
 
-	/**
-	 * Caches images fetched from external URLs to reduce load times and bandwidth.
-	 */
-	app.get("/api/image/:url", async (req: Request, res: Response) => {
-		const url = decodeURIComponent(req.params.url)
-		const hash = createHash("sha256").update(url).digest("hex")
-		const target = join(CACHE_DIR, `${hash}.jpg`)
+	app.get("/api/image/:url", async (req, res, next) => {
+		const url = decodeURI(req.params.url)
+		const target = join(
+			CACHE_DIR,
+			`${createHash("sha256").update(url).digest("hex")}.jpg`,
+		)
 
-		try {
-			await stat(target)
-			debug(`Cache hit for image "${url}"`)
-		} catch {
-			const res = await fetch(url)
-			if (!res.ok) throw new Error(`Failed to fetch ${url}`)
-			const buf = Buffer.from(await res.arrayBuffer())
-			await mkdir(CACHE_DIR, { recursive: true })
-			await writeFile(target, buf)
-			debug(`Cached image "${url}" to "${target}"`)
+		let job = inFlight.get(target)
+		if (!job) {
+			job = ensureCached(url, target).finally(() => inFlight.delete(target))
+			inFlight.set(target, job)
 		}
 
-		res.sendFile(target)
+		try {
+			await job
+			res.sendFile(target)
+		} catch (err) {
+			next(err)
+		}
 	})
 
-	// app.get("/api/question1", async (_req: Request, res: Response) => {
-	// 	const question = await generateGuessIncorrectBirthYearQ();
-	// 	res.json(question);
-	// })
-
-	// app.get("/api/question2", async (_req: Request, res: Response) => {
-	// 	const question = await generateGuessCorrectInfluence();
-	// 	res.json(question);
-	// })
-
-	// app.get("/api/question3", async (_req: Request, res: Response) => {
-	// 	const question = await generateGuessPerformerAtfFestival();
-	// 	res.json(question);
-	// })
 	return app
+}
+
+const inFlight = new Map<string, Promise<void>>()
+
+async function ensureCached(url: string, target: string) {
+	try {
+		await stat(target)
+		return
+	} catch {
+		const res = await fetch(url)
+		if (!res.ok) {
+			debug(res.status, res.statusText)
+			return
+		}
+		const buf = Buffer.from(await res.arrayBuffer())
+		await mkdir(CACHE_DIR, { recursive: true })
+		await writeFile(target, buf)
+	}
 }

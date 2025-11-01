@@ -11,6 +11,8 @@ import {
 	YEARS_FOR_FESTVAL,
 	PERFORMERS_AT_FESTVAL,
 	PERFORMERS_NOT_AT_FESTVAL,
+    BAND_FROM_PLACE,
+    RANDOM_PLACES
 } from "./queries"
 import {
 	runMuziekWebQuery,
@@ -19,6 +21,43 @@ import {
 } from "./muziekWeb"
 import { Question, Answer } from "./common/interfaces"
 import { QuestionType } from "./common/index"
+
+
+export async function generateGuessThePlaceOfOriginOfABand() {
+	debug("Generating question #5")
+    
+	const correctAnswers = await runGraphDBWebQuery(
+		BAND_FROM_PLACE,
+	)
+    const correctAnswer: Answer = {
+		uri: correctAnswers["results"]["bindings"][0].location.value,
+		label: correctAnswers["results"]["bindings"][0].locationLabel.value,
+		hasHint: false,
+	}
+    const performer = correctAnswers["results"]["bindings"][0].performerName.value
+
+    const inCorrectAnswers = await runGraphDBWebQuery(
+		RANDOM_PLACES,
+	)
+    const choices = []
+	inCorrectAnswers["results"]["bindings"].forEach((obj) => {
+		choices.push({
+			uri: obj.uri.value,
+			label: obj.label.value,
+			hasHint: false,
+		})
+	})
+    choices.push(correctAnswer)
+
+    return {
+		type: QuestionType.MULTIPLE_CHOICE,
+		text: "Uit welke plaats komt de band BAND_NAME?"
+			.replace("BAND_NAME", performer),
+		choices: choices,
+		anwser: correctAnswer,
+	}
+}
+
 
 export async function generateGuessPerformerAtfFestival() {
 	debug("Generating question #3")
@@ -72,7 +111,6 @@ export async function generateGuessPerformerAtfFestival() {
 		).replace("FESTIVAL_YEAR", randomYear),
 	)
 
-	//return(correctPerformers['results']['bindings'])
 	const choices = []
 	const answerData = {}
 	correctPerformers["results"]["bindings"].forEach((obj) => {
@@ -278,6 +316,10 @@ export async function loadQuestion(num: number) {
 		case 4:
 			question = generateGuessTrackPerformer()
 			break
+		case 5:
+			question = generateGuessThePlaceOfOriginOfABand()
+			break
+
 	}
 	return question
 }

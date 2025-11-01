@@ -190,3 +190,38 @@ where {
 order by rand()
 limit 1`
 
+export const BAND_FROM_PLACE = `
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+
+SELECT ?location ?locationLabel ?performerName
+WHERE {
+  ?performer a schema:MusicGroup .
+    ?performer owl:sameAs ?wikiPerformer .
+    ?wikiPerformer wdt:P740 ?location .
+    ?location rdfs:label ?locationLabel .
+     OPTIONAL { ?performer schema:name ?performerName }
+     OPTIONAL { ?performer rdfs:label ?performerName }
+}
+order by rand()
+limit 1`
+
+export const RANDOM_PLACES = `
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+
+SELECT (?location AS ?uri) (?locationLabel AS ?label) 
+WHERE {
+  ?performer a schema:MusicGroup .
+    ?performer owl:sameAs ?wikiPerformer .
+    ?wikiPerformer wdt:P740 ?location .
+    ?location rdfs:label ?locationLabel .
+}
+order by rand()
+limit 3`

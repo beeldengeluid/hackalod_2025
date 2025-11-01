@@ -6,3 +6,5 @@ export enum QuestionType {
 	MAP = "MAP",
 	SAMPLE = "SAMPLE",
 }
+
+export const questionCases = [1, 3, 4, 5]

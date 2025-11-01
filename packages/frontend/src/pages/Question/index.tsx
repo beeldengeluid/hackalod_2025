@@ -201,22 +201,6 @@ function DoneAnwserBody({ dispatch, score }: { dispatch: React.Dispatch<Action>,
 	)
 }
 
-function LeaderBoardBody({ dispatch, score }: { dispatch: React.Dispatch<Action>, score: number }) {
-	return (
-		<div className={styles.answerBody}>
-			<h2 className={styles.correct}>
-				Score {sessionStorage.getItem(SESSION_STORAGE_KEY)}
-			</h2>
-			<p>
-				Je hebt totaal <span style={{ color: 'yellow' }}>{score}</span> <IconSparkles size={72} color="yellow" /> verdiend
-			</p>
-			<Button onClick={() => dispatch({ type: Actions.RESET })}>
-				Speel nog een keer!
-			</Button>
-		</div>
-	)
-}
-
 function getQuestion(dispatch: React.Dispatch<Action>) {
 	const questionCaseIndex = Math.floor(Math.random() * questionCases.length)
 	const questionCase = questionCases[questionCaseIndex]

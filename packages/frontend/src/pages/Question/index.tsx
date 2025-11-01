@@ -172,8 +172,9 @@ function DoneAnwserBody({ dispatch, score }: { dispatch: React.Dispatch<Action>,
 }
 
 function getQuestion(dispatch: React.Dispatch<Action>) {
-	// fetch('/api/question/4')
-	fetch("/api/random-question")
+	// fetch('/api/question/3')
+	fetch('/api/question/4')
+	// fetch("/api/random-question")
 		.then((res) => res.json())
 		.then((question: Question) => {
 			dispatch({ type: Actions.SET_QUESTION, payload: { question } })

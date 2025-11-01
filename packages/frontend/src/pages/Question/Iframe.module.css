@@ -12,7 +12,7 @@
 
 .cover {
 	position: absolute;
-	top: calc(.75rem + 3px);
+	top: calc(1.3rem + 3px);
 	left: 0;
 	width: 1rem;
 	height: 29px;

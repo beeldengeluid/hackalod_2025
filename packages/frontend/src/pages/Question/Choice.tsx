@@ -1,4 +1,4 @@
-import { useState, useEffect, useContext } from "react"
+import { useState, useEffect, useContext, type MouseEvent } from "react"
 import { type Choice } from "@hackalod2025/common"
 
 import { DispatchContext } from "../../state"
@@ -8,7 +8,23 @@ import styles from "./Choice.module.css"
 
 export function Choice({ choice }: { choice: Choice }) {
 	const dispatch = useContext(DispatchContext)
-	const picture = useWikiDataPicture(choice.label)
+	const asset = useWikiDataPicture(choice.label)
+	const picture = asset?.imageUrl ?? null
+	const wikidataUrl = asset?.entityUrl ?? null
+	const [isPopupOpen, setIsPopupOpen] = useState(false)
+
+	useEffect(() => {
+		setIsPopupOpen(false)
+	}, [choice.label])
+
+	const handleImageClick = (event: MouseEvent<HTMLImageElement>) => {
+		event.stopPropagation()
+		setIsPopupOpen(true)
+	}
+
+	const handlePopupClick = (event: MouseEvent<HTMLDivElement | HTMLButtonElement>) => {
+		event.stopPropagation()
+	}
 
 	return (
 		<li
@@ -17,21 +33,59 @@ export function Choice({ choice }: { choice: Choice }) {
 		>
 			<span className={styles.checkboxText}>{choice.label}</span>
 			{picture && (
-				<img
-					src={picture}
-					alt={choice.label}
-					className={styles.choiceImage}
-					loading="lazy"
-				/>
+				<div className={styles.imageWrapper} onClick={(event) => event.stopPropagation()}>
+					<img
+						src={picture}
+						alt={choice.label}
+						className={styles.choiceImage}
+						loading="lazy"
+						onClick={handleImageClick}
+					/>
+					{isPopupOpen && wikidataUrl && (
+						<div
+							className={styles.imagePopup}
+							role="dialog"
+							aria-modal="true"
+							aria-label={`${choice.label} information`}
+							onClick={handlePopupClick}
+						>
+							<a
+								href={wikidataUrl}
+								target="_blank"
+								rel="noreferrer"
+								className={styles.imagePopupLink}
+							>
+								Bewerken op Wikidata
+							</a>
+							<button
+								type="button"
+								className={styles.popupClose}
+								onClick={(event) => {
+									handlePopupClick(event)
+									setIsPopupOpen(false)
+								}}
+								aria-label="Close"
+							>
+								×
+							</button>
+						</div>
+					)}
+				</div>
 			)}
 		</li>
 	)
 }
 
+type WikiDataAsset = {
+	imageUrl: string
+	entityUrl: string
+}
+
 function useWikiDataPicture(searchString: string) {
-	const [imageUrl, setImageUrl] = useState<string | null>(null)
+	const [asset, setAsset] = useState<WikiDataAsset | null>(null)
 
 	useEffect(() => {
+		setAsset(null)
 		const query = `
 			PREFIX wd: <http://www.wikidata.org/entity/>
 			PREFIX wdt: <http://www.wikidata.org/prop/direct/>
@@ -67,12 +121,16 @@ function useWikiDataPicture(searchString: string) {
 			.then((data) => {
 				const bindings = data?.results?.bindings ?? []
 				const image = bindings[0]?.image?.value
-				if (image) {
-					setImageUrl("/api/image/" + encodeURIComponent(image))
+				const item = bindings[0]?.item?.value
+				if (image && item) {
+					setAsset({
+						imageUrl: "/api/image/" + encodeURIComponent(image),
+						entityUrl: item,
+					})
 				}
 			})
-			.catch(() => setImageUrl(null))
-	}, [])
+			.catch(() => setAsset(null))
+	}, [searchString])
 
-	return imageUrl
+	return asset
 }

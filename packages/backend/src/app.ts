@@ -9,16 +9,21 @@ import { dummyQuestions } from "./dummy-questions"
 import { mkdir, stat, writeFile } from "fs/promises"
 import { join } from "path"
 import { createHash } from "crypto"
+import { handleLeaderboard } from "./handle-leaderboard"
 
 const CACHE_DIR = join(process.cwd(), "../../", "data", "image-cache")
 
 export function createApp() {
 	const app = express()
 
+	app.use(express.json())
+
 	app.use((req, res, next) => {
 		debug({ method: req.method, url: req.url })
 		next()
 	})
+
+	handleLeaderboard(app)
 
 	app.get("/api/random-name", (_req: Request, res: Response) => {
 		res.json({ name: generateRandomName() })

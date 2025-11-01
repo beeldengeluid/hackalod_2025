@@ -16,6 +16,8 @@ export function Iframe({ question }: { question: Question }) {
 		}
 	}, [question.musicSample])
 
+	if (question.musicSample == null) return null
+
 	return (
 		<div className={clsx(styles.iframeContainer, { [styles.covered]: coverUp })}>
 			<div

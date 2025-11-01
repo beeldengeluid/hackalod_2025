@@ -1,9 +1,10 @@
 import { useState, useEffect, useContext } from "react"
 import { type Choice } from "@hackalod2025/common"
 
-import styles from "./Choice.module.css"
 import { DispatchContext } from "../../state"
 import { Actions } from "../../state/actions"
+
+import styles from "./Choice.module.css"
 
 export function Choice({ choice }: { choice: Choice }) {
 	const dispatch = useContext(DispatchContext)
@@ -15,8 +16,7 @@ export function Choice({ choice }: { choice: Choice }) {
 			onClick={() => dispatch({ type: Actions.ANSWER, payload: { choice } })}
 		>
 			<span className={styles.checkboxText}>{choice.label}</span>
-			{
-				picture && (
+			{picture && (
 				<img
 					src={picture}
 					alt={choice.label}
@@ -68,13 +68,7 @@ function useWikiDataPicture(searchString: string) {
 				const bindings = data?.results?.bindings ?? []
 				const image = bindings[0]?.image?.value
 				if (image) {
-					const img = new Image()
-					img.onload = () => {
-						setImageUrl(image)
-					}
-					img.src = image
-				} else {
-					setImageUrl(null)
+					setImageUrl("/api/image/" + encodeURIComponent(image))
 				}
 			})
 			.catch(() => setImageUrl(null))

@@ -19,6 +19,8 @@ export function QuestionPage() {
 		return null
 	}
 
+	const isLastQuestion = current >= total
+
 	return (
 		<div className={clsx("page", styles.page)}>
 			<div className="backdrop" aria-hidden="true" />
@@ -28,13 +30,10 @@ export function QuestionPage() {
 						<IconHelpHexagonFilled size="36" color="yellow" /> {current}{" "}
 						of {total}
 					</span>
-					{
-						status === AnswerStatus.Unanswered &&
-						question.musicSample == null &&
-						(
+					{status === AnswerStatus.Unanswered &&
+						question.musicSample == null && (
 							<Timer time={12} dispatch={dispatch} />
-						)
-					}
+						)}
 					<span className={styles.paginator}>
 						<IconSparkles size="36" color="yellow" /> {score}
 					</span>
@@ -45,16 +44,25 @@ export function QuestionPage() {
 							<ChoicesBody question={question} />
 						)}
 						{status === AnswerStatus.Correct && (
-							<CorrectAnswerBody dispatch={dispatch} />
+							<CorrectAnswerBody
+								dispatch={dispatch}
+								isLastQuestion={isLastQuestion}
+							/>
 						)}
 						{status === AnswerStatus.Incorrect && (
-							<IncorrectAnswerBody dispatch={dispatch} />
+							<IncorrectAnswerBody
+								dispatch={dispatch}
+								isLastQuestion={isLastQuestion}
+							/>
 						)}
 						{status === AnswerStatus.TimedOut && (
-							<TimedOutAnswerBody dispatch={dispatch} />
+							<TimedOutAnswerBody
+								dispatch={dispatch}
+								isLastQuestion={isLastQuestion}
+							/>
 						)}
 						{status === AnswerStatus.Done && (
-							<DoneAnwserBody dispatch={dispatch} />
+							<DoneAnwserBody dispatch={dispatch} score={score} />
 						)}
 					</div>
 				</main>
@@ -65,7 +73,7 @@ export function QuestionPage() {
 
 function ChoicesBody({ question }: { question: Question }) {
 	return (
-		<>
+		<div className={styles.choicesBody}>
 			<h2 className={styles.question}>
 				{question.text}
 				<Iframe question={question} />
@@ -73,60 +81,99 @@ function ChoicesBody({ question }: { question: Question }) {
 			{question.choices.map((choice) => (
 				<Choice key={choice.uri} choice={choice} />
 			))}
-		</>
+		</div>
 	)
 }
 
-function CorrectAnswerBody({ dispatch }: { dispatch: React.Dispatch<Action> }) {
+function CorrectAnswerBody({
+	dispatch,
+	isLastQuestion,
+}: {
+	dispatch: React.Dispatch<Action>
+	isLastQuestion: boolean
+}) {
 	return (
 		<div className={styles.answerBody}>
-			<h2 className={styles.correct}>Correct!</h2>
-			<p>Well done, you got the right answer.</p>
-			<button onClick={() => getQuestion(dispatch)}>Next</button>
+			<h2 className={styles.correct}>Goed gedaan!</h2>
+			<p>
+				Je hebt een <IconSparkles size={72} color="yellow" /> verdiend!
+			</p>
+			<NextButton dispatch={dispatch} isLastQuestion={isLastQuestion} />
 		</div>
 	)
 }
 
 function IncorrectAnswerBody({
 	dispatch,
+	isLastQuestion,
 }: {
 	dispatch: React.Dispatch<Action>
+	isLastQuestion: boolean
 }) {
 	return (
 		<div className={styles.answerBody}>
-			<h2 className={styles.incorrect}>Incorrect</h2>
-			<p>Sorry, that was not the right answer. Better luck next time!</p>
-			<button onClick={() => getQuestion(dispatch)}>Next</button>
+			<h2 className={styles.correct}>Helaas!</h2>
+			<p>
+				Je hebt geen <IconSparkles size={72} color="gray" /> verdiend
+			</p>
+			<NextButton dispatch={dispatch} isLastQuestion={isLastQuestion} />
 		</div>
 	)
 }
 
 function TimedOutAnswerBody({
 	dispatch,
+	isLastQuestion,
 }: {
 	dispatch: React.Dispatch<Action>
+	isLastQuestion: boolean
 }) {
 	return (
 		<div className={styles.answerBody}>
-			<h2 className={styles.incorrect}>Timed out</h2>
-			<p>Sorry, you were too late! Better luck next time!</p>
-			<button onClick={() => getQuestion(dispatch)}>Next</button>
+			<h2 className={styles.correct}>
+				Oeps!
+				<br />
+				De tijd is verstreken
+			</h2>
+			<p>
+				Je hebt geen <IconSparkles size={72} color="gray" /> verdiend
+			</p>
+			<NextButton dispatch={dispatch} isLastQuestion={isLastQuestion} />
 		</div>
 	)
 }
 
-function DoneAnwserBody({ dispatch }: { dispatch: React.Dispatch<Action> }) {
+function NextButton({
+	dispatch,
+	isLastQuestion,
+}: {
+	dispatch: React.Dispatch<Action>
+	isLastQuestion: boolean
+}) {
+	return (
+		<button className={styles.button} onClick={() => getQuestion(dispatch)}>
+			{isLastQuestion ? "Bekijk je eindscore!" : "Volgende vraag"}
+		</button>
+	)
+}
+
+function DoneAnwserBody({ dispatch, score }: { dispatch: React.Dispatch<Action>, score: number }) {
 	return (
 		<div className={styles.answerBody}>
-			<h2 className={styles.done}>Game DONE</h2>
-			<p>You have already completed this game.</p>
+			<h2 className={styles.correct}>
+				Score
+			</h2>
+			<p>
+				Je hebt totaal <span style={{ color: 'yellow' }}>{score}</span> <IconSparkles size={72} color="yellow" /> verdiend
+			</p>
+			{/* <NextButton dispatch={dispatch} isLastQuestion={isLastQuestion} /> */}
 		</div>
 	)
 }
 
 function getQuestion(dispatch: React.Dispatch<Action>) {
-	fetch('/api/question/4')
-	// fetch("/api/random-question")
+	// fetch('/api/question/4')
+	fetch("/api/random-question")
 		.then((res) => res.json())
 		.then((question: Question) => {
 			dispatch({ type: Actions.SET_QUESTION, payload: { question } })

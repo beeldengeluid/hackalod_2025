@@ -1,11 +1,16 @@
-import Debug from 'debug'
+import Debug from "debug"
 const debug = Debug("hackalod:app")
 
 import express, { Request, Response } from "express"
 import { generateRandomName } from "./randomName"
-import {loadQuestion} from "./questionGenerator"
-import {getAlbumTracks} from "./muziekWeb"
-import { dummyQuestions } from './dummy-questions'
+import { loadQuestion } from "./questionGenerator"
+import { getAlbumTracks } from "./muziekWeb"
+import { dummyQuestions } from "./dummy-questions"
+import { mkdir, stat, writeFile } from "fs/promises"
+import { join } from "path"
+import { createHash } from "crypto"
+
+const CACHE_DIR = join(process.cwd(), "../../", "data", "image-cache")
 
 export function createApp() {
 	const app = express()
@@ -20,19 +25,43 @@ export function createApp() {
 	})
 
 	app.get("/api/random-question", async (_req: Request, res: Response) => {
-		const question = dummyQuestions[Math.floor(Math.random() * dummyQuestions.length)];
-		debug("Serving question:", question);
-		res.json(question);
+		const question =
+			dummyQuestions[Math.floor(Math.random() * dummyQuestions.length)]
+		debug("Serving question:", question)
+		res.json(question)
 	})
 
 	app.get("/api/get-album/:album_id", async (_req: Request, res: Response) => {
-		const triples = await getAlbumTracks(_req.params.album_id);
-		res.json(triples);
+		const triples = await getAlbumTracks(_req.params.album_id)
+		res.json(triples)
 	})
 
 	app.get("/api/question/:num", async (_req: Request, res: Response) => {
-		const triples = await loadQuestion(parseInt(_req.params.num));
-		res.json(triples);
+		const triples = await loadQuestion(parseInt(_req.params.num))
+		res.json(triples)
+	})
+
+	/**
+	 * Caches images fetched from external URLs to reduce load times and bandwidth.
+	 */
+	app.get("/api/image/:url", async (req: Request, res: Response) => {
+		const url = decodeURIComponent(req.params.url)
+		const hash = createHash("sha256").update(url).digest("hex")
+		const target = join(CACHE_DIR, `${hash}.jpg`)
+
+		try {
+			await stat(target)
+			debug(`Cache hit for image "${url}"`)
+		} catch {
+			const res = await fetch(url)
+			if (!res.ok) throw new Error(`Failed to fetch ${url}`)
+			const buf = Buffer.from(await res.arrayBuffer())
+			await mkdir(CACHE_DIR, { recursive: true })
+			await writeFile(target, buf)
+			debug(`Cached image "${url}" to "${target}"`)
+		}
+
+		res.sendFile(target)
 	})
 
 	// app.get("/api/question1", async (_req: Request, res: Response) => {
@@ -45,7 +74,7 @@ export function createApp() {
 	// 	res.json(question);
 	// })
 
-    // app.get("/api/question3", async (_req: Request, res: Response) => {
+	// app.get("/api/question3", async (_req: Request, res: Response) => {
 	// 	const question = await generateGuessPerformerAtfFestival();
 	// 	res.json(question);
 	// })

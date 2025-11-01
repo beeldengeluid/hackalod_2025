@@ -179,7 +179,7 @@ prefix vocab: <https://data.muziekweb.nl/vocab/>
 prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 prefix skos: <http://www.w3.org/2004/02/skos/core#>
-  prefix sdo: <https://schema.org/>
+prefix sdo: <https://schema.org/>
 SELECT DISTINCT ?track_uri ?track_title ?embed_url
 where {
   ?track sdo:inAlbum <FAMOUS_ALBUM> ;
@@ -196,15 +196,21 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX geof: <http://www.opengis.net/def/function/geosparql/>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
 
 SELECT ?location ?locationLabel ?performerName
 WHERE {
   ?performer a schema:MusicGroup .
     ?performer owl:sameAs ?wikiPerformer .
     ?wikiPerformer wdt:P740 ?location .
-    ?location rdfs:label ?locationLabel .
+    ?location rdfs:label ?locationLabel ;
+        geo:hasGeometry/geo:asWKT ?wkt ;
      OPTIONAL { ?performer schema:name ?performerName }
      OPTIONAL { ?performer rdfs:label ?performerName }
+     
+    BIND("POLYGON ((7.450132782237404 53.488219420821025, 5.934482728991128 53.526576262999555, 4.762809992792825 53.1607830824469, 3.1934134837582917 51.311316239017856, 4.10710323216918 51.21041663847805, 4.924049360159927 51.398583470995476, 5.751744779309121 51.109295471862765, 5.536758956152738 50.71620582483206, 6.106471387515626 50.71620582483206, 6.256961463724224 51.351614079459665, 6.106471387515626 51.81914201552789, 6.880420350875482 51.9253306941452, 7.450132782237404 53.488219420821025))"^^geo:wktLiteral AS ?nlBB) 
+	filter(geof:sfWithin(?wkt, ?nlBB))
 }
 order by rand()
 limit 1`
@@ -215,13 +221,17 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX geof: <http://www.opengis.net/def/function/geosparql/>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
 
 SELECT (?location AS ?uri) (?locationLabel AS ?label) 
 WHERE {
-  ?performer a schema:MusicGroup .
-    ?performer owl:sameAs ?wikiPerformer .
-    ?wikiPerformer wdt:P740 ?location .
-    ?location rdfs:label ?locationLabel .
+  ?location a geo:Feature ;
+    geo:hasGeometry/geo:asWKT ?wkt ;
+       rdfs:label ?locationLabel .
+  
+    BIND("POLYGON ((7.450132782237404 53.488219420821025, 5.934482728991128 53.526576262999555, 4.762809992792825 53.1607830824469, 3.1934134837582917 51.311316239017856, 4.10710323216918 51.21041663847805, 4.924049360159927 51.398583470995476, 5.751744779309121 51.109295471862765, 5.536758956152738 50.71620582483206, 6.106471387515626 50.71620582483206, 6.256961463724224 51.351614079459665, 6.106471387515626 51.81914201552789, 6.880420350875482 51.9253306941452, 7.450132782237404 53.488219420821025))"^^geo:wktLiteral AS ?nlBB) 
+	filter(geof:sfWithin(?wkt, ?nlBB))
 }
 order by rand()
 limit 3`

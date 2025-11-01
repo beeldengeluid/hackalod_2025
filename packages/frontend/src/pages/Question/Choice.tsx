@@ -22,7 +22,9 @@ export function Choice({ choice }: { choice: Choice }) {
 		setIsPopupOpen(true)
 	}
 
-	const handlePopupClick = (event: MouseEvent<HTMLDivElement | HTMLButtonElement>) => {
+	const handlePopupClick = (
+		event: MouseEvent<HTMLDivElement | HTMLButtonElement>,
+	) => {
 		event.stopPropagation()
 	}
 
@@ -33,7 +35,10 @@ export function Choice({ choice }: { choice: Choice }) {
 		>
 			<span className={styles.checkboxText}>{choice.label}</span>
 			{picture && (
-				<div className={styles.imageWrapper} onClick={(event) => event.stopPropagation()}>
+				<div
+					className={styles.imageWrapper}
+					onClick={(event) => event.stopPropagation()}
+				>
 					<img
 						src={picture}
 						alt={choice.label}
@@ -122,11 +127,16 @@ function useWikiDataPicture(searchString: string) {
 				const bindings = data?.results?.bindings ?? []
 				const image = bindings[0]?.image?.value
 				const item = bindings[0]?.item?.value
-				if (image && item) {
-					setAsset({
-						imageUrl: "/api/image/" + encodeURIComponent(image),
-						entityUrl: item,
-					})
+				const img = new Image()
+				img.src = image
+				img.onerror = () => setAsset(null)
+				img.onload = () => {
+					if (image && item) {
+						setAsset({
+							imageUrl: "/api/image/" + encodeURIComponent(image),
+							entityUrl: item,
+						})
+					}
 				}
 			})
 			.catch(() => setAsset(null))

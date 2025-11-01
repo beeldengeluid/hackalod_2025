@@ -29,6 +29,34 @@
 	min-height: 0;
 }
 
+.loadingMain {
+	display: flex;
+	min-height: 0;
+}
+
+.loadingCard {
+	align-items: center;
+	flex-direction: row;
+	gap: 1.5rem;
+	justify-content: center;
+}
+
+.loader {
+	animation: spin 900ms linear infinite;
+	border: 0.35rem solid rgba(226, 232, 240, 0.2);
+	border-top-color: #facc15;
+	border-radius: 50%;
+	height: 3.5rem;
+	width: 3.5rem;
+}
+
+.loaderText {
+	color: rgba(226, 232, 240, 0.85);
+	font-size: 1.35rem;
+	font-weight: 600;
+	letter-spacing: 0.05em;
+}
+
 .header.card {
 	border: none;
 	display: flex;
@@ -105,4 +133,38 @@
 	text-decoration: underline;
 	text-decoration-thickness: .5rem;
 	text-underline-offset: 1.5rem;
+}
+
+@media (max-height: 1000px) {
+	.page {
+		--offset: 2rem;
+	}
+
+	.question {
+		font-size: 2rem;
+	}
+	
+	.card {
+		padding-top: 3rem;
+		padding-bottom: 1rem;
+	}
+
+	.answerBody p {
+		font-size: 2.5rem;
+	}
+
+	.correct {
+		font-size: 3.5rem;
+		text-decoration-thickness: .3rem;;
+		text-underline-offset: 1rem;
+	}
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
 }

@@ -11,17 +11,40 @@ import styles from "./index.module.css"
 import { Iframe } from "./Iframe"
 import { Button } from "../../components/Button"
 import { SESSION_STORAGE_KEY, TIMEOUT_SECONDS } from "../../consts"
+import { Link } from "react-router-dom"
 
 export function QuestionPage() {
 	const dispatch = useContext(DispatchContext)
 	const { current, total, question, score, status } = useContext(StateContext)
+	const isLastQuestion = current >= total
 
-	if (!question) {
+	if (!question && !isLastQuestion) {
 		getQuestion(dispatch)
-		return null
 	}
 
-	const isLastQuestion = current >= total
+	if (!question && !isLastQuestion) return ( 
+		<div className={clsx("page", styles.page)}>
+			<div className="backdrop" aria-hidden="true" />
+			<div className={styles.container}>
+				<header className={clsx(styles.card, styles.header)}>
+					<span className={styles.paginator}>
+						<IconHelpHexagonFilled size="36" color="yellow" /> {current}{" "}
+						of {total}
+					</span>
+					<span className={styles.paginator}>
+						<IconSparkles size="36" color="yellow" /> {score}
+					</span>
+				</header>
+				<main className={styles.loadingMain}>
+					<div className={clsx(styles.card, styles.loadingCard)}>
+						<div className={styles.loader} aria-hidden="true" />
+						<span className={styles.loaderText}>Vraag wordt geladen…</span>
+					</div>
+				</main>
+			</div>
+		</div>
+	)
+
 
 	return (
 		<div className={clsx("page", styles.page)}>
@@ -153,7 +176,16 @@ function NextButton({
 	isLastQuestion: boolean
 }) {
 	return (
-		<Button onClick={() => getQuestion(dispatch)}>
+		<Button onClick={() => {
+			console.log({ isLastQuestion})
+			if (isLastQuestion) {
+				dispatch({ type: Actions.SET_QUESTION, payload: { question: undefined } })
+			} else {
+				getQuestion(dispatch)
+			}
+
+
+		}}>
 			{isLastQuestion ? "Bekijk je eindscore!" : "Volgende vraag"}
 		</Button>
 	)
@@ -191,7 +223,7 @@ function DoneAnwserBody({ dispatch, score }: { dispatch: React.Dispatch<Action>,
 				</span>
 				{
 					position &&
-					<span>Je staat op de <span style={{ color: "yellow"}}>{position}de</span> plaats!</span>
+					<span>Je staat op de <Link style={{ textDecoration: 'none'}} to="/leaderboard"><span style={{ color: "yellow"}}>{position}de</span></Link> plaats!</span>
 				}
 			</p>
 			<Button onClick={() => dispatch({ type: Actions.RESET })}>

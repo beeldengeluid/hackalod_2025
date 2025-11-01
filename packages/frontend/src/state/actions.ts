@@ -17,7 +17,7 @@ export type Action =
 	| {
 			type: Actions.SET_QUESTION
 			payload: {
-				question: Question
+				question: Question | undefined
 			}
 	  }
 	| {

@@ -29,12 +29,14 @@ Then to start the backend server run:
 
 ```sh
 npm run dev --workspace backend
+DEBUG=hackalod:* npm run dev --workspace @hackalod2025/backend
 ```
 
 You'll see the address the API is running. You can copy paste it to your browser
 
 ```sh
 npm run dev --workspace frontend
+DEBUG=hackalod:* npm run dev --workspace @hackalod2025/frontend
 ```
 
 You'll see the address the game UI is running. You can copy paste it to your browser

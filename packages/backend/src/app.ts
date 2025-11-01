@@ -12,6 +12,10 @@ import { createHash } from "crypto"
 import { handleLeaderboard } from "./handle-leaderboard"
 
 const CACHE_DIR = join(process.cwd(), "../../", "data", "image-cache")
+const cacheDirReady = mkdir(CACHE_DIR, { recursive: true }).catch((error) => {
+	debug("Failed to prepare cache directory", error)
+	throw error
+})
 
 export function createApp() {
 	const app = express()
@@ -47,7 +51,7 @@ export function createApp() {
 	})
 
 	app.get("/api/image/:url", async (req, res, next) => {
-		const url = decodeURI(req.params.url)
+		const url = decodeURIComponent(req.params.url)
 		const target = join(
 			CACHE_DIR,
 			`${createHash("sha256").update(url).digest("hex")}.jpg`,
@@ -61,6 +65,7 @@ export function createApp() {
 
 		try {
 			await job
+			await cacheDirReady
 			res.sendFile(target)
 		} catch (err) {
 			next(err)
@@ -73,6 +78,7 @@ export function createApp() {
 const inFlight = new Map<string, Promise<void>>()
 
 async function ensureCached(url: string, target: string) {
+	await cacheDirReady
 	try {
 		await stat(target)
 		return

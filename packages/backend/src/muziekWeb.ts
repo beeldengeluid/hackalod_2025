@@ -1,3 +1,6 @@
+import Debug from 'debug'
+const debug = Debug("hackalod:muziekweb")
+
 import { GraphDBResponse } from "./common/interfaces"
 
 const SPARQL_URL =
@@ -26,7 +29,7 @@ const DUMMY_MW_INTERNAL_QUERY = {
 }
 
 export async function runMuziekWebQuery(query: string) {
-	console.log(query)
+	debug(query)
 	try {
 		const response = await fetch(SPARQL_URL, {
 			method: "POST",
@@ -105,7 +108,7 @@ export async function runInternalMuziekWebQuery(query: string) {
 		}
 
 		const result = (await response.json()) as { result: GraphDBResponse }[]
-		console.log(result)
+		debug(result)
 		return result[0].result.results.bindings as unknown as InternalMuziekWebQueryResponse[]
 	} catch (error: any) {
 		console.error("He getsie een error: " + error.message)
@@ -113,7 +116,7 @@ export async function runInternalMuziekWebQuery(query: string) {
 }
 
 export async function getAlbumTracks(albumId: string) {
-	console.log("Getting album tracks for: " + albumId)
+	debug("Getting album tracks for: " + albumId)
 	const payload = {
 		endpoint: "MUZIEKWEB_INTERNAL",
 		parameters: [
@@ -134,13 +137,13 @@ export async function getAlbumTracks(albumId: string) {
 			},
 			body: JSON.stringify(payload),
 		})
-		console.log(response)
+		debug(response)
 		if (!response.ok) {
 			throw new Error(`Response status: ${response.status}`)
 		}
 
 		const result = await response.json()
-		console.log(result)
+		debug(result)
 		return result
 	} catch (error: any) {
 		console.error("He getsie een error: " + error.message)

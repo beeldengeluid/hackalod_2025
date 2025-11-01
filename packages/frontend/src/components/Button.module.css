@@ -1,0 +1,25 @@
+.button {
+	align-items: center;
+	appearance: none;
+	background: linear-gradient(135deg, #a855f7, #38bdf8);
+	border-radius: 999px;
+	border: none;
+	box-shadow: 0 6px 24px rgba(56, 189, 248, 0.35);
+	color: #0f172a;
+	cursor: pointer;
+	display: inline-flex;
+	font-size: 2rem;
+	font-weight: 600;
+	justify-content: center;
+	letter-spacing: 0.02em;
+	padding: 1rem 2.5rem;
+	text-decoration: none;
+	transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.5s ease;
+}
+
+.button.disabled {
+	pointer-events: none;
+	opacity: 0.35;
+	cursor: default;
+	filter: blur(4px);
+}

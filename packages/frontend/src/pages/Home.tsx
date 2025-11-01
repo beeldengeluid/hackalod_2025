@@ -1,40 +1,11 @@
-import { useState, useCallback, useEffect } from "react"
-import { Link } from "react-router-dom"
-
-type NameResponse = {
-	name: string
-}
+import { useState } from "react"
+import { useNavigate } from "react-router-dom"
+import { Button } from "../components/Button"
+import { SESSION_STORAGE_KEY } from "../consts"
 
 export function HomePage() {
-	const [name, setName] = useState<string | null>(null)
-	const [error, setError] = useState<string | null>(null)
-	const [isLoading, setIsLoading] = useState(false)
-
-	const loadName = useCallback(async () => {
-		setIsLoading(true)
-		setError(null)
-
-		try {
-			const response = await fetch("/random-name")
-
-			if (!response.ok) {
-				throw new Error(`Request failed with status ${response.status}`)
-			}
-
-			const data: NameResponse = await response.json()
-			setName(data.name)
-		} catch (err) {
-			console.error("Failed to fetch random name", err)
-			setName(null)
-			setError("We could not reach the name generator. Try again?")
-		} finally {
-			setIsLoading(false)
-		}
-	}, [])
-
-	useEffect(() => {
-		void loadName()
-	}, [loadName])
+	const navigate = useNavigate()
+	const [name, setName] = useState<string>("")
 
 	return (
 		<div className="page">
@@ -42,30 +13,23 @@ export function HomePage() {
 			<main className="card">
 				<p className="eyebrow">Hackalod 2025</p>
 				<h1 className="headline">
-					{isLoading
-						? "Finding a name..."
-						: name
-						? `Hallo, ${name}`
-						: "Hallo, mysterious stranger"}
+					Welkom, <input type="text"
+						className="name-input"
+						placeholder="<naam>"
+						value={name}
+						onChange={(e) => setName(() => {
+							sessionStorage.setItem(SESSION_STORAGE_KEY, e.target.value)
+							return e.target.value
+						})}
+					/>
 				</h1>
-				<p className="lede">Laten we er een mooie HackaLOD van maken!</p>
-				{error && (
-					<p className="error" role="status">
-						{error}
-					</p>
-				)}
 				<div className="actions">
-					<button
-						className="action"
-						type="button"
-						onClick={loadName}
-						disabled={isLoading}
+					<Button
+						disabled={name === ""}
+						onClick={() => navigate("/question")}
 					>
-						{isLoading ? "Aan het genereren" : "Maak er nog een!"}
-					</button>
-					<Link className="secondary-link" to="/question">
-						Bekijk voorbeeldvraag
-					</Link>
+						Naar het spel	
+					</Button>
 				</div>
 			</main>
 		</div>

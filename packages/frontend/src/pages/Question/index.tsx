@@ -1,6 +1,6 @@
 import { useContext, useEffect, useRef, useState } from "react"
 import clsx from "clsx"
-import { QuestionType, type Question } from "@hackalod2025/common"
+import { questionCases, QuestionType, type Question } from "@hackalod2025/common"
 import { Choice } from "./Choice"
 
 import { AnswerStatus, DispatchContext, StateContext } from "../../state"
@@ -9,6 +9,8 @@ import { Action, Actions } from "../../state/actions"
 
 import styles from "./index.module.css"
 import { Iframe } from "./Iframe"
+import { Button } from "../../components/Button"
+import { SESSION_STORAGE_KEY, TIMEOUT_SECONDS } from "../../consts"
 
 export function QuestionPage() {
 	const dispatch = useContext(DispatchContext)
@@ -32,7 +34,7 @@ export function QuestionPage() {
 					</span>
 					{status === AnswerStatus.Unanswered &&
 						question.musicSample == null && (
-							<Timer time={12} dispatch={dispatch} />
+							<Timer time={TIMEOUT_SECONDS} dispatch={dispatch} />
 						)}
 					<span className={styles.paginator}>
 						<IconSparkles size="36" color="yellow" /> {score}
@@ -151,29 +153,75 @@ function NextButton({
 	isLastQuestion: boolean
 }) {
 	return (
-		<button className={styles.button} onClick={() => getQuestion(dispatch)}>
+		<Button onClick={() => getQuestion(dispatch)}>
 			{isLastQuestion ? "Bekijk je eindscore!" : "Volgende vraag"}
-		</button>
+		</Button>
 	)
 }
 
 function DoneAnwserBody({ dispatch, score }: { dispatch: React.Dispatch<Action>, score: number }) {
+	const [position, setPosition] = useState<number>();
+
+	useEffect(() => {
+		fetch('/api/leaderboard', {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json',
+			},
+			body: JSON.stringify({
+				userName: sessionStorage.getItem(SESSION_STORAGE_KEY) ?? 'Onbekende Speler',
+				score,
+			}),
+		})
+			.then((res) => res.json())
+			.then((data) => {
+				console.log('Leaderboard updated:', data)
+				setPosition(data.userPosition);
+			})
+	}, [])
+
 	return (
 		<div className={styles.answerBody}>
 			<h2 className={styles.correct}>
-				Score
+				Score {sessionStorage.getItem(SESSION_STORAGE_KEY)}
+			</h2>
+			<p style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+				<span>
+				Je hebt totaal <span style={{ color: 'yellow' }}>{score}</span> <IconSparkles size={72} color="yellow" /> verdiend
+				</span>
+				{
+					position &&
+					<span>Je staat op de <span style={{ color: "yellow"}}>{position}de</span> plaats!</span>
+				}
+			</p>
+			<Button onClick={() => dispatch({ type: Actions.RESET })}>
+				Speel nog een keer!
+			</Button>
+		</div>
+	)
+}
+
+function LeaderBoardBody({ dispatch, score }: { dispatch: React.Dispatch<Action>, score: number }) {
+	return (
+		<div className={styles.answerBody}>
+			<h2 className={styles.correct}>
+				Score {sessionStorage.getItem(SESSION_STORAGE_KEY)}
 			</h2>
 			<p>
 				Je hebt totaal <span style={{ color: 'yellow' }}>{score}</span> <IconSparkles size={72} color="yellow" /> verdiend
 			</p>
-			{/* <NextButton dispatch={dispatch} isLastQuestion={isLastQuestion} /> */}
+			<Button onClick={() => dispatch({ type: Actions.RESET })}>
+				Speel nog een keer!
+			</Button>
 		</div>
 	)
 }
 
 function getQuestion(dispatch: React.Dispatch<Action>) {
-	// fetch('/api/question/3')
-	fetch('/api/question/4')
+	const questionCaseIndex = Math.floor(Math.random() * questionCases.length)
+	const questionCase = questionCases[questionCaseIndex]
+
+	fetch(`/api/question/${questionCase}`)
 	// fetch("/api/random-question")
 		.then((res) => res.json())
 		.then((question: Question) => {

@@ -55,6 +55,18 @@ export function reducer(state: State, action: Action): State {
 			}
 			break
 		}
+
+		case Actions.RESET: {
+			nextState = {
+				...state,
+				current: 0,
+				score: 0,
+				question: undefined,
+				status: AnswerStatus.Unset
+			}
+
+			break
+		}
 	}
 
 	return nextState

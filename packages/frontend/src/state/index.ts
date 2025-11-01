@@ -1,6 +1,7 @@
 import { createContext, Dispatch } from "react"
 import type { Action } from "./actions"
 import { type Choice, type Question } from "@hackalod2025/common"
+import { QUESTION_COUNT } from "../consts"
 
 export enum AnswerStatus {
 	Correct = "correct",
@@ -28,7 +29,7 @@ export const initialState: State = {
 	question: undefined,
 	score: 0,
 	status: AnswerStatus.Unset,
-	total: 3,
+	total: QUESTION_COUNT,
 }
 
 // Create the contexts

@@ -300,25 +300,12 @@ export async function generateGuessTrackPerformer() {
 
 export async function loadQuestion(num: number) {
 	debug("Loading question #" + num)
-	let question: Question | null = null
-	switch (num) {
-		case 1:
-			question = generateGuessIncorrectBirthYearQ()
-			break
-		case 3:
-			question = generateGuessPerformerAtfFestival()
-			break
-		case 4:
-			question = generateGuessTrackPerformer()
-			break
-		case 5:
-			question = generateGuessThePlaceOfOriginOfABand()
-        break
-        case 6:
-			question = generateGuessLastPlaceTop2000()
-			break
-	}
-	return question
+
+	if (num === 1) return generateGuessIncorrectBirthYearQ()
+	if (num === 3) return generateGuessPerformerAtfFestival()
+	if (num === 4) return generateGuessTrackPerformer()
+	if (num === 5) return generateGuessThePlaceOfOriginOfABand()
+	if (num === 6) return generateGuessLastPlaceTop2000()
 }
 
 /*

@@ -1,4 +1,4 @@
-import Debug from 'debug'
+import Debug from "debug"
 const debug = Debug("hackalod:muziekweb")
 
 import { GraphDBResponse } from "./common/interfaces"
@@ -13,6 +13,7 @@ const TRACKS_QUERY_URL =
 
 const WM_INTERNAL_QUERY_URL =
 	"https://sandbox-search.rdlabs.beeldengeluid.nl/api/v1.1/lod/sparql-direct"
+
 const DUMMY_TRACK_QUERY = {
 	endpoint: "MUZIEKWEB_INTERNAL",
 	parameters: [
@@ -80,15 +81,15 @@ export async function runGraphDBWebQuery(query: string) {
 
 interface InternalMuziekWebQueryResponse {
 	person: {
-		type: 'uri'
+		type: "uri"
 		value: string
-	},
+	}
 	person_name: {
-		type: 'literal'
+		type: "literal"
 		value: string
-	},
+	}
 	album: {
-		type: 'uri'
+		type: "uri"
 		value: string
 	}
 }
@@ -109,7 +110,8 @@ export async function runInternalMuziekWebQuery(query: string) {
 
 		const result = (await response.json()) as { result: GraphDBResponse }[]
 		debug(result)
-		return result[0].result.results.bindings as unknown as InternalMuziekWebQueryResponse[]
+		return result[0].result.results
+			.bindings as unknown as InternalMuziekWebQueryResponse[]
 	} catch (error: any) {
 		console.error("He getsie een error: " + error.message)
 	}

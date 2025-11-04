@@ -89,7 +89,7 @@ async function ensureCached(url: string, target: string) {
 			return
 		}
 		const buf = Buffer.from(await res.arrayBuffer())
-		await mkdir(CACHE_DIR, { recursive: true })
+		// await mkdir(CACHE_DIR, { recursive: true })
 		await writeFile(target, buf)
 	}
 }

@@ -45,7 +45,6 @@ export function QuestionPage() {
 		</div>
 	)
 
-
 	return (
 		<div className={clsx("page", styles.page)}>
 			<div className="backdrop" aria-hidden="true" />
@@ -56,7 +55,7 @@ export function QuestionPage() {
 						of {total}
 					</span>
 					{status === AnswerStatus.Unanswered &&
-						question.musicSample == null && (
+						question?.musicSample == null && (
 							<Timer time={TIMEOUT_SECONDS} dispatch={dispatch} />
 						)}
 					<span className={styles.paginator}>
@@ -96,7 +95,8 @@ export function QuestionPage() {
 	)
 }
 
-function ChoicesBody({ question }: { question: Question }) {
+function ChoicesBody({ question }: { question: Question | undefined }) {
+	if (!question) return null
 	return (
 		<div className={styles.choicesBody}>
 			<h2 className={styles.question}>
@@ -222,8 +222,9 @@ function DoneAnwserBody({ dispatch, score }: { dispatch: React.Dispatch<Action>,
 				Je hebt totaal <span style={{ color: 'yellow' }}>{score}</span> <IconSparkles size={72} color="yellow" /> verdiend
 				</span>
 				{
-					position &&
-					<span>Je staat op de <Link style={{ textDecoration: 'none'}} to="/leaderboard"><span style={{ color: "yellow"}}>{position}de</span></Link> plaats!</span>
+					(position != null && position > 0 && position < 10)
+						? <span>Je staat op de <Link style={{ textDecoration: 'none'}} to="/leaderboard"><span style={{ color: "yellow"}}>{position}de</span></Link> plaats!</span>
+						: <span>Helaas niet bij de <Link className={styles.yellow} to="/leaderboard">eerst 10</Link></span>
 				}
 			</p>
 			<Button onClick={() => dispatch({ type: Actions.RESET })}>

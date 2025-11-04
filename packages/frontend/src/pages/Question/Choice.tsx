@@ -122,14 +122,21 @@ function useWikiDataPicture(searchString: string) {
 				Accept: "application/sparql-results+json",
 			},
 		})
-			.then((res) => res.json())
+			.then((res) => {
+				// console.log(res.status)
+				return res.json()
+			})
 			.then((data) => {
 				const bindings = data?.results?.bindings ?? []
 				const image = bindings[0]?.image?.value
 				const item = bindings[0]?.item?.value
 				const img = new Image()
 				img.src = image
-				img.onerror = () => setAsset(null)
+				img.onerror = (err) => {
+					// console.log("ERRRR", err)
+					setAsset(null)
+				}
+
 				img.onload = () => {
 					if (image && item) {
 						setAsset({

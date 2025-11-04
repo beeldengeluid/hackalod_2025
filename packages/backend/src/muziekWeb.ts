@@ -99,7 +99,7 @@ export async function runInternalMuziekWebQuery(query: string) {
 			headers: {
 				"Content-Type": "application/json",
 				Authorization:
-					"Basic aGFja2Fsb2RfMjAyNTpIQUNLLWxvb2Z0LTReX19ebWFhay1lci1XYXQtdmFu",
+					"Basic aGFja2Fsb2RfMjAyNTpIQUNLLWxvb2Z0LTReX19ebWFhay1lci1asdfasdfadsfasdfmFu",
 			},
 			body: JSON.stringify({ endpoint: "MUZIEKWEB_INTERNAL", query }),
 		})

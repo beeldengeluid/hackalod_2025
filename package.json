@@ -1,21 +1,16 @@
 {
-  "name": "lodster",
-  "private": true,
-  "version": "1.0.0",
-  "workspaces": [
-    "packages/*"
-  ],
-  "scripts": {
-    "dev:frontend": "npm run dev --workspace @lodster/frontend",
-    "dev:backend": "DEBUG=hackalod:generate:* npm run dev --workspace @lodster/backend",
-    "test": "npm run test --workspace @lodster/backend"
-  },
-  "devDependencies": {
-    "@types/debug": "^4.1.12",
-    "debug": "^4.4.3",
-    "typescript": "^5.9.3"
-  },
-  "dependencies": {
-    "clsx": "^2.1.1"
-  }
+	"name": "lodster",
+	"private": true,
+	"version": "1.0.0",
+	"workspaces": [
+		"packages/*"
+	],
+	"scripts": {
+		"build:frontend": "npm run build --workspace @lodster/frontend",
+		"build:image": "./scripts/build-docker-image.sh",
+		"dev:frontend": "npm run dev --workspace @lodster/frontend",
+		"dev:backend": "DEBUG=hackalod:generate:* npm run dev --workspace @lodster/backend",
+		"test": "npm run test --workspace @lodster/backend",
+		"types:backend": "npm run types --workspace @lodster/backend"
+	}
 }

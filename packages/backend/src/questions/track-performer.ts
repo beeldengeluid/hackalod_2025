@@ -54,6 +54,7 @@ export async function generateGuessTrackPerformer(config: QuestionConfig): Promi
 		text: config.questionText(),
 		choices: finalChoices,
 		anwser: finalChoices[0],
+		// @ts-ignore
 		musicSample: trackTriples[0].embed_url.value,
 	}
 }

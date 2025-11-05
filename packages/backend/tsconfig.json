@@ -1,10 +1,18 @@
 {
-	"extends": "../../tsconfig.base.json",
 	"compilerOptions": {
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
 		"lib": ["ES2020"],
-		"types": ["node"],
+		"module": "ESNext",
+		"moduleDetection": "force",
+		"moduleResolution": "Node",
 		"outDir": "dist",
+		"resolveJsonModule": true,
 		"rootDir": "src",
+		"skipLibCheck": true,
+		"strict": true,
+		"target": "ES2020",
+		"types": ["node"],
 	},
 	"include": ["src/**/*.ts"],
 	"exclude": ["dist"]

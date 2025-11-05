@@ -5,6 +5,7 @@ import { DispatchContext } from "../../state"
 import { Actions } from "../../state/actions"
 
 import styles from "./Choice.module.css"
+import { THUMBNAIL_WIDTH } from "../../consts"
 
 export function Choice({ choice }: { choice: Choice }) {
 	const dispatch = useContext(DispatchContext)
@@ -130,20 +131,22 @@ function useWikiDataPicture(searchString: string) {
 				const bindings = data?.results?.bindings ?? []
 				const image = bindings[0]?.image?.value
 				const item = bindings[0]?.item?.value
-				const img = new Image()
-				img.src = image
-				img.onerror = (err) => {
-					// console.log("ERRRR", err)
-					setAsset(null)
+				const createThumbnailUrl = (rawUrl: string) => {
+					try {
+						const url = new URL(rawUrl)
+						url.searchParams.set("width", String(THUMBNAIL_WIDTH))
+						return url.toString()
+					} catch {
+						return rawUrl
+					}
 				}
 
-				img.onload = () => {
-					if (image && item) {
-						setAsset({
-							imageUrl: "/api/image/" + encodeURIComponent(image),
-							entityUrl: item,
-						})
-					}
+				if (image && item) {
+					const thumbnail = createThumbnailUrl(image)
+					setAsset({
+						imageUrl: "/api/image/" + encodeURIComponent(thumbnail),
+						entityUrl: item,
+					})
 				}
 			})
 			.catch(() => setAsset(null))

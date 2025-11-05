@@ -3,13 +3,14 @@ import React, { useContext, useEffect, useState } from "react"
 import { SESSION_STORAGE_KEY } from "../consts"
 import { UNKNOWN_PLAYER_NAME } from "../consts"
 
-import styles from "./Question/index.module.css"
-import lbStyles from "./Leaderboard.module.css"
 import clsx from "clsx"
 import { Button } from "../components/Button"
 import { DispatchContext } from "../state"
 import { Actions } from "../state/actions"
 import { useNavigate } from "react-router-dom"
+
+import styles from "./Question/index.module.css"
+import lbStyles from "./Leaderboard.module.css"
 
 export function Leaderboard() {
 	const leaderboard = useLeaderboard()

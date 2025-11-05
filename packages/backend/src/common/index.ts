@@ -1,10 +1,22 @@
+import type { Question } from "./interfaces"
 export type { Question, Choice } from "./interfaces"
 
-export enum QuestionType {
-	MULTIPLE_CHOICE = "MULTIPLE_CHOICE",
-	HITSTER = "HITSTER",
-	MAP = "MAP",
-	SAMPLE = "SAMPLE",
+export enum QuestionCase {
+	IncorrectBirthYear,
+	PerformerAtfFestival,
+	TrackPerformer,
+	ThePlaceOfOriginOfABand,
+	LastPlaceTop2000,
 }
 
-export const questionCases = [3, 4, 5, 6]
+export enum QuestionType {
+	MultipleChoice = "MULTIPLE_CHOICE",
+	Sample = "SAMPLE",
+}
+
+export interface QuestionConfig {
+	case: QuestionCase
+	function: (config: QuestionConfig) => Promise<Question | undefined>
+	questionText: (...args: any[]) => string
+	type: QuestionType
+}

@@ -1,5 +1,5 @@
 import Debug from 'debug'
-const debug = Debug("hackalod:leaderboard")
+const debug = Debug("lodster:leaderboard")
 
 import { type Express, type Request, type Response } from "express"
 

@@ -6,7 +6,7 @@ export default defineConfig({
 	plugins: [react()],
 	resolve: {
 		alias: {
-			"@hackalod2025/common": path.resolve(__dirname, "../backend/src/common"),
+			"@lodster/common": path.resolve(__dirname, "../backend/src/common"),
 			'@tabler/icons-react': '@tabler/icons-react/dist/esm/icons/index.mjs',
 		}
 	},

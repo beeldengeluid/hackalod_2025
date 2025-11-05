@@ -28,8 +28,10 @@ export function reducer(state: State, action: Action): State {
 
 		case Actions.SET_QUESTION: {
 			const status = state.current === state.total
-				? AnswerStatus.Done
-				: AnswerStatus.Unanswered
+				? AnswerStatus.Done /** This was the last question, set status to Done to load summary page */
+				: action.payload.question == null
+					? AnswerStatus.Loading /** When loading a question */
+					: AnswerStatus.Unanswered /** New question loaded, set status to Unanswered */
 
 			let current = status === AnswerStatus.Unanswered
 				? state.current + 1

@@ -1,5 +1,5 @@
 import Debug from "debug"
-const debug = Debug("hackalod:muziekweb")
+const debug = Debug("lodster:muziekweb")
 
 import { GraphDBResponse } from "./common/interfaces"
 
@@ -29,8 +29,15 @@ const DUMMY_MW_INTERNAL_QUERY = {
 	query: "SELECT * WHERE { ?s ?p ?o } LIMIT 10",
 }
 
+interface MuziekWebQueryResponse {
+	uri: string
+	label: string
+	bYear: string
+	eYear: string
+}
+
 export async function runMuziekWebQuery(query: string) {
-	debug(query)
+	debug('runMuziekWebQuery', query)
 	try {
 		const response = await fetch(SPARQL_URL, {
 			method: "POST",
@@ -43,8 +50,8 @@ export async function runMuziekWebQuery(query: string) {
 			throw new Error(`Response status: ${response.status}`)
 		}
 
-		const result = await response.json()
-		//console.log(result);
+		const result = await response.json() as MuziekWebQueryResponse[]
+		debug(result)
 		return result
 	} catch (error: any) {
 		console.error("He getsie een error: " + error.message)
@@ -94,6 +101,7 @@ interface InternalMuziekWebQueryResponse {
 	}
 }
 export async function runInternalMuziekWebQuery(query: string) {
+	debug('runInternalMuziekWebQuery', query)
 	try {
 		const response = await fetch(WM_INTERNAL_QUERY_URL, {
 			method: "POST",
@@ -105,11 +113,12 @@ export async function runInternalMuziekWebQuery(query: string) {
 			body: JSON.stringify({ endpoint: "MUZIEKWEB_INTERNAL", query }),
 		})
 		if (!response.ok) {
+			debug('runInternalMuziekWebQuery response not ok', response)
 			throw new Error(`Response status: ${response.status}`)
 		}
 
 		const result = (await response.json()) as { result: GraphDBResponse }[]
-		debug(result)
+		debug('runInternalMuziekWebQuery result ', result)
 		return result[0].result.results
 			.bindings as unknown as InternalMuziekWebQueryResponse[]
 	} catch (error: any) {

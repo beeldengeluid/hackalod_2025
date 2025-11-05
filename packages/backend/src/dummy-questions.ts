@@ -2,7 +2,7 @@ import { QuestionType } from "./common"
 import { Question } from "./common/interfaces"
 
 const question1: Question = {
-	type: QuestionType.MULTIPLE_CHOICE,
+	type: QuestionType.MultipleChoice,
 	text: "Wat is de hoofdstad van Nederland?",
 	choices: [
 		{ uri: "urn:city:amsterdam", label: "Amsterdam", hasHint: false },
@@ -14,7 +14,7 @@ const question1: Question = {
 }
 
 const question2: Question = {
-	type: QuestionType.MULTIPLE_CHOICE,
+	type: QuestionType.MultipleChoice,
 	text: "Welke artiest zong het nummer 'Bohemian Rhapsody'?",
 	choices: [
 		{ uri: "urn:artist:queen", label: "Queen", hasHint: false },
@@ -30,7 +30,7 @@ const question2: Question = {
 }
 
 const question3: Question = {
-	type: QuestionType.MULTIPLE_CHOICE,
+	type: QuestionType.MultipleChoice,
 	text: "Welke planeet staat bekend als de 'Rode Planeet'?",
 	choices: [
 		{ uri: "urn:planet:mars", label: "Mars", hasHint: false },
@@ -42,7 +42,7 @@ const question3: Question = {
 }
 
 const question4: Question = {
-	type: QuestionType.MULTIPLE_CHOICE,
+	type: QuestionType.MultipleChoice,
 	text: "Wie schilderde de Mona Lisa?",
 	choices: [
 		{
@@ -62,7 +62,7 @@ const question4: Question = {
 }
 
 const question5: Question = {
-	type: QuestionType.MULTIPLE_CHOICE,
+	type: QuestionType.MultipleChoice,
 	text: "Wat is de grootste oceaan ter wereld?",
 	choices: [
 		{ uri: "urn:ocean:pacific", label: "Stille Oceaan", hasHint: false },
@@ -78,7 +78,7 @@ const question5: Question = {
 }
 
 const question6: Question = {
-	type: QuestionType.MULTIPLE_CHOICE,
+	type: QuestionType.MultipleChoice,
 	text: "Welke taal wordt gesproken in Brazilië?",
 	choices: [
 		{ uri: "urn:language:portuguese", label: "Portugees", hasHint: false },

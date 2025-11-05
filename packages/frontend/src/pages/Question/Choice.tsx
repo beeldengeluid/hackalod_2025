@@ -1,5 +1,5 @@
 import { useState, useEffect, useContext, type MouseEvent } from "react"
-import { type Choice } from "@hackalod2025/common"
+import { type Choice } from "@lodster/common"
 
 import { DispatchContext } from "../../state"
 import { Actions } from "../../state/actions"

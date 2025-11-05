@@ -1,12 +1,13 @@
 import { createContext, Dispatch } from "react"
 import type { Action } from "./actions"
-import { type Choice, type Question } from "@hackalod2025/common"
+import { type Choice, type Question } from "@lodster/common"
 import { QUESTION_COUNT } from "../consts"
 
 export enum AnswerStatus {
 	Correct = "correct",
 	Done = "done",
 	Incorrect = "incorrect",
+	Loading = "loading",
 	TimedOut = "timed_out",
 	Unanswered = "unanswered",
 	Unset = "unset",

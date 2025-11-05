@@ -61,7 +61,7 @@ export async function generateGuessPerformerAtfFestival(config: QuestionConfig):
 	if (incorrectPerformers == null) return
 
 	const choices = []
-	const answerData = {}
+	// const answerData = {}
 	correctPerformers["results"]["bindings"].forEach((obj) => {
 		choices.push({
 			uri: obj.uri.value,

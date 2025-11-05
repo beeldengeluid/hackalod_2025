@@ -1,7 +1,7 @@
 import Debug from "debug"
 const debug = Debug("lodster:generate:track-performer")
 
-import { Choice, Question, QuestionConfig, QuestionType } from "../common"
+import { Choice, Question, QuestionConfig } from "../common"
 import { runInternalMuziekWebQuery } from "../muziekWeb"
 import { RANDOM_FAMOUS_ALBUM, RANDOM_TRACK_FROM_ALBUM } from "../queries"
 
@@ -17,7 +17,7 @@ export async function generateGuessTrackPerformer(config: QuestionConfig): Promi
 	}
 	debug({ personAlbumTriples, RANDOM_FAMOUS_ALBUM })
 	const choices: Choice[] = []
-	const unique = []
+	// const unique = []
 	let selectedAlbum: string | undefined
 	personAlbumTriples.forEach((album) => {
 		if (!selectedAlbum) {
@@ -54,6 +54,7 @@ export async function generateGuessTrackPerformer(config: QuestionConfig): Promi
 		text: config.questionText(),
 		choices: finalChoices,
 		anwser: finalChoices[0],
+		// @ts-ignore
 		musicSample: trackTriples[0].embed_url.value,
 	}
 }

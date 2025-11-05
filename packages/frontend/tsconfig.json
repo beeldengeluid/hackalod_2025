@@ -1,9 +1,17 @@
 {
-	"extends": "../../tsconfig.base.json",
 	"compilerOptions": {
-		"types": ["vite/client"],
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
 		"jsx": "react-jsx",
+		"lib": ["ES2020", "DOM"],
+		"module": "ESNext",
+		"moduleDetection": "force",
 		"moduleResolution": "bundler",
+		"resolveJsonModule": true,
+		"skipLibCheck": true,
+		"strict": true,
+		"target": "ES2020",
+		"types": ["vite/client"],
 		"paths": {
 			"@lodster/common": ["../backend/src/common/index.ts"],
 			"@lodster/common/*": ["../backend/src/common/*"]

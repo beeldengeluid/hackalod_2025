@@ -40,3 +40,7 @@ DEBUG=hackalod:* npm run dev --workspace @hackalod2025/frontend
 ```
 
 You'll see the address the game UI is running. You can copy paste it to your browser
+
+## Docker
+Test the backend
+$ docker run --rm -p 3000:3000 gijsjan/lodster:1.0.0 

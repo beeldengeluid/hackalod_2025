@@ -7,3 +7,5 @@ __pycache__/
 .venv/
 data/image-cache
 data/image-cacheOLD
+scripts
+build/

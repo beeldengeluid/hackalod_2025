@@ -6,13 +6,14 @@ import { GraphDBResponse } from "./common/interfaces"
 const SPARQL_URL =
 	"https://data.muziekweb.nl/_api/datasets/MuziekwebOrganization/Muziekweb/services/Muziekweb/sparql"
 
-const DUMMY_QUERY = { query: "select * where {?subj ?pred ?obj.} limit 10" }
-
 const TRACKS_QUERY_URL =
 	"https://sandbox-search.rdlabs.beeldengeluid.nl/api/v1.1/lod/grlc/beeldengeluid/sparql-queries/getMuziekAlbumTracks/"
 
 const WM_INTERNAL_QUERY_URL =
 	"https://sandbox-search.rdlabs.beeldengeluid.nl/api/v1.1/lod/sparql-direct"
+
+/**
+const DUMMY_QUERY = { query: "select * where {?subj ?pred ?obj.} limit 10" }
 
 const DUMMY_TRACK_QUERY = {
 	endpoint: "MUZIEKWEB_INTERNAL",
@@ -28,6 +29,7 @@ const DUMMY_MW_INTERNAL_QUERY = {
 	endpoint: "MUZIEKWEB_INTERNAL",
 	query: "SELECT * WHERE { ?s ?p ?o } LIMIT 10",
 }
+*/
 
 interface MuziekWebQueryResponse {
 	uri: string

@@ -194,6 +194,7 @@ ORDER BY ?startDate
 `
 
 
+/**
 const RANDOM_ALBUM = `
 prefix sdo: <https://schema.org/>
 
@@ -202,6 +203,7 @@ SELECT * WHERE {
 } 
 ORDER BY RAND()
 LIMIT 300`
+*/
 
 
 // MUST BE RUN ON INTERNAL MW via search API

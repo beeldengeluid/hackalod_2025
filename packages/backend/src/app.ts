@@ -4,7 +4,6 @@ const debug = Debug("lodster:app")
 import express, { Request, Response } from "express"
 import { getAlbumTracks } from "./muziekWeb"
 import { dummyQuestions } from "./dummy-questions"
-import { stat, writeFile } from "fs/promises"
 import { handleLeaderboard } from "./endpoints/leaderboard"
 import { loadRandomQuestion, loadQuestion } from "./questions/load"
 import { handleImage } from "./endpoints/image"
@@ -14,7 +13,7 @@ export function createApp() {
 
 	app.use(express.json())
 
-	app.use((req, res, next) => {
+	app.use((req, _res, next) => {
 		debug({ method: req.method, url: req.url })
 		next()
 	})

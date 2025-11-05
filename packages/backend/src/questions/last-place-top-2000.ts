@@ -1,7 +1,7 @@
 import Debug from "debug"
 const debug = Debug("lodster:generate:last-place-top-2000")
 
-import { Choice, Question, QuestionConfig, QuestionType } from "../common"
+import { Choice, Question, QuestionConfig } from "../common"
 import { getRandomInt } from "../common/utils"
 import { runGraphDBWebQuery } from "../muziekWeb"
 import { LAST_PLACE_TOP2000, NOT_LAST_PLACE_TOP2000 } from "../queries"

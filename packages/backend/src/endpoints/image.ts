@@ -10,7 +10,7 @@ import { join } from "path"
 const inFlight = new Map<string, Promise<void>>()
 
 const CACHE_DIR = join(process.cwd(), "../../", "data", "image-cache")
-const cacheDirReady = mkdir(CACHE_DIR, { recursive: true }).catch((error) => {
+mkdir(CACHE_DIR, { recursive: true }).catch((error) => {
 	debug("Failed to prepare cache directory", error)
 	throw error
 })
@@ -31,7 +31,6 @@ export function handleImage(app: Express) {
 
 		try {
 			await job
-			await cacheDirReady
 			res.sendFile(target)
 		} catch (err) {
 			next(err)
@@ -40,9 +39,9 @@ export function handleImage(app: Express) {
 }
 
 async function ensureCached(url: string, target: string) {
-	await cacheDirReady
 	try {
 		await stat(target)
+		debug(`Cache hit for `, { url, target })
 		return
 	} catch {
 		const res = await fetch(url)
@@ -51,7 +50,7 @@ async function ensureCached(url: string, target: string) {
 			return
 		}
 		const buf = Buffer.from(await res.arrayBuffer())
-		// await mkdir(CACHE_DIR, { recursive: true })
 		await writeFile(target, buf)
+		debug(`Cached image`, { url, target })
 	}
 }

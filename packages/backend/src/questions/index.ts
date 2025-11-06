@@ -1,5 +1,5 @@
 import { Question, QuestionCase, QuestionType } from "../common/index"
-import { generateGuessIncorrectBirthYear } from "./incorrect-birthyear"
+import { generateGuessCorrectBirthYear } from "./correct-birthyear"
 import { generateGuessLastPlaceTop2000 } from "./last-place-top-2000"
 import { generateGuessPerformerAtfFestival } from "./performer-at-festival"
 import { generateGuessThePlaceOfOriginOfABand } from "./place-of-origin-of-band"
@@ -14,15 +14,15 @@ export interface QuestionConfig {
 
 export const questionConfigs: QuestionConfig[] = [
 	{
-		case: QuestionCase.IncorrectBirthYear,
-		function: generateGuessIncorrectBirthYear,
-		questionText: (randomYear: number) => `Raad welke van deze artiesten niet in ${randomYear} geboren is`,
+		case: QuestionCase.CorrectBirthYear,
+		function: generateGuessCorrectBirthYear,
+		questionText: (randomYear: number) => `Welk van deze artiesten is in ${randomYear} geboren?`,
 		type: QuestionType.MultipleChoice,
 	},
 	{
 		case: QuestionCase.PerformerAtfFestival,
 		function: generateGuessPerformerAtfFestival,
-		questionText: (name: string, year: number) => `Welke van deze artiesten trad NIET op op ${name} in ${year}?`,
+		questionText: (name: string, year: number) => `Welke van deze artiesten speelde NIET op ${name} in ${year}?`,
 		type: QuestionType.MultipleChoice,
 	},
 	{

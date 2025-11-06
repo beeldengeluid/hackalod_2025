@@ -2,7 +2,7 @@ import type { Question } from "./interfaces"
 export type { Question, Choice } from "./interfaces"
 
 export enum QuestionCase {
-	IncorrectBirthYear,
+	CorrectBirthYear,
 	PerformerAtfFestival,
 	TrackPerformer,
 	ThePlaceOfOriginOfABand,

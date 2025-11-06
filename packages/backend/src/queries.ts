@@ -253,7 +253,7 @@ SELECT ?location ?locationLabel ?performerName
 WHERE {
   ?performer a schema:MusicGroup .
     ?performer owl:sameAs ?wikiPerformer .
-    ?wikiPerformer wdt:P740 ?location .
+    { ?wikiPerformer wdt:P740|wdt:P19 ?location }.
     ?location rdfs:label ?locationLabel ;
         geo:hasGeometry/geo:asWKT ?wkt ;
      OPTIONAL { ?performer schema:name ?performerName }
@@ -262,7 +262,7 @@ WHERE {
     BIND("POLYGON ((7.450132782237404 53.488219420821025, 5.934482728991128 53.526576262999555, 4.762809992792825 53.1607830824469, 3.1934134837582917 51.311316239017856, 4.10710323216918 51.21041663847805, 4.924049360159927 51.398583470995476, 5.751744779309121 51.109295471862765, 5.536758956152738 50.71620582483206, 6.106471387515626 50.71620582483206, 6.256961463724224 51.351614079459665, 6.106471387515626 51.81914201552789, 6.880420350875482 51.9253306941452, 7.450132782237404 53.488219420821025))"^^geo:wktLiteral AS ?nlBB) 
 	filter(geof:sfWithin(?wkt, ?nlBB))
 }
-order by rand()
+offset NUMBER_OFF
 limit 1`
 
 export const RANDOM_PLACES = `
@@ -274,12 +274,12 @@ PREFIX wdt: <http://www.wikidata.org/prop/direct/>
 PREFIX geof: <http://www.opengis.net/def/function/geosparql/>
 PREFIX geo: <http://www.opengis.net/ont/geosparql#>
 
-SELECT (?location AS ?uri) (?locationLabel AS ?label) 
+SELECT DISTINCT (?location AS ?uri) (?locationLabel AS ?label) 
 WHERE {
   ?location a geo:Feature ;
     geo:hasGeometry/geo:asWKT ?wkt ;
        rdfs:label ?locationLabel .
-  
+    FILTER (?locationLabel != 'PLACE_NAME'@en).
     BIND("POLYGON ((7.450132782237404 53.488219420821025, 5.934482728991128 53.526576262999555, 4.762809992792825 53.1607830824469, 3.1934134837582917 51.311316239017856, 4.10710323216918 51.21041663847805, 4.924049360159927 51.398583470995476, 5.751744779309121 51.109295471862765, 5.536758956152738 50.71620582483206, 6.106471387515626 50.71620582483206, 6.256961463724224 51.351614079459665, 6.106471387515626 51.81914201552789, 6.880420350875482 51.9253306941452, 7.450132782237404 53.488219420821025))"^^geo:wktLiteral AS ?nlBB) 
 	filter(geof:sfWithin(?wkt, ?nlBB))
 }

@@ -34,7 +34,7 @@ export const questionConfigs: QuestionConfig[] = [
 	{
 		case: QuestionCase.ThePlaceOfOriginOfABand,
 		function: generateGuessThePlaceOfOriginOfABand,
-		questionText: (name: string) => `Uit welke plaats komt de band ${name}?`,
+		questionText: (name: string) => `Uit welke plaats komt band of artiest ${name}?`,
 		type: QuestionType.MultipleChoice,
 	},
 	{

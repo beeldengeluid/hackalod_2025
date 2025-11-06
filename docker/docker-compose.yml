@@ -2,19 +2,24 @@ name: lodster
 
 services:
   nginx:
+    container_name: nginx-lodster
     image: nginx:latest
     networks:
       - lodster-internal
       - rdt
     restart: unless-stopped
     volumes:
-      - ./templates:/etc/nginx/templates:ro
+      - ./templates:/etc/nginx/templates
       - ./dist:/usr/share/nginx/html:ro
 
   backend:
-    image: gijsjan/lodster:1.0.0    
+    container_name: lodster-backend
+    # environment:
+    #   - DEBUG=lodster:*
+    image: gijsjan/lodster:1.0.0
     networks:
       - lodster-internal
+    restart: unless-stopped
 
 networks:
   lodster-internal:

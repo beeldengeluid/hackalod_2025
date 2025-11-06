@@ -10,7 +10,7 @@ server {
 	}
 
 	location /api/ {
-		proxy_pass http://backend:80/;
+		proxy_pass http://lodster-backend:3000;
 	}
 
 	location = /robots.txt {

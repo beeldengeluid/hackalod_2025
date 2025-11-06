@@ -87,6 +87,7 @@ export function QuestionPage() {
 							<IncorrectAnswerBody
 								dispatch={dispatch}
 								isLastQuestion={isLastQuestion}
+								question={question!}
 							/>
 						)}
 						{status === AnswerStatus.TimedOut && (
@@ -141,13 +142,16 @@ function CorrectAnswerBody({
 function IncorrectAnswerBody({
 	dispatch,
 	isLastQuestion,
+	question
 }: {
 	dispatch: React.Dispatch<Action>
 	isLastQuestion: boolean
+	question: Question
 }) {
 	return (
 		<div className={styles.answerBody}>
 			<h2 className={styles.correct}>Helaas!</h2>
+			<p style={{ flexDirection: 'column' }}>Het goede antwoord was: <span style={{color: 'yellow' }}>{question.anwser.label}</span></p>
 			<p>
 				Je hebt geen <IconSparkles size={72} color="gray" /> verdiend
 			</p>

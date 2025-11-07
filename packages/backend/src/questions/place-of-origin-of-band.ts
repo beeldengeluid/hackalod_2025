@@ -4,7 +4,7 @@ const debug = Debug("lodster:generate:place-of-origin-of-band")
 import { Choice, Question, QuestionConfig } from "../common"
 import { runGraphDBWebQuery } from "../muziekWeb"
 import { BAND_FROM_PLACE, RANDOM_PLACES } from "../queries"
-import { getRandomInt } from "src/common/utils"
+import { getRandomInt } from "../common/utils"
 
 const HARDCODED_LIMIT = 117
 

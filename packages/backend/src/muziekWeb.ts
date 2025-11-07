@@ -41,7 +41,7 @@ interface MuziekWebQueryResponse {
 
 interface BAGResponse {
 	place: string
-	label: string
+	name: string
 }
 
 export async function runMuziekWebQuery(query: string) {

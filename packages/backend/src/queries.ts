@@ -286,6 +286,19 @@ WHERE {
 order by rand()
 limit 3`
 
+export const RANDOM_LOCALITIES = `
+prefix bag: <https://bag.basisregistraties.overheid.nl/def/bag#>
+
+SELECT ?place ?name 
+WHERE {
+  ?place a bag:Gemeente ;
+    bag:naam ?name .
+ FILTER (?name != 'PLACE_NAME').
+}
+ORDER BY RAND()
+limit 3
+`
+
 export const LAST_PLACE_TOP2000 = `
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <http://schema.org/>

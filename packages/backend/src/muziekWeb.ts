@@ -12,6 +12,7 @@ const TRACKS_QUERY_URL =
 const WM_INTERNAL_QUERY_URL =
 	"https://sandbox-search.rdlabs.beeldengeluid.nl/api/v1.1/lod/sparql-direct"
 
+
 /**
 const DUMMY_QUERY = { query: "select * where {?subj ?pred ?obj.} limit 10" }
 
@@ -38,6 +39,11 @@ interface MuziekWebQueryResponse {
 	eYear: string
 }
 
+interface BAGResponse {
+	place: string
+	label: string
+}
+
 export async function runMuziekWebQuery(query: string) {
 	debug('runMuziekWebQuery', query)
 	try {
@@ -57,6 +63,31 @@ export async function runMuziekWebQuery(query: string) {
 		return result
 	} catch (error: any) {
 		console.error("He getsie een error: " + error.message)
+		console.error(error)
+	}
+	return []
+}
+
+export async function runBAGQuery(query: string) {
+	debug('runBAGQuery', query)
+	try {
+		const response = await fetch('https://api.labs.kadaster.nl/datasets/bag/lv/services/baglv/sparql ', {
+			method: "POST",
+			headers: {
+				"Content-Type": "application/json",
+			},
+			body: JSON.stringify({ query: query }),
+		})
+		if (!response.ok) {
+		
+            throw new Error(`Response status: ${response.status}`)
+		}
+
+		const result = await response.json() as BAGResponse[]
+		debug(result)
+		return result
+	} catch (error: any) {
+		console.error("He BAG een error: " + error.message)
 		console.error(error)
 	}
 	return []

@@ -3,7 +3,8 @@ const debug = Debug("lodster:generate:place-of-origin-of-band")
 
 import { Choice, Question, QuestionConfig } from "../common"
 import { runGraphDBWebQuery } from "../muziekWeb"
-import { BAND_FROM_PLACE, RANDOM_PLACES } from "../queries"
+import { runBAGQuery } from "../muziekWeb"
+import { BAND_FROM_PLACE, RANDOM_LOCALITIES } from "../queries"
 import { getRandomInt } from "src/common/utils"
 
 
@@ -22,19 +23,20 @@ export async function generateGuessThePlaceOfOriginOfABand(config: QuestionConfi
 		hasHint: false,
 	}
     const place = correctAnswer.label
-    debug({ place, correctAnswers })
 	const performer =
-		correctAnswers["results"]["bindings"][0].performerName.value
+    correctAnswers["results"]["bindings"][0].performerName.value
     
-	const inCorrectAnswers = await runGraphDBWebQuery(
-        RANDOM_PLACES.replace("PLACE_NAME", place),
+	const inCorrectAnswers = await runBAGQuery(
+        RANDOM_LOCALITIES.replace("PLACE_NAME", place),
     )
+    debug ({ place, inCorrectAnswers })
+
 	if (inCorrectAnswers == null) return
 	const choices = []
-	inCorrectAnswers["results"]["bindings"].forEach((obj) => {
+	inCorrectAnswers.forEach((obj) => {
 		choices.push({
-			uri: obj.uri.value,
-			label: obj.label.value,
+			uri: obj.place,
+			label: obj.name,
 			hasHint: false,
 		})
 	})

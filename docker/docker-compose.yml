@@ -16,7 +16,7 @@ services:
     container_name: lodster-backend
     environment:
       - DEBUG=lodster:*
-    image: gijsjan/lodster:1.0.1
+    image: gijsjan/lodster:1.0.2
     networks:
       - lodster-internal
     restart: unless-stopped

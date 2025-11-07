@@ -5,18 +5,20 @@ import { Choice, Question, QuestionConfig } from "../common"
 import { runGraphDBWebQuery } from "../muziekWeb"
 import { runBAGQuery } from "../muziekWeb"
 import { BAND_FROM_PLACE, RANDOM_LOCALITIES } from "../queries"
-import { getRandomInt } from "src/common/utils"
+import { getRandomInt } from "../common/utils"
 
+const HARDCODED_LIMIT = 117
 
-export async function generateGuessThePlaceOfOriginOfABand(config: QuestionConfig): Promise<Question | undefined> {
+export async function generateGuessThePlaceOfOriginOfABand(
+	config: QuestionConfig,
+): Promise<Question | undefined> {
 	debug("Generating question with config", config)
 
-    const hardcoded_limit = 117
 	const correctAnswers = await runGraphDBWebQuery(
-        BAND_FROM_PLACE.replace("NUMBER_OFF", getRandomInt(1, hardcoded_limit)),
-    )
+		BAND_FROM_PLACE.replace("NUMBER_OFF", getRandomInt(1, HARDCODED_LIMIT).toString()),
+	)
 	if (correctAnswers == null) return
-	
+
 	const correctAnswer: Choice = {
 		uri: correctAnswers["results"]["bindings"][0].location.value,
 		label: correctAnswers["results"]["bindings"][0].locationLabel.value,

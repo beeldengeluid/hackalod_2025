@@ -33,6 +33,7 @@ async function getQuestion(dispatch: React.Dispatch<Action>) {
 	// Reset the error count on a successful fetch
 	errorCount = 0
 	const question: Question = await response.json()
+	question.choices.sort(() => Math.random() - 0.5) // Shuffle choices
 	dispatch({ type: Actions.SET_QUESTION, payload: { question } })
 }
 
